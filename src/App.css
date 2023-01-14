@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.RuneInputDiv {
+  display: inline-block
+}
+
+.RuneInputField {
+  size: 1;
+  width: 15px;
 }
