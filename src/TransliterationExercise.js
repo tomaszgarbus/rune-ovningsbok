@@ -3,9 +3,11 @@ import { useState } from "react";
 
 
 function TransliterationExercise(props) {
+  console.log(props.runeMapping);
+
   const [userAnswer, setUserAnswer] = useState(
     {
-      inputs: props.runes.map(_ => ""),
+      inputs: props.exercise.runes.map(_ => ""),
       ready: false
     }
   )
@@ -15,22 +17,21 @@ function TransliterationExercise(props) {
     inputs[index] = char;
     setUserAnswer({
       inputs: inputs,
-      ready: isSubmitDisabled(inputs)
+      ready: isReady(inputs)
     });
   }
 
-  function isSubmitDisabled(inputs) {
+  function isReady(inputs) {
     for (const c of inputs) {
-      console.log(c);
-      if (c == "") return false;
+      if (c === "") return false;
     }
     return true;
   }
 
   function validate() {
     for (let i = 0; i < userAnswer.inputs.length; ++i) {
-      if (userAnswer.inputs[i] != props.runeMapping[props.runes[i]]) {
-        console.log("Wrong!!");
+      if (userAnswer.inputs[i] !== props.runeMapping[props.exercise.runes[i]]) {
+        console.log("Wrong!!" + i + props.runeMapping[props.exercise.runes[i]]);
         return;
       }
     }
@@ -43,21 +44,25 @@ function TransliterationExercise(props) {
   }
 
   return (
-    <div>
+    <div className="ActiveTransliterationExercise">
+      <h1>{props.exercise.title}</h1>
       <form onSubmit={onSubmit}>
-        {
-          props.runes.map(
-            (rune, index) => <RuneInput
-                key={index}
-                runeSymbol={rune}
-                onChange={event => updateUserAnswer(index, event.target.value)}
-              />
-          )
-        }
+        <div className="RuneInputsDiv">
+          {
+            props.exercise.runes.map(
+              (rune, index) => <RuneInput
+                  key={index}
+                  runeSymbol={rune}
+                  onChange={event => updateUserAnswer(index, event.target.value)}
+                />
+            )
+          }
+        </div>
         <input
           type="submit"
           onSubmit={onSubmit}
           disabled={!userAnswer.ready}
+          value="Check"
           />
       </form>
     </div>

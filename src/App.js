@@ -1,19 +1,24 @@
-import TransliterationExercise from './TransliterationExercise';
 import './App.css';
+import RuneRows from './RuneRows.json';
+import {RuneRowToMapping} from './Utils';
+import TransliterationExercise from './TransliterationExercise';
+import ListOfExercises from './ListOfExercises';
+import Exercises from './exercises.json';
+import { useState } from 'react';
 
 function App() {
-  const runeMapping = {
-    "ᛞ": "d",
-    "ᚱ": "r",
-    "ᛁ": "i",
-    "ᚠ": "f"
-  }
+  const [exercise, setExercise] = useState(null);
 
   return (
     <div className="App">
-      <TransliterationExercise
-        runes={["ᛞ", "ᚱ", "ᛁ", "ᚠ"]}
-        runeMapping={runeMapping} />
+      <ListOfExercises items={Exercises} setExercise={setExercise}/>
+      {
+        exercise ?
+          <TransliterationExercise
+            exercise={exercise}
+            runeMapping={RuneRowToMapping(RuneRows[exercise.rowType])} />
+        : <div></div>
+      }
     </div>
   );
 }

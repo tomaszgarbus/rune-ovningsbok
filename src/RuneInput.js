@@ -1,7 +1,7 @@
 function RuneInput(props) {
   return (
-    <div className="RuneInputDiv">
-      <p>{props.runeSymbol}</p>
+    <div className="SingleRuneInputDiv">
+      <p className="SingleRuneOriginalSymbol">{props.runeSymbol}</p>
       <input
         type="text"
         className="RuneInputField"

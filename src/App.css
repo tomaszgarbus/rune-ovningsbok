@@ -37,11 +37,31 @@
   }
 } */
 
-.RuneInputDiv {
-  display: inline-block
+.ActiveTransliterationExercise {
+  margin: auto;
+}
+
+.RuneInputsDiv {
+  margin: 70px;
+}
+
+.SingleRuneOriginalSymbol {
+  text-align: center;
+}
+
+.SingleRuneInputDiv {
+  margin: 5px;
+  border-radius: 25px;
+  display: inline-block;
+  background-color: beige;
+  padding: 15px;
 }
 
 .RuneInputField {
   size: 1;
-  width: 15px;
+  width: 25px;
+  height: 35px;
+  border-radius: 25px;
+  border-color: transparent;
+  text-align: center;
 }
