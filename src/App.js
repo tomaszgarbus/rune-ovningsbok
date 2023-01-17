@@ -16,6 +16,7 @@ function App() {
         exercise ?
           <TransliterationExercise
             exercise={exercise}
+            key={exercise.id}
             runeMapping={RuneRowToMapping(RuneRows[exercise.rowType])} />
         : <div></div>
       }

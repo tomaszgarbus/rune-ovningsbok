@@ -31,16 +31,6 @@ function TransliterationExercise(props) {
     return true;
   }
 
-  function validate() {
-    for (let i = 0; i < userAnswer.inputs.length; ++i) {
-      if (userAnswer.inputs[i] !== props.runeMapping[props.exercise.runes[i]]) {
-        console.log("Wrong!!" + i + props.runeMapping[props.exercise.runes[i]]);
-        return;
-      }
-    }
-    console.log("Good!!");
-  }
-
   function onSubmit(event) {
     event.preventDefault();
     setShowFeedback(true);
