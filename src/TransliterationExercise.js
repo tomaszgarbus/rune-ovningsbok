@@ -11,6 +11,8 @@ function TransliterationExercise(props) {
       ready: false
     }
   )
+  // True if user has clicked the "Check" button.
+  const [showFeedback, setShowFeedback] = useState(false);
 
   function updateUserAnswer(index, char) {
     const inputs = userAnswer.inputs;
@@ -19,6 +21,7 @@ function TransliterationExercise(props) {
       inputs: inputs,
       ready: isReady(inputs)
     });
+    console.log(inputs);
   }
 
   function isReady(inputs) {
@@ -40,7 +43,7 @@ function TransliterationExercise(props) {
 
   function onSubmit(event) {
     event.preventDefault();
-    validate();
+    setShowFeedback(true);
   }
 
   return (
@@ -53,6 +56,13 @@ function TransliterationExercise(props) {
               (rune, index) => <RuneInput
                   key={index}
                   runeSymbol={rune}
+                  feedback={
+                    showFeedback ? 
+                      {
+                        "symbol": props.runeMapping[rune],
+                        "correct": props.runeMapping[rune] === userAnswer.inputs[index]
+                      } : undefined
+                    }
                   onChange={event => updateUserAnswer(index, event.target.value)}
                 />
             )

@@ -49,12 +49,24 @@
   text-align: center;
 }
 
+.SingleRuneFeedbackSymbol {
+  text-align: center;
+}
+
 .SingleRuneInputDiv {
   margin: 5px;
   border-radius: 25px;
   display: inline-block;
-  background-color: beige;
+  background-color: lightgray;
   padding: 15px;
+}
+
+.SingleRuneInputDiv.Correct {
+  background-color: lightgreen;
+}
+
+.SingleRuneInputDiv.Incorrect {
+  background-color: lightcoral;
 }
 
 .RuneInputField {
