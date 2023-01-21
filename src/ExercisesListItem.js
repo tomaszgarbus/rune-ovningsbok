@@ -1,9 +1,8 @@
 function ExercisesListItem(props) {
   return (
     <div>
-      <a onClick={props.open}>
-        <p>{props.exercise.title}</p>
-      </a>
+      {/* TODO: should this be a link instead? */}
+      <p onClick={props.open}>{props.exercise.title}</p>
     </div>
   )
 }
