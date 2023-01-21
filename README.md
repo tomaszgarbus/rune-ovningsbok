@@ -1,4 +1,7 @@
 # rune-ovningsbok
+
+[![Node.js CI](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/node.js.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/node.js.yml)
+
 ## Rune Övningsbok web app
 
 This web app is currently under development. It will be a simple service for
