@@ -16,8 +16,8 @@ function RuneInput(props) {
         className={"RuneInputField " + feedbackClass()}
         onChange={props.onChange}
         maxLength={1} />
-      {props.feedback && 
-        <p className={"SingleRuneFeedbackSymbol " + feedbackClass()}>
+      {props.feedback && !props.feedback.correct &&
+        <p className={"SingleRuneFeedbackSymbol" + feedbackClass()} data-testid="symbol-feedback">
           {props.feedback.symbol}
         </p>
       }

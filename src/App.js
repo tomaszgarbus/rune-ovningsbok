@@ -3,7 +3,7 @@ import RuneRows from './RuneRows.json';
 import {RuneRowToMapping} from './Utils';
 import TransliterationExercise from './TransliterationExercise';
 import ListOfExercises from './ListOfExercises';
-import Exercises from './exercises.json';
+import Exercises from './Exercises.json';
 import { useState } from 'react';
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
         exercise ?
           <TransliterationExercise
             exercise={exercise}
-            key={exercise.id}
             runeMapping={RuneRowToMapping(RuneRows[exercise.rowType])} />
         : <div></div>
       }

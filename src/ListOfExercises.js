@@ -7,6 +7,7 @@ function ListOfExercises(props) {
         props.items.map(
           exercise => <ExercisesListItem
             exercise={exercise}
+            key={exercise.id}
             open={_ => props.setExercise(exercise)}
             />)
       }

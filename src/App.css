@@ -43,6 +43,8 @@
 
 .RuneInputsDiv {
   margin: 70px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .SingleRuneOriginalSymbol {
