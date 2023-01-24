@@ -7,7 +7,7 @@ function RuneInput(props) {
   }
 
   return (
-    <div className={"SingleRuneInputDiv " + feedbackClass()}>
+    <div className={"SingleRuneInputDiv " + feedbackClass()} data-testid="single-rune-box">
       <p className={"SingleRuneOriginalSymbol " + feedbackClass()}>
         {props.runeSymbol}
       </p>
@@ -15,7 +15,8 @@ function RuneInput(props) {
         type="text"
         className={"RuneInputField " + feedbackClass()}
         onChange={props.onChange}
-        maxLength={1} />
+        maxLength={1}
+        data-testid="rune-input" />
       {props.feedback && !props.feedback.correct &&
         <p className={"SingleRuneFeedbackSymbol" + feedbackClass()} data-testid="symbol-feedback">
           {props.feedback.symbol}

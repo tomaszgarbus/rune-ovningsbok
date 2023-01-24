@@ -3,8 +3,6 @@ import { useState } from "react";
 
 
 function TransliterationExercise(props) {
-  console.log(props.runeMapping);
-
   const [userAnswer, setUserAnswer] = useState(
     {
       inputs: props.exercise.runes.map(_ => ""),
@@ -21,7 +19,6 @@ function TransliterationExercise(props) {
       inputs: inputs,
       ready: isReady(inputs)
     });
-    console.log(inputs);
   }
 
   function isReady(inputs) {
