@@ -2,7 +2,7 @@ import ExercisesListItem from './ExercisesListItem';
 
 function ListOfExercises(props) {
   return (
-    <div>
+    <div className='ExercisesList'>
       {
         props.items.map(
           exercise => <ExercisesListItem
