@@ -9,6 +9,7 @@ function ListOfExercises(props) {
             exercise={exercise}
             key={exercise.id}
             open={_ => props.setExercise(exercise)}
+            runeRow={props.runeRows[exercise.rowType]}
             />)
       }
     </div>

@@ -11,7 +11,11 @@ function App() {
 
   return (
     <div className="App">
-      <ListOfExercises items={Exercises} setExercise={setExercise}/>
+      <ListOfExercises
+        items={Exercises}
+        setExercise={setExercise}
+        runeRows={RuneRows}
+        />
       {
         exercise ?
           <TransliterationExercise
