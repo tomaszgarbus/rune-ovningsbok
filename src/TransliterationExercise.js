@@ -42,7 +42,9 @@ function TransliterationExercise(props) {
         </button>
         <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
       </div>
-      <img src={"./assets/" + props.exercise.img} className="ActiveExerciseImg" alt={props.exercise.title} />
+      <div className="ActiveExerciseImgDiv">
+        <img src={"./assets/" + props.exercise.img} className="ActiveExerciseImg" alt={props.exercise.title} />
+      </div>
       <form onSubmit={onSubmit}>
         <div className="RuneInputsDiv">
           {

@@ -17,6 +17,14 @@ body {
   border-radius: 25px;
   max-width: 100%;
   margin: auto;
+  position: relative;
+  z-index: -2;
+}
+
+.ActiveExerciseImgDiv {
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 10px darkgrey;
+  width: fit-content;
 }
 
 .ActiveExerciseTopBar {
