@@ -5,7 +5,7 @@ function ExercisesListItem(props) {
   console.log("assets/" + props.exercise.img);
   return (
     <div className="ExercisesListItem" onClick={props.open}>
-      <img src={"./assets/" + props.exercise.img} className="ExerciseThumbnail" />
+      <img src={"./assets/" + props.exercise.img} className="ExerciseThumbnail" alt={props.exercise.title} />
       <div className="ExerciseThumbnailGradient" />
       <svg viewbox="0 0 100 100" className="ExerciseThumbnailRuneMask" opacity="0">
         <defs>
