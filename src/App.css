@@ -1,5 +1,69 @@
+.App {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #fefefe;
+}
+
 .ActiveTransliterationExercise {
+  display: flex;
+  flex-direction: column;
   margin: auto;
+}
+
+.ActiveExerciseImg {
+  border-radius: 25px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.ActiveExerciseTopBar {
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.ActiveExerciseTitle {
+  border-radius: 15px;
+  background-color: #fff0f0;
+  flex-grow: 1;
+  font-size: 2em;
+  padding: 10px;
+}
+
+/* .ActiveExerciseCheckButton {
+  align-self: center;
+  border-radius: 15px;
+  border: none;
+  background-color: darkred;
+  color: #fefefe;
+  font-size: 2em;
+  padding: 10px;
+} */
+
+.BackToListButton {
+  border-radius: 15px;
+  border: none;
+  
+  font-size: 2em;
+  padding: 10px;
+}
+
+.BackToListButton:hover {
+  /* background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,212,255,1) 100%); */
+  background: rgba(0, 212, 255, 1);
+  color: black;
+  transition-duration: 1s;
+}
+
+.BackToListButton:not(:hover) {
+  background-color: darkred;
+  color: #fefefe;
+  transition-duration: 1s;
 }
 
 .ExercisesList {
@@ -11,7 +75,7 @@
 }
 
 .ExercisesListItem {
-  box-shadow: 0px 0px 5px lightgray, 5px -5px 5px lightgray;
+  box-shadow: 0px 0px 10px darkgrey, 5px -5px 5px lightgray;
   display: grid;
   grid-template-rows: [top-line] 100px [second-line] 100px [bottom-line];
   grid-template-columns: [start-line] 300px [end-line];
@@ -76,12 +140,16 @@
 }
 
 .RuneInputsDiv {
-  margin: 70px;
-  display: flex;
   align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .SingleRuneOriginalSymbol {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 0px;
   text-align: center;
 }
 
@@ -93,7 +161,7 @@
   margin: 5px;
   border-radius: 25px;
   display: inline-block;
-  background-color: lightgray;
+  background-color: #ffd0d0;
   padding: 15px;
 }
 
@@ -107,6 +175,7 @@
 
 .RuneInputField {
   size: 1;
+  font-size: 1.5em;
   width: 25px;
   height: 35px;
   border-radius: 25px;

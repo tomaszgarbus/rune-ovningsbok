@@ -35,7 +35,14 @@ function TransliterationExercise(props) {
 
   return (
     <div className="ActiveTransliterationExercise">
-      <h1>{props.exercise.title}</h1>
+
+      <div className="ActiveExerciseTopBar">
+        <button onClick={props.backToExerciseListFn} className="BackToListButton">
+          ⮜
+        </button>
+        <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
+      </div>
+      <img src={"./assets/" + props.exercise.img} className="ActiveExerciseImg" alt={props.exercise.title} />
       <form onSubmit={onSubmit}>
         <div className="RuneInputsDiv">
           {
@@ -56,6 +63,7 @@ function TransliterationExercise(props) {
           }
         </div>
         <input
+          className="ActiveExerciseCheckButton"
           type="submit"
           onSubmit={onSubmit}
           disabled={!userAnswer.ready}

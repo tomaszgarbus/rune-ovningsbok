@@ -11,17 +11,20 @@ function App() {
 
   return (
     <div className="App">
-      <ListOfExercises
-        items={Exercises}
-        setExercise={setExercise}
-        runeRows={RuneRows}
-        />
-      {
-        exercise ?
+      {exercise === null ?
+        (
+          <ListOfExercises
+            items={Exercises}
+            setExercise={setExercise}
+            runeRows={RuneRows}
+            />
+        ) :
+        (
           <TransliterationExercise
+            backToExerciseListFn={() => {setExercise(null)}}
             exercise={exercise}
             runeMapping={RuneRowToMapping(RuneRows[exercise.rowType])} />
-        : <div></div>
+        )
       }
     </div>
   );
