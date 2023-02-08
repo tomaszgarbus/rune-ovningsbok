@@ -12,6 +12,7 @@ function RuneInput(props) {
         {props.runeSymbol}
       </p>
       <input
+        id={"RuneInputField" + props.index}
         type="text"
         className={"RuneInputField " + feedbackClass()}
         onChange={props.onChange}

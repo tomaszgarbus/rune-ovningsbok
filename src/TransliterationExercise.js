@@ -37,6 +37,12 @@ function TransliterationExercise(props) {
       solved: isSolved(inputs)
     });
     console.log(isSolved(inputs));
+
+    // Maybe move the cursor to the next input.
+    // TODO: find a way to do it with Refs instead.
+    if (index < inputs.length - 1 && char) {
+      document.getElementById("RuneInputField" + (index + 1)).focus();
+    }
   }
 
   function isReady(inputs) {
@@ -51,7 +57,7 @@ function TransliterationExercise(props) {
       return false;
     }
     for (const i in inputs) {
-      if (props.runeMapping[props.exercise.runes[i]] != userAnswer.inputs[i]) {
+      if (props.runeMapping[props.exercise.runes[i]] !== userAnswer.inputs[i]) {
         return false;
       }
     }
