@@ -1,6 +1,10 @@
+/* Trick thanks to https://css-tricks.com/the-hidden-attribute-is-visibly-weak/ */
+[hidden] { display: none !important; }
+
 .App {
   display: flex;
   align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -11,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  max-width: 80%;
 }
 
 .ActiveExerciseImg {
@@ -24,6 +29,7 @@ body {
 .ActiveExerciseImgDiv {
   border-radius: 25px;
   box-shadow: inset 0px 0px 10px darkgrey;
+  margin: auto;
   width: fit-content;
 }
 
@@ -43,15 +49,34 @@ body {
   padding: 10px;
 }
 
-/* .ActiveExerciseCheckButton {
-  align-self: center;
-  border-radius: 15px;
+.ActiveExerciseRuneInputsDiv {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+#ActiveExerciseCheckButton {
+  align-self: stretch;
+  border-radius: 25px;
   border: none;
+  display: inline-block;
+  font-size: 2em;
+  margin: 5px;
+  min-height: 100%;
+  padding: 10px;
+}
+
+#ActiveExerciseCheckButton:enabled {
   background-color: darkred;
   color: #fefefe;
-  font-size: 2em;
-  padding: 10px;
-} */
+}
+
+#ActiveExerciseCheckButton:disabled {
+  background-color: lightgrey;
+  color: grey;
+}
 
 .BackToListButton {
   border-radius: 15px;
@@ -145,13 +170,6 @@ body {
 .ExercisesListItem:not(:hover) .ExerciseThumbnailRuneMask {
   opacity: 0;
   transition: 5s;
-}
-
-.RuneInputsDiv {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .SingleRuneOriginalSymbol {

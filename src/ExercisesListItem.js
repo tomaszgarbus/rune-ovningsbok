@@ -1,4 +1,4 @@
-/* TODO: Consider refactoring to a React Router Link. */
+/* TODO:Consider refactoring to a React Router Link. */
 
 function ExercisesListItem(props) {
   console.log(props.exercise);

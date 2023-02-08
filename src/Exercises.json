@@ -4,7 +4,9 @@
     "img": "drif.jpg",
     "title": "Name of the last Heilung album",
     "runes": ["ᛞ", "ᚱ", "ᛁ", "ᚠ"],
-    "rowType": "elder_futhark"
+    "rowType": "elder_futhark",
+    "sources": ["https://chaoszine.net/heilung-reveals-details-for-upcoming-album-drif/"],
+    "explanationAfter": "Good answer! The band themselves explain that Drif means \"gathering\"."
   },
   {
     "id": "figa",
@@ -16,15 +18,28 @@
   {
     "id": "einang",
     "img": "einangstone.jpg",
-    "title": "Einang stone",
+    "title": "Einangsteinen (Einang stone)",
     "runes": ["\u16de", "\u16a8", "\u16b7", "\u16a8", "\u16ca", "\u16cf", "\u16c1", "\u16c9", "\u16b1", "\u16a2", "\u16be", "\u16df", "\u16a0", "\u16a8", "\u16c1", "\u16ba", "\u16c1", "\u16de", "\u16df"],
-    "rowType": "elder_futhark"
+    "rowType": "elder_futhark",
+    "description": "The Einang stone is located in Gardbergfeltet, a historical site in Oppland, Norway, holding over 550 burial mounds and over 900 discoveries from Roman Iron Age and Viking Age. The Einang stone is believed to date back to around 300 AD, and for a long time was the oldest known runic stone from northwestern Europe.",
+    "explanationAfter": "As explained by Kristel Zilmer on Twitter (see sources): Moltke's reading - still commonly accepted - is: …daga-(t)(i)R runo faihido. He suggested that the start could be: [Ek Go]dagastiR rūnō faihidō, «I, GodagastiR, painted (wrote) the rune (i.e. the runic inscription)”. The singular rūnō can refer to the overall runic message.",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/51/c/eac8d35824e8706f5d26e9e376610921/",
+      "https://www.visitnorway.com/listings/gardbergfeltet-and-the-einang-stone/6081/",
+      "https://twitter.com/kristel_zilmer/status/1395417502528716801"
+    ]
   },
   {
     "id": "svingerudsteinen",
     "img": "svingerudsteinen.jpg",
     "title": "Svingerudsteinen (Svingerud Stone)",
     "runes": ["\u16c1", "\u16de", "\u16c1", "\u16d2", "\u16d6", "\u16b1", "\u16a2", "\u16b7"],
-    "rowType": "elder_futhark"
+    "rowType": "elder_futhark",
+    "description": "In early 2023, this stone was announced to be the oldest known runic inscription to date. It was found in a cremation ground, in Hole near Tyrifjorden, Eastern Norway, by University of Oslo researchers. The inscriptions are dated between 1 and 250 AD. The stone itself is a 31x32 cm block of reddish-brown Ringerike sandstone.",
+    "explanationAfter": "Great answer! The inscription, consisting of thin, shallow runes, is transliterated as \"Idiberug\". According to Kristel Zilmer, professor at Oslo's Museum of Cultural History: this could be name of a woman Idibera or a kin named Idiberung.",
+    "sources": [
+      "https://edition.cnn.com/style/article/worlds-oldest-runestone-norway-intl-scli-scn/index.html",
+      "https://www.khm.uio.no/english/news/found-the-world-s-oldest-rune-stone.html"
+    ]
   }
 ]
