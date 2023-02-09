@@ -8,16 +8,28 @@ const testExercise = {
   rowType: "elder_test",
 }
 
-const testRuneMapping = {
-  "ᛏ": "t",
-  "ᛖ": "e",
-  "ᛊ": "s"
+const testRuneRow = {
+  'name': 'Test Rune Row',
+  'symbols': [
+    {
+      'rune': 'ᛏ',
+      'latin': 't',
+    },
+    {
+      'rune': 'ᛖ',
+      'latin': 'e',
+    },
+    {
+      'rune': 'ᛊ',
+      'latin': 's',
+    },
+  ]
 }
 
 test('enable check once all inputs provided', () => {
   render(<TransliterationExercise
     exercise={testExercise}
-    runeMapping={testRuneMapping}
+    runeRow={testRuneRow}
   />);
   const checkButton = screen.getByText("Check");
   expect(checkButton).toBeDisabled();
@@ -33,7 +45,7 @@ test('enable check once all inputs provided', () => {
 test('check button enables feedback', () => {
   render(<TransliterationExercise
     exercise={testExercise}
-    runeMapping={testRuneMapping}
+    runeRow={testRuneRow}
   />);
   for (let inputField of screen.getAllByTestId("rune-input")) {
     inputField.setAttribute('value', 'a');

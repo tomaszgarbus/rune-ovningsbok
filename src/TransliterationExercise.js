@@ -29,7 +29,6 @@ function TransliterationExercise(props) {
         ...userAnswer,
         solved: isSolved(userAnswer.inputs)
       });
-      console.log(isSolved(userAnswer.inputs));
     },
     [showFeedback]
   )
@@ -42,7 +41,6 @@ function TransliterationExercise(props) {
       ready: isReady(inputs),
       solved: isSolved(inputs)
     });
-    console.log(isSolved(inputs));
 
     // Maybe move the cursor to the next input.
     // TODO: find a way to do it with Refs instead.
@@ -164,13 +162,14 @@ function TransliterationExercise(props) {
         <div
           id="ActiveExerciseHelpModal"
           ref={helpModalRef}
-          hidden="true">
+          hidden={true}>
           <div>
             <p>{props.runeRow.name}</p>
             <ul>
               {
                 Object.entries(runeMapping).map((elem) =>
-                  <li>
+                  <li
+                    key={elem[0]}> {/* Just to silence some warnings. */}
                     {/* rune */}
                     {elem[0]}: 
                     {/* latin */}
