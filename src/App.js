@@ -1,6 +1,5 @@
 import './App.css';
 import RuneRows from './RuneRows.json';
-import {RuneRowToMapping} from './Utils';
 import TransliterationExercise from './TransliterationExercise';
 import ListOfExercises from './ListOfExercises';
 import Exercises from './Exercises.json';

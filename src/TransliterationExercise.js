@@ -1,5 +1,5 @@
 import RuneInput from "./RuneInput";
-import { useRef, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {RuneRowToMapping} from './Utils';
 
 
@@ -20,18 +20,14 @@ function TransliterationExercise(props) {
   // Used to update the `display` property on the help modal.
   const helpModalRef = useRef(null);
 
-  const runeMapping = RuneRowToMapping(props.runeRow)
+  // TODO: This was created to silence warnings. Instead of this inefficient
+  // function, runeMapping constant below should be made React-friendly so
+  // that it's not recomputed on each re-render.
+  const runeMappingFn = useCallback((rune) => {
+    return RuneRowToMapping(props.runeRow)[rune];
+  }, [props])
 
-  // If the user requests feedback and they got everything right, `solved` should automatically be set to true.
-  useEffect(
-    () => {
-      setUserAnswer({
-        ...userAnswer,
-        solved: isSolved(userAnswer.inputs)
-      });
-    },
-    [showFeedback]
-  )
+  const runeMapping = RuneRowToMapping(props.runeRow)
 
   function updateUserAnswer(index, char) {
     const inputs = userAnswer.inputs;
@@ -56,17 +52,28 @@ function TransliterationExercise(props) {
     return true;
   }
 
-  function isSolved(inputs) {
+  const isSolved = useCallback((inputs) => {
     if (!showFeedback) {
       return false;
     }
     for (const i in inputs) {
-      if (runeMapping[props.exercise.runes[i]] !== userAnswer.inputs[i]) {
+      if (runeMappingFn(props.exercise.runes[i]) !== inputs[i]) {
         return false;
       }
     }
     return true;
-  }
+  }, [showFeedback, props, runeMappingFn]);
+
+  // If the user requests feedback and they got everything right, `solved` should automatically be set to true.
+  useEffect(
+    () => {
+      setUserAnswer(u => { return {
+        ...u,
+        solved: isSolved(u.inputs)
+      };});
+    },
+    [showFeedback, isSolved]
+  )
 
   function onSubmit(event) {
     event.preventDefault();
