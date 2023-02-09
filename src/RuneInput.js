@@ -12,14 +12,14 @@ function RuneInput(props) {
         {props.runeSymbol}
       </p>
       <input
-        id={"RuneInputField" + props.index}
+        id={"SingleRuneInputField" + props.index}
         type="text"
-        className={"RuneInputField " + feedbackClass()}
+        className={"SingleRuneInputField " + feedbackClass()}
         onChange={props.onChange}
         maxLength={1}
         data-testid="rune-input" />
       {props.feedback && !props.feedback.correct &&
-        <p className={"SingleRuneFeedbackSymbol" + feedbackClass()} data-testid="symbol-feedback">
+        <p className={"SingleRuneFeedbackSymbol " + feedbackClass()} data-testid="symbol-feedback">
           {props.feedback.symbol}
         </p>
       }

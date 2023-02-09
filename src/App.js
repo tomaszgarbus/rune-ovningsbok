@@ -23,7 +23,7 @@ function App() {
           <TransliterationExercise
             backToExerciseListFn={() => {setExercise(null)}}
             exercise={exercise}
-            runeMapping={RuneRowToMapping(RuneRows[exercise.rowType])} />
+            runeRow={RuneRows[exercise.rowType]} />
         )
       }
     </div>

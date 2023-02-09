@@ -1,5 +1,6 @@
 import RuneInput from "./RuneInput";
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
+import {RuneRowToMapping} from './Utils';
 
 
 function TransliterationExercise(props) {
@@ -15,6 +16,11 @@ function TransliterationExercise(props) {
 
   // True if user has clicked the "Check" button.
   const [showFeedback, setShowFeedback] = useState(false);
+
+  // Used to update the `display` property on the help modal.
+  const helpModalRef = useRef(null);
+
+  const runeMapping = RuneRowToMapping(props.runeRow)
 
   // If the user requests feedback and they got everything right, `solved` should automatically be set to true.
   useEffect(
@@ -41,7 +47,7 @@ function TransliterationExercise(props) {
     // Maybe move the cursor to the next input.
     // TODO: find a way to do it with Refs instead.
     if (index < inputs.length - 1 && char) {
-      document.getElementById("RuneInputField" + (index + 1)).focus();
+      document.getElementById("SingleRuneInputField" + (index + 1)).focus();
     }
   }
 
@@ -57,7 +63,7 @@ function TransliterationExercise(props) {
       return false;
     }
     for (const i in inputs) {
-      if (props.runeMapping[props.exercise.runes[i]] !== userAnswer.inputs[i]) {
+      if (runeMapping[props.exercise.runes[i]] !== userAnswer.inputs[i]) {
         return false;
       }
     }
@@ -67,6 +73,11 @@ function TransliterationExercise(props) {
   function onSubmit(event) {
     event.preventDefault();
     setShowFeedback(true);
+  }
+
+  function toggleHelpModal(event) {
+    event.preventDefault();
+    helpModalRef.current.hidden = !helpModalRef.current.hidden;
   }
 
   return (
@@ -102,8 +113,8 @@ function TransliterationExercise(props) {
                   feedback={
                     showFeedback ? 
                       {
-                        "symbol": props.runeMapping[rune],
-                        "correct": props.runeMapping[rune] === userAnswer.inputs[index]
+                        "symbol": runeMapping[rune],
+                        "correct": runeMapping[rune] === userAnswer.inputs[index]
                       } : undefined
                     }
                   onChange={event => updateUserAnswer(index, event.target.value)}
@@ -145,6 +156,37 @@ function TransliterationExercise(props) {
           </ol>
         </div>
       }
+
+      {/* Hints modal and button */}
+      <div id="ActiveExerciseHelpContainer">
+
+        {/* Modal */}
+        <div
+          id="ActiveExerciseHelpModal"
+          ref={helpModalRef}
+          hidden="true">
+          <div>
+            <p>{props.runeRow.name}</p>
+            <ul>
+              {
+                Object.entries(runeMapping).map((elem) =>
+                  <li>
+                    {/* rune */}
+                    {elem[0]}: 
+                    {/* latin */}
+                    {elem[1]}
+                  </li>)
+              }
+            </ul>
+          </div>
+        </div>
+
+        {/* Help button */}
+        <button
+          id="ActiveExerciseToggleHelpButton"
+          onClick={toggleHelpModal}>?</button>
+      </div>
+
     </div>
   )
 }

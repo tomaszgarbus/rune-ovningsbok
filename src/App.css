@@ -2,7 +2,6 @@
 [hidden] { display: none !important; }
 
 .App {
-  display: flex;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -78,6 +77,38 @@ body {
   color: grey;
 }
 
+#ActiveExerciseHelpContainer {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+#ActiveExerciseToggleHelpButton {
+  background-image: url(../public/help_button_background.svg);
+  border-radius: 25px;
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+}
+
+#ActiveExerciseHelpModal {
+  background-color: #dddddddd;
+  border-radius: 25px;
+  display: block;
+  padding: 10px;
+}
+
+#ActiveExerciseHelpModal:hover {
+  transition-duration: 1s;
+}
+
 .BackToListButton {
   border-radius: 15px;
   border: none;
@@ -87,7 +118,6 @@ body {
 }
 
 .BackToListButton:hover {
-  /* background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,212,255,1) 100%); */
   background: rgba(0, 212, 255, 1);
   color: black;
   transition-duration: 1s;
@@ -180,6 +210,9 @@ body {
 }
 
 .SingleRuneFeedbackSymbol {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -199,7 +232,7 @@ body {
   background-color: lightcoral;
 }
 
-.RuneInputField {
+.SingleRuneInputField {
   size: 1;
   font-size: 1.5em;
   width: 25px;
