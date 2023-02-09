@@ -147,7 +147,9 @@ function TransliterationExercise(props) {
             {
               props.exercise.sources.map(
                 source => (
-                  <li><a href={source}>{source}</a></li>
+                  <li key={source}>
+                    <a href={source}>{source}</a>
+                  </li>
                 )
               )
             }
