@@ -168,13 +168,14 @@ function TransliterationExercise(props) {
       }
 
       {/* Hints modal and button */}
+      <div id="ActiveExerciseHelpContainer">
+
+      {/* Modal */}
       <div
         id="ActiveExerciseHelpModal"
         ref={helpModalRef}
         hidden={true}
         data-testid="ActiveExerciseHelpModal">
-
-        {/* Modal */}
         <div>
           <p>{props.runeRow.name}</p>
           <ul>
@@ -190,11 +191,12 @@ function TransliterationExercise(props) {
             }
           </ul>
         </div>
+      </div>
 
-        {/* Help button */}
-        <button
-          id="ActiveExerciseToggleHelpButton"
-          onClick={toggleHelpModal}>?</button>
+      {/* Help button */}
+      <button
+        id="ActiveExerciseToggleHelpButton"
+        onClick={toggleHelpModal}>?</button>
       </div>
 
     </div>

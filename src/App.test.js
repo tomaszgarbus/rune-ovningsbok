@@ -47,5 +47,5 @@ test('back to exercise list', () => {
   fireEvent.click(backButton, {});
 
   // Verify we're back to the list.
-  expect(screen.findByText(testExercise.description)).not.toBeInTheDocument();
+  expect(screen.queryByText(testExercise.description)).toBe(null);
 });

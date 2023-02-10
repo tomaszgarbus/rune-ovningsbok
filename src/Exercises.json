@@ -42,5 +42,17 @@
       "https://edition.cnn.com/style/article/worlds-oldest-runestone-norway-intl-scli-scn/index.html",
       "https://www.khm.uio.no/english/news/found-the-world-s-oldest-rune-stone.html"
     ]
+  },
+  {
+    "id": "bryggengohome",
+    "img": "bergenstick_gohome.jpg",
+    "title": "Bergen stick B149",
+    "runes": ["ᚴ", "ᛦ", "ᛆ", "ᛌ", "ᛅ", "ᚼ", "ᛁ", "ᚱ", "ᛆ", "ᛐ", "ᚦ", "ᚢ", "ᚴ", "ᛆ", "ᚴ", "ᚼ", "ᛅ", "ᛁ", "ᛉ"],
+    "rowType": "b149_younger_futhark",
+    "description": "The stick has an inscription on both sides, consisting of mixed long- and short-twig Younger Futhark runes. The first side says: ᚴᛦᛆ : ᛌᛅᚼᛁᚱ : ᛆᛐᚦᚢ : ᚴᛆᚴ : ᚼᛅᛁᛉ.",
+    "explanationAfter": "Yes! That is the famous inscription which translates to \"Gyða segir at þú gakk heim\" - \"Gyða tells you to go home\"!",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
+    ]
   }
 ]
