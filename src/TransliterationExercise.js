@@ -90,7 +90,10 @@ function TransliterationExercise(props) {
 
       {/* Top bar */}
       <div className="ActiveExerciseTopBar">
-        <button onClick={props.backToExerciseListFn} className="BackToListButton">
+        <button
+          onClick={props.backToExerciseListFn}
+          className="BackToListButton"
+          data-testid="BackToListButton">
           &#10094;
         </button>
         <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
@@ -165,28 +168,27 @@ function TransliterationExercise(props) {
       }
 
       {/* Hints modal and button */}
-      <div id="ActiveExerciseHelpContainer">
+      <div
+        id="ActiveExerciseHelpModal"
+        ref={helpModalRef}
+        hidden={true}
+        data-testid="ActiveExerciseHelpModal">
 
         {/* Modal */}
-        <div
-          id="ActiveExerciseHelpModal"
-          ref={helpModalRef}
-          hidden={true}>
-          <div>
-            <p>{props.runeRow.name}</p>
-            <ul>
-              {
-                Object.entries(runeMapping).map((elem) =>
-                  <li
-                    key={elem[0]}> {/* Just to silence some warnings. */}
-                    {/* rune */}
-                    {elem[0]}: 
-                    {/* latin */}
-                    {elem[1]}
-                  </li>)
-              }
-            </ul>
-          </div>
+        <div>
+          <p>{props.runeRow.name}</p>
+          <ul>
+            {
+              Object.entries(runeMapping).map((elem) =>
+                <li
+                  key={elem[0]}> {/* Just to silence some warnings. */}
+                  {/* rune */}
+                  {elem[0]}: 
+                  {/* latin */}
+                  {elem[1]}
+                </li>)
+            }
+          </ul>
         </div>
 
         {/* Help button */}

@@ -77,7 +77,7 @@ body {
   color: grey;
 }
 
-#ActiveExerciseHelpContainer {
+#ActiveExerciseHelpModal {
   align-items: flex-end;
   align-self: flex-end;
   display: flex;

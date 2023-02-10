@@ -1,11 +1,9 @@
 import './App.css';
-import RuneRows from './RuneRows.json';
 import TransliterationExercise from './TransliterationExercise';
 import ListOfExercises from './ListOfExercises';
-import Exercises from './Exercises.json';
 import { useState } from 'react';
 
-function App() {
+function App(props) {
   const [exercise, setExercise] = useState(null);
 
   return (
@@ -13,16 +11,16 @@ function App() {
       {exercise === null ?
         (
           <ListOfExercises
-            items={Exercises}
+            items={props.exercises}
             setExercise={setExercise}
-            runeRows={RuneRows}
+            runeRows={props.runeRows}
             />
         ) :
         (
           <TransliterationExercise
             backToExerciseListFn={() => {setExercise(null)}}
             exercise={exercise}
-            runeRow={RuneRows[exercise.rowType]} />
+            runeRow={props.runeRows[exercise.rowType]} />
         )
       }
     </div>

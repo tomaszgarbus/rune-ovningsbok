@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import RuneRows from './RuneRows.json';
+import Exercises from './Exercises.json';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App
+      runeRows={RuneRows}
+      exercises={Exercises}
+    />
   </React.StrictMode>
 );
 
