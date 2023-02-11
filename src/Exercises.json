@@ -54,5 +54,18 @@
     "sources": [
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
     ]
+  },
+  {
+    "id": "grumpanbracteate",
+    "img": "grumpanbracteate.jpg",
+    "title": "Grumpan practeate VG207",
+    "rowType": "elder_futhark",
+    "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
+    "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
+    "explanationAfter": "Correct! This bracteate depicts the division of Elder Futhark row into 3 equal parts.",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/331/c/4d7032467cdc2f98787138d9e1f2bd24/",
+      "https://app.raa.se/open/runor/inscription?id=d5024f02-c8b4-4168-b02c-ad97c5559b42"
+    ]
   }
 ]

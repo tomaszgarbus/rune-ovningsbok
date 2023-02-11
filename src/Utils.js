@@ -7,7 +7,7 @@ function RuneRowToMapping(rune_row) {
 }
 
 function IsSeparator(character) {
-  if (character === ':') {
+  if ([':', '᛫', '…'].includes(character)) {
     return true;
   }
   return false;

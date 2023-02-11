@@ -44,7 +44,7 @@ function TransliterationExercise(props) {
     let nextIndexToFocus = index;
     while (++nextIndexToFocus < inputs.length &&
       IsSeparator(props.exercise.runes[nextIndexToFocus]));
-    if (nextIndexToFocus < inputs.length) {
+    if (nextIndexToFocus < inputs.length && inputs[index].length > 0) {
       document.getElementById("SingleRuneInputField" + (nextIndexToFocus)).focus();
     }
   }

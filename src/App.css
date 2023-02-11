@@ -27,7 +27,7 @@ body {
 
 .ActiveExerciseImgDiv {
   border-radius: 15px;
-  box-shadow: inset 0px 0px 10px darkgrey;
+  box-shadow: inset 0px 0px 10px black;
   margin: auto;
   width: fit-content;
 }
