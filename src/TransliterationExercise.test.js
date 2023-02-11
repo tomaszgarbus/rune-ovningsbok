@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import TransliterationExercise from './TransliterationExercise';
 import { RuneRowToMapping } from './Utils';
-import { testExercise, testRuneRow } from './TestData.js'
+import { testExercise, testExerciseWithSeparators, testRuneRow } from './TestData.js'
 
 test('enable check once all inputs provided', () => {
   render(<TransliterationExercise
@@ -11,7 +11,7 @@ test('enable check once all inputs provided', () => {
   const checkButton = screen.getByText("Check");
   expect(checkButton).toBeDisabled();
 
-  for (let inputField of screen.getAllByTestId("rune-input")) {
+  for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
     inputField.setAttribute('value', 'a');
     fireEvent.change(inputField, { target: { value: 'a' } });
   }
@@ -24,7 +24,7 @@ test('check button enables feedback', () => {
     exercise={testExercise}
     runeRow={testRuneRow}
   />);
-  for (let inputField of screen.getAllByTestId("rune-input")) {
+  for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
     inputField.setAttribute('value', 'a');
     fireEvent.change(inputField, { target: { value: 'a' } });
   }
@@ -43,7 +43,7 @@ test('show explanation after solved', () => {
     runeRow={testRuneRow}
   />)
   
-  for (const [index, inputField] of screen.getAllByTestId("rune-input").entries()) {
+  for (const [index, inputField] of screen.getAllByTestId(/RuneInput.*/).entries()) {
     const latinSymbol = RuneRowToMapping(testRuneRow)[testExercise.runes[index]];
     inputField.setAttribute('value', latinSymbol);
     fireEvent.change(inputField, { target: { value: latinSymbol } });
@@ -87,4 +87,48 @@ test('show sources', () => {
     const sourceP = screen.getByText(source);
     expect(sourceP).toBeInTheDocument();
   }
+});
+
+test('input moves cursor to next field', () => {
+  render(<TransliterationExercise
+    exercise={testExerciseWithSeparators}
+    runeRow={testRuneRow}
+  />)
+
+  // Check that separators are rendered.
+  expect(screen.getAllByText(":").length).toBe(3);
+
+  // Input a symbol to each field then verify that the next one was focused.
+  const inputFields = screen.getAllByTestId(/RuneInput.*/).sort(
+    (a, b) => a.getAttribute('data-testid') < b.getAttribute('data-testid'));
+  fireEvent.change(inputFields[0], { target: { value: 't' } });
+  expect(inputFields[1]).toHaveFocus();
+  fireEvent.change(inputFields[1], { target: { value: 'e' } });
+  expect(inputFields[2]).toHaveFocus();
+  fireEvent.change(inputFields[2], { target: { value: 's' } });
+  expect(inputFields[3]).toHaveFocus();
+});
+
+test('solved exercise with separators', () => {
+  render(<TransliterationExercise
+    exercise={testExerciseWithSeparators}
+    runeRow={testRuneRow}
+  />)
+
+  // Check that separators are rendered.
+  expect(screen.getAllByText(":").length).toBe(3);
+
+  const inputFields = screen.getAllByTestId(/RuneInput.*/).sort(
+    (a, b) => a.getAttribute('data-testid') < b.getAttribute('data-testid'));
+  fireEvent.change(inputFields[0], { target: { value: 't' } });
+  fireEvent.change(inputFields[1], { target: { value: 'e' } });
+  fireEvent.change(inputFields[2], { target: { value: 's' } });
+  fireEvent.change(inputFields[3], { target: { value: 't' } });
+
+  const checkButton = screen.getByText("Check");
+  expect(checkButton).toBeEnabled();
+  fireEvent.click(checkButton, {});
+
+  expect(screen.getByText(
+    testExerciseWithSeparators.explanationAfter)).toBeInTheDocument();
 });

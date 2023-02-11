@@ -6,4 +6,11 @@ function RuneRowToMapping(rune_row) {
   return result;
 }
 
-export {RuneRowToMapping};
+function IsSeparator(character) {
+  if (character === ':') {
+    return true;
+  }
+  return false;
+}
+
+export {IsSeparator, RuneRowToMapping};

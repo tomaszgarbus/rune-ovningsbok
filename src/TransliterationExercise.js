@@ -1,6 +1,7 @@
 import RuneInput from "./RuneInput";
 import { useCallback, useEffect, useRef, useState } from "react";
-import {RuneRowToMapping} from './Utils';
+import { IsSeparator, RuneRowToMapping } from './Utils';
+import RuneSeparator from "./RuneSeparator";
 
 
 function TransliterationExercise(props) {
@@ -40,13 +41,17 @@ function TransliterationExercise(props) {
 
     // Maybe move the cursor to the next input.
     // TODO: find a way to do it with Refs instead.
-    if (index < inputs.length - 1 && char) {
-      document.getElementById("SingleRuneInputField" + (index + 1)).focus();
+    let nextIndexToFocus = index;
+    while (++nextIndexToFocus < inputs.length &&
+      IsSeparator(props.exercise.runes[nextIndexToFocus]));
+    if (nextIndexToFocus < inputs.length) {
+      document.getElementById("SingleRuneInputField" + (nextIndexToFocus)).focus();
     }
   }
 
   function isReady(inputs) {
-    for (const c of inputs) {
+    for (const [i, c] of inputs.entries()) {
+      if (IsSeparator(props.exercise.runes[i])) continue;
       if (c === "") return false;
     }
     return true;
@@ -57,6 +62,7 @@ function TransliterationExercise(props) {
       return false;
     }
     for (const i in inputs) {
+      if (IsSeparator(props.exercise.runes[i])) continue;
       if (runeMappingFn(props.exercise.runes[i]) !== inputs[i]) {
         return false;
       }
@@ -114,19 +120,25 @@ function TransliterationExercise(props) {
         <div className="ActiveExerciseRuneInputsDiv">
           {
             props.exercise.runes.map(
-              (rune, index) => <RuneInput
-                  index={index}
-                  key={index}
-                  runeSymbol={rune}
-                  feedback={
-                    showFeedback ? 
-                      {
-                        "symbol": runeMapping[rune],
-                        "correct": runeMapping[rune] === userAnswer.inputs[index]
-                      } : undefined
-                    }
-                  onChange={event => updateUserAnswer(index, event.target.value)}
-                />
+              (rune, index) => IsSeparator(rune) ? 
+                  <RuneSeparator
+                    character={rune}
+                    key={index}
+                    />
+                :
+                  <RuneInput
+                      index={index}
+                      key={index}
+                      runeSymbol={rune}
+                      feedback={
+                        showFeedback ? 
+                          {
+                            "symbol": runeMapping[rune],
+                            "correct": runeMapping[rune] === userAnswer.inputs[index]
+                          } : undefined
+                        }
+                      onChange={event => updateUserAnswer(index, event.target.value)}
+                    />
             )
           }
 
@@ -158,7 +170,9 @@ function TransliterationExercise(props) {
               props.exercise.sources.map(
                 source => (
                   <li key={source}>
-                    <a href={source}>{source}</a>
+                    <a href={source} target="_blank" rel="noreferrer">
+                      {source}
+                    </a>
                   </li>
                 )
               )

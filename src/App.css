@@ -18,7 +18,7 @@ body {
 }
 
 .ActiveExerciseImg {
-  border-radius: 25px;
+  border-radius: 15px;
   max-width: 100%;
   margin: auto;
   position: relative;
@@ -26,7 +26,7 @@ body {
 }
 
 .ActiveExerciseImgDiv {
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: inset 0px 0px 10px darkgrey;
   margin: auto;
   width: fit-content;
@@ -34,7 +34,7 @@ body {
 
 .ActiveExerciseTopBar {
   align-items: center;
-  border-radius: 25px;
+  border-radius: 15px;
   display: flex;
   gap: 10px;
   flex-direction: row;
@@ -58,7 +58,7 @@ body {
 
 #ActiveExerciseCheckButton {
   align-self: stretch;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
   display: inline-block;
   font-size: 2em;
@@ -100,7 +100,7 @@ body {
 
 #ActiveExerciseHelpModal {
   background-color: #dddddddd;
-  border-radius: 25px;
+  border-radius: 15px;
   display: block;
   padding: 10px;
 }
@@ -202,6 +202,17 @@ body {
   transition: 5s;
 }
 
+.RuneSeparator {
+  align-self: stretch;
+  border-radius: 15px;
+  border: none;
+  display: inline-block;
+  font-size: 2em;
+  margin: 5px;
+  min-height: 100%;
+  padding: 10px;
+}
+
 .SingleRuneOriginalSymbol {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -218,10 +229,13 @@ body {
 
 .SingleRuneInputDiv {
   margin: 5px;
-  border-radius: 25px;
+  border-radius: 15px;
   display: inline-block;
   background-color: #ffd0d0;
-  padding: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .SingleRuneInputDiv.Correct {

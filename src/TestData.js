@@ -8,6 +8,14 @@ const testExercise = {
   sources: ["A cousin told me", "Rune shaman"],
 }
 
+const testExerciseWithSeparators = {
+  id: "test",
+  title: "Test exercise with separators",
+  runes: ["ᛏ", ":", "ᛖ", ":", "ᛊ", ":", "ᛏ"],
+  rowType: "elder_test",
+  explanationAfter: "Ye!"
+}
+
 const testRuneRow = {
   'name': 'Test Rune Row',
   'symbols': [
@@ -30,4 +38,4 @@ const testRuneRows = {
   'elder_test': testRuneRow
 }
 
-export { testExercise, testRuneRow, testRuneRows };
+export { testExercise, testExerciseWithSeparators, testRuneRow, testRuneRows };
