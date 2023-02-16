@@ -67,5 +67,18 @@
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/331/c/4d7032467cdc2f98787138d9e1f2bd24/",
       "https://app.raa.se/open/runor/inscription?id=d5024f02-c8b4-4168-b02c-ad97c5559b42"
     ]
+  },
+  {
+    "id": "gripsholmstone",
+    "img": "gripsholmstone.jpg",
+    "img_credit": "https://de.m.wikipedia.org/wiki/Datei:Right_Gripsholm_Runestone.jpg",
+    "title": "Gripsholm stone SÖ179",
+    "rowType": "sö179_younger_futhark",
+    "description": "The Gripsholm Stone - which can to this day be visited near the Gripsholm Castle not far from Stockholm - is one of the \"Ingvarr stones\". This group of stones is dated soon after 1041, when the Icelandic annals record the death of Yngvarr the Far-Travelled in the south. Note how the inscriber forgot one word and added it later!",
+    "runes": "ᛏᚢᛚᛅ:ᛚᛁᛏ:ᚱᛅᛁᛋᛅ:ᛋᛏᛅᛁᚾ:ᚦᛁᚾᛋᛅᛏ:ᛋᚢᚾ:ᛋᛁᚾ:ᚼᛅᚱᛅᛚᛏ:ᛒᚱᚢᚦᚢᚱ:ᛁᚾᚴᚢᛅᚱᛋ:ᚦᛅᛁᛦ|ᚠᚢᚱᚢ:ᛏᚱᛁᚴᛁᛚᛅ:ᚠᛁᛅᚱᛁ:ᛅᛏ:ᚴᚢᛚᛁ:ᛅᚢᚴ:ᛅ:ᚢᛋᛏᛅᚱᛚᛅᚱ:ᚾᛁ:ᚴᛅᚠᚢ:ᛏᚢᚢ:ᛋᚢᚾᛅᚱ:ᛚᛅ:ᛅᛋᛁᚱᚴ:ᛚᛅᚾ:ᛏᛁ",
+    "explanationAfter": "Correct. The last part (from the word inserted later) runs: \"Þæiʀ foru drængila, fjarri at gulli, auk austarla ærni gafu. Dou sunnarla, a Særklandi\" -- \"They went manfully, far after gold, and in the east gave [food] to the eagle [i.e. despatched enemies in battle]. They died in the south, in Særkland.\" (translation credit to Michael P. Barnes, p. 77 from Runes: A Handbook)",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 77-8, 81, 139, 169)"
+    ]
   }
 ]
