@@ -172,5 +172,78 @@
         "latin": "y"
       }
     ]
+  },
+  "sö179_younger_futhark": {
+    "name": "SÖ179 Younger Fuþark",
+    "symbols": [
+      {
+        "rune": "\u16a0",
+        "latin": "f"
+      },
+      {
+        "rune": "\u16a2",
+        "latin": "u"
+      },
+      {
+        "rune": "\u16a6",
+        "latin": "\u00fe"
+      },
+      {
+        "rune": "\u16ad",
+        "latin": "\u0105"
+      },
+      {
+        "rune": "\u16b1",
+        "latin": "r"
+      },
+      {
+        "rune": "\u16b4",
+        "latin": "k"
+      },
+      {
+        "rune": "\u16bc",
+        "latin": "h"
+      },
+      {
+        "rune": "\u16be",
+        "latin": "n"
+      },
+      {
+        "rune": "\u16c1",
+        "latin": "i"
+      },
+      {
+        "rune": "\u16c6",
+        "latin": "a"
+      },
+      {
+        "rune": "\u16c5",
+        "latin": "a"
+      },
+      {
+        "rune": "\u16cb",
+        "latin": "s"
+      },
+      {
+        "rune": "\u16cf",
+        "latin": "t"
+      },
+      {
+        "rune": "\u16d2",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "m"
+      },
+      {
+        "rune": "\u16da",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": "R"
+      }
+    ]
   }
 }

@@ -7,7 +7,7 @@ import RuneSeparator from "./RuneSeparator";
 function TransliterationExercise(props) {
   const [userAnswer, setUserAnswer] = useState(
     {
-      inputs: props.exercise.runes.map(_ => ""),
+      inputs: mapRunes(_ => ""),
       // "Ready" means "ready for checking". This is synonymous with "submit button is unlocked".
       ready: false,
       // "Solved" means "checked and all inputs correct or corrected after hints".
@@ -91,6 +91,17 @@ function TransliterationExercise(props) {
     helpModalRef.current.hidden = !helpModalRef.current.hidden;
   }
 
+  // Runes can either be an array or a string.
+  function mapRunes(fn) {
+    console.log(typeof(props.exercise.runes));
+    console.log(typeof(props.exercise.runes) === 'string');
+    if (typeof(props.exercise.runes) === 'string') {
+      return props.exercise.runes.split('').map(fn);
+    } else {
+      return props.exercise.runes.map(fn);
+    }
+  }
+
   return (
     <div className="ActiveTransliterationExercise">
 
@@ -119,7 +130,7 @@ function TransliterationExercise(props) {
       <form onSubmit={onSubmit}>
         <div className="ActiveExerciseRuneInputsDiv">
           {
-            props.exercise.runes.map(
+            mapRunes(
               (rune, index) => IsSeparator(rune) ? 
                   <RuneSeparator
                     character={rune}
