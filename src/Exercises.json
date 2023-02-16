@@ -58,7 +58,7 @@
   {
     "id": "grumpanbracteate",
     "img": "grumpanbracteate.jpg",
-    "title": "Grumpan practeate VG207",
+    "title": "Grumpan bracteate VG207",
     "rowType": "elder_futhark",
     "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
     "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
@@ -79,6 +79,32 @@
     "explanationAfter": "Correct. The last part (from the word inserted later) runs: \"Þæiʀ foru drængila, fjarri at gulli, auk austarla ærni gafu. Dou sunnarla, a Særklandi\" -- \"They went manfully, far after gold, and in the east gave [food] to the eagle [i.e. despatched enemies in battle]. They died in the south, in Særkland.\" (translation credit to Michael P. Barnes, p. 77 from Runes: A Handbook)",
     "sources": [
       "Runes: A Handbook by Michael P. Barnes (p 77-8, 81, 139, 169)"
+    ]
+  },
+  {
+    "id": "kylverstone",
+    "img": "kylverstone.jpg",
+    "img_credit": "https://en.wikipedia.org/wiki/Kylver_Stone#/media/File:Kylverstenen_1383.jpg",
+    "title": "Kylver stone G88",
+    "rowType": "elder_futhark",
+    "runes": "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛈᛇᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ",
+    "description": "The Kylver stone originates from the Baltic island of Gotland. It is one of eleven known inscriptions of the older futhark row, dated to 5th and 6th centuries (only 4 of these 11 give the complete rune row order).",
+    "explanationAfter": "Two things to note about the Kylver stone: 1) there is no division of the run row into the ættir - groups of eight - unlike for example the Grumpan bracteate; 2) the runes at positions 13-4 (ᛈ, ᛇ) and 23-4 (ᛞ, ᛟ) are given in the opposite order than usually.",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 16-19)"
+    ]
+  },
+  {
+    "id": "jellingstoneharald",
+    "img": "jellingstoneharald.png",
+    "img_credit": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-monuments-at-jelling/the-jelling-stone/",
+    "title": "Jelling stone of Harald Bluetooth",
+    "runes": "ᚼᛅᚱᛅᛚᛏᚱ:ᚴᚢᚾᚢᚴᛦ:ᛒᛅᚦ:ᚴᛅᚢᚱᚢᛅᚴᚢᛒᛚ:ᚦᛅᚢᛋᛁ:ᛅᚠᛏ:ᚴᚢᚱᛘᚠᛅᚦᚢᚱᛋᛁᚾᛅᚢᚴᛅᚠᛏ:ᚦᚭᚢᚱᚢᛁ:ᛘᚢᚦᚢᚱ:ᛋᛁᚾᛅ:ᛋᛅᚼᛅᚱᛅᛚᛏᚱ:ᛁᛅᛋ:ᛋᚭᛦ᛫ᚢᛅᚾ᛫ᛏᛅᚾᛘᛅᚢᚱᚴ||ᛅᛚᛅ᛫ᛅᚢᚴ᛫ᚾᚢᚱᚢᛁᛅᚴ||᛫ᛅᚢᚴ᛫ᛏᛅᚾᛁ᛫ᚴᛅᚱᚦᛁ᛫ᚴᚱᛁᛋᛏᚾᚭ",
+    "rowType": "younger_futhark_jelling",
+    "description": "A rune-stone with political themes from north-eastern Jutland. King Haraldr claims on it to have made himself master of all Denmark and of Norway. These are among the earliest occurrences of the names \"Denmark\" and \"Norway\". Thanks to the  political references, Jelling 2 stone can be fairly reliably dated to around 970-980s.",
+    "explanationAfter": "The translation to be found in Barnes' book is as follows: \"Haraldr kunungR ba\" \"King Haraldr ordered [people] to make these monuments after GormR, his father and after Þorvi, his mother. That Haraldr who won for himself all Denmark, and Norway, and made the Danes Christian.\" (\"Haraldr kunungR bað gørva kumbl þøsi aft Gorm, faður sin, ok aft Þórvi, moður sina. Sa Haraldr æs sæR vann Danmork alla ok Norvæg ok dani gærði kristna.\")",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 73-4)"
     ]
   }
 ]
