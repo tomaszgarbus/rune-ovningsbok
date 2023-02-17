@@ -46,7 +46,7 @@
   {
     "id": "bryggengohome",
     "img": "bergenstick_gohome.jpg",
-    "title": "Bergen stick B149",
+    "title": "Bergen stick B 149",
     "runes": ["ᚴ", "ᛦ", "ᛆ", ":", "ᛌ", "ᛅ", "ᚼ", "ᛁ", "ᚱ", ":", "ᛆ", "ᛐ", "ᚦ", "ᚢ", ":", "ᚴ", "ᛆ", "ᚴ", ":", "ᚼ", "ᛅ", "ᛁ", "ᛉ"],
     "rowType": "b149_younger_futhark",
     "description": "The stick has an inscription on both sides, consisting of mixed long- and short-twig Younger Futhark runes. The first side says: ᚴᛦᛆ : ᛌᛅᚼᛁᚱ : ᛆᛐᚦᚢ : ᚴᛆᚴ : ᚼᛅᛁᛉ.",
@@ -58,7 +58,7 @@
   {
     "id": "grumpanbracteate",
     "img": "grumpanbracteate.jpg",
-    "title": "Grumpan bracteate VG207",
+    "title": "Grumpan bracteate Vg 207",
     "rowType": "elder_futhark",
     "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
     "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
@@ -72,7 +72,7 @@
     "id": "gripsholmstone",
     "img": "gripsholmstone.jpg",
     "img_credit": "https://de.m.wikipedia.org/wiki/Datei:Right_Gripsholm_Runestone.jpg",
-    "title": "Gripsholm stone SÖ179",
+    "title": "Gripsholm stone Sö 179",
     "rowType": "sö179_younger_futhark",
     "description": "The Gripsholm Stone - which can to this day be visited near the Gripsholm Castle not far from Stockholm - is one of the \"Ingvarr stones\". This group of stones is dated soon after 1041, when the Icelandic annals record the death of Yngvarr the Far-Travelled in the south. Note how the inscriber forgot one word and added it later!",
     "runes": "ᛏᚢᛚᛅ:ᛚᛁᛏ:ᚱᛅᛁᛋᛅ:ᛋᛏᛅᛁᚾ:ᚦᛁᚾᛋᛅᛏ:ᛋᚢᚾ:ᛋᛁᚾ:ᚼᛅᚱᛅᛚᛏ:ᛒᚱᚢᚦᚢᚱ:ᛁᚾᚴᚢᛅᚱᛋ:ᚦᛅᛁᛦ|ᚠᚢᚱᚢ:ᛏᚱᛁᚴᛁᛚᛅ:ᚠᛁᛅᚱᛁ:ᛅᛏ:ᚴᚢᛚᛁ:ᛅᚢᚴ:ᛅ:ᚢᛋᛏᛅᚱᛚᛅᚱ:ᚾᛁ:ᚴᛅᚠᚢ:ᛏᚢᚢ:ᛋᚢᚾᛅᚱ:ᛚᛅ:ᛅᛋᛁᚱᚴ:ᛚᛅᚾ:ᛏᛁ",
@@ -85,7 +85,7 @@
     "id": "kylverstone",
     "img": "kylverstone.jpg",
     "img_credit": "https://en.wikipedia.org/wiki/Kylver_Stone#/media/File:Kylverstenen_1383.jpg",
-    "title": "Kylver stone G88",
+    "title": "Kylver stone G 88",
     "rowType": "elder_futhark",
     "runes": "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛈᛇᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ",
     "description": "The Kylver stone originates from the Baltic island of Gotland. It is one of eleven known inscriptions of the older futhark row, dated to 5th and 6th centuries (only 4 of these 11 give the complete rune row order).",
@@ -102,9 +102,23 @@
     "runes": "ᚼᛅᚱᛅᛚᛏᚱ:ᚴᚢᚾᚢᚴᛦ:ᛒᛅᚦ:ᚴᛅᚢᚱᚢᛅᚴᚢᛒᛚ:ᚦᛅᚢᛋᛁ:ᛅᚠᛏ:ᚴᚢᚱᛘᚠᛅᚦᚢᚱᛋᛁᚾᛅᚢᚴᛅᚠᛏ:ᚦᚭᚢᚱᚢᛁ:ᛘᚢᚦᚢᚱ:ᛋᛁᚾᛅ:ᛋᛅᚼᛅᚱᛅᛚᛏᚱ:ᛁᛅᛋ:ᛋᚭᛦ᛫ᚢᛅᚾ᛫ᛏᛅᚾᛘᛅᚢᚱᚴ||ᛅᛚᛅ᛫ᛅᚢᚴ᛫ᚾᚢᚱᚢᛁᛅᚴ||᛫ᛅᚢᚴ᛫ᛏᛅᚾᛁ᛫ᚴᛅᚱᚦᛁ᛫ᚴᚱᛁᛋᛏᚾᚭ",
     "rowType": "younger_futhark_jelling",
     "description": "A rune-stone with political themes from north-eastern Jutland. King Haraldr claims on it to have made himself master of all Denmark and of Norway. These are among the earliest occurrences of the names \"Denmark\" and \"Norway\". Thanks to the  political references, Jelling 2 stone can be fairly reliably dated to around 970-980s.",
-    "explanationAfter": "The translation to be found in Barnes' book is as follows: \"Haraldr kunungR ba\" \"King Haraldr ordered [people] to make these monuments after GormR, his father and after Þorvi, his mother. That Haraldr who won for himself all Denmark, and Norway, and made the Danes Christian.\" (\"Haraldr kunungR bað gørva kumbl þøsi aft Gorm, faður sin, ok aft Þórvi, moður sina. Sa Haraldr æs sæR vann Danmork alla ok Norvæg ok dani gærði kristna.\")",
+    "explanationAfter": "The translation to be found in Barnes' book is as follows: \"King Haraldr ordered [people] to make these monuments after GormR, his father and after Þorvi, his mother. That Haraldr who won for himself all Denmark, and Norway, and made the Danes Christian.\" (\"Haraldr kunungR bað gørva kumbl þøsi aft Gorm, faður sin, ok aft Þórvi, moður sina. Sa Haraldr æs sæR vann Danmork alla ok Norvæg ok dani gærði kristna.\")",
     "sources": [
       "Runes: A Handbook by Michael P. Barnes (p 73-4)"
+    ]
+  },
+  {
+    "id": "sigurdristingen",
+    "img": "sigurdristingen.jpg",
+    "img_credit": "https://sv.wikipedia.org/wiki/Sigurdsristningen#/media/Fil:Sigurdsristningen_på_Ramsundsberget,_Södermanland_(Montelius_1877_s349_fig406).jpg",
+    "title": "Ramsundberget carving Sö 101",
+    "rowType": "younger_futhark_ramsund",
+    "description": "The Ramsund carving is located in Södermanland, Sweden. The carving is almost 5m wide, making it the biggest known rune carving. It is unusual, since the carving is made in a flat rock, not in a standing stone.",
+    "runes": "ᛋᛁᚱᛁᚦᚱ:ᚴᛁᛅᚱᚦᛁ:ᛒᚢᚱ:ᚦᚬᛋᛁ:ᛘᚢᚦᛁᛦ:ᛅᛚᚱᛁᚴᛋ:ᛏᚢᛏᛁᛦ:ᚢᚱᛘᛋ:ᚠᚢᚱ᛫ᛋᛅᛚᚢ:ᚼᚢᛚᛘᚴᛁᚱᛋ:ᚠᛅᚦᚢᚱ:ᛋᚢᚴᚱᚢᚦᛅᚱ ᛒᚢᛅᛏᛅ᛫ᛋᛁᛋ",
+    "explanationAfter": "Good answer! The runes are believed to translate to \"Sigriðr gærði bro þasi, moðiR Alriks, dottiR Orms, for salu HolmgæiRs, faður SigrøðaR, boanda sins.\" -- \"Sigríðr, Alríkr's mother, Ormr's daughter, made this bridge for the soul of Holmgeirr, father of Sigrøðr, her husbandman\".",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 84)",
+      "https://jonaslaumarkussen.com/illustration/the-ramsund-carving-so-101/"
     ]
   }
 ]

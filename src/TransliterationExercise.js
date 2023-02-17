@@ -57,13 +57,21 @@ function TransliterationExercise(props) {
     return true;
   }
 
+  function isInputCorrect(input, groundTruth) {
+    if (typeof(groundTruth) === 'string') {
+      return input === groundTruth;
+    } else {
+      return groundTruth.includes(input);
+    }
+  }
+
   const isSolved = useCallback((inputs) => {
     if (!showFeedback) {
       return false;
     }
     for (const i in inputs) {
       if (IsSeparator(props.exercise.runes[i])) continue;
-      if (runeMappingFn(props.exercise.runes[i]) !== inputs[i]) {
+      if (!isInputCorrect(inputs[i], runeMappingFn(props.exercise.runes[i]))) {
         return false;
       }
     }
@@ -93,8 +101,6 @@ function TransliterationExercise(props) {
 
   // Runes can either be an array or a string.
   function mapRunes(fn) {
-    console.log(typeof(props.exercise.runes));
-    console.log(typeof(props.exercise.runes) === 'string');
     if (typeof(props.exercise.runes) === 'string') {
       return props.exercise.runes.split('').map(fn);
     } else {
@@ -145,7 +151,7 @@ function TransliterationExercise(props) {
                         showFeedback ? 
                           {
                             "symbol": runeMapping[rune],
-                            "correct": runeMapping[rune] === userAnswer.inputs[index]
+                            "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
                           } : undefined
                         }
                       onChange={event => updateUserAnswer(index, event.target.value)}
