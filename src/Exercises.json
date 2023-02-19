@@ -120,5 +120,31 @@
       "Runes: A Handbook by Michael P. Barnes (p 84)",
       "https://jonaslaumarkussen.com/illustration/the-ramsund-carving-so-101/"
     ]
+  },
+  {
+    "id": "kjølevikstone",
+    "img": "kjølevikstone.jpg",
+    "img_credit": "https://www.runesdb.eu/find-list/d/im/q/r/r/1~2/f/71/p/4597/c/97591001363d3a3306231e8304be203c/",
+    "title": "Kjølevik stone N KJ75",
+    "rowType": "elder_futhark",
+    "runes": ["\u16ba", "\u16a8", "\u16de", "\u16a2", "\u16da", "\u16a8", "\u16c1", "\u16b2", "\u16a8", "\u16c9", " ", "\u16d6", "\u16b2", "\u16ba", "\u16a8", "\u16b7", "\u16a2", "\u16ca", "\u16cf", "\u16a8", "\u16de", "\u16a8", "\u16c9", " ", "\u16ba", "\u16da", "\u16a8", "\u16a8", "\u16c1", "\u16b9", "\u16c1", "\u16de", "\u16df", "\u16d7", "\u16a8", "\u16b7", "\u16a2", "\u16d7", "\u16c1", "\u16be", "\u16c1", "\u16be", "\u16df"],
+    "description": "The Kjølevik stone is dated to 5th century and was found in Rogaland, south+western Norway.",
+    "explanationAfter": "Old Norse translation of the inscription is believed to be \"Haðulaikaz. Ek Hagustaldaz hlaiwiðdo magu minino\" -- \"Haðulaikaz. I Hagustaldaz buried my son\". Haðulaikaz is a man's name consisting of elements \"battle\" ahnd \"play\".",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 30)"
+    ]
+  },
+  {
+    "id": "burserydfont",
+    "img": "burserydfont.jpg",
+    "img_credit": "https://mis.historiska.se/mis/sok/resultat_bild.asp?lokalid=5696&rd_min=&typ=fotografi&searchmode=&qmode=&qtype=bild&sort=&orderby=upptagning.namn&sm=&pagesize=6&page",
+    "title": "Burseryd baptismal font",
+    "runes": "ᛆᚱᛁᚿᛒᛁᚮᚱᚿ:ᚵᚯᚱᛐᚼᛂ:ᛘᛁᚴ ᚢᛁᛐᚴᚢᚿᛑᛂᚱ:ᛔᚱᛂᛋᛐᛂᚱ:ᛋᚴᚱᛂᚠ:ᛘᛁᚴ ᚮᚴ:ᚼᛅᚱ:ᛋᚴᛆᛚ:ᚢᛘ:ᛋᛐᚢᚿᛑ:ᛋᛐᛆᚿᛐ",
+    "rowType": "younger_futhark_burseryd",
+    "description": "This is 13th century baptismal font from Burseryd church in Småland, Sweden.",
+    "explanationAfter": "Yes! Translation: \"Arinbjorn gjørði mik. Vitkunder prester skref mik. Ok hær skal um stund standa\" -- \"Arinbjorn made me. Vitkunder the priest wrote me. And here I shall stand for a while\". Interesting detail is the use of [th] instead of [þ] in the spelling of \"gørthi\". Note there are some bind runes, which in this exercise were split due to limitations of Unicode.",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 102-3)"
+    ]
   }
 ]

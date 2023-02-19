@@ -58,6 +58,10 @@ function TransliterationExercise(props) {
   }
 
   function isInputCorrect(input, groundTruth) {
+    // TODO: better handling of undefined symbols.
+    if (!groundTruth) {
+      return false;
+    }
     if (typeof(groundTruth) === 'string') {
       return input === groundTruth;
     } else {
