@@ -146,5 +146,18 @@
     "sources": [
       "Runes: A Handbook by Michael P. Barnes (p 102-3)"
     ]
+  },
+  {
+    "id": "maugholdstone",
+    "img": "maugholdstone.jpg",
+    "img_credit": "https://en.wikipedia.org/wiki/Manx_runestones#/media/File:Maughold_Stone_with_Runes_and_Ogham_-_Maughold-Stein_mit_Runen_und_Ogham,_Zeichnung.gif",
+    "title": "Maughold I stone",
+    "runes": ["\u16c5", "\u16bf", "+", "\u16d3", "\u16b1", "\u16c1", "\u16cc", "\u16d0", "+", "\u16b1", "\u16c5", "\u16c1", "\u16cc", "\u16d0", "\u16c1", "+", "\u16a6", "\u16c5", "\u16cc", "\u16c1", "\u16b1", "+", "\u16b1", "\u16a2", "\u16bf", "\u16a2", "\u16b1", "+", "\u16a2", "\u16a6", "\u16ad", "\u16b1", "\u16bf", "\u16c1", "\u16c5", "\u16cc", "\u16d0", "\u16d3", "\u16c9", "\u16da", " "],
+    "rowType": "younger_futhark_maughold",
+    "description": "This runestone is dated to 1150-1199 and was found in the Maughold parish in the Isle of Man.",
+    "explanationAfter": "Yes! According to Scandinavian Runic-text Database (see sources), the inferred transliteration is \"(i)(u)an + brist + raisti + þasir + runur +¶ [f]uþor(k)(h)niastbml +\". The translation to Old Norse is \"Jóan prestr reisti þessar rúnar. <fuþorkhniastbml>\" and to English: \"Jóan the priest carved these runes. fuþorkhniastbml\"",
+    "sources": [
+      "http://kulturarvsdata.se/uu/srdb/057d73b7-7715-44fd-9355-b621125623f4"
+    ]
   }
 ]

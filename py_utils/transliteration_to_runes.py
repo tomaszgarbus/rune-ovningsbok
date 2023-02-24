@@ -12,5 +12,8 @@ if __name__ == '__main__':
 
   result = []
   for ch in transliteration:
-    result.append(lat_to_rune[ch])
+    try:
+      result.append(lat_to_rune[ch])
+    except KeyError as e:
+      result.append(ch)
   print(json.dumps(result))
