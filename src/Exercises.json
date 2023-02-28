@@ -4,7 +4,7 @@
     "img": "drif.jpg",
     "title": "Name of the last Heilung album",
     "runes": ["ᛞ", "ᚱ", "ᛁ", "ᚠ"],
-    "rowType": "elder_futhark",
+    "rowType": "older_futhark",
     "sources": ["https://chaoszine.net/heilung-reveals-details-for-upcoming-album-drif/"],
     "description": "The name of the album is written with Elder Futhark on the cover. On the LP edition, each of the 4 sides is labelled with one of the runes.",
     "explanationAfter": "Good answer! The band themselves explain that Drif means \"gathering\"."
@@ -14,14 +14,14 @@
     "img": "figa.jpg",
     "title": "Name of my dog",
     "runes": ["ᚠ", "ᛁ", "ᚷ", "ᚨ"],
-    "rowType": "elder_futhark"
+    "rowType": "older_futhark"
   },
   {
     "id": "einang",
     "img": "einangstone.jpg",
     "title": "Einangsteinen (Einang stone)",
     "runes": ["\u16de", "\u16a8", "\u16b7", "\u16a8", "\u16ca", "\u16cf", "\u16c1", "\u16c9", "\u16b1", "\u16a2", "\u16be", "\u16df", "\u16a0", "\u16a8", "\u16c1", "\u16ba", "\u16c1", "\u16de", "\u16df"],
-    "rowType": "elder_futhark",
+    "rowType": "older_futhark",
     "description": "The Einang stone is located in Gardbergfeltet, a historical site in Oppland, Norway, holding over 550 burial mounds and over 900 discoveries from Roman Iron Age and Viking Age. The Einang stone is believed to date back to around 300 AD, and for a long time was the oldest known runic stone from northwestern Europe.",
     "explanationAfter": "Excellent! As explained by Kristel Zilmer on Twitter (see sources): Moltke's reading - still commonly accepted - is: …daga-(t)(i)R runo faihido. He suggested that the start could be: [Ek Go]dagastiR rūnō faihidō, «I, GodagastiR, painted (wrote) the rune (i.e. the runic inscription)”. The singular rūnō can refer to the overall runic message.",
     "sources": [
@@ -35,7 +35,7 @@
     "img": "svingerudsteinen.jpg",
     "title": "Svingerudsteinen (Svingerud Stone)",
     "runes": ["\u16c1", "\u16de", "\u16c1", "\u16d2", "\u16d6", "\u16b1", "\u16a2", "\u16b7"],
-    "rowType": "elder_futhark",
+    "rowType": "older_futhark",
     "description": "In early 2023, this stone was announced to be the oldest known runic inscription to date. It was found in a cremation ground, in Hole near Tyrifjorden, Eastern Norway, by University of Oslo researchers. The inscriptions are dated between 1 and 250 AD. The stone itself is a 31x32 cm block of reddish-brown Ringerike sandstone.",
     "explanationAfter": "Great answer! The inscription, consisting of thin, shallow runes, is transliterated as \"Idiberug\". According to Kristel Zilmer, professor at Oslo's Museum of Cultural History: this could be name of a woman Idibera or a kin named Idiberung.",
     "sources": [
@@ -59,7 +59,7 @@
     "id": "grumpanbracteate",
     "img": "grumpanbracteate.jpg",
     "title": "Grumpan bracteate Vg 207",
-    "rowType": "elder_futhark",
+    "rowType": "older_futhark",
     "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
     "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
     "explanationAfter": "Correct! This bracteate depicts the division of Elder Futhark row into 3 equal parts.",
@@ -86,7 +86,7 @@
     "img": "kylverstone.jpg",
     "img_credit": "https://en.wikipedia.org/wiki/Kylver_Stone#/media/File:Kylverstenen_1383.jpg",
     "title": "Kylver stone G 88",
-    "rowType": "elder_futhark",
+    "rowType": "older_futhark",
     "runes": "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛈᛇᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ",
     "description": "The Kylver stone originates from the Baltic island of Gotland. It is one of eleven known inscriptions of the older futhark row, dated to 5th and 6th centuries (only 4 of these 11 give the complete rune row order).",
     "explanationAfter": "Two things to note about the Kylver stone: 1) there is no division of the run row into the ættir - groups of eight - unlike for example the Grumpan bracteate; 2) the runes at positions 13-4 (ᛈ, ᛇ) and 23-4 (ᛞ, ᛟ) are given in the opposite order than usually.",
@@ -126,7 +126,7 @@
     "img": "kjølevikstone.jpg",
     "img_credit": "https://www.runesdb.eu/find-list/d/im/q/r/r/1~2/f/71/p/4597/c/97591001363d3a3306231e8304be203c/",
     "title": "Kjølevik stone N KJ75",
-    "rowType": "elder_futhark",
+    "rowType": "older_futhark",
     "runes": ["\u16ba", "\u16a8", "\u16de", "\u16a2", "\u16da", "\u16a8", "\u16c1", "\u16b2", "\u16a8", "\u16c9", " ", "\u16d6", "\u16b2", "\u16ba", "\u16a8", "\u16b7", "\u16a2", "\u16ca", "\u16cf", "\u16a8", "\u16de", "\u16a8", "\u16c9", " ", "\u16ba", "\u16da", "\u16a8", "\u16a8", "\u16c1", "\u16b9", "\u16c1", "\u16de", "\u16df", "\u16d7", "\u16a8", "\u16b7", "\u16a2", "\u16d7", "\u16c1", "\u16be", "\u16c1", "\u16be", "\u16df"],
     "description": "The Kjølevik stone is dated to 5th century and was found in Rogaland, south+western Norway.",
     "explanationAfter": "Old Norse translation of the inscription is believed to be \"Haðulaikaz. Ek Hagustaldaz hlaiwiðdo magu minino\" -- \"Haðulaikaz. I Hagustaldaz buried my son\". Haðulaikaz is a man's name consisting of elements \"battle\" ahnd \"play\".",
@@ -158,6 +158,19 @@
     "explanationAfter": "Yes! According to Scandinavian Runic-text Database (see sources), the inferred transliteration is \"(i)(u)an + brist + raisti + þasir + runur +¶ [f]uþor(k)(h)niastbml +\". The translation to Old Norse is \"Jóan prestr reisti þessar rúnar. <fuþorkhniastbml>\" and to English: \"Jóan the priest carved these runes. fuþorkhniastbml\"",
     "sources": [
       "http://kulturarvsdata.se/uu/srdb/057d73b7-7715-44fd-9355-b621125623f4"
+    ]
+  },
+  {
+    "id": "ågedalbracteate",
+    "img": "ågedalbracteate.jpg",
+    "img_credit": "https://digi20.digitale-sammlungen.de/en/fs1/object/display/bsb00042600_00018.html",
+    "title": "Ågedal bracteate N IK1",
+    "runes": ["\u16a6", "\u16c1", "\u16c9", "\u16a8", "\u16c1", "\u16d6", "\u16c1", "\u16a2", "-", "\u16de", "\u16c1", "\u16a2", "\u16ba", "\u16da", "\u16c1", "\u16a8", "\u16a0", "\u16da", "\u16ba", "\u16a8", "-", "\u16ba", "\u16de", "\u16cf", "\u16c1", "\u16a8", "\u16c1", "-", "-", "\u16c1", "\u16d6", "\u16da", "\u16c1", "\u16a8", "\u16c1", "\u16a8", "-", "\u16be", "\u16c1", "\u16cf"],
+    "rowType": "older_futhark_ågedal",
+    "description": "Little is known about this bracteate. It was found in southern Norway and contains inscriptions in Older Futhark, though with inconsistent direction of carving. It is made of gold and is dated before early 8th century.",
+    "explanationAfter": "That's a correct transliteration of the intelligible symbols. Uppsala University website makes the following attempt at translation to Old Norse: \"Þiz æje, i-rioð, i yhli-afl haha! Lið tiaðe elli aiga i tahe\". English: \"The slave-woman, rosy-cheeked, full of yule-power (=intoxicated), may lead the horse to the pasture! It became apparent that the old one had a retinue in the tún (=his own homestead)\".",
+    "sources": [
+      "http://kulturarvsdata.se/uu/srdb/33b8b0a3-d3ff-44fc-836f-f10461f5b8ff"
     ]
   }
 ]
