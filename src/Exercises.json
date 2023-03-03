@@ -172,5 +172,27 @@
     "sources": [
       "http://kulturarvsdata.se/uu/srdb/33b8b0a3-d3ff-44fc-836f-f10461f5b8ff"
     ]
+  },
+  {
+    "id": "acvalhalla",
+    "img": "acvalhalla.jpg",
+    "title": "Assasin's Creed Valhalla loading screen",
+    "rowType": "younger_futhark_long_branch",
+    "description": "This text is looped twice around the game logo in the loading screen of Assasin's Creed Valhalla.",
+    "runes": "ᛏᛅᚢᛦ ᚠᛁ ᛏᛅᚢᛁᛅ ᚠᚱᚬᛏᛦ ᛏᛅᚢᛦ ᛋᛁᛅᛚᚠᛦ ᛁᛏ ᛋᛅᛘᛅ ᛁᚴ ᚢᛅᛁᛏ ᛅᛁᚾ ᛅᛏ ᛅᛚᛏᚱᛁ ᛏᛅᚢᛦ ᛏᚢᛘᛦ ᚢᛒ ᛏᛅᚢᚦᛅᚾ ᚼᚢᛅᚱᚾ",
+    "explanationAfter": "This text is an excerpt from Havamal - stanza 77 to be precise: \"deyr fé, deyja frændr, deyr sjalfr it sama, ek veit einn, at aldrei deyr: dómr um dauðan hvern\". In Carolyne Larringtone's translation: \"Cattle die, kinsmen die, the self must also die; I know one thing which never dies; the reputation of each dead man.\"",
+    "sources": [
+      "https://www.reddit.com/r/runes/comments/kau2ak/assassins_creed_valhalla_menu_runes_please/"
+    ]
+  },
+  {
+    "id": "codexrunicus",
+    "img": "codexrunicus.jpg",
+    "title": "An excerpt from the Codex Runicus",
+    "runes": "ᛋᛅᚱᛅᚱ:ᛘᛆᚿ:ᛆᚿᚿᛅᚱ:ᛘᛆᚿ:ᛘᛆᚦᛅᚿ:ᚴᚢᚿᚢᚿ:ᛅᚱ",
+    "explanationAfter": "Særær man annær man mæþæn kunung ær ",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Codex_Runicus"
+    ]
   }
 ]
