@@ -739,5 +739,94 @@
         "latin": ["\u0280", "R", "z", "y"]
       }
     ]
+  },
+  "medieval": {
+    "name": "Medieval",
+    "symbols": [
+      {
+        "rune": "\u16a0",
+        "latin": "f"
+      },
+      {
+        "rune": "\u16a2",
+        "latin": "u"
+      },
+      {
+        "rune": "\u16a6",
+        "latin": "\u00fe"
+      },
+      {
+        "rune": "\u16ae",
+        "latin": "o"
+      },
+      {
+        "rune": "\u16b1",
+        "latin": "r"
+      },
+      {
+        "rune": "\u16b4",
+        "latin": "k"
+      },
+      {
+        "rune": "\u16bc",
+        "latin": "h"
+      },
+      {
+        "rune": "\u16bf",
+        "latin": "n"
+      },
+      {
+        "rune": "\u16c1",
+        "latin": "i"
+      },
+      {
+        "rune": "\u16c6",
+        "latin": "a"
+      },
+      {
+        "rune": "\u16cb",
+        "latin": "s"
+      },
+      {
+        "rune": "\u16d0",
+        "latin": "t"
+      },
+      {
+        "rune": "\u16d1",
+        "latin": "d"
+      },
+      {
+        "rune": "\u16d2",
+        "latin": "b"
+      },
+      {
+        "rune": "\u16d8",
+        "latin": "m"
+      },
+      {
+        "rune": "\u16da",
+        "latin": "l"
+      },
+      {
+        "rune": "\u16e6",
+        "latin": "y"
+      },
+      {
+        "rune": "\u16af",
+        "latin": ["\u00f8", "ö"]
+      },
+      {
+        "rune": "\u16c5",
+        "latin": ["\u00e6", "a", "ä"]
+      },
+      {
+        "rune": "\u16b5",
+        "latin": "g"
+      },
+      {
+        "rune": "\u16c2",
+        "latin": "e"
+      }
+    ]
   }
 }

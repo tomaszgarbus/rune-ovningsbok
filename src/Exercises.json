@@ -189,10 +189,12 @@
     "id": "codexrunicus",
     "img": "codexrunicus.jpg",
     "title": "An excerpt from the Codex Runicus",
-    "runes": "ᛋᛅᚱᛅᚱ:ᛘᛆᚿ:ᛆᚿᚿᛅᚱ:ᛘᛆᚿ:ᛘᛆᚦᛅᚿ:ᚴᚢᚿᚢᚿ:ᛅᚱ",
-    "explanationAfter": "Særær man annær man mæþæn kunung ær ",
+    "rowType": "medieval",
+    "description": "Codex runicus is a vellum manuscript from c. 1300, containing early Danish law texts, in particular the Scanian Law (Skånske lov).",
+    "runes": "ᛋᛅᚱᛅᚱ:ᛘᛆᚿ:ᛆᚿᚿᛅᚱ:ᛘᛆᚿ:ᛘᛆᚦᛅᚿ:ᚴᚢᚿᚢᚿᚵ:ᛅᚱ:ᛁᚿᚿᛅᚿ:ᛚᛅᚿᛑᛅᛋ:ᛒᚯᛐᛅ:ᚠᚮᚱᛂ:ᛋᛆᚱ:ᛋᚢᛘ:ᛚᚮᚼ:ᛅᚱᛅ:ᚮᚴ:ᚴᚢᚿᚢᚿᚵ:ᚠᛁᚱᛁᛐᛁᚢᚼᚢ:ᛘᛆᚱᚴ:ᚮᚴ:ᚼᛁᚿᚢᛘ:ᛅᚱ:ᛋᛆᚱ:ᚠᛁᚱᛁᛐᛁᚢᚼᚢ:ᛘᛆᚱᚴ:ᚠᚮᚱᛂ:ᚠᚱᛁᚦᛒᚱᚢᛐ",
+    "explanationAfter": "Correct! this medieval manuscript reads \"Særær man annær man mæþæn kunung ær innæn lændæs bøtæ fore sar sum loh æræ ok kunungi firitiuhu mark ok hinum ær sar fik firitiuhu mark fore friþbrut\". In English: \"If a man wounds another man while the king is the province he shall pay a fine for the wound in accordance with the law, and 40 marks to the king and 40 marks for breach of the peace to the one who was wounded\".",
     "sources": [
-      "https://en.wikipedia.org/wiki/Codex_Runicus"
+      "https://web.archive.org/web/19991002053657/http://www.hum.ku.dk/ami/am28.html"
     ]
   }
 ]
