@@ -188,6 +188,7 @@
   {
     "id": "codexrunicus",
     "img": "codexrunicus.jpg",
+    "img_credit": "https://en.wikipedia.org/wiki/Codex_Runicus#/media/File:CodexRunicus.jpeg",
     "title": "An excerpt from the Codex Runicus",
     "rowType": "medieval",
     "description": "Codex runicus is a vellum manuscript from c. 1300, containing early Danish law texts, in particular the Scanian Law (Skånske lov).",
@@ -195,6 +196,21 @@
     "explanationAfter": "Correct! this medieval manuscript reads \"Særær man annær man mæþæn kunung ær innæn lændæs bøtæ fore sar sum loh æræ ok kunungi firitiuhu mark ok hinum ær sar fik firitiuhu mark fore friþbrut\". In English: \"If a man wounds another man while the king is the province he shall pay a fine for the wound in accordance with the law, and 40 marks to the king and 40 marks for breach of the peace to the one who was wounded\".",
     "sources": [
       "https://web.archive.org/web/19991002053657/http://www.hum.ku.dk/ami/am28.html"
+    ]
+  },
+  {
+    "id": "rökstone_side_a",
+    "img": "rökstenen_side_a.jpg",
+    "img_credit": "https://sv.wikipedia.org/wiki/Rökstenen#/media/Fil:Rökstenen_2.jpg",
+    "title": "Rök runestone, side A (fragment) Ög 136",
+    "rowType": "younger_futhark_rök_side_a",
+    "description": "The Rök runestone from Östergötland, Sweden, is dated to 9th century. It contains inscriptions in 3 different runic ortographies: short-twig runes, older Fuþark and numerical cipher. The scholars have long debated the meaning (and even reading order!) of the inscription. For one recent interpretation, binding it to poems Vafþrúðnismál and Völuspá, see Holmberg et al., 2020 (linked in the sources). For the exercise below, we use the very beginning of the inscription. Note that due to limitations of Runic Unicode block, I had to use \u16c5 and \u16d9 as substitutes for two other short-twig runes.",
+    "runes": ["\u16c5", "\u16a0", "\u16cf", " ", "\u16a2", "\u16c5", "\u16d9", "\u16a2", "\u16a6", " ", "\u16cc", "\u16cf", "\u16ad", "\u16bf", "\u16cf", "\u16c5", " ", "\u16b1", "\u16a2", "\u16bf", "\u16c5", "\u16e7", " ", "\u16a6", "\u16c5", "\u16e7", " ", "+", " ", "(", "\u16c1", ")", "\u16bf", " ", "\u16a2", "\u16c5", "\u16b1", "\u16c1", "\u16bf", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", "\u16e7", " ", "\u16c5", "\u16a0", "\u16cf", " ", "\u16a0", "\u16c5", "\u16c1", "\u16b4", "\u16c1", "\u16ad", "\u16bf", " ", "\u16cc", "\u16a2", "\u16bf", "\u16a2"],
+    "explanationAfter": "Excellent! This translates as: \"Aft Vāmōð stãnda rūnaʀ þāʀ. Æn Varinn fāði, faðiʀ, aft faigiãn sunu.\", or in English: \"After Vāmōðʀ stand these runes. And Varinn, the father, made them after thedeath-doomed son\".",
+    "sources": [
+      "http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1383036&dswid=-2803",
+      "Runes: A Handbook by Michael P. Barnes (p 83)",
+      "http://kulturarvsdata.se/uu/srdb/3a61c080-77fc-4a44-b5ac-f3a4b33b3aab"
     ]
   }
 ]

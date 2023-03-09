@@ -828,5 +828,74 @@
         "latin": "e"
       }
     ]
+  },
+  "younger_futhark_rök_side_a": {
+    "name": "Short-twig Younger Fuþark",
+    "symbols": [
+      {
+        "rune": "\u16a0",
+        "latin": "f"
+      },
+      {
+        "rune": "\u16a2",
+        "latin": "u"
+      },
+      {
+        "rune": "\u16a6",
+        "latin": "\u00fe"
+      },
+      {
+        "rune": "\u16ad",
+        "latin": ["\u0105", "o"]
+      },
+      {
+        "rune": "\u16b1",
+        "latin": "r"
+      },
+      {
+        "rune": "\u16b4",
+        "latin": "k"
+      },
+      {
+        "rune": "\u16bd",
+        "latin": "h"
+      },
+      {
+        "rune": "\u16bf",
+        "latin": "n"
+      },
+      {
+        "rune": "\u16c1",
+        "latin": "i"
+      },
+      {
+        "rune": "\u16c5",
+        "latin": "a"
+      },
+      {
+        "rune": "\u16cc",
+        "latin": "s"
+      },
+      {
+        "rune": "\u16cf",
+        "latin": "t"
+      },
+      {
+        "rune": "\u16d3",
+        "latin": "b"
+      },
+      {
+        "rune": "\u16d9",
+        "latin": "m"
+      },
+      {
+        "rune": "\u16da",
+        "latin": "l"
+      },
+      {
+        "rune": "\u16e7",
+        "latin": ["\u0280", "R"]
+      }
+    ]
   }
 }
