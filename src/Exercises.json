@@ -212,5 +212,18 @@
       "Runes: A Handbook by Michael P. Barnes (p 83)",
       "http://kulturarvsdata.se/uu/srdb/3a61c080-77fc-4a44-b5ac-f3a4b33b3aab"
     ]
+  },
+  {
+    "id": "eidi_runestick",
+    "img": "eidi_runestick.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "description": "The runestick was found during archeological excavations in Durhúsi in Eiði. Runologically, the inscription is dated to 900-1200 AD. Archeological observations point to the elder part of this period.",
+    "title": "Eiði runestick",
+    "rowType": "younger_futhark_eidi_runestick",
+    "runes": "ᚠᚢᚦᚭᚱᚴᚽᚿᛁᛆᛌᛐᛓ",
+    "explanationAfter": "Indeed, the stick contains first 13 rune characters of short-twig Younger Fuþark, which were used in North Western areas, including Faroes.",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ]
   }
 ]
