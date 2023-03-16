@@ -970,5 +970,102 @@
         "latin": ["y", "z", "R"]
       }
     ]
+  },
+  "younger_futhark_sandavagur_stone": {
+    "name": "Short-twig Younger Fuþark",
+    "symbols": [
+      {
+        "rune": "\u16a0",
+        "latin": "f"
+      },
+      {
+        "rune": "\u16a2",
+        "latin": "u"
+      },
+      {
+        "rune": "\u16a6",
+        "latin": "\u00fe"
+      },
+      {
+        "rune": "\u16ad",
+        "latin": ["\u0105", "o"]
+      },
+      {
+        "rune": "\u16b1",
+        "latin": "r"
+      },
+      {
+        "rune": "\u16b4",
+        "latin": "k"
+      },
+      {
+        "rune": "\u16b5",
+        "latin": "g"
+      },
+      {
+        "rune": "\u16bd",
+        "latin": "h"
+      },
+      {
+        "rune": "\u16bc",
+        "latin": "h"
+      },
+      {
+        "rune": "\u16bf",
+        "latin": "n"
+      },
+      {
+        "rune": "\u16c1",
+        "latin": "i"
+      },
+      {
+        "rune": "\u16c2",
+        "latin": "e"
+      },
+      {
+        "rune": "\u16c5",
+        "latin": ["a", "e"]
+      },
+      {
+        "rune": "\u16c6",
+        "latin": ["a", "e"]
+      },
+      {
+        "rune": "\u16cc",
+        "latin": "s"
+      },
+      {
+        "rune": "\u16cd",
+        "latin": ["c", "s"]
+      },
+      {
+        "rune": "\u16d0",
+        "latin": "t"
+      },
+      {
+        "rune": "\u16d1",
+        "latin": "d"
+      },
+      {
+        "rune": "\u16d2",
+        "latin": "b"
+      },
+      {
+        "rune": "\u16d3",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "m"
+      },
+      {
+        "rune": "\u16da",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": "y"
+      }
+    ]
   }
 }
