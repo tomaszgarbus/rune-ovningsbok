@@ -238,5 +238,18 @@
     "sources": [
       "Tjóðsavnið - the National Museum of Faroe Islands"
     ]
+  },
+  {
+    "id": "sørvágur_box",
+    "img": "sørvágur_box.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "title": "Sørvágur wooden box",
+    "rowType": "medieval_sørvági_box",
+    "runes": "ᛆᛒᚴᚦᛂᚠᚴᚼᛁᚴᛚᛘᚿᚮᛒᚱᛋᛏᚢ",
+    "description": "This box orignates from the Sørvágur village in the Vágar island.",
+    "explanationAfter": "The latin alphabet has been carved with runes, supplemented by the date ANNO 1695. G. I. S. below stands for G(utti) J(oens) S(on).",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ]
   }
 ]

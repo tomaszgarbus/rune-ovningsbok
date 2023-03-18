@@ -1067,5 +1067,74 @@
         "latin": "y"
       }
     ]
+  },
+  "medieval_sørvági_box": {
+    "name": "Medieval runes",
+    "symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": ["b", "p"]
+      },
+      {
+        "rune": "ᚴ",
+        "latin": ["c", "g", "k"]
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛂ",
+        "latin": "e"
+      },
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛘ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᚿ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᚮ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      }
+    ]
   }
 }
