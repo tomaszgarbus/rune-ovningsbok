@@ -112,6 +112,13 @@ function TransliterationExercise(props) {
     }
   }
 
+  function maybeSeparateSymbols(str_or_arr) {
+    if (typeof(str_or_arr) === 'string') {
+      return str_or_arr;
+    }
+    return str_or_arr.join('/');
+  }
+
   return (
     <div className="ActiveTransliterationExercise">
 
@@ -181,6 +188,12 @@ function TransliterationExercise(props) {
             {props.exercise.explanationAfter}
           </p>
         }
+      { showFeedback && !userAnswer.solved && 
+        <p className="ActiveExercisePromptToUseHints">
+          Not quite! Please correct all the inputs according to the
+          hints to read an explanation of the runic message.
+        </p>
+      }
 
       {/* Sources */}
       {props.exercise.sources &&
@@ -221,7 +234,7 @@ function TransliterationExercise(props) {
                   {/* rune */}
                   {elem[0]}: 
                   {/* latin */}
-                  {elem[1]}
+                  {maybeSeparateSymbols(elem[1])}
                 </li>)
             }
           </ul>

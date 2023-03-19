@@ -6,6 +6,13 @@ function RuneInput(props) {
     return props.feedback.correct ? "Correct" : "Incorrect";
   }
 
+  function feedbackSymbolsToString() {
+    if (typeof(props.feedback.symbol) === 'string') {
+      return props.feedback.symbol;
+    }
+    return props.feedback.symbol.join('/');
+  }
+
   return (
     <div className={"SingleRuneInputDiv " + feedbackClass()} data-testid="single-rune-box">
       <p className={"SingleRuneOriginalSymbol " + feedbackClass()}>
@@ -20,7 +27,7 @@ function RuneInput(props) {
         data-testid={"RuneInput" + props.index} />
       {props.feedback && !props.feedback.correct &&
         <p className={"SingleRuneFeedbackSymbol " + feedbackClass()} data-testid="symbol-feedback">
-          {props.feedback.symbol}
+          {feedbackSymbolsToString()}
         </p>
       }
     </div>
