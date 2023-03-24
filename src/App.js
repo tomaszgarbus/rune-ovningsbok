@@ -1,10 +1,23 @@
 import './App.css';
 import TransliterationExercise from './TransliterationExercise';
 import ListOfExercises from './ListOfExercises';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App(props) {
-  const [exercise, setExercise] = useState(null);
+  // If this way of setting initial state should cause troubles,
+  // switch to useEffect() with empty dependency array.
+  const [exercise, setExercise] = useState(
+    JSON.parse(window.sessionStorage.getItem('exercise')));
+
+  function setExerciseNotNull(newExercise) {
+    window.sessionStorage.setItem('exercise', JSON.stringify(newExercise));
+    setExercise(newExercise);
+  }
+
+  function clearExercise() {
+    window.sessionStorage.setItem('exercise', null);
+    setExercise(null);
+  }
 
   return (
     <div className="App">
@@ -12,13 +25,13 @@ function App(props) {
         (
           <ListOfExercises
             items={props.exercises}
-            setExercise={setExercise}
+            setExercise={setExerciseNotNull}
             runeRows={props.runeRows}
             />
         ) :
         (
           <TransliterationExercise
-            backToExerciseListFn={() => {setExercise(null)}}
+            backToExerciseListFn={clearExercise}
             exercise={exercise}
             runeRow={props.runeRows[exercise.rowType]} />
         )
