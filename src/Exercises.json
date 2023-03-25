@@ -251,5 +251,18 @@
     "sources": [
       "Tjóðsavnið - the National Museum of Faroe Islands"
     ]
+  },
+  {
+    "id": "adventure_time_guitar_repair",
+    "img": "at_guitar_repair.jpg",
+    "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Guitar_banner_in_\"Five_More_Short_Graybles\"",
+    "title": "Adventure Time: runic banner from \"Five More Short Graybles\"",
+    "runes": "ᚷᚢᛁᛏᚨᚱ ᚱᛖᚦᚨᛁᚱ",
+    "rowType": "older_futhark",
+    "description": "This is a banner from an episode \"Five More Short Graybles\" written in Older Futhark.",
+    "explanationAfter": "Indeed, that's a guitar repair shop! Note how they used the thorn rune wrongly, as \"p\" instead of \"th\".",
+    "sources": [
+      "https://adventuretime.fandom.com/wiki/Runic_code#Guitar_banner_in_\"Five_More_Short_Graybles\""
+    ]
   }
 ]

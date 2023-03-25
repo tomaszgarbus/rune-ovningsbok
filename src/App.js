@@ -1,7 +1,7 @@
 import './App.css';
 import TransliterationExercise from './TransliterationExercise';
 import ListOfExercises from './ListOfExercises';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function App(props) {
   // If this way of setting initial state should cause troubles,
