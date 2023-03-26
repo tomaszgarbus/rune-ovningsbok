@@ -264,5 +264,31 @@
     "sources": [
       "https://adventuretime.fandom.com/wiki/Runic_code#Guitar_banner_in_\"Five_More_Short_Graybles\""
     ]
+  },
+  {
+    "id": "adventure_time_pitcher",
+    "img": "at_pitcher.jpg",
+    "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Pitcher_in_\"Video_Makers\"",
+    "title": "Adventure Time: a cup from \"Video Makers\"",
+    "runes": "ᚳᚢᚦ ᚩᚠ ᛗᚫᚿᚣ ᚫᛚᛖ",
+    "rowType": "anglo_saxon_at_pitcher",
+    "description": "A message on a cup from which Finn pours drinks in the \"Video Makers\" episode. It appears to be in the Anglo-Saxon runic system.",
+    "explanationAfter": "Correct! Note the wrong usage of the thorn rune as \"p\" instead of \"th\". The authors intended to spell \"Cup of many ale\".",
+    "sources": [
+      "https://adventuretime.fandom.com/wiki/Runic_code#Pitcher_in_\"Video_Makers\""
+    ]
+  },
+  {
+    "id": "adventure_time_sword_web_weirdos",
+    "img": "at_sword_web_weirdos.jpg",
+    "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Web_Weirdos\"",
+    "title": "Adventure Time: a sword from \"Web Weirdos\"",
+    "rowType": "older_futhark_at_web_weirdos",
+    "runes": ["\u16c1", " ", "\u16a8", "\u16d7", " ", "\u16a8", " ", "ᛋ", "\u16b2", "\u16d6", "\u16da", "\u16d6", "\u16cf", "\u16df", "\u16be", " ", "\u16c1", " ", "\u16b9", "\u16c1", "ᛋ", "\u16ba", " ", "\u16c1", " ", "\u16ba", "\u16a8", "\u16de", " ", "ᛋ", "\u16b2", "\u16c1", "\u16be"],
+    "description": "This magic sword appears in an episode \"Web weirdos\".",
+    "explanationAfter": "Yes! The sword says \"I am a skeleton I wish I had skin\".",
+    "sources": [
+      "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Web_Weirdos\""
+    ]
   }
 ]
