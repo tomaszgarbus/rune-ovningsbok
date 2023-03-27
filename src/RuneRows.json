@@ -1242,7 +1242,7 @@
       },
       {
         "rune": "\u16ab",
-        "latin": "\u00e6"
+        "latin": ["\u00e6", "a"]
       },
       {
         "rune": "\u16a3",
@@ -1461,6 +1461,119 @@
       {
         "rune": "\u16df",
         "latin": "o"
+      }
+    ]
+  },
+  "anglo_saxon_at_morituri": {
+    "name": "Anglo-Saxon",
+    "symbols": [
+      {
+        "rune": "\u16a0",
+        "latin": "f"
+      },
+      {
+        "rune": "\u16a2",
+        "latin": "u"
+      },
+      {
+        "rune": "\u16a6",
+        "latin": "\u00fe"
+      },
+      {
+        "rune": "\u16a9",
+        "latin": "o"
+      },
+      {
+        "rune": "\u16b1",
+        "latin": "r"
+      },
+      {
+        "rune": "\u16b3",
+        "latin": "c"
+      },
+      {
+        "rune": "\u16b7",
+        "latin": "g"
+      },
+      {
+        "rune": "\u16b9",
+        "latin": "w"
+      },
+      {
+        "rune": "\u16bb",
+        "latin": "h"
+      },
+      {
+        "rune": "\u16be",
+        "latin": "n"
+      },
+      {
+        "rune": "\u16c1",
+        "latin": "i"
+      },
+      {
+        "rune": "\u16e1",
+        "latin": "j"
+      },
+      {
+        "rune": "\u16c7",
+        "latin": "\u00ef"
+      },
+      {
+        "rune": "\u16c8",
+        "latin": "p"
+      },
+      {
+        "rune": "\u16c9",
+        "latin": "x"
+      },
+      {
+        "rune": "\u16cb",
+        "latin": "s"
+      },
+      {
+        "rune": "\u16cf",
+        "latin": "t"
+      },
+      {
+        "rune": "\u16d2",
+        "latin": "b"
+      },
+      {
+        "rune": "\u16d6",
+        "latin": "e"
+      },
+      {
+        "rune": "\u16d7",
+        "latin": "m"
+      },
+      {
+        "rune": "\u16da",
+        "latin": "l"
+      },
+      {
+        "rune": "\u16dd",
+        "latin": "\u014b"
+      },
+      {
+        "rune": "\u16df",
+        "latin": "\u0153"
+      },
+      {
+        "rune": "\u16de",
+        "latin": "d"
+      },
+      {
+        "rune": "\u16aa",
+        "latin": "a"
+      },
+      {
+        "rune": "\u16ab",
+        "latin": ["\u00e6", "a"]
+      },
+      {
+        "rune": "\u16a3",
+        "latin": "y"
       }
     ]
   }

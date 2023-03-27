@@ -290,5 +290,31 @@
     "sources": [
       "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Web_Weirdos\""
     ]
+  },
+  {
+    "id": "adventure_time_staff_storytelling",
+    "img": "at_staff_storytelling.jpg",
+    "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Staff_in_\"Storytelling\"",
+    "title": "Adventure Time: a staff from \"Storytelling\"",
+    "rowType": "anglo_saxon",
+    "runes": "ᚠᚫᚳᛖ",
+    "description": "This secret message appears on the staff of the Forest Wizard in the \"Storytelling\" episode when he bashes Finn on the head with it. The image is flipped horizontally.",
+    "explanationAfter": "Yes, it spells FACE.",
+    "sources": [
+      "https://adventuretime.fandom.com/wiki/Runic_code#Staff_in_\"Storytelling\""
+    ]
+  },
+  {
+    "id": "adventure_time_sword_morituri",
+    "img": "at_sword_morituri.jpg",
+    "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Morituri_Te_Salutamus\"",
+    "title": "Adventure Time: a sword from \"Morituri Te Salutamus\"",
+    "rowType": "anglo_saxon_at_morituri",
+    "runes": ["\u16cf", "\u16a9", " ", "\u16a0", "\u16c1", "\u16b7", "ᚹ", "\u16cf", " ", "\u16c1", "\u16cb", " ", "\u16cf", "\u16a9", " ", "\u16da", "\u16c1", "ᚢ", "\u16d6"],
+    "description": "A sword that occurs in the episode \"Morituri Te Salutamus\"",
+    "explanationAfter": "Indeed, the runic message says \"To fight is to live\". While the use of Uruz rune for \"v\" is historically common, the choice of ᚹ for \"h\" is more surprising.",
+    "sources": [
+      "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Morituri_Te_Salutamus\""
+    ]
   }
 ]
