@@ -5,15 +5,37 @@ import RuneSeparator from "./RuneSeparator";
 
 
 function TransliterationExercise(props) {
+  function loadUserAnswerIfExerciseIdMatches() {
+    let loadedUserAnswer = window.sessionStorage.getItem('userAnswer');
+    if (!loadedUserAnswer) {
+      return null;
+    }
+    let parsedUserAnswer = JSON.parse(loadedUserAnswer);
+    if (parsedUserAnswer.exerciseId === props.exercise.id) {
+      return parsedUserAnswer;
+    }
+    return null;
+  }
+
   const [userAnswer, setUserAnswer] = useState(
+    loadUserAnswerIfExerciseIdMatches() ||
     {
       inputs: mapRunes(_ => ""),
-      // "Ready" means "ready for checking". This is synonymous with "submit button is unlocked".
+      // "Ready" means "ready for checking". This is synonymous with "submit
+      // button is unlocked".
       ready: false,
       // "Solved" means "checked and all inputs correct or corrected after hints".
-      solved: false
+      solved: false,
+      // Read-only. This field is used to identify whether the userAnswer cached
+      // in window.sessionStorage is for the current exercise.
+      exerciseId: props.exercise.id,
     }
   )
+
+  function setUserAnswerAndCacheInSessionStorage(newAnswer) {
+    window.sessionStorage.setItem('userAnswer', JSON.stringify(newAnswer));
+    setUserAnswer(newAnswer);
+  }
 
   // True if user has clicked the "Check" button.
   const [showFeedback, setShowFeedback] = useState(false);
@@ -33,7 +55,8 @@ function TransliterationExercise(props) {
   function updateUserAnswer(index, char) {
     const inputs = userAnswer.inputs;
     inputs[index] = char;
-    setUserAnswer({
+    setUserAnswerAndCacheInSessionStorage({
+      ...userAnswer,
       inputs: inputs,
       ready: isReady(inputs),
       solved: isSolved(inputs)
@@ -82,7 +105,8 @@ function TransliterationExercise(props) {
     return true;
   }, [showFeedback, props, runeMappingFn]);
 
-  // If the user requests feedback and they got everything right, `solved` should automatically be set to true.
+  // If the user requests feedback and they got everything right,
+  // `solved` should automatically be set to true.
   useEffect(
     () => {
       setUserAnswer(u => { return {
@@ -132,12 +156,12 @@ function TransliterationExercise(props) {
         </button>
         <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
       </div>
-      
+
       {/* Description */}
       <p className="ActiveExerciseDescription">
         {props.exercise.description}
       </p>
-      
+
       {/* Image */}
       <div className="ActiveExerciseImgDiv">
         <img src={"./assets/" + props.exercise.img} className="ActiveExerciseImg" alt={props.exercise.title} />
@@ -148,7 +172,7 @@ function TransliterationExercise(props) {
         <div className="ActiveExerciseRuneInputsDiv">
           {
             mapRunes(
-              (rune, index) => IsSeparator(rune) ? 
+              (rune, index) => IsSeparator(rune) ?
                   <RuneSeparator
                     character={rune}
                     key={index}
@@ -158,8 +182,9 @@ function TransliterationExercise(props) {
                       index={index}
                       key={index}
                       runeSymbol={rune}
+                      userInput={userAnswer.inputs[index]}
                       feedback={
-                        showFeedback ? 
+                        showFeedback ?
                           {
                             "symbol": runeMapping[rune],
                             "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
@@ -183,12 +208,12 @@ function TransliterationExercise(props) {
       </form>
 
       {/* Explanation after */}
-      { userAnswer.solved && 
+      { userAnswer.solved &&
           <p className="ActiveExerciseExplanationAfter">
             {props.exercise.explanationAfter}
           </p>
         }
-      { showFeedback && !userAnswer.solved && 
+      { showFeedback && !userAnswer.solved &&
         <p className="ActiveExercisePromptToUseHints">
           Not quite! Please correct all the inputs according to the
           hints to read an explanation of the runic message.
@@ -232,7 +257,7 @@ function TransliterationExercise(props) {
                 <li
                   key={elem[0]}> {/* Just to silence some warnings. */}
                   {/* rune */}
-                  {elem[0]}: 
+                  {elem[0]}:
                   {/* latin */}
                   {maybeSeparateSymbols(elem[1])}
                 </li>)
