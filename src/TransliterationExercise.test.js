@@ -3,6 +3,10 @@ import TransliterationExercise from './TransliterationExercise';
 import { RuneRowToMapping } from './Utils';
 import { testExercise, testExerciseWithSeparators, testRuneRow } from './TestData.js'
 
+afterEach(() => {
+  window.sessionStorage.clear();
+});
+
 test('enable check once all inputs provided', () => {
   render(<TransliterationExercise
     exercise={testExercise}
@@ -42,7 +46,7 @@ test('show explanation after solved', () => {
     exercise={testExercise}
     runeRow={testRuneRow}
   />)
-  
+
   for (const [index, inputField] of screen.getAllByTestId(/RuneInput.*/).entries()) {
     const latinSymbol = RuneRowToMapping(testRuneRow)[testExercise.runes[index]];
     inputField.setAttribute('value', latinSymbol);
@@ -62,7 +66,7 @@ test('toggle help modal', () => {
     exercise={testExercise}
     runeRow={testRuneRow}
   />)
-  
+
   const helpModalButton = screen.getByText('?');
   expect(helpModalButton).toBeInTheDocument();
 
@@ -131,4 +135,31 @@ test('solved exercise with separators', () => {
 
   expect(screen.getByText(
     testExerciseWithSeparators.explanationAfter)).toBeInTheDocument();
+});
+
+test('user input preserved on page refresh', () => {
+  render(<TransliterationExercise
+    exercise={testExerciseWithSeparators}
+    runeRow={testRuneRow}
+  />);
+
+  // Check that separators are rendered.
+  expect(screen.getAllByText(":").length).toBe(3);
+
+  // Input a symbol to 2 fields then verify they keep them after page refresh.
+  const inputFields = screen.getAllByTestId(/RuneInput.*/).sort(
+    (a, b) => a.getAttribute('data-testid') < b.getAttribute('data-testid'));
+  fireEvent.change(inputFields[0], { target: { value: 't' } });
+  fireEvent.change(inputFields[1], { target: { value: 'e' } });
+  // Window.location.reload is not implemented, let's just rerender.
+  render(<TransliterationExercise
+    exercise={testExerciseWithSeparators}
+    runeRow={testRuneRow}
+  />);
+  expect(inputFields[0]).toHaveValue('t');
+  expect(inputFields[1]).toHaveValue('e');
+
+  // Let's just make sure that field skipping works fine after reload...
+  fireEvent.change(inputFields[2], { target: { value: 's' } });
+  expect(inputFields[3]).toHaveFocus();
 });
