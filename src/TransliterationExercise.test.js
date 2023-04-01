@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import TransliterationExercise from './TransliterationExercise';
 import { RuneRowToMapping } from './Utils';
-import { testExercise, testExerciseWithSeparators, testRuneRow } from './TestData.js'
+import { testExercise, testExerciseWithMultipleCorrectAnswers, testExerciseWithSeparators, testRuneRow, testRuneRowWithMultipleTransliterations } from './TestData.js'
 
 afterEach(() => {
   window.sessionStorage.clear();
@@ -138,7 +138,7 @@ test('solved exercise with separators', () => {
 });
 
 test('user input preserved on page refresh', () => {
-  render(<TransliterationExercise
+  const {rerender} = render(<TransliterationExercise
     exercise={testExerciseWithSeparators}
     runeRow={testRuneRow}
   />);
@@ -152,7 +152,7 @@ test('user input preserved on page refresh', () => {
   fireEvent.change(inputFields[0], { target: { value: 't' } });
   fireEvent.change(inputFields[1], { target: { value: 'e' } });
   // Window.location.reload is not implemented, let's just rerender.
-  render(<TransliterationExercise
+  rerender(<TransliterationExercise
     exercise={testExerciseWithSeparators}
     runeRow={testRuneRow}
   />);
@@ -162,4 +162,55 @@ test('user input preserved on page refresh', () => {
   // Let's just make sure that field skipping works fine after reload...
   fireEvent.change(inputFields[2], { target: { value: 's' } });
   expect(inputFields[3]).toHaveFocus();
+});
+
+test('don\'t load user answer from session storage if exercise id mismatches', () => {
+  // First render the component with exercise id "test".
+  const {unmount} = render(<TransliterationExercise
+    exercise={testExercise}
+    runeRow={testRuneRow} />);
+
+  // Input a symbol to each input field.
+  for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
+    inputField.setAttribute('value', 'a');
+    fireEvent.change(inputField, { target: { value: 'a' } });
+  }
+  // Just make sure that all inputs are present:
+  let checkButton = screen.getByText('Check');
+  expect(checkButton).toBeEnabled();
+
+  // Now rerender the component with different exercise.
+  unmount();
+  render(<TransliterationExercise
+    exercise={testExerciseWithSeparators}
+    runeRow={testRuneRow} />);
+  expect(screen.getByText(testExerciseWithSeparators.description)).toBeInTheDocument();
+  // Check that inputs are not loaded from cache.
+  for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
+    expect(inputField).toHaveValue('');
+  }
+  checkButton = screen.getByText('Check');
+  expect(checkButton).toBeDisabled();
+});
+
+test('accepts alternative inputs as correct', () => {
+  render(<TransliterationExercise
+    exercise={testExerciseWithMultipleCorrectAnswers}
+    runeRow={testRuneRowWithMultipleTransliterations}
+  />);
+  const inputFields = screen.getAllByTestId(/RuneInput.*/).sort(
+    (a, b) => a.getAttribute('data-testid') < b.getAttribute('data-testid'));
+  fireEvent.change(inputFields[0], { target: { value: 'd' } });
+  fireEvent.change(inputFields[1], { target: { value: 'ä' } });
+  fireEvent.change(inputFields[2], { target: { value: 'z' } });
+  fireEvent.change(inputFields[3], { target: { value: 'd' } });
+
+  // Check that the answer is accepted.
+  let checkButton = screen.getByText('Check');
+  expect(checkButton).toBeEnabled();
+  fireEvent.click(checkButton, {});
+  expect(
+    screen.getByText(
+      testExerciseWithMultipleCorrectAnswers.explanationAfter
+      )).toBeInTheDocument();
 });

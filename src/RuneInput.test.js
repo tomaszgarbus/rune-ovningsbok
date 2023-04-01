@@ -24,3 +24,12 @@ test('no feedback: doesnt render hint', () => {
   const hintDiv = screen.queryByTestId('symbol-feedback');
   expect(hintDiv).toBeNull();
 });
+
+test('feedback symbols array is joined with slash', () => {
+  render(<RuneInput runeSymbol='ᚨ' feedback={{
+    'correct': false,
+    'symbol': ['a', 'ä', 'æ']
+  }} />);
+  const hintDiv = screen.queryByTestId('symbol-feedback');
+  expect(hintDiv).toHaveTextContent('a/ä/æ');
+});
