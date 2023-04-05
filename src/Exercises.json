@@ -14,7 +14,9 @@
     "img": "figa.jpg",
     "title": "Name of my dog",
     "runes": ["ᚠ", "ᛁ", "ᚷ", "ᚨ"],
-    "rowType": "older_futhark"
+    "rowType": "older_futhark",
+    "description": "Solve the exercise to learn what my dog is called.",
+    "explanationAfter": "Correct. She's a good girl!"
   },
   {
     "id": "einang",

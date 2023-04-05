@@ -203,6 +203,15 @@ function TransliterationExercise(props) {
             disabled={!userAnswer.ready}
             hidden={showFeedback}
             value="Check"
+            title={
+              userAnswer.ready ?
+              "Show feedback for your answers. After you check " +
+              "you'll receive hints for the wrong inputs to correct " +
+              "them."
+              :
+              "Please complete all inputs first. You can get" +
+              " some hints by clicking the button at the bottom right."
+            }
             />
         </div>
       </form>
@@ -269,7 +278,10 @@ function TransliterationExercise(props) {
       {/* Help button */}
       <button
         id="ActiveExerciseToggleHelpButton"
-        onClick={toggleHelpModal}>?</button>
+        onClick={toggleHelpModal}
+        title={"Show or hide a popup with hints - assumed " +
+        "transliterations of runic symbols to latin alphabet."}
+        >?</button>
       </div>
 
     </div>
