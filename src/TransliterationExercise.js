@@ -52,6 +52,34 @@ function TransliterationExercise(props) {
 
   const runeMapping = RuneRowToMapping(props.runeRow)
 
+  function maybeMoveToPreviousInput(current_index) {
+    // TODO: find a way to do it with Refs instead.
+    let previousIndexToFocus = current_index;
+    while (--previousIndexToFocus >= 0 &&
+      IsSeparator(props.exercise.runes[previousIndexToFocus]));
+    if (previousIndexToFocus >= 0) {
+      let element = document.getElementById(
+        "SingleRuneInputField" + (previousIndexToFocus));
+      element.focus();
+      element.setSelectionRange(1, 1);
+    }
+  }
+
+  function maybeMoveToNextInput(current_index) {
+    const inputs = userAnswer.inputs;
+
+    // TODO: find a way to do it with Refs instead.
+    let nextIndexToFocus = current_index;
+    while (++nextIndexToFocus < inputs.length &&
+      IsSeparator(props.exercise.runes[nextIndexToFocus]));
+    if (nextIndexToFocus < inputs.length) {
+      let element = document.getElementById(
+        "SingleRuneInputField" + (nextIndexToFocus));
+      element.focus();
+      element.setSelectionRange(1, 1);
+    }
+  }
+
   function updateUserAnswer(index, char) {
     const inputs = userAnswer.inputs;
     inputs[index] = char;
@@ -62,13 +90,8 @@ function TransliterationExercise(props) {
       solved: isSolved(inputs)
     });
 
-    // Maybe move the cursor to the next input.
-    // TODO: find a way to do it with Refs instead.
-    let nextIndexToFocus = index;
-    while (++nextIndexToFocus < inputs.length &&
-      IsSeparator(props.exercise.runes[nextIndexToFocus]));
-    if (nextIndexToFocus < inputs.length && inputs[index].length > 0) {
-      document.getElementById("SingleRuneInputField" + (nextIndexToFocus)).focus();
+    if (inputs[index].length === 1) {
+      maybeMoveToNextInput(index);
     }
   }
 
@@ -143,6 +166,17 @@ function TransliterationExercise(props) {
     return str_or_arr.join('/');
   }
 
+  function handleKeyDown(input_index, e) {
+    if (e.keyCode === 37) {  // left arrow
+      e.preventDefault();
+      maybeMoveToPreviousInput(input_index);
+    }
+    if (e.keyCode === 39) {  // right arrow
+      e.preventDefault();
+      maybeMoveToNextInput(input_index);
+    }
+  }
+
   return (
     <div className="ActiveTransliterationExercise">
 
@@ -183,6 +217,7 @@ function TransliterationExercise(props) {
                       key={index}
                       runeSymbol={rune}
                       userInput={userAnswer.inputs[index]}
+                      onKeyDown={(e) => handleKeyDown(index, e)}
                       feedback={
                         showFeedback ?
                           {

@@ -23,6 +23,7 @@ function RuneInput(props) {
         type="text"
         className={"SingleRuneInputField " + feedbackClass()}
         onChange={props.onChange}
+        onKeyDown={props.onKeyDown}
         maxLength={1}
         value={props.userInput}
         data-testid={"RuneInput" + props.index} />
