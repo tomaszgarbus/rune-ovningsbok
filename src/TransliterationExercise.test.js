@@ -41,6 +41,27 @@ test('check button enables feedback', () => {
   expect(screen.getAllByTestId("symbol-feedback").length).toBe(4);
 });
 
+test('accept upper case answers', () => {
+  render(<TransliterationExercise
+    exercise={testExercise}
+    runeRow={testRuneRow}
+  />)
+
+  for (const [index, inputField] of screen.getAllByTestId(/RuneInput.*/).entries()) {
+    const latinSymbol = RuneRowToMapping(testRuneRow)[testExercise.runes[index]];
+    inputField.setAttribute('value', latinSymbol.toUpperCase());
+    fireEvent.change(inputField, { target: { value: latinSymbol } });
+  }
+
+  const checkButton = screen.getByText("Check");
+  expect(checkButton).toBeEnabled();
+  fireEvent.submit(checkButton, {});
+
+  const explanationAfter = screen.getByText(testExercise.explanationAfter);
+  expect(explanationAfter).toBeInTheDocument();
+});
+
+
 test('show explanation after solved', () => {
   render(<TransliterationExercise
     exercise={testExercise}

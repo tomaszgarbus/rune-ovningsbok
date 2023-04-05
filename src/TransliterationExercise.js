@@ -86,9 +86,9 @@ function TransliterationExercise(props) {
       return false;
     }
     if (typeof(groundTruth) === 'string') {
-      return input === groundTruth;
+      return input.toLowerCase() === groundTruth;
     } else {
-      return groundTruth.includes(input);
+      return groundTruth.includes(input.toLowerCase());
     }
   }
 
