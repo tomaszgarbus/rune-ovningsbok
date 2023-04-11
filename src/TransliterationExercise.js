@@ -192,13 +192,22 @@ function TransliterationExercise(props) {
         <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
       </div>
 
-      {/* Description */}
-      <p className="ActiveExerciseDescription">
-        {props.exercise.description}
+      {/* Row type */}
+      <p className="ActiveExerciseInfoBlock">
+        <b>Runic alphabet: </b> {props.runeRow.name}
       </p>
+
+      {/* Description */}
+      <p className="ActiveExerciseInfoBlock">
+        <b>Description: </b>{props.exercise.description}
+      </p>
+
+      <hr/>
 
       {/* Image */}
       <ActiveExerciseImage exercise={props.exercise}/>
+
+      <hr/>
 
       {/* User input */}
       <form onSubmit={onSubmit}>
@@ -252,21 +261,24 @@ function TransliterationExercise(props) {
 
       {/* Explanation after */}
       { userAnswer.solved &&
-          <p className="ActiveExerciseExplanationAfter">
-            {props.exercise.explanationAfter}
+          <p className="ActiveExerciseInfoBlock">
+            <b>Feedback: </b>{props.exercise.explanationAfter}
           </p>
         }
       { showFeedback && !userAnswer.solved &&
-        <p className="ActiveExercisePromptToUseHints">
+        <p className="ActiveExerciseInfoBlock">
+          <b>Feedback: </b>
           Not quite! Please correct all the inputs according to the
           hints to read an explanation of the runic message.
         </p>
       }
 
+      <hr/>
+
       {/* Sources */}
       {props.exercise.sources &&
-        <div className="ActiveExerciseSources">
-          Sources:
+        <div className="ActiveExerciseInfoBlock">
+          <b>Sources:</b>
           <ol>
             {
               props.exercise.sources.map(

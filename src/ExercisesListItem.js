@@ -3,7 +3,10 @@
 function ExercisesListItem(props) {
   return (
     <div className="ExercisesListItem" onClick={props.open}>
-      <img src={"./assets/" + props.exercise.img} className="ExerciseThumbnail" alt={props.exercise.title} />
+      <img
+        src={"./assets/" + props.exercise.img}
+        className="ExerciseThumbnail"
+        alt={props.exercise.title} />
       <div className="ExerciseThumbnailGradient" />
       <svg className="ExerciseThumbnailRuneMask" opacity="0">
         <defs>
@@ -14,8 +17,8 @@ function ExercisesListItem(props) {
             }</text>
           </mask>
         </defs>
-        <rect width="100%" height="100%" 
-          mask={`url(#mask${props.exercise.runes[0]})`} fillOpacity="0.9"/>    
+        <rect width="100%" height="100%"
+          mask={`url(#mask${props.exercise.runes[0]})`} fillOpacity="0.9"/>
       </svg>
       <div className="ExerciseListItemInfo">
         <p className="ExerciseListItemTitle">{props.exercise.title}</p>

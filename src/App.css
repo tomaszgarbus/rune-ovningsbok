@@ -18,11 +18,29 @@ h2 {
   text-align: center;
 }
 
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: darkgrey;
+  height: 1px
+}
+
+.center {
+  margin: auto;
+}
+
 .ActiveTransliterationExercise {
   display: flex;
   flex-direction: column;
   margin: auto;
   max-width: 80%;
+}
+
+.ActiveExerciseInfoBlock {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .ActiveExerciseImg {
@@ -72,7 +90,7 @@ h2 {
   border: none;
   display: inline-block;
   font-size: 2em;
-  margin: 5px;
+  margin: 1px;
   margin-top: 10px;
   min-height: 100%;
   padding: 10px;
