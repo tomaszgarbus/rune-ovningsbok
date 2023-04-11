@@ -16,7 +16,7 @@ function ActiveExerciseImage(props) {
             <b>{"Image credit: "}</b>
             {
               IsValidHttpUrl(props.exercise.img_credit) ?
-              <a href={props.exercise.img_credit} target='_blank'>link</a>
+              <a href={props.exercise.img_credit} target='_blank' rel='noreferrer'>link</a>
               :
               <>{props.exercise.img_credit}</>
             }
