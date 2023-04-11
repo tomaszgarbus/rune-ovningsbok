@@ -1,0 +1,14 @@
+name: img-resize
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install ImageMagick
+      run: sudo apt-get install imagemagick
