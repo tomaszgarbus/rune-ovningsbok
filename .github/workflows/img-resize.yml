@@ -1,4 +1,4 @@
-name: img-resize
+name: Thumbnalize images
 
 on:
   push:
