@@ -13,4 +13,15 @@ function IsSeparator(character) {
   return false;
 }
 
-export {IsSeparator, RuneRowToMapping};
+// https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
+function IsValidHttpUrl(maybeLink) {
+  let url;
+  try {
+    url = new URL(maybeLink);
+  } catch (_) {
+    return false;
+  }
+  return url.protocol === "http:" || url.protocol === "https:";
+}
+
+export {IsSeparator, IsValidHttpUrl, RuneRowToMapping};

@@ -1,7 +1,8 @@
 import RuneInput from "./RuneInput";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { IsSeparator, RuneRowToMapping } from './Utils';
+import { IsSeparator, IsValidHttpUrl, RuneRowToMapping } from './Utils';
 import RuneSeparator from "./RuneSeparator";
+import ActiveExerciseImage from "./ActiveExerciseImage";
 
 
 function TransliterationExercise(props) {
@@ -128,17 +129,6 @@ function TransliterationExercise(props) {
     return true;
   }, [showFeedback, props, runeMappingFn]);
 
-  // https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
-  function isValidHttpUrl(maybeLink) {
-    let url;
-    try {
-      url = new URL(maybeLink);
-    } catch (_) {
-      return false;
-    }
-    return url.protocol === "http:" || url.protocol === "https:";
-  }
-
   // If the user requests feedback and they got everything right,
   // `solved` should automatically be set to true.
   useEffect(
@@ -208,9 +198,7 @@ function TransliterationExercise(props) {
       </p>
 
       {/* Image */}
-      <div className="ActiveExerciseImgDiv">
-        <img src={"./assets/" + props.exercise.img} className="ActiveExerciseImg" alt={props.exercise.title} />
-      </div>
+      <ActiveExerciseImage exercise={props.exercise}/>
 
       {/* User input */}
       <form onSubmit={onSubmit}>
@@ -286,7 +274,7 @@ function TransliterationExercise(props) {
                   <li key={source}> {
                     // Display as link if it resembles a link.
                     // Display as plaintext otherwise.
-                    isValidHttpUrl(source)
+                    IsValidHttpUrl(source)
                     ?
                     <a href={source} target="_blank" rel="noreferrer">
                       {source}
