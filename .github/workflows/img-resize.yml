@@ -10,13 +10,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Install ImageMagick
-      run: sudo apt-get install imagemagick
-    - name: DEBUG
-      run: ls 1>&2
-    - name: Create output directory
-      run: mkdir output
-    - name: Resize all images
-      run: for f in `ls public/assets`;
-           do convert  -resize 300x200 $f output/$f;
-           done;
+      - uses: actions/checkout@v3
+      - name: Install ImageMagick
+        run: sudo apt-get install imagemagick
+      - name: DEBUG
+        run: ls 1>&2
+      - name: Create output directory
+        run: mkdir output
+      - name: Resize all images
+        run: for f in `ls public/assets`;
+             do convert  -resize 300x200 $f output/$f;
+             done;
