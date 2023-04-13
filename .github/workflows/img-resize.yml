@@ -19,7 +19,7 @@ jobs:
         run: mkdir output
       - name: Resize all images
         run: for f in `ls public/assets | grep -E 'jpg|jpeg|png'`;
-             do convert  -resize 300x200^ -crop 300x200 public/assets/$f output/$f;
+             do convert public/assets/$f -resize 300x200^ output/$f;
              done;
       - name: Upload generated thumbnails
         uses: actions/upload-artifact@v3
