@@ -4,7 +4,11 @@ function ExercisesListItem(props) {
   return (
     <div className="ExercisesListItem" onClick={props.open}>
       <img
-        src={"./assets/" + props.exercise.img}
+        src={"./assets/thumbnails/" + props.exercise.img}
+        onError={(e) => {
+          e.target.onError = null;
+          e.target.src = "./assets/" + props.exercise.img;
+        }}
         className="ExerciseThumbnail"
         alt={props.exercise.title} />
       <div className="ExerciseThumbnailGradient" />
