@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { IsSeparator, IsValidHttpUrl, RuneRowToMapping } from './Utils';
 import RuneSeparator from "./RuneSeparator";
 import ActiveExerciseImage from "./ActiveExerciseImage";
+import Keyboard from "./Keyboard";
 
 
 function TransliterationExercise(props) {
@@ -53,16 +54,20 @@ function TransliterationExercise(props) {
 
   const runeMapping = RuneRowToMapping(props.runeRow)
 
+  function focusOnInput(inputIndex) {
+    let element = document.getElementById(
+      "SingleRuneInputField" + (inputIndex));
+    element.focus();
+    element.setSelectionRange(1, 1);
+  }
+
   function maybeMoveToPreviousInput(current_index) {
     // TODO: find a way to do it with Refs instead.
     let previousIndexToFocus = current_index;
     while (--previousIndexToFocus >= 0 &&
       IsSeparator(props.exercise.runes[previousIndexToFocus]));
     if (previousIndexToFocus >= 0) {
-      let element = document.getElementById(
-        "SingleRuneInputField" + (previousIndexToFocus));
-      element.focus();
-      element.setSelectionRange(1, 1);
+      focusOnInput(previousIndexToFocus);
     }
   }
 
@@ -74,10 +79,7 @@ function TransliterationExercise(props) {
     while (++nextIndexToFocus < inputs.length &&
       IsSeparator(props.exercise.runes[nextIndexToFocus]));
     if (nextIndexToFocus < inputs.length) {
-      let element = document.getElementById(
-        "SingleRuneInputField" + (nextIndexToFocus));
-      element.focus();
-      element.setSelectionRange(1, 1);
+      focusOnInput(nextIndexToFocus);
     }
   }
 
@@ -335,6 +337,9 @@ function TransliterationExercise(props) {
         "transliterations of runic symbols to latin alphabet."}
         >?</button>
       </div>
+
+      {/* Funny keys keyboard */}
+      <Keyboard />
 
     </div>
   )
