@@ -149,6 +149,10 @@ hr {
   margin-right: 1px;
 }
 
+.VirtualKeyboardKeyButton:active {
+  transform: scale(0.95);
+}
+
 #ActiveExerciseToggleHelpButton {
   background-image: url(../public/help_button_background.svg);
   border-radius: 25px;
