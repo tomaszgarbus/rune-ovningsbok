@@ -15,6 +15,7 @@ function Keyboard(props) {
         {
           funnyLetters.map((letter) => {
             return <button
+              className="VirtualKeyboardKeyButton"
               key={letter}
               onMouseDown={
                 e => {

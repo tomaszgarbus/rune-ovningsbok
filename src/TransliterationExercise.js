@@ -303,44 +303,49 @@ function TransliterationExercise(props) {
         </div>
       }
 
-      {/* Hints modal and button */}
-      <div id="ActiveExerciseHelpContainer">
+      {/* All things floating */}
+      <div id="ActiveExerciseFloaties">
+        <div id="ActiveExerciseFloatiesGrid">
 
-      {/* Modal */}
-      <div
-        id="ActiveExerciseHelpModal"
-        ref={helpModalRef}
-        hidden={true}
-        data-testid="ActiveExerciseHelpModal">
-        <div>
-          <p>{props.runeRow.name}</p>
-          <ul>
-            {
-              Object.entries(runeMapping).map((elem) =>
-                <li
-                  key={elem[0]}> {/* Just to silence some warnings. */}
-                  {/* rune */}
-                  {elem[0]}:
-                  {/* latin */}
-                  {maybeSeparateSymbols(elem[1])}
-                </li>)
-            }
-          </ul>
+          {/* Funny keys keyboard */}
+          <Keyboard />
+
+          {/* Hints modal and button */}
+          <div id="ActiveExerciseHelpContainer">
+
+            {/* Modal */}
+            <div
+              id="ActiveExerciseHelpModal"
+              ref={helpModalRef}
+              hidden={true}
+              data-testid="ActiveExerciseHelpModal">
+              <div>
+                <p>{props.runeRow.name}</p>
+                <ul>
+                  {
+                    Object.entries(runeMapping).map((elem) =>
+                      <li
+                        key={elem[0]}> {/* Just to silence some warnings. */}
+                        {/* rune */}
+                        {elem[0]}:
+                        {/* latin */}
+                        {maybeSeparateSymbols(elem[1])}
+                      </li>)
+                  }
+                </ul>
+              </div>
+            </div>
+
+            {/* Help button */}
+            <button
+              id="ActiveExerciseToggleHelpButton"
+              onClick={toggleHelpModal}
+              title={"Show or hide a popup with hints - assumed " +
+              "transliterations of runic symbols to latin alphabet."}
+              >?</button>
+          </div>
         </div>
       </div>
-
-      {/* Help button */}
-      <button
-        id="ActiveExerciseToggleHelpButton"
-        onClick={toggleHelpModal}
-        title={"Show or hide a popup with hints - assumed " +
-        "transliterations of runic symbols to latin alphabet."}
-        >?</button>
-      </div>
-
-      {/* Funny keys keyboard */}
-      <Keyboard />
-
     </div>
   )
 }

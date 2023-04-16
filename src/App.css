@@ -31,10 +31,6 @@ hr {
   margin: auto;
 }
 
-.Floating {
-  
-}
-
 .ActiveTransliterationExercise {
   display: flex;
   flex-direction: column;
@@ -110,20 +106,47 @@ hr {
   color: grey;
 }
 
-#ActiveExerciseHelpContainer {
-  align-self: flex-end;
-  flex-direction: column;
-  align-items: flex-end;
-  display: flex;
-  position: fixed;
+#ActiveExerciseFloaties {
   bottom: 0;
+  height: fit-content;
+  width: 80%;
+  position: fixed;
   z-index: 1;
-  gap: 10px;
   margin: 20px;
 }
 
-#ActiveExerciseFunnyKeysKeyboard {
+#ActiveExerciseFloatiesGrid {
+  justify-content: stretch;
+  align-items: end;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
 
+#ActiveExerciseHelpContainer {
+  grid-column-start: 3;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-self: end;
+}
+
+#ActiveExerciseFunnyKeysKeyboard {
+  grid-column-start: 2;
+  justify-self: center;
+}
+
+.VirtualKeyboardKeyButton {
+  background-image: url(../public/virtual_keyboard_key.svg);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  font-size: 1em;
+  color: #f0f0f0;
+  text-align: start;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 #ActiveExerciseToggleHelpButton {
@@ -140,6 +163,7 @@ hr {
   border-radius: 15px;
   display: block;
   padding: 10px;
+  width: fit-content;
 }
 
 #ActiveExerciseHelpModal:hover {
