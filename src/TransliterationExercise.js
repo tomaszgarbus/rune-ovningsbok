@@ -323,7 +323,7 @@ function TransliterationExercise(props) {
                 <p id="ActiveExerciseHelpModalRuneRowName">
                   {props.runeRow.name}
                 </p>
-                <table>
+                <table id="HelpModalTable">
                   <tr>
                     {
                       Object.entries(runeMapping).map((elem) =>

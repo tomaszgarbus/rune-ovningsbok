@@ -203,6 +203,8 @@ hr {
   padding: 10px;
   width: fit-content;
   box-shadow: 5px 5px 5px;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 #ActiveExerciseHelpModalRuneRowName {
@@ -365,4 +367,13 @@ hr {
 
 #WelcomeHeader {
   font-family: 'Aboreto';
+}
+
+table {
+  border:none;
+  border-collapse: collapse;
+}
+
+table td:nth-child(2n) {
+  background-color: #ffffff55;
 }
