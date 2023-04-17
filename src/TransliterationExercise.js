@@ -188,7 +188,8 @@ function TransliterationExercise(props) {
         <button
           onClick={props.backToExerciseListFn}
           className="BackToListButton"
-          data-testid="BackToListButton">
+          data-testid="BackToListButton"
+          title="Back to exercises list">
           &#10094;
         </button>
         <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
