@@ -40,3 +40,14 @@ Here's how you can help grow the app:
 
 ## Stack
 * ReactJS
+* Node.js
+
+### Getting started with the repo
+
+1. Clone the repository: `git clone https://github.com/tomaszgarbus/rune-ovningsbok`
+1. `cd` into `rune-ovningsbok`
+1. Install Node dependencies: `npm install`
+1. You're good to go! Run `npm start` to run the app locally.
+
+### Deployment to GH pages
+Deployment to GH pages was set up by following [this guide](https://github.com/gitname/react-gh-pages). It suffices to run `npm run deploy` from the main directory of the repo.
