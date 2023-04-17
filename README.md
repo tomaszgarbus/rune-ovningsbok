@@ -21,7 +21,3 @@ After successful transliteration, a short explanation of the meaning of the mess
 Before releasing this app, I still want to improve the experience and build up a bigger database of exercises. Ideally, I'd also like to gather some early feedback from someone who is better versed in Scandinavian writing systems.
 
 Feel free to file an [Issue](https://github.com/tomaszgarbus/rune-ovningsbok/issues) for any feature I should add.
-
-## Credits
-
-This project uses [Junicode font](https://junicode.sourceforge.io).
