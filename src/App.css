@@ -16,9 +16,14 @@
   src: local('AlegreyaSansSC'), url(./fonts/AlegreyaSansSC-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Finlandica';
+  src: local('Finlandica'), url(./fonts/Finlandica-VariableFont_wght.ttf) format('truetype');
+}
+
 .App {
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Finlandica', sans-serif;
 }
 
 body {
@@ -250,14 +255,14 @@ hr {
 .ExerciseListItemTitle {
   margin: 0px;
   font-size: large;
-  font-weight: 700;
-  font-family: 'Forum';
+  font-weight: 500;
+  font-family: 'Finlandica';
 }
 
 .ExerciseListItemRowType {
   margin: 0px;
   font-size: small;
-  font-family: 'Alegreya-SC';
+  font-family: 'Finlandica';
 }
 
 .ExerciseThumbnail {
