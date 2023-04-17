@@ -5,7 +5,7 @@ function ActiveExerciseImage(props) {
     <>
       <div className="ActiveExerciseImgDiv">
         <img
-          src={"./assets/" + props.exercise.img}
+          src={"./images/" + props.exercise.img}
           className="ActiveExerciseImg"
           alt={props.exercise.title} />
       </div>

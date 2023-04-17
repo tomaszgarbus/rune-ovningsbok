@@ -4,10 +4,10 @@ function ExercisesListItem(props) {
   return (
     <div className="ExercisesListItem" onClick={props.open}>
       <img
-        src={"./assets/thumbnails/" + props.exercise.img}
+        src={"./images/thumbnails/" + props.exercise.img}
         onError={(e) => {
           e.target.onError = null;
-          e.target.src = "./assets/" + props.exercise.img;
+          e.target.src = "./images/" + props.exercise.img;
         }}
         className="ExerciseThumbnail"
         alt={props.exercise.title} />

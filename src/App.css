@@ -1,9 +1,14 @@
 /* Trick thanks to https://css-tricks.com/the-hidden-attribute-is-visibly-weak/ */
 [hidden] { display: none !important; }
 
+@font-face {
+  font-family: 'Junicode';
+  src: local('Junicode'), url(./fonts/Junicode.ttf) format('truetype');
+}
+
 .App {
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Junicode', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -169,6 +174,11 @@ hr {
   font-size: 2em;
   width: 50px;
   height: 50px;
+  box-shadow: 2px 2px 5px;
+}
+
+#ActiveExerciseToggleHelpButton:active {
+  box-shadow: inset 2px 2px 5px;
 }
 
 #ActiveExerciseHelpModal {
@@ -177,10 +187,13 @@ hr {
   display: block;
   padding: 10px;
   width: fit-content;
+  box-shadow: 5px 5px 5px;
 }
 
-#ActiveExerciseHelpModal:hover {
-  transition-duration: 1s;
+#ActiveExerciseHelpModalRuneRowName {
+  padding: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
 }
 
 .BackToListButton {

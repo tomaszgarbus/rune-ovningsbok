@@ -320,21 +320,27 @@ function TransliterationExercise(props) {
               ref={helpModalRef}
               hidden={true}
               data-testid="ActiveExerciseHelpModal">
-              <div>
-                <p>{props.runeRow.name}</p>
-                <ul>
-                  {
-                    Object.entries(runeMapping).map((elem) =>
-                      <li
-                        key={elem[0]}> {/* Just to silence some warnings. */}
-                        {/* rune */}
-                        {elem[0]}:
-                        {/* latin */}
-                        {maybeSeparateSymbols(elem[1])}
-                      </li>)
-                  }
-                </ul>
-              </div>
+                <p id="ActiveExerciseHelpModalRuneRowName">
+                  {props.runeRow.name}
+                </p>
+                <table>
+                  <tr>
+                    {
+                      Object.entries(runeMapping).map((elem) =>
+                        // rune
+                        <td>{elem[0]}</td>
+                      )
+                    }
+                  </tr>
+                  <tr>
+                    {
+                      Object.entries(runeMapping).map((elem) =>
+                        // latin
+                        <td>{maybeSeparateSymbols(elem[1])}</td>
+                      )
+                    }
+                  </tr>
+                </table>
             </div>
 
             {/* Help button */}
