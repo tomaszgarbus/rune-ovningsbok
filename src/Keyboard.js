@@ -1,5 +1,5 @@
 function Keyboard(props) {
-  const funnyLetters = ["ä", "æ", "å", "ą", "ø", "ö", "ó", "þ", "ð"];
+  const funnyLetters = ["ä", "æ", "å", "ą", "ø", "ö", "ó", "þ", "ð", "ʀ", "Ʀ"];
 
   function onButtonClick(letter) {
     // https://stackoverflow.com/questions/23892547/what-is-the-best-way-to-trigger-change-or-input-event-in-react-js-from-jquery-or
