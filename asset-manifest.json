@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rune-ovningsbok/static/css/main.314e35ee.css",
-    "main.js": "/rune-ovningsbok/static/js/main.63bb8187.js",
+    "main.css": "/rune-ovningsbok/static/css/main.295993bb.css",
+    "main.js": "/rune-ovningsbok/static/js/main.5145fa02.js",
     "static/js/787.042a5c5b.chunk.js": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js",
     "static/media/AlegreyaSansSC-Regular.ttf": "/rune-ovningsbok/static/media/AlegreyaSansSC-Regular.d215c944a70a1f2ba744.ttf",
     "static/media/Forum-Regular.ttf": "/rune-ovningsbok/static/media/Forum-Regular.6b8e836eb36b2f54db9a.ttf",
@@ -9,13 +9,13 @@
     "static/media/Aboreto-Regular.ttf": "/rune-ovningsbok/static/media/Aboreto-Regular.7c5655d7b7541650e02d.ttf",
     "static/media/virtual_keyboard_key.svg": "/rune-ovningsbok/static/media/virtual_keyboard_key.b47a9a803bd95273f917.svg",
     "index.html": "/rune-ovningsbok/index.html",
-    "static/media/help_button_background.svg": "/rune-ovningsbok/static/media/help_button_background.e1b3abf591d68b8959a2.svg",
-    "main.314e35ee.css.map": "/rune-ovningsbok/static/css/main.314e35ee.css.map",
-    "main.63bb8187.js.map": "/rune-ovningsbok/static/js/main.63bb8187.js.map",
+    "static/media/help_button_background.svg": "/rune-ovningsbok/static/media/help_button_background.2e108caec3c26b77a205.svg",
+    "main.295993bb.css.map": "/rune-ovningsbok/static/css/main.295993bb.css.map",
+    "main.5145fa02.js.map": "/rune-ovningsbok/static/js/main.5145fa02.js.map",
     "787.042a5c5b.chunk.js.map": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.314e35ee.css",
-    "static/js/main.63bb8187.js"
+    "static/css/main.295993bb.css",
+    "static/js/main.5145fa02.js"
   ]
 }
