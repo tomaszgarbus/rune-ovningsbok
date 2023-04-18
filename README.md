@@ -26,7 +26,7 @@ Contributions are very much welcome!
 
 Here's how you can help grow the app:
 
-### As a developer/designer:
+### As a developer/UI&UX designer:
 * Directly contribute code.
 * Improve test coverage.
 * Provide mocks or sketches for better UI.
