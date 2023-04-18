@@ -28,6 +28,7 @@ Here's how you can help grow the app:
 
 ### As a developer/designer:
 * Directly contribute code.
+* Improve test coverage.
 * Provide mocks or sketches for better UI.
 
 ### As a scholar/expert on runes:
@@ -47,6 +48,7 @@ Here's how you can help grow the app:
 1. Clone the repository: `git clone https://github.com/tomaszgarbus/rune-ovningsbok`
 1. `cd` into `rune-ovningsbok`
 1. Install Node dependencies: `npm install`
+1. To run the tests: `npm test -- --coverage --watchAll`
 1. You're good to go! Run `npm start` to run the app locally.
 
 ### Deployment to GH pages
