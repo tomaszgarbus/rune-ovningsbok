@@ -1,23 +1,55 @@
-# rune-ovningsbok
+# Rune transliteration practice app
 
 [![Node.js CI](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/node.js.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/node.js.yml)
 [![Generate thumbnails](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml)
 
-## Rune Övningsbok web app
-
-This web app is currently under development. It will be a simple service for
-practicing rune transliteration with some well-known runic findings.
+## [Try it out!](https://tomaszgarbus.github.io/rune-ovningsbok)
 
 ## About
-The user will pick one of the well-known runic inscriptions that they want to practice transliteration on:
-![img](screenshots/list_view.png)
 
-A single exercise consists of a short description of the object, a photo and a row of runes to transliterate:
-![img](screenshots/einang.png)
+Use real runic inscriptions, both historical and from popular culture, to practice transliteration.
 
-After successful transliteration, a short explanation of the meaning of the message is displayed:
-![img](screenshots/einang_solved.png)
+Ideally, I would like to become a collaborative effort where more enthusiasts would contribute and review each others' content.
 
-Before releasing this app, I still want to improve the experience and build up a bigger database of exercises. Ideally, I'd also like to gather some early feedback from someone who is better versed in Scandinavian writing systems.
+## Example
+Consider this screenshot of a popular cartoon Adventure Time, where Finn is pouring a liquid from a mug with a mysterious Anglo-Saxon inscription.
 
-Feel free to file an [Issue](https://github.com/tomaszgarbus/rune-ovningsbok/issues) for any feature I should add.
+Under each runic symbol, there is a field to transliterate it to a latin character. For convenience, you can navigate with arrows between symbols as well as automatically jump to the next one.
+
+At the bottom, there is a mini virtual keyboard with regional characters. In the bottom right, you can also open a cheat sheet.
+
+![img](screenshots/at_exercise.png)
+
+## Contributions
+
+Contributions are very much welcome!
+
+Here's how you can help grow the app:
+
+### As a developer/UI&UX designer:
+* Directly contribute code.
+* Improve test coverage.
+* Provide mocks or sketches for better UI.
+
+### As a scholar/expert on runes:
+* Review existing content.
+* Provide better sources.
+* Submit new content (feel free to submit in any format, I'll be happy to convert to jsons).
+
+### As a user:
+* File an [issue](https://github.com/tomaszgarbus/rune-ovningsbok/issues) with your suggestions.
+
+## Stack
+* ReactJS
+* Node.js
+
+### Getting started with the repo
+
+1. Clone the repository: `git clone https://github.com/tomaszgarbus/rune-ovningsbok`
+1. `cd` into `rune-ovningsbok`
+1. Install Node dependencies: `npm install`
+1. To run the tests: `npm test -- --coverage --watchAll`
+1. You're good to go! Run `npm start` to run the app locally.
+
+### Deployment to GH pages
+Deployment to GH pages was set up by following [this guide](https://github.com/gitname/react-gh-pages). It suffices to run `npm run deploy` from the main directory of the repo.

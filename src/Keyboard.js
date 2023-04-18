@@ -30,7 +30,11 @@ function Keyboard(props) {
                   onButtonClick(letter);
                 }
               }
-            >{letter}</button>;
+            >
+              <span className="VirtualKeyboardKeyButtonText">
+                {letter}
+              </span>
+            </button>;
           })
         }
     </div>

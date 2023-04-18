@@ -1,9 +1,29 @@
 /* Trick thanks to https://css-tricks.com/the-hidden-attribute-is-visibly-weak/ */
 [hidden] { display: none !important; }
 
+@font-face {
+  font-family: 'Aboreto';
+  src: local('Aboreto'), url(./fonts/Aboreto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Forum';
+  src: local('Forum'), url(./fonts/Forum-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Alegreya-SC';
+  src: local('AlegreyaSansSC'), url(./fonts/AlegreyaSansSC-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  src: local('Finlandica'), url(./fonts/Finlandica-VariableFont_wght.ttf) format('truetype');
+}
+
 .App {
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Finlandica', sans-serif;
 }
 
 body {
@@ -74,6 +94,7 @@ hr {
   flex-grow: 1;
   font-size: 2em;
   padding: 10px;
+  font-family: 'Aboreto';
 }
 
 .ActiveExerciseRuneInputsDiv {
@@ -119,7 +140,7 @@ hr {
   justify-content: stretch;
   align-items: end;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: 20% 60% 20%;
 }
 
 #ActiveExerciseHelpContainer {
@@ -138,15 +159,23 @@ hr {
 
 .VirtualKeyboardKeyButton {
   background-image: url(../public/virtual_keyboard_key.svg);
+  background-color: transparent;
   width: 50px;
   height: 50px;
-  line-height: 50px;
   border: none;
-  font-size: 1em;
   color: #f0f0f0;
-  text-align: start;
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.VirtualKeyboardKeyButtonText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-top: 4px;
+  font-size: 1.25em;
 }
 
 .VirtualKeyboardKeyButton:active {
@@ -160,6 +189,11 @@ hr {
   font-size: 2em;
   width: 50px;
   height: 50px;
+  box-shadow: 2px 2px 5px;
+}
+
+#ActiveExerciseToggleHelpButton:active {
+  box-shadow: inset 2px 2px 5px;
 }
 
 #ActiveExerciseHelpModal {
@@ -168,16 +202,20 @@ hr {
   display: block;
   padding: 10px;
   width: fit-content;
+  box-shadow: 5px 5px 5px;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
-#ActiveExerciseHelpModal:hover {
-  transition-duration: 1s;
+#ActiveExerciseHelpModalRuneRowName {
+  padding: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
 }
 
 .BackToListButton {
   border-radius: 15px;
   border: none;
-
   font-size: 2em;
   padding: 10px;
 }
@@ -219,13 +257,14 @@ hr {
 .ExerciseListItemTitle {
   margin: 0px;
   font-size: large;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Finlandica';
 }
 
 .ExerciseListItemRowType {
   margin: 0px;
   font-size: small;
-  font-weight: 500;
+  font-family: 'Finlandica';
 }
 
 .ExerciseThumbnail {
@@ -320,4 +359,21 @@ hr {
   border-radius: 25px;
   border-color: transparent;
   text-align: center;
+}
+
+#PickAnExerciseHeader {
+  font-family: 'Forum';
+}
+
+#WelcomeHeader {
+  font-family: 'Aboreto';
+}
+
+table {
+  border:none;
+  border-collapse: collapse;
+}
+
+table td:nth-child(2n) {
+  background-color: #ffffff55;
 }
