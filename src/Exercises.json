@@ -142,7 +142,7 @@
     "img_credit": "https://mis.historiska.se/mis/sok/resultat_bild.asp?lokalid=5696&rd_min=&typ=fotografi&searchmode=&qmode=&qtype=bild&sort=&orderby=upptagning.namn&sm=&pagesize=6&page",
     "title": "Burseryd baptismal font",
     "runes": "ᛆᚱᛁᚿᛒᛁᚮᚱᚿ:ᚵᚯᚱᛐᚼᛂ:ᛘᛁᚴ ᚢᛁᛐᚴᚢᚿᛑᛂᚱ:ᛔᚱᛂᛋᛐᛂᚱ:ᛋᚴᚱᛂᚠ:ᛘᛁᚴ ᚮᚴ:ᚼᛅᚱ:ᛋᚴᛆᛚ:ᚢᛘ:ᛋᛐᚢᚿᛑ:ᛋᛐᛆᚿᛐ",
-    "rowType": "younger_futhark_burseryd",
+    "rowType": "medieval_burseryd",
     "description": "This is 13th century baptismal font from Burseryd church in Småland, Sweden.",
     "explanationAfter": "Yes! Translation: \"Arinbjorn gjørði mik. Vitkunder prester skref mik. Ok hær skal um stund standa\" -- \"Arinbjorn made me. Vitkunder the priest wrote me. And here I shall stand for a while\". Interesting detail is the use of [th] instead of [þ] in the spelling of \"gørthi\". Note there are some bind runes, which in this exercise were split due to limitations of Unicode.",
     "sources": [

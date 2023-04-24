@@ -1,6 +1,10 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
-import { testExercise, testRuneRow } from './TestData.js'
+import { testExercise, testExerciseInheriting, testRuneRow, testRuneRowInheriting } from './TestData.js'
+
+afterEach(() => {
+  window.sessionStorage.clear();
+});
 
 test('renders test exercise in the list', () => {
   render(<App
@@ -69,4 +73,37 @@ test('reopen same exercise on page refresh', () => {
 
   // Once again check that the exercise is opened.
   expect(screen.getByText(testExercise.description)).toBeInTheDocument();
+});
+
+test('open exercise with alphabet using inherit mode', () => {
+  render(<App
+    exercises={[testExerciseInheriting]}
+    runeRows={{
+      'elder_test': testRuneRow,
+      'elder_test_inherit': testRuneRowInheriting
+    }}/>);
+  
+  // Open the exercise.
+  const exerciseTitle = screen.getByText(
+    'Test exercise with inherited alphabet');
+  expect(exerciseTitle).toBeInTheDocument();
+  fireEvent.click(exerciseTitle, {});
+  // Quick verification that the exercise is opened.
+  expect(screen.getByText(
+    testExerciseInheriting.description)).toBeInTheDocument();
+
+  // Check that the answer is accepted.
+  const inputFields = screen.getAllByTestId(/RuneInput.*/).sort(
+    (a, b) => a.getAttribute('data-testid') < b.getAttribute('data-testid'));
+  fireEvent.change(inputFields[0], { target: { value: 'd' } });
+  fireEvent.change(inputFields[1], { target: { value: 'e' } });
+  fireEvent.change(inputFields[2], { target: { value: 's' } });
+  fireEvent.change(inputFields[3], { target: { value: 'd' } });
+  let checkButton = screen.getByText('Check');
+  expect(checkButton).toBeEnabled();
+  fireEvent.click(checkButton, {});
+  expect(
+    screen.getByText(
+      testExerciseInheriting.explanationAfter
+      )).toBeInTheDocument();
 });

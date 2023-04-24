@@ -3,670 +3,99 @@
     "name": "Older Fuþark",
     "symbols": [
       {
-        "rune": "\u16a0",
+        "rune": "ᚠ",
         "latin": "f"
       },
       {
-        "rune": "\u16a2",
+        "rune": "ᚢ",
         "latin": "u"
       },
       {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
+        "rune": "ᚦ",
+        "latin": "þ"
       },
       {
-        "rune": "\u16a8",
+        "rune": "ᚨ",
         "latin": "a"
       },
       {
-        "rune": "\u16b1",
+        "rune": "ᚱ",
         "latin": "r"
       },
       {
-        "rune": "\u16b2",
+        "rune": "ᚲ",
         "latin": "k"
       },
       {
-        "rune": "\u16b7",
+        "rune": "ᚷ",
         "latin": "g"
       },
       {
-        "rune": "\u16b9",
+        "rune": "ᚹ",
         "latin": "w"
       },
       {
-        "rune": "\u16ba",
+        "rune": "ᚺ",
         "latin": "h"
       },
       {
-        "rune": "\u16be",
+        "rune": "ᚾ",
         "latin": "n"
       },
       {
-        "rune": "\u16c1",
+        "rune": "ᛁ",
         "latin": "i"
       },
       {
-        "rune": "\u16c3",
+        "rune": "ᛃ",
         "latin": "j"
       },
       {
-        "rune": "\u16c8",
+        "rune": "ᛈ",
         "latin": "p"
       },
       {
-        "rune": "\u16c7",
-        "latin": "\u00ef"
+        "rune": "ᛇ",
+        "latin": "ï"
       },
       {
-        "rune": "\u16c9",
+        "rune": "ᛉ",
         "latin": "z"
       },
       {
-        "rune": "\u16ca",
+        "rune": "ᛊ",
         "latin": "s"
       },
       {
-        "rune": "\u16cf",
+        "rune": "ᛏ",
         "latin": "t"
       },
       {
-        "rune": "\u16d2",
+        "rune": "ᛒ",
         "latin": "b"
       },
       {
-        "rune": "\u16d6",
+        "rune": "ᛖ",
         "latin": "e"
       },
       {
-        "rune": "\u16d7",
+        "rune": "ᛗ",
         "latin": "m"
       },
       {
-        "rune": "\u16da",
+        "rune": "ᛚ",
         "latin": "l"
       },
       {
-        "rune": "\u16dc",
-        "latin": "\u014b"
+        "rune": "ᛜ",
+        "latin": "ŋ"
       },
       {
-        "rune": "\u16de",
+        "rune": "ᛞ",
         "latin": "d"
       },
       {
-        "rune": "\u16df",
-        "latin": "o"
-      }
-    ]
-  },
-  "b149_younger_futhark": {
-    "name": "Long-branch Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cc",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16d0",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d3",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛉ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["y", "ʀ", "Ʀ"]
-      }
-    ]
-  },
-  "sö179_younger_futhark": {
-    "name": "Long-branch Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛉ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["ʀ", "Ʀ", "z"]
-      }
-    ]
-  },
-  "younger_futhark_jelling": {
-    "name": "Long-branch Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛘ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["ʀ", "Ʀ", "z"]
-      }
-    ]
-  },
-  "younger_futhark_ramsund": {
-    "name": "Long-branch Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ac",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛘ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["ʀ", "Ʀ", "z"]
-      }
-    ]
-  },
-  "younger_futhark_burseryd": {
-    "name": "Medieval Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ac",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16ae",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16af",
-        "latin": ["ø", "ö"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16b5",
-        "latin": "g"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c2",
-        "latin": "e"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d0",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d1",
-        "latin": "d"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d4",
-        "latin": "p"
-      },
-      {
-        "rune": "ᛘ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["ʀ", "Ʀ", "z"]
-      }
-    ]
-  },
-  "younger_futhark_maughold": {
-    "name": "Short-twig Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cc",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16d0",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d3",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛉ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["y", "z", "ʀ", "Ʀ"]
-      }
-    ]
-  },
-  "older_futhark_ågedal": {
-    "name": "Older Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16a8",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b2",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16b7",
-        "latin": "g"
-      },
-      {
-        "rune": "\u16b9",
-        "latin": "w"
-      },
-      {
-        "rune": "\u16ba",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c3",
-        "latin": "j"
-      },
-      {
-        "rune": "\u16c8",
-        "latin": "p"
-      },
-      {
-        "rune": "\u16c7",
-        "latin": "\u00ef"
-      },
-      {
-        "rune": "\u16c9",
-        "latin": "z"
-      },
-      {
-        "rune": "\u16ca",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d6",
-        "latin": "e"
-      },
-      {
-        "rune": "\u16d7",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "\u16dc",
-        "latin": "\u014b"
-      },
-      {
-        "rune": "\u16de",
-        "latin": "d"
-      },
-      {
-        "rune": "\u16df",
+        "rune": "ᛟ",
         "latin": "o"
       }
     ]
@@ -675,453 +104,50 @@
     "name": "Long-branch Younger Fuþark",
     "symbols": [
       {
-        "rune": "\u16a0",
+        "rune": "ᚠ",
         "latin": "f"
       },
       {
-        "rune": "\u16a2",
+        "rune": "ᚢ",
         "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ac",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": ["i", "e"]
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d8",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "\u16e6",
-        "latin": ["\u0280", "ʀ", "Ʀ", "z", "y"]
-      }
-    ]
-  },
-  "medieval": {
-    "name": "Medieval",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ae",
-        "latin": "o"
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16d0",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d1",
-        "latin": "d"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d8",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "\u16e6",
-        "latin": ["y", "ʀ", "Ʀ"]
-      },
-      {
-        "rune": "\u16af",
-        "latin": ["\u00f8", "ö"]
-      },
-      {
-        "rune": "\u16c5",
-        "latin": ["\u00e6", "a", "ä"]
-      },
-      {
-        "rune": "\u16b5",
-        "latin": "g"
-      },
-      {
-        "rune": "\u16c2",
-        "latin": "e"
-      }
-    ]
-  },
-  "younger_futhark_rök_side_a": {
-    "name": "Short-twig Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bd",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cc",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d3",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d9",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "\u16e7",
-        "latin": ["\u0280", "R"]
-      }
-    ]
-  },
-  "younger_futhark_eidi_runestick": {
-    "name": "Short-twig Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16bd",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c6",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16cc",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16d0",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d3",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛉ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["y", "z", "ʀ", "Ʀ"]
-      }
-    ]
-  },
-  "younger_futhark_sandavagur_stone": {
-    "name": "Short-twig Younger Fuþark",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16ad",
-        "latin": ["\u0105", "o"]
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b4",
-        "latin": "k"
-      },
-      {
-        "rune": "\u16b5",
-        "latin": "g"
-      },
-      {
-        "rune": "\u16bd",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bc",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16bf",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16c2",
-        "latin": "e"
-      },
-      {
-        "rune": "\u16c5",
-        "latin": ["a", "e"]
-      },
-      {
-        "rune": "\u16c6",
-        "latin": ["a", "e"]
-      },
-      {
-        "rune": "\u16cc",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cd",
-        "latin": ["c", "s"]
-      },
-      {
-        "rune": "\u16d0",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d1",
-        "latin": "d"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d3",
-        "latin": "b"
-      },
-      {
-        "rune": "ᛉ",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛦ",
-        "latin": ["y", "ʀ", "Ʀ"]
-      }
-    ]
-  },
-  "medieval_sørvági_box": {
-    "name": "Medieval runes",
-    "symbols": [
-      {
-        "rune": "ᛆ",
-        "latin": "a"
-      },
-      {
-        "rune": "ᛒ",
-        "latin": ["b", "p"]
-      },
-      {
-        "rune": "ᚴ",
-        "latin": ["c", "g", "k"]
       },
       {
         "rune": "ᚦ",
-        "latin": "d"
+        "latin": "þ"
       },
       {
-        "rune": "ᛂ",
-        "latin": "e"
+        "rune": "ᚬ",
+        "latin": [
+          "ą",
+          "o"
+        ]
       },
       {
-        "rune": "ᚠ",
-        "latin": "f"
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚴ",
+        "latin": "k"
       },
       {
         "rune": "ᚼ",
         "latin": "h"
       },
       {
-        "rune": "ᛁ",
-        "latin": "i"
-      },
-      {
-        "rune": "ᛚ",
-        "latin": "l"
-      },
-      {
-        "rune": "ᛘ",
-        "latin": "m"
-      },
-      {
-        "rune": "ᚿ",
+        "rune": "ᚾ",
         "latin": "n"
       },
       {
-        "rune": "ᚮ",
-        "latin": "o"
+        "rune": "ᛁ",
+        "latin": [
+          "i",
+          "e"
+        ]
       },
       {
-        "rune": "ᚱ",
-        "latin": "r"
+        "rune": "ᛅ",
+        "latin": "a"
       },
       {
         "rune": "ᛋ",
@@ -1132,161 +158,69 @@
         "latin": "t"
       },
       {
-        "rune": "ᚢ",
-        "latin": "u"
-      }
-    ]
-  },
-  "anglo_saxon": {
-    "name": "Anglo-Saxon",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16a9",
-        "latin": "o"
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b3",
-        "latin": "c"
-      },
-      {
-        "rune": "\u16b7",
-        "latin": "g"
-      },
-      {
-        "rune": "\u16b9",
-        "latin": "w"
-      },
-      {
-        "rune": "\u16bb",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16e1",
-        "latin": "j"
-      },
-      {
-        "rune": "\u16c7",
-        "latin": "\u00ef"
-      },
-      {
-        "rune": "\u16c8",
-        "latin": "p"
-      },
-      {
-        "rune": "\u16c9",
-        "latin": "x"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
+        "rune": "ᛒ",
         "latin": "b"
       },
       {
-        "rune": "\u16d6",
-        "latin": "e"
-      },
-      {
-        "rune": "\u16d7",
+        "rune": "ᛘ",
         "latin": "m"
       },
       {
-        "rune": "\u16da",
+        "rune": "ᛚ",
         "latin": "l"
       },
       {
-        "rune": "\u16dd",
-        "latin": "\u014b"
-      },
-      {
-        "rune": "\u16df",
-        "latin": "\u0153"
-      },
-      {
-        "rune": "\u16de",
-        "latin": "d"
-      },
-      {
-        "rune": "\u16aa",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16ab",
-        "latin": ["\u00e6", "a"]
-      },
-      {
-        "rune": "\u16a3",
-        "latin": "y"
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "ʀ",
+          "Ʀ",
+          "z",
+          "y"
+        ]
       }
     ]
   },
-  "anglo_saxon_at_pitcher": {
-    "name": "Anglo-Saxon",
+  "younger_futhark_short_twig": {
+    "name": "Short-twig Younger Fuþark",
     "symbols": [
       {
-        "rune": "\u16a0",
+        "rune": "ᚠ",
         "latin": "f"
       },
       {
-        "rune": "\u16a2",
+        "rune": "ᚢ",
         "latin": "u"
       },
       {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
+        "rune": "ᚦ",
+        "latin": "þ"
       },
       {
-        "rune": "\u16a9",
-        "latin": "o"
+        "rune": "ᚭ",
+        "latin": [
+          "ą",
+          "o"
+        ]
       },
       {
-        "rune": "\u16b1",
+        "rune": "ᚱ",
         "latin": "r"
       },
       {
-        "rune": "\u16b3",
-        "latin": "c"
+        "rune": "ᚴ",
+        "latin": "k"
       },
       {
-        "rune": "\u16b7",
+        "rune": "ᚵ",
         "latin": "g"
       },
       {
-        "rune": "\u16b9",
-        "latin": "w"
+        "rune": "ᚽ",
+        "latin": "h"
       },
       {
-        "rune": "\u16bb",
+        "rune": "ᚼ",
         "latin": "h"
       },
       {
@@ -1294,287 +228,563 @@
         "latin": "n"
       },
       {
-        "rune": "\u16c1",
+        "rune": "ᛁ",
         "latin": "i"
       },
       {
-        "rune": "\u16e1",
-        "latin": "j"
-      },
-      {
-        "rune": "\u16c7",
-        "latin": "\u00ef"
-      },
-      {
-        "rune": "\u16c8",
-        "latin": "p"
-      },
-      {
-        "rune": "\u16c9",
-        "latin": "x"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d6",
+        "rune": "ᛂ",
         "latin": "e"
       },
       {
-        "rune": "\u16d7",
-        "latin": "m"
+        "rune": "ᛅ",
+        "latin": [
+          "a",
+          "e"
+        ]
       },
       {
-        "rune": "\u16da",
-        "latin": "l"
+        "rune": "ᛆ",
+        "latin": [
+          "a",
+          "e"
+        ]
       },
       {
-        "rune": "\u16dd",
-        "latin": "\u014b"
+        "rune": "ᛌ",
+        "latin": "s"
       },
       {
-        "rune": "\u16df",
-        "latin": "\u0153"
+        "rune": "ᛍ",
+        "latin": [
+          "c",
+          "s"
+        ]
       },
       {
-        "rune": "\u16de",
+        "rune": "ᛐ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛑ",
         "latin": "d"
       },
       {
-        "rune": "\u16aa",
-        "latin": "a"
+        "rune": "ᛒ",
+        "latin": "b"
       },
       {
-        "rune": "\u16ab",
-        "latin": ["æ", "a"]
+        "rune": "ᛓ",
+        "latin": "b"
       },
       {
-        "rune": "\u16a3",
-        "latin": "y"
+        "rune": "ᛉ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "ʀ",
+          "Ʀ"
+        ]
       }
     ]
   },
-  "older_futhark_at_web_weirdos": {
-    "name": "Older Fuþark",
+  "anglo_saxon": {
+    "name": "Anglo-Saxon",
     "symbols": [
       {
-        "rune": "\u16a0",
+        "rune": "ᚠ",
         "latin": "f"
       },
       {
-        "rune": "\u16a2",
+        "rune": "ᚢ",
         "latin": "u"
       },
       {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
+        "rune": "ᚦ",
+        "latin": "þ"
       },
       {
-        "rune": "\u16a8",
-        "latin": "a"
+        "rune": "ᚩ",
+        "latin": "o"
       },
       {
-        "rune": "\u16b1",
+        "rune": "ᚱ",
         "latin": "r"
       },
       {
-        "rune": "\u16b2",
-        "latin": "k"
+        "rune": "ᚳ",
+        "latin": "c"
       },
       {
-        "rune": "\u16b7",
+        "rune": "ᚷ",
         "latin": "g"
       },
       {
-        "rune": "\u16b9",
+        "rune": "ᚹ",
         "latin": "w"
       },
       {
-        "rune": "\u16ba",
+        "rune": "ᚻ",
         "latin": "h"
       },
       {
-        "rune": "\u16be",
+        "rune": "ᚾ",
         "latin": "n"
       },
       {
-        "rune": "\u16c1",
+        "rune": "ᛁ",
         "latin": "i"
       },
       {
-        "rune": "\u16c3",
+        "rune": "ᛡ",
         "latin": "j"
       },
       {
-        "rune": "\u16c8",
+        "rune": "ᛇ",
+        "latin": "ï"
+      },
+      {
+        "rune": "ᛈ",
         "latin": "p"
       },
       {
-        "rune": "\u16c7",
-        "latin": "\u00ef"
-      },
-      {
-        "rune": "\u16c9",
-        "latin": "z"
+        "rune": "ᛉ",
+        "latin": "x"
       },
       {
         "rune": "ᛋ",
         "latin": "s"
       },
       {
-        "rune": "\u16cf",
+        "rune": "ᛏ",
         "latin": "t"
       },
       {
-        "rune": "\u16d2",
+        "rune": "ᛒ",
         "latin": "b"
       },
       {
-        "rune": "\u16d6",
+        "rune": "ᛖ",
         "latin": "e"
       },
       {
-        "rune": "\u16d7",
+        "rune": "ᛗ",
         "latin": "m"
       },
       {
-        "rune": "\u16da",
+        "rune": "ᛚ",
         "latin": "l"
       },
       {
-        "rune": "\u16dc",
-        "latin": "\u014b"
+        "rune": "ᛝ",
+        "latin": "ŋ"
       },
       {
-        "rune": "\u16de",
+        "rune": "ᛟ",
+        "latin": "œ"
+      },
+      {
+        "rune": "ᛞ",
         "latin": "d"
       },
       {
-        "rune": "\u16df",
+        "rune": "ᚪ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᚫ",
+        "latin": [
+          "æ",
+          "a"
+        ]
+      },
+      {
+        "rune": "ᚣ",
+        "latin": "y"
+      }
+    ]
+  },
+  "medieval": {
+    "name": "Medieval",
+    "symbols": [
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "þ"
+      },
+      {
+        "rune": "ᚮ",
         "latin": "o"
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚴ",
+        "latin": "k"
+      },
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚿ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛐ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛑ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛘ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "ʀ",
+          "Ʀ"
+        ]
+      },
+      {
+        "rune": "ᚯ",
+        "latin": [
+          "ø",
+          "ö"
+        ]
+      },
+      {
+        "rune": "ᛅ",
+        "latin": [
+          "æ",
+          "a",
+          "ä"
+        ]
+      },
+      {
+        "rune": "ᚵ",
+        "latin": "g"
+      },
+      {
+        "rune": "ᛂ",
+        "latin": "e"
+      }
+    ]
+  },
+  "b149_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      }
+    ]
+  },
+  "sö179_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚭ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_jelling": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚭ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_ramsund": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "medieval_burseryd": {
+    "name": "Medieval Younger Fuþark",
+    "inherit_from": "medieval",
+    "override_symbols": [
+      {
+        "rune": "ᚬ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᚮ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᚾ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛔ",
+        "latin": "p"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_maughold": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "z",
+          "ʀ",
+          "Ʀ"
+        ]
+      }
+    ]
+  },
+  "older_futhark_ågedal": {
+    "name": "Older Fuþark",
+    "inherit_from": "older_futhark",
+    "override_symbols": []
+  },
+  "younger_futhark_rök_side_a": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛙ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛧ",
+        "latin": [
+          "ʀ",
+          "R"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_eidi_runestick": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "z",
+          "ʀ",
+          "Ʀ"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_sandavagur_stone": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": []
+  },
+  "medieval_sørvági_box": {
+    "name": "Medieval runes",
+    "inherit_from": "medieval",
+    "override_symbols": [
+      {
+        "rune": "ᛒ",
+        "latin": [
+          "b",
+          "p"
+        ]
+      },
+      {
+        "rune": "ᚴ",
+        "latin": [
+          "c",
+          "g",
+          "k"
+        ]
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      }
+    ]
+  },
+  "anglo_saxon_at_pitcher": {
+    "name": "Anglo-Saxon",
+    "inherit_from": "anglo_saxon",
+    "override_symbols": [
+      {
+        "rune": "ᚿ",
+        "latin": "n"
+      }
+    ]
+  },
+  "older_futhark_at_web_weirdos": {
+    "name": "Older Fuþark",
+    "inherit_from": "older_futhark",
+    "override_symbols": [
+      {
+        "rune": "ᛋ",
+        "latin": "s"
       }
     ]
   },
   "anglo_saxon_at_morituri": {
     "name": "Anglo-Saxon",
-    "symbols": [
-      {
-        "rune": "\u16a0",
-        "latin": "f"
-      },
-      {
-        "rune": "\u16a2",
-        "latin": "u"
-      },
-      {
-        "rune": "\u16a6",
-        "latin": "\u00fe"
-      },
-      {
-        "rune": "\u16a9",
-        "latin": "o"
-      },
-      {
-        "rune": "\u16b1",
-        "latin": "r"
-      },
-      {
-        "rune": "\u16b3",
-        "latin": "c"
-      },
-      {
-        "rune": "\u16b7",
-        "latin": "g"
-      },
-      {
-        "rune": "\u16b9",
-        "latin": "w"
-      },
-      {
-        "rune": "\u16bb",
-        "latin": "h"
-      },
-      {
-        "rune": "\u16be",
-        "latin": "n"
-      },
-      {
-        "rune": "\u16c1",
-        "latin": "i"
-      },
-      {
-        "rune": "\u16e1",
-        "latin": "j"
-      },
-      {
-        "rune": "\u16c7",
-        "latin": "\u00ef"
-      },
-      {
-        "rune": "\u16c8",
-        "latin": "p"
-      },
-      {
-        "rune": "\u16c9",
-        "latin": "x"
-      },
-      {
-        "rune": "\u16cb",
-        "latin": "s"
-      },
-      {
-        "rune": "\u16cf",
-        "latin": "t"
-      },
-      {
-        "rune": "\u16d2",
-        "latin": "b"
-      },
-      {
-        "rune": "\u16d6",
-        "latin": "e"
-      },
-      {
-        "rune": "\u16d7",
-        "latin": "m"
-      },
-      {
-        "rune": "\u16da",
-        "latin": "l"
-      },
-      {
-        "rune": "\u16dd",
-        "latin": "\u014b"
-      },
-      {
-        "rune": "\u16df",
-        "latin": "\u0153"
-      },
-      {
-        "rune": "\u16de",
-        "latin": "d"
-      },
-      {
-        "rune": "\u16aa",
-        "latin": "a"
-      },
-      {
-        "rune": "\u16ab",
-        "latin": ["\u00e6", "a"]
-      },
-      {
-        "rune": "\u16a3",
-        "latin": "y"
-      }
-    ]
+    "inherit_from": "anglo_saxon",
+    "override_symbols": []
   }
 }

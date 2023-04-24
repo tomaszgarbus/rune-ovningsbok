@@ -2,6 +2,7 @@ import './App.css';
 import TransliterationExercise from './TransliterationExercise';
 import ListOfExercises from './ListOfExercises';
 import { useState } from 'react';
+import { ExpandRuneRowsToCanonical } from './Utils';
 
 function App(props) {
   // If this way of setting initial state should cause troubles,
@@ -19,6 +20,8 @@ function App(props) {
     setExercise(null);
   }
 
+  const runeRows = ExpandRuneRowsToCanonical(props.runeRows);
+
   return (
     <div className="App">
       {exercise === null ?
@@ -26,14 +29,14 @@ function App(props) {
           <ListOfExercises
             items={props.exercises}
             setExercise={setExerciseNotNull}
-            runeRows={props.runeRows}
+            runeRows={runeRows}
             />
         ) :
         (
           <TransliterationExercise
             backToExerciseListFn={clearExercise}
             exercise={exercise}
-            runeRow={props.runeRows[exercise.rowType]} />
+            runeRow={runeRows[exercise.rowType]} />
         )
       }
     </div>

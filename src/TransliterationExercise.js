@@ -295,7 +295,7 @@ function TransliterationExercise(props) {
                       {source}
                     </a>
                     :
-                    <text>{source}</text>
+                    <span>{source}</span>
                   } </li>
                 )
               )
@@ -324,22 +324,24 @@ function TransliterationExercise(props) {
                   {props.runeRow.name}
                 </p>
                 <table id="HelpModalTable">
-                  <tr>
-                    {
-                      Object.entries(runeMapping).map((elem) =>
-                        // rune
-                        <td>{elem[0]}</td>
-                      )
-                    }
-                  </tr>
-                  <tr>
-                    {
-                      Object.entries(runeMapping).map((elem) =>
-                        // latin
-                        <td>{maybeSeparateSymbols(elem[1])}</td>
-                      )
-                    }
-                  </tr>
+                  <tbody>
+                    <tr>
+                      {
+                        Object.entries(runeMapping).map((elem) =>
+                          // rune
+                          <td key={elem[0]}>{elem[0]}</td>
+                        )
+                      }
+                    </tr>
+                    <tr>
+                      {
+                        Object.entries(runeMapping).map((elem) =>
+                          // latin
+                          <td key={elem[0]}>{maybeSeparateSymbols(elem[1])}</td>
+                        )
+                      }
+                    </tr>
+                  </tbody>
                 </table>
             </div>
 
