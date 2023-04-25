@@ -140,3 +140,7 @@ The entry point of the app is the "List of exercises" view. It shows all availab
 Thumbnails are created automatically by [img-resize workflow](https://github.com/tomaszgarbus/rune-ovningsbok/blob/main/.github/workflows/img-resize.yml).
 
 Thus, a good practice after adding a new exercise, is to wait for the `img-resize` workflow to complete, download the generated artefact (a zip file with images) and extract it to `public/images/thumbnails`.
+
+## Mobile support.
+
+Currently, mobile is not supported. You can open the app on your phone, but the layout was designed for PC. Rewriting in React Native is in plans.
