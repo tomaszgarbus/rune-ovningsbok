@@ -4,7 +4,7 @@ function ExercisesListItem(props) {
   return (
     <div className="ExercisesListItem" onClick={props.open}>
       <img
-        src={"./images/thumbnails/" + props.exercise.img}
+        src={require("./images/thumbnails/" + props.exercise.img)}
         onError={(e) => {
           e.target.onError = null;
           e.target.src = "./images/" + props.exercise.img;
