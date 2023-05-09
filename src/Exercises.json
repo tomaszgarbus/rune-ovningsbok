@@ -318,5 +318,21 @@
     "sources": [
       "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Morituri_Te_Salutamus\""
     ]
+  },
+  {
+    "id": "oseberg_oar",
+    "img": "oseberg_oar.jpg",
+    "img_credit": "Kulturhistorisk museum, UiO",
+    "title": "Oseberg inscription N 137",
+    "description": "An inscription on a wooden runic stave found at the famous Oseberg ship in Tønsberg, Vestfold, Norway. Dated to the viking period, more specifically early 9th century. Einar Selvik can often be seen wearing a shirt with this inscription - for example, at the Midgardsblot festival, which takes place close to this historic place.",
+    "runes": "ᛚᛁᛐᛁᛚᚢᛁᛌᛙ",
+    "rowType": "younger_futhark_oseberg_oar",
+    "explanationAfter": "That's a correct transliteration. Interpretation of this inscription is unclear, with some theories saying: \"little man knows\" or \"you idiot\".",
+    "sources": [
+      "http://kulturarvsdata.se/uu/srdb/c35baf97-5e9c-47f3-b761-61255179eee3",
+      "https://www.vikingtidsmuseet.no/de-nye-utstillingene/key-objects-16.12..2021.pdf",
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
+      "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
+    ]
   }
 ]

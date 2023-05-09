@@ -786,5 +786,15 @@
     "name": "Anglo-Saxon",
     "inherit_from": "anglo_saxon",
     "override_symbols": []
+  },
+  "younger_futhark_oseberg_oar": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛙ",
+        "latin": "m"
+      }
+    ]
   }
 }
