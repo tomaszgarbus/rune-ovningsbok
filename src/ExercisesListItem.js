@@ -4,6 +4,7 @@ function ExercisesListItem(props) {
   return (
     <div className="ExercisesListItem" onClick={props.open}>
       <img
+        // TODO: This "onError" logic doesn't handle require() failures.
         src={require("./images/thumbnails/" + props.exercise.img)}
         onError={(e) => {
           e.target.onError = null;

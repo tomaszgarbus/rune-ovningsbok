@@ -6,6 +6,7 @@ const testExercise = {
   title: "Test exercise",
   runes: ["ᛏ", "ᛖ", "ᛊ", "ᛏ"],
   rowType: "test_futhark",
+  img: "test.png"
 }
 
 const testRuneRow = {

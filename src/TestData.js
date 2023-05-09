@@ -53,6 +53,7 @@ const testExercise = {
   explanationAfter: "Good answer!",
   description: "Transliterate the word test.",
   sources: ["A cousin told me", "Rune shaman"],
+  img: "test.png"
 }
 
 const testExerciseWithSeparators = {
@@ -61,7 +62,8 @@ const testExerciseWithSeparators = {
   runes: ["ᛏ", ":", "ᛖ", ":", "ᛊ", ":", "ᛏ"],
   description: "Transliterate the word test with separators.",
   rowType: "elder_test",
-  explanationAfter: "Ye!"
+  explanationAfter: "Ye!",
+  img: "test.png"
 }
 
 const testExerciseWithMultipleCorrectAnswers = {
@@ -71,6 +73,7 @@ const testExerciseWithMultipleCorrectAnswers = {
   rowType: "elder_test_multi",
   explanationAfter: "Good answer! One of many good answers!",
   description: "Transliterate the word test.",
+  img: "test.png"
 }
 
 const testExerciseInheriting = {
@@ -80,6 +83,7 @@ const testExerciseInheriting = {
   rowType: "elder_test_inherit",
   explanationAfter: "Good answer!",
   description: "Transliterate the word test.",
+  img: "test.png"
 }
 
 const testRuneRows = {

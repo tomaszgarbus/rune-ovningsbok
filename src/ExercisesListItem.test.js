@@ -6,6 +6,7 @@ test('rune row name is displayed', () => {
     exercise={{
       title: "Test inscription on a test stone",
       runes: [],
+      img: "test.png"
     }}
     runeRow={{
       name: "Test Futhark"
