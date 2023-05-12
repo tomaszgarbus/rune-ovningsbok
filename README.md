@@ -143,4 +143,6 @@ Thus, a good practice after adding a new exercise, is to wait for the `img-resiz
 
 ## Mobile support.
 
-Currently, mobile is not supported. You can open the app on your phone, but the layout was designed for PC. Rewriting in React Native is in plans.
+Currently, mobile is not supported. You can open the app on your phone (in the browser), but the layout was designed for PC.
+
+Rewriting the app in React Native for Android is in progress.

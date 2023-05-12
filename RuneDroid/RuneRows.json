@@ -1,0 +1,800 @@
+{
+  "older_futhark": {
+    "name": "Older Fuþark",
+    "symbols": [
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "þ"
+      },
+      {
+        "rune": "ᚨ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚲ",
+        "latin": "k"
+      },
+      {
+        "rune": "ᚷ",
+        "latin": "g"
+      },
+      {
+        "rune": "ᚹ",
+        "latin": "w"
+      },
+      {
+        "rune": "ᚺ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚾ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛃ",
+        "latin": "j"
+      },
+      {
+        "rune": "ᛈ",
+        "latin": "p"
+      },
+      {
+        "rune": "ᛇ",
+        "latin": "ï"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "z"
+      },
+      {
+        "rune": "ᛊ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛖ",
+        "latin": "e"
+      },
+      {
+        "rune": "ᛗ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛜ",
+        "latin": "ŋ"
+      },
+      {
+        "rune": "ᛞ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛟ",
+        "latin": "o"
+      }
+    ]
+  },
+  "younger_futhark_long_branch": {
+    "name": "Long-branch Younger Fuþark",
+    "symbols": [
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "þ"
+      },
+      {
+        "rune": "ᚬ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚴ",
+        "latin": "k"
+      },
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚾ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": [
+          "i",
+          "e"
+        ]
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛘ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "ʀ",
+          "Ʀ",
+          "z",
+          "y"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_short_twig": {
+    "name": "Short-twig Younger Fuþark",
+    "symbols": [
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "þ"
+      },
+      {
+        "rune": "ᚭ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚴ",
+        "latin": "k"
+      },
+      {
+        "rune": "ᚵ",
+        "latin": "g"
+      },
+      {
+        "rune": "ᚽ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚿ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛂ",
+        "latin": "e"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": [
+          "a",
+          "e"
+        ]
+      },
+      {
+        "rune": "ᛆ",
+        "latin": [
+          "a",
+          "e"
+        ]
+      },
+      {
+        "rune": "ᛌ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛍ",
+        "latin": [
+          "c",
+          "s"
+        ]
+      },
+      {
+        "rune": "ᛐ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛑ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛓ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "ʀ",
+          "Ʀ"
+        ]
+      }
+    ]
+  },
+  "anglo_saxon": {
+    "name": "Anglo-Saxon",
+    "symbols": [
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "þ"
+      },
+      {
+        "rune": "ᚩ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚳ",
+        "latin": "c"
+      },
+      {
+        "rune": "ᚷ",
+        "latin": "g"
+      },
+      {
+        "rune": "ᚹ",
+        "latin": "w"
+      },
+      {
+        "rune": "ᚻ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚾ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛡ",
+        "latin": "j"
+      },
+      {
+        "rune": "ᛇ",
+        "latin": "ï"
+      },
+      {
+        "rune": "ᛈ",
+        "latin": "p"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "x"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛖ",
+        "latin": "e"
+      },
+      {
+        "rune": "ᛗ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛝ",
+        "latin": "ŋ"
+      },
+      {
+        "rune": "ᛟ",
+        "latin": "œ"
+      },
+      {
+        "rune": "ᛞ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᚪ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᚫ",
+        "latin": [
+          "æ",
+          "a"
+        ]
+      },
+      {
+        "rune": "ᚣ",
+        "latin": "y"
+      }
+    ]
+  },
+  "medieval": {
+    "name": "Medieval",
+    "symbols": [
+      {
+        "rune": "ᚠ",
+        "latin": "f"
+      },
+      {
+        "rune": "ᚢ",
+        "latin": "u"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "þ"
+      },
+      {
+        "rune": "ᚮ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᚱ",
+        "latin": "r"
+      },
+      {
+        "rune": "ᚴ",
+        "latin": "k"
+      },
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᚿ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      },
+      {
+        "rune": "ᛐ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛑ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛘ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "ʀ",
+          "Ʀ"
+        ]
+      },
+      {
+        "rune": "ᚯ",
+        "latin": [
+          "ø",
+          "ö"
+        ]
+      },
+      {
+        "rune": "ᛅ",
+        "latin": [
+          "æ",
+          "a",
+          "ä"
+        ]
+      },
+      {
+        "rune": "ᚵ",
+        "latin": "g"
+      },
+      {
+        "rune": "ᛂ",
+        "latin": "e"
+      }
+    ]
+  },
+  "b149_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      }
+    ]
+  },
+  "sö179_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚭ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛉ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_jelling": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚭ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_ramsund": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᛁ",
+        "latin": "i"
+      },
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "medieval_burseryd": {
+    "name": "Medieval Younger Fuþark",
+    "inherit_from": "medieval",
+    "override_symbols": [
+      {
+        "rune": "ᚬ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᚮ",
+        "latin": [
+          "ą",
+          "o"
+        ]
+      },
+      {
+        "rune": "ᚾ",
+        "latin": "n"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛔ",
+        "latin": "p"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "ʀ",
+          "Ʀ",
+          "z"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_maughold": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "z",
+          "ʀ",
+          "Ʀ"
+        ]
+      }
+    ]
+  },
+  "older_futhark_ågedal": {
+    "name": "Older Fuþark",
+    "inherit_from": "older_futhark",
+    "override_symbols": []
+  },
+  "younger_futhark_rök_side_a": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛙ",
+        "latin": "m"
+      },
+      {
+        "rune": "ᛧ",
+        "latin": [
+          "ʀ",
+          "R"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_eidi_runestick": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛆ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᛦ",
+        "latin": [
+          "y",
+          "z",
+          "ʀ",
+          "Ʀ"
+        ]
+      }
+    ]
+  },
+  "younger_futhark_sandavagur_stone": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": []
+  },
+  "medieval_sørvági_box": {
+    "name": "Medieval runes",
+    "inherit_from": "medieval",
+    "override_symbols": [
+      {
+        "rune": "ᛒ",
+        "latin": [
+          "b",
+          "p"
+        ]
+      },
+      {
+        "rune": "ᚴ",
+        "latin": [
+          "c",
+          "g",
+          "k"
+        ]
+      },
+      {
+        "rune": "ᚦ",
+        "latin": "d"
+      },
+      {
+        "rune": "ᛏ",
+        "latin": "t"
+      }
+    ]
+  },
+  "anglo_saxon_at_pitcher": {
+    "name": "Anglo-Saxon",
+    "inherit_from": "anglo_saxon",
+    "override_symbols": [
+      {
+        "rune": "ᚿ",
+        "latin": "n"
+      }
+    ]
+  },
+  "older_futhark_at_web_weirdos": {
+    "name": "Older Fuþark",
+    "inherit_from": "older_futhark",
+    "override_symbols": [
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      }
+    ]
+  },
+  "anglo_saxon_at_morituri": {
+    "name": "Anglo-Saxon",
+    "inherit_from": "anglo_saxon",
+    "override_symbols": []
+  },
+  "younger_futhark_oseberg_oar": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛙ",
+        "latin": "m"
+      }
+    ]
+  }
+}
