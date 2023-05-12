@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/rune-ovningsbok/static/css/main.314e35ee.css",
-    "main.js": "/rune-ovningsbok/static/js/main.80161d42.js",
+    "main.js": "/rune-ovningsbok/static/js/main.607b2c92.js",
     "static/js/787.042a5c5b.chunk.js": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js",
     "static/media/sigurdristingen.jpg": "/rune-ovningsbok/static/media/sigurdristingen.09e7140aca6d5e80398b.jpg",
     "static/media/kjølevikstone.jpg": "/rune-ovningsbok/static/media/kjølevikstone.e4b667e91f00e410bd71.jpg",
+    "static/media/oseberg_oar.jpg": "/rune-ovningsbok/static/media/oseberg_oar.56ec6bf641597ded7b07.jpg",
     "static/media/sandavagur_stone.jpg": "/rune-ovningsbok/static/media/sandavagur_stone.2ed2370b7a75ccf7224f.jpg",
     "static/media/bergenstick_gohome.jpg": "/rune-ovningsbok/static/media/bergenstick_gohome.b63c7d8f4beccda31d2c.jpg",
     "static/media/gripsholmstone.jpg": "/rune-ovningsbok/static/media/gripsholmstone.b228ea41c13149b043e5.jpg",
@@ -35,11 +36,11 @@
     "index.html": "/rune-ovningsbok/index.html",
     "static/media/help_button_background.svg": "/rune-ovningsbok/static/media/help_button_background.e1b3abf591d68b8959a2.svg",
     "main.314e35ee.css.map": "/rune-ovningsbok/static/css/main.314e35ee.css.map",
-    "main.80161d42.js.map": "/rune-ovningsbok/static/js/main.80161d42.js.map",
+    "main.607b2c92.js.map": "/rune-ovningsbok/static/js/main.607b2c92.js.map",
     "787.042a5c5b.chunk.js.map": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.314e35ee.css",
-    "static/js/main.80161d42.js"
+    "static/js/main.607b2c92.js"
   ]
 }
