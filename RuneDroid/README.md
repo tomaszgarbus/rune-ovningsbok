@@ -9,3 +9,8 @@ After the environment has been set up, run the following to start a debugging se
 ```
 npx react-native run-android
 ```
+
+To see the logs, run:
+```
+npx react-native log-android
+```
