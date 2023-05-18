@@ -1,15 +1,16 @@
 import {
-    FlatList,
     ImageBackground,
     ScrollView,
     StyleSheet,
     Text,
     View
 } from 'react-native';
-import Exercises from './Exercises.json';
+import ExerciseType from './Types';
+import UntypedExercises from './Exercises.json';
 import StaticImages from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
 
+const Exercises: Array<ExerciseType> = UntypedExercises;
 
 // TODO: display thumbnails instead, for better performance?
 function ListOfExercises(): JSX.Element {
@@ -18,7 +19,7 @@ function ListOfExercises(): JSX.Element {
       <Text>text</Text>
       {
         Exercises.map(
-          exercise => (
+          (exercise: ExerciseType) => (
             StaticImages[exercise.id] ?
             <View
             key={exercise.id}
