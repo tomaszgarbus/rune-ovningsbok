@@ -14,9 +14,6 @@ function App(): JSX.Element {
       <StatusBar
         barStyle='dark-content'
       />
-      <Text>
-      test
-      </Text>
       {
         exercise === null ?
         <ListOfExercises

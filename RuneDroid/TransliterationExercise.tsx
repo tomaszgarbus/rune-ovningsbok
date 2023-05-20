@@ -1,14 +1,19 @@
 import {
   Button,
+  Image,
+  ImageBackground,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View
 } from 'react-native';
 import ExerciseType from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
+import StaticImages from './StaticImages.autogen';
+import commonStyles from './CommonStyles';
+import { useState } from 'react';
+
 
 
 type TransliterationExercisePropsType = {
@@ -17,28 +22,63 @@ type TransliterationExercisePropsType = {
 };
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
+  const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
+
   useBackHandler(() => {
     props.goBack();
     return true;
   })
 
-  return <ScrollView>
+  return <ScrollView
+      style={[commonStyles.background, styles.scrollView]}>
+    <Button title="back to the list" onPress={props.goBack} />
     <SafeAreaView
       style={styles.titleBar}>
-      <Button title="back to the list" onPress={props.goBack} />
-      <Text>
+      <Text
+        style={styles.title}>
         {props.exercise.title}
       </Text>
     </SafeAreaView>
+    <Image
+      source={StaticImages[props.exercise.id]}
+      style={[
+        styles.image,
+        {
+          aspectRatio: imageAspectRatio
+        }
+      ]}
+      onLoad={
+        ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
+        } />
   </ScrollView>
 }
 
 const styles = StyleSheet.create({
   titleBar: {
     width: "100%",
-    height: 50,
-    backgroundColor: "red",
   },
+  title: {
+    alignSelf: "center",
+    fontSize: 20,
+  },
+  image: {
+    alignSelf: "center",
+    margin: "auto",
+    resizeMode: "contain",
+    width: "80%",
+    height: undefined,
+    borderRadius: 20,
+    // shadowColor: "black",
+    // shadowOffset: {
+    //   height: 5,
+    //   width: 5
+    // },
+    // shadowRadius: 10,
+  },
+  scrollView: {
+    display: "flex",
+    flexDirection: "column",
+  }
 });
 
 export default TransliterationExercise;
