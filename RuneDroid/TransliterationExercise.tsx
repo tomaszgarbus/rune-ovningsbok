@@ -12,7 +12,9 @@ import ExerciseType from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import StaticImages from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
+import { RuneInput, RuneSeparator } from './RuneInput';
+import { IsSeparator } from './Utils';
 
 
 
@@ -29,6 +31,14 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     return true;
   })
 
+  function mapRunes(fn: (rune: string, index: number) => any) {
+    if (typeof(props.exercise.runes) === 'string') {
+      return props.exercise.runes.split('').map(fn);
+    } else {
+      return props.exercise.runes.map(fn);
+    }
+  }
+
   return <ScrollView
       style={[commonStyles.background, styles.scrollView]}>
     <Button title="back to the list" onPress={props.goBack} />
@@ -39,6 +49,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         {props.exercise.title}
       </Text>
     </SafeAreaView>
+    <Text>
+      {props.exercise.description}
+    </Text>
     <Image
       source={StaticImages[props.exercise.id]}
       style={[
@@ -50,6 +63,21 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       onLoad={
         ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
         } />
+    <ScrollView
+      horizontal={true}>
+      {
+        mapRunes(
+          (rune, index) => IsSeparator(rune) ?
+          <RuneSeparator character={rune} key={index} />
+          :
+          <RuneInput
+            index={index}
+            key={index}
+            rune={rune}
+          />
+        )
+      }
+    </ScrollView>
   </ScrollView>
 }
 
