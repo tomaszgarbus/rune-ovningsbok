@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 
 type RuneInputPropsType = {
   index: number,
@@ -6,11 +6,13 @@ type RuneInputPropsType = {
 };
 
 function RuneInput(props : RuneInputPropsType) {
-  console.log(props);
   return <View>
     <Text>
       {props.rune}
     </Text>
+    <TextInput style={styles.textInput}>
+
+    </TextInput>
   </View>
 }
 
@@ -19,13 +21,19 @@ type RuneSeparatorPropsType = {
 };
 
 function RuneSeparator(props: RuneSeparatorPropsType) {
-  console.log(props);
   return <View>
     <Text>
       {props.character}
     </Text>
   </View>
 }
+
+const styles = StyleSheet.create({
+  textInput: {
+    borderColor: 'black',
+    borderWidth: 1,
+  }
+});
 
 export {
   RuneInput,
