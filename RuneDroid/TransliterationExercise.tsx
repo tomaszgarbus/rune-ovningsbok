@@ -33,7 +33,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     return true;
   })
 
-  function mapRunes(fn: (rune: string, index: number) => any) {
+  function mapRunes<Type>(fn: (rune: string, index: number) => Type): Array<Type> {
     if (typeof(props.exercise.runes) === 'string') {
       return props.exercise.runes.split('').map(fn);
     } else {
@@ -72,7 +72,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     <ScrollView
       horizontal={true}>
       {
-        mapRunes(
+        mapRunes<ReactElement>(
           (rune, index) => IsSeparator(rune) ?
           <RuneSeparator character={rune} key={index} />
           :
