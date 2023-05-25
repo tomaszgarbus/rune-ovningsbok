@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   ScrollView,
   StyleSheet,
+  Switch,
   Text,
   View
 } from 'react-native';
@@ -25,6 +26,7 @@ type TransliterationExercisePropsType = {
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
+  const [hintsEnabled, setHintsEnabled] = useState<boolean>(false);
 
   useBackHandler(() => {
     props.goBack();
@@ -37,6 +39,10 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     } else {
       return props.exercise.runes.map(fn);
     }
+  }
+
+  function toggleHints() {
+    setHintsEnabled(!hintsEnabled);
   }
 
   return <ScrollView
@@ -74,10 +80,18 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
             index={index}
             key={index}
             rune={rune}
+            onChange={() => {}}  // TODO
           />
         )
       }
     </ScrollView>
+    {/* Hints toggler */}
+    <View>
+      <Text>Show hints after wrong answers?</Text>
+      <Switch
+        value={hintsEnabled}
+        onValueChange={toggleHints} />
+    </View>
   </ScrollView>
 }
 

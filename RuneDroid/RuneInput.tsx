@@ -2,7 +2,8 @@ import { StyleSheet, Text, TextInput, View } from "react-native";
 
 type RuneInputPropsType = {
   index: number,
-  rune: string
+  rune: string,
+  onChange: (nativeEvent: any) => void,
 };
 
 function RuneInput(props : RuneInputPropsType) {
@@ -10,8 +11,10 @@ function RuneInput(props : RuneInputPropsType) {
     <Text>
       {props.rune}
     </Text>
-    <TextInput style={styles.textInput}>
-
+    <TextInput
+      style={styles.textInput}
+      maxLength={1}
+      onChange={props.onChange}>
     </TextInput>
   </View>
 }
