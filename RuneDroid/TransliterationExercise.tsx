@@ -47,7 +47,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
 
   return <ScrollView
       style={[commonStyles.background, styles.scrollView]}>
+    {/* Back button */}
     <Button title="back to the list" onPress={props.goBack} />
+    {/* Title */}
     <SafeAreaView
       style={styles.titleBar}>
       <Text
@@ -55,9 +57,11 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         {props.exercise.title}
       </Text>
     </SafeAreaView>
+    {/* Description */}
     <Text>
       {props.exercise.description}
     </Text>
+    {/* Image */}
     <Image
       source={StaticImages[props.exercise.id]}
       style={[
@@ -69,6 +73,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       onLoad={
         ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
         } />
+    {/* Rune inputs and separators */}
     <ScrollView
       horizontal={true}>
       {
