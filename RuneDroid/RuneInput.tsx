@@ -8,7 +8,8 @@ type RuneInputPropsType = {
 
 function RuneInput(props : RuneInputPropsType) {
   return <View style={styles.runeInputBox}>
-    <Text>
+    <Text
+      style={styles.originalSymbol}>
       {props.rune}
     </Text>
     <TextInput
@@ -24,16 +25,33 @@ type RuneSeparatorPropsType = {
 };
 
 function RuneSeparator(props: RuneSeparatorPropsType) {
-  return <View>
-    <Text>
+  return <View
+    style={styles.runeSeparatorBox}>
+    <Text
+      style={styles.runeSeparatorSymbol}>
       {props.character}
     </Text>
   </View>
 }
 
 const styles = StyleSheet.create({
+  runeSeparatorSymbol: {
+    fontSize: 20,
+    alignSelf: "center",
+  },
+  runeSeparatorBox: {
+    display: "flex",
+    flexDirection: "row",
+    height: "100%",
+  },
+  originalSymbol: {
+    fontSize: 15,
+    marginBottom: 5,
+    marginTop: 0,
+    textAlign: 'center',
+  },
   runeInputBox: {
-    backgroundColor: "#ffd0d0",
+    backgroundColor: '#ffd0d0',
     margin: 1,
     marginTop: 10,
     borderRadius: 15,
