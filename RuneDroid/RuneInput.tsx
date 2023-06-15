@@ -1,9 +1,15 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { NativeSyntheticEvent, StyleSheet, Text, TextInput, TextInputChangeEventData, View } from "react-native";
+
+type Feedback = {
+  correct: boolean,
+  symbol: string | Array<string>,
+};
 
 type RuneInputPropsType = {
   index: number,
+  feedback: Feedback | undefined,
   rune: string,
-  onChange: (nativeEvent: any) => void,
+  onChangeText: (text: string) => void,
 };
 
 function RuneInput(props : RuneInputPropsType) {
@@ -15,8 +21,13 @@ function RuneInput(props : RuneInputPropsType) {
     <TextInput
       style={styles.textInput}
       maxLength={1}
-      onChange={props.onChange}>
+      onChangeText={props.onChangeText}>
     </TextInput>
+    {props.feedback && 
+      <Text>
+        props.feedback.symbol
+      </Text>
+    }
   </View>
 }
 

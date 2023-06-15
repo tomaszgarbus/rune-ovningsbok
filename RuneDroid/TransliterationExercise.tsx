@@ -9,24 +9,32 @@ import {
   Text,
   View
 } from 'react-native';
-import ExerciseType from './Types';
+import { ExerciseType, RuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import StaticImages from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
 import { ReactElement, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
-import { IsSeparator } from './Utils';
-
-
+import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
   goBack: (() => void),
+  runeRow: RuneRowType,
+};
+
+type ExerciseState = {
+  inputs: Array<string>,
 };
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
   const [hintsEnabled, setHintsEnabled] = useState<boolean>(false);
+  // TODO: Consider caching solved exercises on disk?
+  const [userAnswer, setUserAnswer] = useState<ExerciseState>({
+    inputs: mapRunes<string>(_ => ""),
+  });
+  const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
 
   useBackHandler(() => {
     props.goBack();
@@ -43,6 +51,25 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
 
   function toggleHints() {
     setHintsEnabled(!hintsEnabled);
+  }
+
+  function shouldShowHintForField(index: number) {
+    const inputs: Array<string> = userAnswer.inputs;
+    // TODO: handle the case when all inputs are provided
+    if (hintsEnabled && inputs[index].length > 0) {
+      return true;
+    }
+    return false;
+  }
+
+  function updateUserAnswer(index: number, char: string) {
+    const inputs: Array<string> = userAnswer.inputs;
+    inputs[index] = char;
+    setUserAnswer({
+      ...userAnswer,
+      inputs: inputs
+    });
+    // TODO: move to the next input
   }
 
   return <ScrollView
@@ -85,14 +112,20 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
             index={index}
             key={index}
             rune={rune}
-            onChange={() => {}}  // TODO
+            onChangeText={(text) => updateUserAnswer(index, text)}
+            feedback={shouldShowHintForField(index) ? 
+              {
+                "symbol": runeMapping[rune],
+                "correct": true // TODO
+              } : undefined
+            }
           />
         )
       }
     </ScrollView>
     {/* Hints toggler */}
     <View>
-      <Text>Show hints after wrong answers?</Text>
+      <Text>Show hints immediately after wrong answers?</Text>
       <Switch
         value={hintsEnabled}
         onValueChange={toggleHints} />

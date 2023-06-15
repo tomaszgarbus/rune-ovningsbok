@@ -9,4 +9,14 @@ type ExerciseType = {
   explanationAfter: string
 };
 
-export default ExerciseType;
+type RuneRowSymbolPair = {
+  rune: string,
+  latin: string | Array<string>,
+};
+
+type RuneRowType = {
+  name: string,
+  symbols: Array<RuneRowSymbolPair>,
+};
+
+export type { ExerciseType, RuneRowSymbolPair, RuneRowType };
