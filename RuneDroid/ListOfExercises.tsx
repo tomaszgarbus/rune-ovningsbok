@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import ExerciseType from './Types';
+import { ExerciseType}  from './Types';
 import UntypedExercises from './Exercises.json';
 import StaticImages from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
@@ -14,6 +14,7 @@ import LinearGradient from 'react-native-linear-gradient';
 const Exercises: Array<ExerciseType> = UntypedExercises;
 
 type ListOfExercisesPropsType = {
+  exercises: Array<ExerciseType>,
   setExercise: ((exercise: ExerciseType) => void),
 };
 

@@ -13,7 +13,20 @@ type RuneInputPropsType = {
 };
 
 function RuneInput(props : RuneInputPropsType) {
-  return <View style={styles.runeInputBox}>
+  function GetStylesFromFeedback() {
+    // TODO: type the aray correctly
+    var result: Array<any> = [styles.runeInputBox];
+    if (props.feedback) {
+      if (props.feedback.correct) {
+        result.push(styles.correct);
+      } else {
+        result.push(styles.incorrect);
+      }
+    }
+    return result;
+  }
+
+  return <View style={GetStylesFromFeedback()}>
     <Text
       style={styles.originalSymbol}>
       {props.rune}
@@ -23,9 +36,9 @@ function RuneInput(props : RuneInputPropsType) {
       maxLength={1}
       onChangeText={props.onChangeText}>
     </TextInput>
-    {props.feedback && 
+    {props.feedback && !props.feedback.correct && 
       <Text>
-        props.feedback.symbol
+        {props.feedback.symbol}
       </Text>
     }
   </View>
@@ -70,6 +83,12 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingLeft: 5,
     paddingRight: 5,
+  },
+  correct: {
+    backgroundColor: "lightgreen",
+  },
+  incorrect: {
+    backgroundColor: "lightcoral",
   },
   textInput: {
     backgroundColor: 'white',

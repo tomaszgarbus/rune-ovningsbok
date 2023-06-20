@@ -9,7 +9,7 @@ import {
   Text,
   View
 } from 'react-native';
-import { ExerciseType, RuneRowType}  from './Types';
+import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import StaticImages from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
@@ -20,7 +20,7 @@ import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
   goBack: (() => void),
-  runeRow: RuneRowType,
+  runeRow: CanonicalRuneRowType,
 };
 
 type ExerciseState = {

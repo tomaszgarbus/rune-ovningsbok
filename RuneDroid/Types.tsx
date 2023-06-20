@@ -6,7 +6,8 @@ type ExerciseType = {
   runes: string | Array<string>,
   sources?: Array<String>
   description: string,
-  explanationAfter: string
+  explanationAfter: string,
+  rowType: string,
 };
 
 type RuneRowSymbolPair = {
@@ -14,9 +15,25 @@ type RuneRowSymbolPair = {
   latin: string | Array<string>,
 };
 
-type RuneRowType = {
+type CompressedRuneRowType = {
   name: string,
-  symbols: Array<RuneRowSymbolPair>,
+  inherit_from: string,
+  override_symbols: Array<RuneRowSymbolPair>,
 };
 
-export type { ExerciseType, RuneRowSymbolPair, RuneRowType };
+type CanonicalRuneRowType = {
+  name: string,
+  symbols: Array<RuneRowSymbolPair>,
+}
+
+type CompressedRuneRowMap = { [name: string]: (CompressedRuneRowType | CanonicalRuneRowType) };
+type CanonicalRuneRowMap = { [name: string]: CanonicalRuneRowType };
+
+export type {
+  ExerciseType,
+  RuneRowSymbolPair,
+  CompressedRuneRowType,
+  CanonicalRuneRowType,
+  CompressedRuneRowMap,
+  CanonicalRuneRowMap
+};
