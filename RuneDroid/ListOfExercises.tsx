@@ -7,11 +7,8 @@ import {
     View
 } from 'react-native';
 import { ExerciseType}  from './Types';
-import UntypedExercises from './Exercises.json';
 import StaticImages from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
-
-const Exercises: Array<ExerciseType> = UntypedExercises;
 
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
@@ -24,7 +21,7 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
     <ScrollView>
       <Text>text</Text>
       {
-        Exercises.map(
+        props.exercises.map(
           (exercise: ExerciseType) => (
             StaticImages[exercise.id] ?
             <TouchableOpacity

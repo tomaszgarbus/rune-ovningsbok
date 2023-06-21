@@ -72,6 +72,14 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     // TODO: move to the next input
   }
 
+  function isInputCorrect(input: string, groundTruth: string | Array<String>) {
+    if (typeof(groundTruth) === 'string') {
+      return input.toLowerCase() === groundTruth;
+    } else {
+      return groundTruth.includes(input.toLowerCase());
+    }
+  }
+
   return <ScrollView
       style={[commonStyles.background, styles.scrollView]}>
     {/* Back button */}
@@ -116,7 +124,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
             feedback={shouldShowHintForField(index) ? 
               {
                 "symbol": runeMapping[rune],
-                "correct": true // TODO
+                "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
               } : undefined
             }
           />

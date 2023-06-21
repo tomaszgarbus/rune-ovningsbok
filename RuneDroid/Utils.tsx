@@ -19,7 +19,7 @@ function RuneRowToMapping(rune_row: CanonicalRuneRowType) : RuneMappingType {
 
 // Expands rune rows to canonical form (no inheritance).
 function ExpandRuneRowsToCanonical(compressed: CompressedRuneRowMap) : CanonicalRuneRowMap {
-  function InheritFrom(baseRuneRow: CanonicalRuneRowType, childRuneRow: CompressedRuneRowType) {
+  function inheritFrom(baseRuneRow: CanonicalRuneRowType, childRuneRow: CompressedRuneRowType) {
     var result: CanonicalRuneRowType = {
       name: '',
       symbols: []
@@ -46,7 +46,7 @@ function ExpandRuneRowsToCanonical(compressed: CompressedRuneRowMap) : Canonical
       result[k] = v as CanonicalRuneRowType;
     } else {
       // `v` must inherit symbols from another alphabet.
-      result[k] = InheritFrom(
+      result[k] = inheritFrom(
         compressed[(v as CompressedRuneRowType).inherit_from] as CanonicalRuneRowType,
         v as CompressedRuneRowType
         );
