@@ -37,7 +37,7 @@ function RuneInput(props : RuneInputPropsType) {
       onChangeText={props.onChangeText}>
     </TextInput>
     {props.feedback && !props.feedback.correct && 
-      <Text>
+      <Text style={styles.feedbackSymbol}>
         {props.feedback.symbol}
       </Text>
     }
@@ -99,6 +99,10 @@ const styles = StyleSheet.create({
     height: 30,
     padding: 0,
     textAlign: 'center',
+  },
+  feedbackSymbol: {
+    fontSize: 15,
+    textAlign: 'center'
   }
 });
 
