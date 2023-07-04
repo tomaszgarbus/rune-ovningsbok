@@ -4,7 +4,7 @@ type ExerciseType = {
   img: string,
   img_credit?: string,
   runes: string | Array<string>,
-  sources?: Array<String>
+  sources?: Array<string>
   description: string,
   explanationAfter: string,
   rowType: string,

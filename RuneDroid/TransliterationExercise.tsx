@@ -1,5 +1,6 @@
 import {
   Button,
+  FlatList,
   Image,
   ImageBackground,
   SafeAreaView,
@@ -181,6 +182,19 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         hints to read an explanation of the runic message.
       </Text>
     }
+
+    {/* Sources */}
+    <ScrollView horizontal={true}>
+      <View>
+        <Text>Sources:</Text>
+      {
+        props.exercise.sources && 
+        props.exercise.sources.map((src: string) =>
+          <Text> • {src}</Text>
+        )
+      }
+      </View>
+    </ScrollView>
 
     {/* Hints toggler */}
     <View>
