@@ -17,6 +17,7 @@ import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
+import Toggle from 'react-native-toggle-element/lib/toggle';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -52,10 +53,6 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     } else {
       return props.exercise.runes.map(fn);
     }
-  }
-
-  function toggleHints() {
-    setHintsEnabled(!hintsEnabled);
   }
 
   function shouldShowHintForField(index: number) {
@@ -183,6 +180,18 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       </Text>
     }
 
+    {/* Hints toggler */}
+    <View>
+      <Text>Show hints immediately after wrong answers?</Text>
+      <Toggle
+        value={hintsEnabled}
+        leftTitle={"No"}
+        rightTitle={"Yes"}
+        trackBar={styles.toggler}
+        thumbButton={styles.togglerButton}
+        onPress={(val: boolean | undefined) => setHintsEnabled(val || false)} />
+    </View>
+
     {/* Sources */}
     <ScrollView horizontal={true}>
       <View>
@@ -196,13 +205,6 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       </View>
     </ScrollView>
 
-    {/* Hints toggler */}
-    <View>
-      <Text>Show hints immediately after wrong answers?</Text>
-      <Switch
-        value={hintsEnabled}
-        onValueChange={toggleHints} />
-    </View>
   </ScrollView>
 }
 
@@ -236,6 +238,20 @@ const styles = StyleSheet.create({
   topLevelScrollView: {
     display: "flex",
     flexDirection: "column",
+  },
+  toggler: {
+    activeBackgroundColor: "#9ee3fb",
+    inActiveBackgroundColor: "#3c4145",
+    borderActiveColor: "#86c3d7",
+    borderInActiveColor: "#1c1c1c",
+    borderWidth: 5,
+    height: 30,
+    width: 80,
+  },
+  togglerButton: {
+    width: 45,
+    height: 45,
+    radius: 22,
   }
 });
 
