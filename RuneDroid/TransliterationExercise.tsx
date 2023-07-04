@@ -190,7 +190,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       {
         props.exercise.sources && 
         props.exercise.sources.map((src: string) =>
-          <Text> • {src}</Text>
+          <Text key={src}> • {src}</Text>
         )
       }
       </View>
