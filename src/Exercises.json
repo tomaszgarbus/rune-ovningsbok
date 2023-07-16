@@ -1,24 +1,5 @@
 [
   {
-    "id": "drif",
-    "img": "drif.jpg",
-    "title": "Name of the last Heilung album",
-    "runes": ["ᛞ", "ᚱ", "ᛁ", "ᚠ"],
-    "rowType": "older_futhark",
-    "sources": ["https://chaoszine.net/heilung-reveals-details-for-upcoming-album-drif/"],
-    "description": "The name of the album is written with Elder Futhark on the cover. On the LP edition, each of the 4 sides is labelled with one of the runes.",
-    "explanationAfter": "Good answer! The band themselves explain that Drif means \"gathering\"."
-  },
-  {
-    "id": "figa",
-    "img": "figa.jpg",
-    "title": "Name of my dog",
-    "runes": ["ᚠ", "ᛁ", "ᚷ", "ᚨ"],
-    "rowType": "older_futhark",
-    "description": "Solve the exercise to learn what my dog is called.",
-    "explanationAfter": "Correct. She's a good girl!"
-  },
-  {
     "id": "einang",
     "img": "einangstone.jpg",
     "title": "Einangsteinen (Einang stone)",
@@ -344,6 +325,8 @@
     "runes": "ᚴᚬᚱᛁ x ᛅᚢᚴ x ᛁᛅᚴᛚᛏᚱ x ᛅᚢ … ᛁᚱ ᛫ ᛒᛁᛁᚱᚾ ᛫ ᚠᛅᚦᚢᚱ ᛫ ᛋᛁᚾ ᛫ ᚴᚢᚦ ᛫ …",
     "rowType": "younger_futhark_dalängen",
     "explanationAfter": "The remaining part of the stone can be read as \"Kore and Ingjald and ... after Björn, their father. God ...\". It seems to follow a standard formula, helping us fill the gaps: \"Kore and Ingjald raised this stone after Björn, their father. God help...\".",
-    "sources": "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
+    "sources": [
+      "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
+    ]
   }
 ]
