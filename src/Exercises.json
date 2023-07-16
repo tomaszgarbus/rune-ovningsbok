@@ -52,8 +52,21 @@
     ]
   },
   {
-    "id": "gripsholmstone",
-    "img": "gripsholmstone.jpg",
+    "id": "gripsholmstone178",
+    "img": "gripsholmstone178.jpg",
+    "img_credit": "Own photo, taken in Mariefred, Sweden",
+    "title": "Gripsholm stone Sö 178",
+    "rowType": "sö178_younger_futhark",
+    "description": "A rune stone with inscription from the 11th century.",
+    "runes": "ᚼᛅᚴᚢᛚᚠᚱ x ᛅᚢᚴ x ᛅᚢᛚᚠᚱ x ᚦᛅᛁᛦ x ᛚᛅᛏᚢ x ᚱᛅᛁᛁᛋᛅ x ᛋᛏᛅᛁᚾᛅ x ᛒᛅᚦᛅ x ᛅᛏ x ᛒᚱᚬᚦᚢᚱ x ᛋᛁᚾ x ᚴᛁᛏᛁᛚᛘᚢᛏ x ᛅᚢᚴ x ᛒᚱᚬ x ᛁᚠᛏᛁᛦ x ᛋᚬᛘᚢ x ᛘᚬᚦᚢᚱ x ᛋᛁᚾᛅ x ᛁᛅ x ᛁᚱᚢᚾᛁ x ᛁᛁᚢᚴ x ᛒᚱᚬᚦᛁᛦ x ᚼᛁᚾᛅᛦ",
+    "explanationAfter": "Correct. The stone reads: \"Hälgulv (?) and Oulv they had this stone raised in memory of their brother, Kätilmund, and built a bridge in memory of Soma, their mother. But Brune (?), her brother, carved (the runes)\"",
+    "sources": [
+      "A plaque next to the stone, provided by Riksantikvarieambetet"
+    ]
+  },
+  {
+    "id": "gripsholmstone179",
+    "img": "gripsholmstone179.jpg",
     "img_credit": "https://de.m.wikipedia.org/wiki/Datei:Right_Gripsholm_Runestone.jpg",
     "title": "Gripsholm stone Sö 179",
     "rowType": "sö179_younger_futhark",
