@@ -557,6 +557,11 @@
       }
     ]
   },
+  "sö178_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": []
+  },
   "younger_futhark_jelling": {
     "name": "Long-branch Younger Fuþark",
     "inherit_from": "younger_futhark_long_branch",
@@ -796,5 +801,10 @@
         "latin": "m"
       }
     ]
+  },
+  "younger_futhark_dalängen": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": []
   }
 }
