@@ -334,5 +334,16 @@
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
       "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
     ]
+  },
+  {
+    "id": "lidingö_dalängen",
+    "img": "lidingö_dalängen.jpg",
+    "title": "Dalängen runsten i Lidingö",
+    "img_credit": "Own photo, taken in Lidingö.",
+    "description": "A runestone standing by the road in Lidingö. One of the two present on the island. It was found in 19th century and it has been standing in its current place since 1943.",
+    "runes": "ᚴᚬᚱᛁ x ᛅᚢᚴ x ᛁᛅᚴᛚᛏᚱ x ᛅᚢ … ᛁᚱ ᛫ ᛒᛁᛁᚱᚾ ᛫ ᚠᛅᚦᚢᚱ ᛫ ᛋᛁᚾ ᛫ ᚴᚢᚦ ᛫ …",
+    "rowType": "younger_futhark_dalängen",
+    "explanationAfter": "The remaining part of the stone can be read as \"Kore and Ingjald and ... after Björn, their father. God ...\". It seems to follow a standard formula, helping us fill the gaps: \"Kore and Ingjald raised this stone after Björn, their father. God help...\".",
+    "sources": "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
   }
 ]
