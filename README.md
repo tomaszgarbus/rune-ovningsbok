@@ -2,6 +2,7 @@
 
 [![Node.js CI](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/node.js.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/node.js.yml)
 [![Generate thumbnails](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml)
+[![Diff Web and Native resources](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/diff-web-and-native.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/diff-web-and-native.yml)
 
 ## [Try it out!](https://tomaszgarbus.github.io/rune-ovningsbok)
 
