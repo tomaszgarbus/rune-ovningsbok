@@ -345,12 +345,25 @@
   {
     "id": "bjärby_runsten",
     "img": "bjärby_runsten.jpg",
-    "title": "Bjärby stone 36 Ö",
+    "title": "Bjärby stone Ö 36",
     "img_credit": "Own photo, taken in Bjärby",
     "description": "A beautiful 11-century runestone standing by the side of the road in Bjärby in eastern Öland, Sweden.",
     "runes": "ᚼᛁᚱᚠᚱᛁ…ᚢᛁᚦᛒᛁᚢᚱᚾxᛚᛁᛏᚢxᚱᛅᛁᛋᛅxᛋᛏᛅᛁᚾxᚦᛁᚾᛅxᛅᛏxᚠᛅ…ᛏᚢᛚᚠxᚠᛅᚦᚢᚱxᛋᛁᚾ ᛋᛁᚴᛚᛅᚢᚴxᛚᛁᛏxᚱᛅᛁᛋᛅxᛅᚠᛏᛁᛦxᛒᚢᚾᛏᛅxᛋᛁᚾxᚼᛅᚾxᛁᛅᚱxᚴᚱᛅᚠᛁᚾᛁxᚴᛁᚱᛁᚴᛁᚢ",
     "rowType": "younger_futhark_bjärby",
     "explanationAfter": "Correct! Swedish translation provided onsite: \"Härfrid och Vidbjörn läto resa stenen efter Fastul sin fader. Siglaug lät resa efter sin make. Han är begraven i kyrkan.\" In English that would be: \"Harfrid and Vidbjorn had this stone raised after their father Fastul. Siglaug had it raised after her husband. He is buried in the church.\"",
+    "sources": [
+      "Info table next to the stone, provided by Riksantikvarieambetet."
+    ]
+  },
+  {
+    "id": "gårdby_runsten",
+    "img": "gårdby_runsten.jpg",
+    "title": "Gårdby stone Ö 28",
+    "img_credit": "Own photo, taken in Gårdby",
+    "description": "A well preserved 11-th century runestone, now standing in the cemetery in Gårdby, Öland.",
+    "runes": "ᚼᛅᚱᚦᚱᚢᚦᚱxᚱᛅᛁᛋᛁxᛋᛏᛅᛁᚾxᚦᛁᚾᛋᛅxᛅᚠᛏᛁᛦxᛋᚢᚾxᛋᛁᚾxᛋᛘᛁᚦxᛏᚱᛅᚴxᚴᚢᚦᛅᚾxᚼᛅᛚᚠᛒᚢᚱᛁᚾxᛒᚱᚢᚦᛁᚱxᛋᛁᚾxᛋᛁᛏᚱxᚴᛅᚱ ᚦᚢᛘ ᛒᚱᛅᚾᛏᚱ ᚱᛁᛏᛁ ᛁᛅᚴᚦᚢ ᚱᛅᚦᛅ ᚴᚼᚾ",
+    "rowType": "younger_futhark_gårdby",
+    "explanationAfter": "Yes! Swedish translation: \"Härtrud reste denna sten efter sin son Smed, en god man. Halvboren, hans broder, sitter i Gårdarike. Brand högg rätt, därför kan du tyda.\" English: \"Hartrud raised this stone after his son Smed, a good man. Halvbor, his brother, is in Gaardarike. Brand (sword?) cut straight, therefore you can decipher\". Gårdarike is an old Norse name for the Swedish viking areas in current Russia.",
     "sources": [
       "Info table next to the stone, provided by Riksantikvarieambetet."
     ]

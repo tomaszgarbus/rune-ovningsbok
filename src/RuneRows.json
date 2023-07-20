@@ -113,7 +113,10 @@
       },
       {
         "rune": "ᚦ",
-        "latin": "þ"
+        "latin": [
+          "þ",
+          "d"
+        ]
       },
       {
         "rune": "ᚬ",
@@ -173,10 +176,8 @@
         "rune": "ᛦ",
         "latin": [
           "ʀ",
-          "ʀ",
-          "Ʀ",
-          "z",
-          "y"
+          "R",
+          "Ʀ"
         ]
       }
     ]
@@ -808,6 +809,11 @@
     "override_symbols": []
   },
   "younger_futhark_bjärby": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": []
+  },
+  "younger_futhark_gårdby": {
     "name": "Long-branch Younger Fuþark",
     "inherit_from": "younger_futhark_long_branch",
     "override_symbols": []
