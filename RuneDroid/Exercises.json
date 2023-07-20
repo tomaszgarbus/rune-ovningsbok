@@ -1,24 +1,5 @@
 [
   {
-    "id": "drif",
-    "img": "drif.jpg",
-    "title": "Name of the last Heilung album",
-    "runes": ["ᛞ", "ᚱ", "ᛁ", "ᚠ"],
-    "rowType": "older_futhark",
-    "sources": ["https://chaoszine.net/heilung-reveals-details-for-upcoming-album-drif/"],
-    "description": "The name of the album is written with Elder Futhark on the cover. On the LP edition, each of the 4 sides is labelled with one of the runes.",
-    "explanationAfter": "Good answer! The band themselves explain that Drif means \"gathering\"."
-  },
-  {
-    "id": "figa",
-    "img": "figa.jpg",
-    "title": "Name of my dog",
-    "runes": ["ᚠ", "ᛁ", "ᚷ", "ᚨ"],
-    "rowType": "older_futhark",
-    "description": "Solve the exercise to learn what my dog is called.",
-    "explanationAfter": "Correct. She's a good girl!"
-  },
-  {
     "id": "einang",
     "img": "einangstone.jpg",
     "title": "Einangsteinen (Einang stone)",
@@ -71,8 +52,21 @@
     ]
   },
   {
-    "id": "gripsholmstone",
-    "img": "gripsholmstone.jpg",
+    "id": "gripsholmstone178",
+    "img": "gripsholmstone178.jpg",
+    "img_credit": "Own photo, taken in Mariefred, Sweden",
+    "title": "Gripsholm stone Sö 178",
+    "rowType": "sö178_younger_futhark",
+    "description": "A rune stone with inscription from the 11th century.",
+    "runes": "ᚼᛅᚴᚢᛚᚠᚱ x ᛅᚢᚴ x ᛅᚢᛚᚠᚱ x ᚦᛅᛁᛦ x ᛚᛅᛏᚢ x ᚱᛅᛁᛁᛋᛅ x ᛋᛏᛅᛁᚾᛅ x ᛒᛅᚦᛅ x ᛅᛏ x ᛒᚱᚬᚦᚢᚱ x ᛋᛁᚾ x ᚴᛁᛏᛁᛚᛘᚢᛏ x ᛅᚢᚴ x ᛒᚱᚬ x ᛁᚠᛏᛁᛦ x ᛋᚬᛘᚢ x ᛘᚬᚦᚢᚱ x ᛋᛁᚾᛅ x ᛁᛅ x ᛁᚱᚢᚾᛁ x ᛁᛁᚢᚴ x ᛒᚱᚬᚦᛁᛦ x ᚼᛁᚾᛅᛦ",
+    "explanationAfter": "Correct. The stone reads: \"Hälgulv (?) and Oulv they had this stone raised in memory of their brother, Kätilmund, and built a bridge in memory of Soma, their mother. But Brune (?), her brother, carved (the runes)\"",
+    "sources": [
+      "A plaque next to the stone, provided by Riksantikvarieambetet"
+    ]
+  },
+  {
+    "id": "gripsholmstone179",
+    "img": "gripsholmstone179.jpg",
     "img_credit": "https://de.m.wikipedia.org/wiki/Datei:Right_Gripsholm_Runestone.jpg",
     "title": "Gripsholm stone Sö 179",
     "rowType": "sö179_younger_futhark",
@@ -333,6 +327,19 @@
       "https://www.vikingtidsmuseet.no/de-nye-utstillingene/key-objects-16.12..2021.pdf",
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
       "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
+    ]
+  },
+  {
+    "id": "lidingö_dalängen",
+    "img": "lidingö_dalängen.jpg",
+    "title": "Dalängen runsten i Lidingö",
+    "img_credit": "Own photo, taken in Lidingö.",
+    "description": "A runestone standing by the road in Lidingö. One of the two present on the island. It was found in 19th century and it has been standing in its current place since 1943.",
+    "runes": "ᚴᚬᚱᛁ x ᛅᚢᚴ x ᛁᛅᚴᛚᛏᚱ x ᛅᚢ … ᛁᚱ ᛫ ᛒᛁᛁᚱᚾ ᛫ ᚠᛅᚦᚢᚱ ᛫ ᛋᛁᚾ ᛫ ᚴᚢᚦ ᛫ …",
+    "rowType": "younger_futhark_dalängen",
+    "explanationAfter": "The remaining part of the stone can be read as \"Kore and Ingjald and ... after Björn, their father. God ...\". It seems to follow a standard formula, helping us fill the gaps: \"Kore and Ingjald raised this stone after Björn, their father. God help...\".",
+    "sources": [
+      "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
     ]
   }
 ]

@@ -1,0 +1,19 @@
+name: Diff web and Native resources
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Diff exercises
+        run: diff src/Exercises.json RuneDroid/Exercises.json
+      - name: Diff rune rows
+        run: diff src/RuneRows.json RuneDroid/RuneRows.json
+      - name: Diff images
+        run: diff --brief --recursive src/images/ RuneDroid/images/
