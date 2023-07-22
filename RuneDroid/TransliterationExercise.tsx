@@ -240,9 +240,9 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   toggler: {
-    activeBackgroundColor: "#9ee3fb",
+    activeBackgroundColor: "#3c4145",
     inActiveBackgroundColor: "#3c4145",
-    borderActiveColor: "#86c3d7",
+    borderActiveColor: "#1c1c1c",
     borderInActiveColor: "#1c1c1c",
     borderWidth: 5,
     height: 30,
@@ -252,6 +252,8 @@ const styles = StyleSheet.create({
     width: 45,
     height: 45,
     radius: 22,
+    activeBackgroundColor: "#ffd0d0",
+    inActiveBackgroundColor: "#ffd0d0",
   }
 });
 
