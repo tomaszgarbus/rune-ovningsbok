@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/rune-ovningsbok/static/css/main.314e35ee.css",
-    "main.js": "/rune-ovningsbok/static/js/main.61f2dd5c.js",
+    "main.js": "/rune-ovningsbok/static/js/main.22600b6f.js",
     "static/js/787.042a5c5b.chunk.js": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js",
     "static/media/bjärby_runsten.jpg": "/rune-ovningsbok/static/media/bjärby_runsten.f9556d3cb1033bf79a12.jpg",
     "static/media/lidingö_dalängen.jpg": "/rune-ovningsbok/static/media/lidingö_dalängen.10febd455eb4001ec24b.jpg",
     "static/media/gripsholmstone178.jpg": "/rune-ovningsbok/static/media/gripsholmstone178.659a5fca3dd1b6931eee.jpg",
     "static/media/gårdby_runsten.jpg": "/rune-ovningsbok/static/media/gårdby_runsten.e470793a20933cbcd878.jpg",
     "static/media/gripsholmstone179.jpg": "/rune-ovningsbok/static/media/gripsholmstone179.bbb81d2c35d25bab9e08.jpg",
+    "static/media/lidingö_askrikevägen.jpg": "/rune-ovningsbok/static/media/lidingö_askrikevägen.64d31ac01d0c89918449.jpg",
     "static/media/sigurdristingen.jpg": "/rune-ovningsbok/static/media/sigurdristingen.09e7140aca6d5e80398b.jpg",
     "static/media/kjølevikstone.jpg": "/rune-ovningsbok/static/media/kjølevikstone.e4b667e91f00e410bd71.jpg",
     "static/media/oseberg_oar.jpg": "/rune-ovningsbok/static/media/oseberg_oar.56ec6bf641597ded7b07.jpg",
@@ -38,11 +39,11 @@
     "index.html": "/rune-ovningsbok/index.html",
     "static/media/help_button_background.svg": "/rune-ovningsbok/static/media/help_button_background.e1b3abf591d68b8959a2.svg",
     "main.314e35ee.css.map": "/rune-ovningsbok/static/css/main.314e35ee.css.map",
-    "main.61f2dd5c.js.map": "/rune-ovningsbok/static/js/main.61f2dd5c.js.map",
+    "main.22600b6f.js.map": "/rune-ovningsbok/static/js/main.22600b6f.js.map",
     "787.042a5c5b.chunk.js.map": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.314e35ee.css",
-    "static/js/main.61f2dd5c.js"
+    "static/js/main.22600b6f.js"
   ]
 }
