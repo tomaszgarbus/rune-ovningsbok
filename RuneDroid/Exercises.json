@@ -1,57 +1,5 @@
 [
   {
-    "id": "einang",
-    "img": "einangstone.jpg",
-    "title": "Einangsteinen (Einang stone)",
-    "runes": ["\u16de", "\u16a8", "\u16b7", "\u16a8", "\u16ca", "\u16cf", "\u16c1", "\u16c9", "\u16b1", "\u16a2", "\u16be", "\u16df", "\u16a0", "\u16a8", "\u16c1", "\u16ba", "\u16c1", "\u16de", "\u16df"],
-    "rowType": "older_futhark",
-    "description": "The Einang stone is located in Gardbergfeltet, a historical site in Oppland, Norway, holding over 550 burial mounds and over 900 discoveries from Roman Iron Age and Viking Age. The Einang stone is believed to date back to around 300 AD, and for a long time was the oldest known runic stone from northwestern Europe.",
-    "explanationAfter": "Excellent! As explained by Kristel Zilmer on Twitter (see sources): Moltke's reading - still commonly accepted - is: …daga-(t)(i)R runo faihido. He suggested that the start could be: [Ek Go]dagastiR rūnō faihidō, «I, GodagastiR, painted (wrote) the rune (i.e. the runic inscription)”. The singular rūnō can refer to the overall runic message.",
-    "sources": [
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/51/c/eac8d35824e8706f5d26e9e376610921/",
-      "https://www.visitnorway.com/listings/gardbergfeltet-and-the-einang-stone/6081/",
-      "https://twitter.com/kristel_zilmer/status/1395417502528716801"
-    ]
-  },
-  {
-    "id": "svingerudsteinen",
-    "img": "svingerudsteinen.jpg",
-    "title": "Svingerudsteinen (Svingerud Stone)",
-    "runes": ["\u16c1", "\u16de", "\u16c1", "\u16d2", "\u16d6", "\u16b1", "\u16a2", "\u16b7"],
-    "rowType": "older_futhark",
-    "description": "In early 2023, this stone was announced to be the oldest known runic inscription to date. It was found in a cremation ground, in Hole near Tyrifjorden, Eastern Norway, by University of Oslo researchers. The inscriptions are dated between 1 and 250 AD. The stone itself is a 31x32 cm block of reddish-brown Ringerike sandstone.",
-    "explanationAfter": "Great answer! The inscription, consisting of thin, shallow runes, is transliterated as \"Idiberug\". According to Kristel Zilmer, professor at Oslo's Museum of Cultural History: this could be name of a woman Idibera or a kin named Idiberung.",
-    "sources": [
-      "https://edition.cnn.com/style/article/worlds-oldest-runestone-norway-intl-scli-scn/index.html",
-      "https://www.khm.uio.no/english/news/found-the-world-s-oldest-rune-stone.html"
-    ]
-  },
-  {
-    "id": "bryggengohome",
-    "img": "bergenstick_gohome.jpg",
-    "title": "Bergen stick B 149",
-    "runes": ["ᚴ", "ᛦ", "ᛆ", ":", "ᛌ", "ᛅ", "ᚼ", "ᛁ", "ᚱ", ":", "ᛆ", "ᛐ", "ᚦ", "ᚢ", ":", "ᚴ", "ᛆ", "ᚴ", ":", "ᚼ", "ᛅ", "ᛁ", "ᛉ"],
-    "rowType": "b149_younger_futhark",
-    "description": "The stick has an inscription on both sides, consisting of mixed long- and short-twig Younger Futhark runes. The first side says: ᚴᛦᛆ : ᛌᛅᚼᛁᚱ : ᛆᛐᚦᚢ : ᚴᛆᚴ : ᚼᛅᛁᛉ.",
-    "explanationAfter": "Yes! That is the famous inscription which translates to \"Gyða segir at þú gakk heim\" - \"Gyða tells you to go home\"!",
-    "sources": [
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
-    ]
-  },
-  {
-    "id": "grumpanbracteate",
-    "img": "grumpanbracteate.jpg",
-    "title": "Grumpan bracteate Vg 207",
-    "rowType": "older_futhark",
-    "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
-    "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
-    "explanationAfter": "Correct! This bracteate depicts the division of Elder Futhark row into 3 equal parts.",
-    "sources": [
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/331/c/4d7032467cdc2f98787138d9e1f2bd24/",
-      "https://app.raa.se/open/runor/inscription?id=d5024f02-c8b4-4168-b02c-ad97c5559b42"
-    ]
-  },
-  {
     "id": "gripsholmstone178",
     "img": "gripsholmstone178.jpg",
     "img_credit": "Own photo, taken in Mariefred, Sweden",
@@ -91,16 +39,71 @@
     ]
   },
   {
-    "id": "jellingstoneharald",
-    "img": "jellingstoneharald.png",
-    "img_credit": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-monuments-at-jelling/the-jelling-stone/",
-    "title": "Jelling stone of Harald Bluetooth",
-    "runes": "ᚼᛅᚱᛅᛚᛏᚱ:ᚴᚢᚾᚢᚴᛦ:ᛒᛅᚦ:ᚴᛅᚢᚱᚢᛅᚴᚢᛒᛚ:ᚦᛅᚢᛋᛁ:ᛅᚠᛏ:ᚴᚢᚱᛘᚠᛅᚦᚢᚱᛋᛁᚾᛅᚢᚴᛅᚠᛏ:ᚦᚭᚢᚱᚢᛁ:ᛘᚢᚦᚢᚱ:ᛋᛁᚾᛅ:ᛋᛅᚼᛅᚱᛅᛚᛏᚱ:ᛁᛅᛋ:ᛋᚭᛦ᛫ᚢᛅᚾ᛫ᛏᛅᚾᛘᛅᚢᚱᚴ||ᛅᛚᛅ᛫ᛅᚢᚴ᛫ᚾᚢᚱᚢᛁᛅᚴ||᛫ᛅᚢᚴ᛫ᛏᛅᚾᛁ᛫ᚴᛅᚱᚦᛁ᛫ᚴᚱᛁᛋᛏᚾᚭ",
-    "rowType": "younger_futhark_jelling",
-    "description": "A rune-stone with political themes from north-eastern Jutland. King Haraldr claims on it to have made himself master of all Denmark and of Norway. These are among the earliest occurrences of the names \"Denmark\" and \"Norway\". Thanks to the  political references, Jelling 2 stone can be fairly reliably dated to around 970-980s.",
-    "explanationAfter": "The translation to be found in Barnes' book is as follows: \"King Haraldr ordered [people] to make these monuments after GormR, his father and after Þorvi, his mother. That Haraldr who won for himself all Denmark, and Norway, and made the Danes Christian.\" (\"Haraldr kunungR bað gørva kumbl þøsi aft Gorm, faður sin, ok aft Þórvi, moður sina. Sa Haraldr æs sæR vann Danmork alla ok Norvæg ok dani gærði kristna.\")",
+    "id": "lidingö_dalängen",
+    "img": "lidingö_dalängen.jpg",
+    "title": "Dalängen runestone im Lidingö",
+    "img_credit": "Own photo, taken in Lidingö.",
+    "description": "A runestone standing by the road in Lidingö. One of the two present on the island. It was found in 19th century and it has been standing in its current place since 1943.",
+    "runes": "ᚴᚬᚱᛁ x ᛅᚢᚴ x ᛁᛅᚴᛚᛏᚱ x ᛅᚢ … ᛁᚱ ᛫ ᛒᛁᛁᚱᚾ ᛫ ᚠᛅᚦᚢᚱ ᛫ ᛋᛁᚾ ᛫ ᚴᚢᚦ ᛫ …",
+    "rowType": "younger_futhark_dalängen",
+    "explanationAfter": "The remaining part of the stone can be read as \"Kore and Ingjald and ... after Björn, their father. God ...\". It seems to follow a standard formula, helping us fill the gaps: \"Kore and Ingjald raised this stone after Björn, their father. God help...\".",
     "sources": [
-      "Runes: A Handbook by Michael P. Barnes (p 73-4)"
+      "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
+    ]
+  },
+  {
+    "id": "lidingö_askrikevägen",
+    "img": "lidingö_askrikevägen.jpg",
+    "title": "Askrikevägen rune slab in Lidingö",
+    "img_credit": "Own photo, taken in Lidingö.",
+    "description": "This memorial inscription belongs to an iron-age burial place, consisting of a bit over 50 graves. It is one of the two runestones on the island.",
+    "runes": "ᛅᛋᛘᚢᚾᛏ ᚱ… ᚱᚢᚾᛁᛦ ᚽᚠᛏᛁᛦ ᛋᛏᚽᛁᚾ ᚠᛅᚦᚢᚱᛋ ᚠᛅᚦᚢᚱ ᛋᛁᚾ ᛅᚢᚴ ᚠᛅᚦᚢᚱ ᛋᛁᛒᛅ ᛅᚴ ᚴᚽᛁᛦᛒᛁᛅᚱᚾᛅᛦ ᛅᚮᚴ ᚢᛚᚠᛋ ᚽᛅᛦᛘᚽᚱᚴᛁ ᛘᛁᚴᛁᛏ ᛅᛏ ᛘᛅᚾ ᚴᚮᚦᛅᚾ",
+    "rowType": "younger_futhark_askrikevägen",
+    "explanationAfter": "Correct! The translation to Swedish goes: \"Åsmund ristade runor efter Sten, sin farfar, och fadern till Sibbe och Gerbjörn och Ulf. Här ett stort minnesmärke efter en god man\" and to English: \"Aasmund carved runes after Sten, his grandfather and father of Sibbe and Gerbjorn and Ulf. Here is a big memorial to a good man.\" From the description, we cannot tell whether Sten lies at the same location as the inscription. A big cross being part of the inscription suggests that Sten converted to christianity.",
+    "sources": [
+      "Info table next to the stone, provided by Lidingö Stad",
+      "http://raa.diva-portal.org/smash/get/diva2:1225795/FULLTEXT01.pdf"
+    ]
+  },
+  {
+    "id": "bjärby_runsten",
+    "img": "bjärby_runsten.jpg",
+    "title": "Bjärby stone Ö 36",
+    "img_credit": "Own photo, taken in Bjärby",
+    "description": "A beautiful 11-century runestone standing by the side of the road in Bjärby in eastern Öland, Sweden.",
+    "runes": "ᚼᛁᚱᚠᚱᛁ…ᚢᛁᚦᛒᛁᚢᚱᚾxᛚᛁᛏᚢxᚱᛅᛁᛋᛅxᛋᛏᛅᛁᚾxᚦᛁᚾᛅxᛅᛏxᚠᛅ…ᛏᚢᛚᚠxᚠᛅᚦᚢᚱxᛋᛁᚾ ᛋᛁᚴᛚᛅᚢᚴxᛚᛁᛏxᚱᛅᛁᛋᛅxᛅᚠᛏᛁᛦxᛒᚢᚾᛏᛅxᛋᛁᚾxᚼᛅᚾxᛁᛅᚱxᚴᚱᛅᚠᛁᚾᛁxᚴᛁᚱᛁᚴᛁᚢ",
+    "rowType": "younger_futhark_bjärby",
+    "explanationAfter": "Correct! Swedish translation provided onsite: \"Härfrid och Vidbjörn läto resa stenen efter Fastul sin fader. Siglaug lät resa efter sin make. Han är begraven i kyrkan.\" In English that would be: \"Harfrid and Vidbjorn had this stone raised after their father Fastul. Siglaug had it raised after her husband. He is buried in the church.\"",
+    "sources": [
+      "Info table next to the stone, provided by Riksantikvarieambetet."
+    ]
+  },
+  {
+    "id": "gårdby_runsten",
+    "img": "gårdby_runsten.jpg",
+    "title": "Gårdby stone Ö 28",
+    "img_credit": "Own photo, taken in Gårdby",
+    "description": "A well preserved 11-th century runestone, now standing in the cemetery in Gårdby, Öland.",
+    "runes": "ᚼᛅᚱᚦᚱᚢᚦᚱxᚱᛅᛁᛋᛁxᛋᛏᛅᛁᚾxᚦᛁᚾᛋᛅxᛅᚠᛏᛁᛦxᛋᚢᚾxᛋᛁᚾxᛋᛘᛁᚦxᛏᚱᛅᚴxᚴᚢᚦᛅᚾxᚼᛅᛚᚠᛒᚢᚱᛁᚾxᛒᚱᚢᚦᛁᚱxᛋᛁᚾxᛋᛁᛏᚱxᚴᛅᚱ ᚦᚢᛘ ᛒᚱᛅᚾᛏᚱ ᚱᛁᛏᛁ ᛁᛅᚴᚦᚢ ᚱᛅᚦᛅ ᚴᚼᚾ",
+    "rowType": "younger_futhark_gårdby",
+    "explanationAfter": "Yes! Swedish translation: \"Härtrud reste denna sten efter sin son Smed, en god man. Halvboren, hans broder, sitter i Gårdarike. Brand högg rätt, därför kan du tyda.\" English: \"Hartrud raised this stone after his son Smed, a good man. Halvbor, his brother, is in Gaardarike. Brand (sword?) cut straight, therefore you can decipher\". Gårdarike is an old Norse name for the Swedish viking areas in current Russia.",
+    "sources": [
+      "Info table next to the stone, provided by Riksantikvarieambetet."
+    ]
+  },
+  {
+    "id": "rökstone_side_a",
+    "img": "rökstenen_side_a.jpg",
+    "img_credit": "https://sv.wikipedia.org/wiki/Rökstenen#/media/Fil:Rökstenen_2.jpg",
+    "title": "Rök runestone, side A (fragment) Ög 136",
+    "rowType": "younger_futhark_rök_side_a",
+    "description": "The Rök runestone from Östergötland, Sweden, is dated to 9th century. It contains inscriptions in 3 different runic ortographies: short-twig runes, older Fuþark and numerical cipher. The scholars have long debated the meaning (and even reading order!) of the inscription. For one recent interpretation, binding it to poems Vafþrúðnismál and Völuspá, see Holmberg et al., 2020 (linked in the sources). For the exercise below, we use the very beginning of the inscription. Note that due to limitations of Runic Unicode block, I had to use \u16c5 and \u16d9 as substitutes for two other short-twig runes.",
+    "runes": ["\u16c5", "\u16a0", "\u16cf", " ", "\u16a2", "\u16c5", "\u16d9", "\u16a2", "\u16a6", " ", "\u16cc", "\u16cf", "\u16ad", "\u16bf", "\u16cf", "\u16c5", " ", "\u16b1", "\u16a2", "\u16bf", "\u16c5", "\u16e7", " ", "\u16a6", "\u16c5", "\u16e7", " ", "+", " ", "(", "\u16c1", ")", "\u16bf", " ", "\u16a2", "\u16c5", "\u16b1", "\u16c1", "\u16bf", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", "\u16e7", " ", "\u16c5", "\u16a0", "\u16cf", " ", "\u16a0", "\u16c5", "\u16c1", "\u16b4", "\u16c1", "\u16ad", "\u16bf", " ", "\u16cc", "\u16a2", "\u16bf", "\u16a2"],
+    "explanationAfter": "Excellent! This translates as: \"Aft Vāmōð stãnda rūnaʀ þāʀ. Æn Varinn fāði, faðiʀ, aft faigiãn sunu.\", or in English: \"After Vāmōðʀ stand these runes. And Varinn, the father, made them after thedeath-doomed son\".",
+    "sources": [
+      "http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1383036&dswid=-2803",
+      "Runes: A Handbook by Michael P. Barnes (p 83)",
+      "http://kulturarvsdata.se/uu/srdb/3a61c080-77fc-4a44-b5ac-f3a4b33b3aab"
     ]
   },
   {
@@ -118,6 +121,19 @@
     ]
   },
   {
+    "id": "jellingstoneharald",
+    "img": "jellingstoneharald.png",
+    "img_credit": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-monuments-at-jelling/the-jelling-stone/",
+    "title": "Jelling stone of Harald Bluetooth",
+    "runes": "ᚼᛅᚱᛅᛚᛏᚱ:ᚴᚢᚾᚢᚴᛦ:ᛒᛅᚦ:ᚴᛅᚢᚱᚢᛅᚴᚢᛒᛚ:ᚦᛅᚢᛋᛁ:ᛅᚠᛏ:ᚴᚢᚱᛘᚠᛅᚦᚢᚱᛋᛁᚾᛅᚢᚴᛅᚠᛏ:ᚦᚭᚢᚱᚢᛁ:ᛘᚢᚦᚢᚱ:ᛋᛁᚾᛅ:ᛋᛅᚼᛅᚱᛅᛚᛏᚱ:ᛁᛅᛋ:ᛋᚭᛦ᛫ᚢᛅᚾ᛫ᛏᛅᚾᛘᛅᚢᚱᚴ||ᛅᛚᛅ᛫ᛅᚢᚴ᛫ᚾᚢᚱᚢᛁᛅᚴ||᛫ᛅᚢᚴ᛫ᛏᛅᚾᛁ᛫ᚴᛅᚱᚦᛁ᛫ᚴᚱᛁᛋᛏᚾᚭ",
+    "rowType": "younger_futhark_jelling",
+    "description": "A rune-stone with political themes from north-eastern Jutland. King Haraldr claims on it to have made himself master of all Denmark and of Norway. These are among the earliest occurrences of the names \"Denmark\" and \"Norway\". Thanks to the  political references, Jelling 2 stone can be fairly reliably dated to around 970-980s.",
+    "explanationAfter": "The translation to be found in Barnes' book is as follows: \"King Haraldr ordered [people] to make these monuments after GormR, his father and after Þorvi, his mother. That Haraldr who won for himself all Denmark, and Norway, and made the Danes Christian.\" (\"Haraldr kunungR bað gørva kumbl þøsi aft Gorm, faður sin, ok aft Þórvi, moður sina. Sa Haraldr æs sæR vann Danmork alla ok Norvæg ok dani gærði kristna.\")",
+    "sources": [
+      "Runes: A Handbook by Michael P. Barnes (p 73-4)"
+    ]
+  },
+  {
     "id": "kjølevikstone",
     "img": "kjølevikstone.jpg",
     "img_credit": "https://www.runesdb.eu/find-list/d/im/q/r/r/1~2/f/71/p/4597/c/97591001363d3a3306231e8304be203c/",
@@ -128,6 +144,97 @@
     "explanationAfter": "Old Norse translation of the inscription is believed to be \"Haðulaikaz. Ek Hagustaldaz hlaiwiðdo magu minino\" -- \"Haðulaikaz. I Hagustaldaz buried my son\". Haðulaikaz is a man's name consisting of elements \"battle\" ahnd \"play\".",
     "sources": [
       "Runes: A Handbook by Michael P. Barnes (p 30)"
+    ]
+  },
+  {
+    "id": "svingerudsteinen",
+    "img": "svingerudsteinen.jpg",
+    "title": "Svingerudsteinen (Svingerud Stone)",
+    "runes": ["\u16c1", "\u16de", "\u16c1", "\u16d2", "\u16d6", "\u16b1", "\u16a2", "\u16b7"],
+    "rowType": "older_futhark",
+    "description": "In early 2023, this stone was announced to be the oldest known runic inscription to date. It was found in a cremation ground, in Hole near Tyrifjorden, Eastern Norway, by University of Oslo researchers. The inscriptions are dated between 1 and 250 AD. The stone itself is a 31x32 cm block of reddish-brown Ringerike sandstone.",
+    "explanationAfter": "Great answer! The inscription, consisting of thin, shallow runes, is transliterated as \"Idiberug\". According to Kristel Zilmer, professor at Oslo's Museum of Cultural History: this could be name of a woman Idibera or a kin named Idiberung.",
+    "sources": [
+      "https://edition.cnn.com/style/article/worlds-oldest-runestone-norway-intl-scli-scn/index.html",
+      "https://www.khm.uio.no/english/news/found-the-world-s-oldest-rune-stone.html"
+    ]
+  },
+  {
+    "id": "eidi_runestick",
+    "img": "eidi_runestick.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "description": "The runestick was found during archeological excavations in Durhúsi in Eiði. Runologically, the inscription is dated to 900-1200 AD. Archeological observations point to the elder part of this period.",
+    "title": "Eiði runestick",
+    "rowType": "younger_futhark_eidi_runestick",
+    "runes": "ᚠᚢᚦᚭᚱᚴᚽᚿᛁᛆᛌᛐᛓ",
+    "explanationAfter": "Indeed, the stick contains first 13 rune characters of short-twig Younger Fuþark, which were used in North Western areas, including Faroes.",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ]
+  },
+  {
+    "id": "sandavagur_stone",
+    "img": "sandavagur_stone.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "title": "Sandavágur rune-stone",
+    "rowType": "younger_futhark_sandavagur_stone",
+    "runes": "ᚦᚭᚱᚴᛅᛚ:ᚭᚿᚭᚿᛑᛆᚱᛍᚢᚿ|ᛆᚢᛍᛐᛉᛆᚦᚱᛆᚠᚱᚢᚼᛆ|ᛚᛆᚿᛑᛂxᛒᛦᚵᚦᛂ:ᚦᛂ(ᚿ)|ᛆ:ᛍᛆᚦ:ᚠᛦᛍᛐ",
+    "description": "This is the most magnificent rune-stone inscription found in the Faroes. The stone was found by chance, at the abandoned ancient settlement í Eingjartoftum in Sandavágur in 1917. You can see this to this day in Sandavágur church. The runes are of the younger Swedo-Norwegian type.",
+    "explanationAfter": "Good! The translation provided by Tjóðsavnið is: \"1. þorkæl onondarsun 2. austmaþrafruha 3. lande bygþe þe(n) 4. a saþ fyst\". In English: \"Torkil Onundarson from Rogaland was the first to settle this place.\"",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ]
+  },
+  {
+    "id": "sørvágur_box",
+    "img": "sørvágur_box.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "title": "Sørvágur wooden box",
+    "rowType": "medieval_sørvági_box",
+    "runes": "ᛆᛒᚴᚦᛂᚠᚴᚼᛁᚴᛚᛘᚿᚮᛒᚱᛋᛏᚢ",
+    "description": "This box orignates from the Sørvágur village in the Vágar island.",
+    "explanationAfter": "The latin alphabet has been carved with runes, supplemented by the date ANNO 1695. G. I. S. below stands for G(utti) J(oens) S(on).",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ]
+  },
+  {
+    "id": "einang",
+    "img": "einangstone.jpg",
+    "title": "Einangsteinen (Einang stone)",
+    "runes": ["\u16de", "\u16a8", "\u16b7", "\u16a8", "\u16ca", "\u16cf", "\u16c1", "\u16c9", "\u16b1", "\u16a2", "\u16be", "\u16df", "\u16a0", "\u16a8", "\u16c1", "\u16ba", "\u16c1", "\u16de", "\u16df"],
+    "rowType": "older_futhark",
+    "description": "The Einang stone is located in Gardbergfeltet, a historical site in Oppland, Norway, holding over 550 burial mounds and over 900 discoveries from Roman Iron Age and Viking Age. The Einang stone is believed to date back to around 300 AD, and for a long time was the oldest known runic stone from northwestern Europe.",
+    "explanationAfter": "Excellent! As explained by Kristel Zilmer on Twitter (see sources): Moltke's reading - still commonly accepted - is: …daga-(t)(i)R runo faihido. He suggested that the start could be: [Ek Go]dagastiR rūnō faihidō, «I, GodagastiR, painted (wrote) the rune (i.e. the runic inscription)”. The singular rūnō can refer to the overall runic message.",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/51/c/eac8d35824e8706f5d26e9e376610921/",
+      "https://www.visitnorway.com/listings/gardbergfeltet-and-the-einang-stone/6081/",
+      "https://twitter.com/kristel_zilmer/status/1395417502528716801"
+    ]
+  },
+  {
+    "id": "bryggengohome",
+    "img": "bergenstick_gohome.jpg",
+    "title": "Bergen stick B 149",
+    "runes": ["ᚴ", "ᛦ", "ᛆ", ":", "ᛌ", "ᛅ", "ᚼ", "ᛁ", "ᚱ", ":", "ᛆ", "ᛐ", "ᚦ", "ᚢ", ":", "ᚴ", "ᛆ", "ᚴ", ":", "ᚼ", "ᛅ", "ᛁ", "ᛉ"],
+    "rowType": "b149_younger_futhark",
+    "description": "The stick has an inscription on both sides, consisting of mixed long- and short-twig Younger Futhark runes. The first side says: ᚴᛦᛆ : ᛌᛅᚼᛁᚱ : ᛆᛐᚦᚢ : ᚴᛆᚴ : ᚼᛅᛁᛉ.",
+    "explanationAfter": "Yes! That is the famous inscription which translates to \"Gyða segir at þú gakk heim\" - \"Gyða tells you to go home\"!",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
+    ]
+  },
+  {
+    "id": "grumpanbracteate",
+    "img": "grumpanbracteate.jpg",
+    "title": "Grumpan bracteate Vg 207",
+    "rowType": "older_futhark",
+    "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
+    "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
+    "explanationAfter": "Correct! This bracteate depicts the division of Elder Futhark row into 3 equal parts.",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/331/c/4d7032467cdc2f98787138d9e1f2bd24/",
+      "https://app.raa.se/open/runor/inscription?id=d5024f02-c8b4-4168-b02c-ad97c5559b42"
     ]
   },
   {
@@ -170,18 +277,6 @@
     ]
   },
   {
-    "id": "acvalhalla",
-    "img": "acvalhalla.jpg",
-    "title": "Assasin's Creed Valhalla loading screen",
-    "rowType": "younger_futhark_long_branch",
-    "description": "This text is looped twice around the game logo in the loading screen of Assasin's Creed Valhalla.",
-    "runes": "ᛏᛅᚢᛦ ᚠᛁ ᛏᛅᚢᛁᛅ ᚠᚱᚬᛏᛦ ᛏᛅᚢᛦ ᛋᛁᛅᛚᚠᛦ ᛁᛏ ᛋᛅᛘᛅ ᛁᚴ ᚢᛅᛁᛏ ᛅᛁᚾ ᛅᛏ ᛅᛚᛏᚱᛁ ᛏᛅᚢᛦ ᛏᚢᛘᛦ ᚢᛒ ᛏᛅᚢᚦᛅᚾ ᚼᚢᛅᚱᚾ",
-    "explanationAfter": "This text is an excerpt from Havamal - stanza 77 to be precise: \"deyr fé, deyja frændr, deyr sjalfr it sama, ek veit einn, at aldrei deyr: dómr um dauðan hvern\". In Carolyne Larringtone's translation: \"Cattle die, kinsmen die, the self must also die; I know one thing which never dies; the reputation of each dead man.\"",
-    "sources": [
-      "https://www.reddit.com/r/runes/comments/kau2ak/assassins_creed_valhalla_menu_runes_please/"
-    ]
-  },
-  {
     "id": "codexrunicus",
     "img": "codexrunicus.jpg",
     "img_credit": "https://en.wikipedia.org/wiki/Codex_Runicus#/media/File:CodexRunicus.jpeg",
@@ -195,57 +290,15 @@
     ]
   },
   {
-    "id": "rökstone_side_a",
-    "img": "rökstenen_side_a.jpg",
-    "img_credit": "https://sv.wikipedia.org/wiki/Rökstenen#/media/Fil:Rökstenen_2.jpg",
-    "title": "Rök runestone, side A (fragment) Ög 136",
-    "rowType": "younger_futhark_rök_side_a",
-    "description": "The Rök runestone from Östergötland, Sweden, is dated to 9th century. It contains inscriptions in 3 different runic ortographies: short-twig runes, older Fuþark and numerical cipher. The scholars have long debated the meaning (and even reading order!) of the inscription. For one recent interpretation, binding it to poems Vafþrúðnismál and Völuspá, see Holmberg et al., 2020 (linked in the sources). For the exercise below, we use the very beginning of the inscription. Note that due to limitations of Runic Unicode block, I had to use \u16c5 and \u16d9 as substitutes for two other short-twig runes.",
-    "runes": ["\u16c5", "\u16a0", "\u16cf", " ", "\u16a2", "\u16c5", "\u16d9", "\u16a2", "\u16a6", " ", "\u16cc", "\u16cf", "\u16ad", "\u16bf", "\u16cf", "\u16c5", " ", "\u16b1", "\u16a2", "\u16bf", "\u16c5", "\u16e7", " ", "\u16a6", "\u16c5", "\u16e7", " ", "+", " ", "(", "\u16c1", ")", "\u16bf", " ", "\u16a2", "\u16c5", "\u16b1", "\u16c1", "\u16bf", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", "\u16e7", " ", "\u16c5", "\u16a0", "\u16cf", " ", "\u16a0", "\u16c5", "\u16c1", "\u16b4", "\u16c1", "\u16ad", "\u16bf", " ", "\u16cc", "\u16a2", "\u16bf", "\u16a2"],
-    "explanationAfter": "Excellent! This translates as: \"Aft Vāmōð stãnda rūnaʀ þāʀ. Æn Varinn fāði, faðiʀ, aft faigiãn sunu.\", or in English: \"After Vāmōðʀ stand these runes. And Varinn, the father, made them after thedeath-doomed son\".",
+    "id": "acvalhalla",
+    "img": "acvalhalla.jpg",
+    "title": "Assasin's Creed Valhalla loading screen",
+    "rowType": "younger_futhark_long_branch",
+    "description": "This text is looped twice around the game logo in the loading screen of Assasin's Creed Valhalla.",
+    "runes": "ᛏᛅᚢᛦ ᚠᛁ ᛏᛅᚢᛁᛅ ᚠᚱᚬᛏᛦ ᛏᛅᚢᛦ ᛋᛁᛅᛚᚠᛦ ᛁᛏ ᛋᛅᛘᛅ ᛁᚴ ᚢᛅᛁᛏ ᛅᛁᚾ ᛅᛏ ᛅᛚᛏᚱᛁ ᛏᛅᚢᛦ ᛏᚢᛘᛦ ᚢᛒ ᛏᛅᚢᚦᛅᚾ ᚼᚢᛅᚱᚾ",
+    "explanationAfter": "This text is an excerpt from Havamal - stanza 77 to be precise: \"deyr fé, deyja frændr, deyr sjalfr it sama, ek veit einn, at aldrei deyr: dómr um dauðan hvern\". In Carolyne Larringtone's translation: \"Cattle die, kinsmen die, the self must also die; I know one thing which never dies; the reputation of each dead man.\"",
     "sources": [
-      "http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1383036&dswid=-2803",
-      "Runes: A Handbook by Michael P. Barnes (p 83)",
-      "http://kulturarvsdata.se/uu/srdb/3a61c080-77fc-4a44-b5ac-f3a4b33b3aab"
-    ]
-  },
-  {
-    "id": "eidi_runestick",
-    "img": "eidi_runestick.jpg",
-    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
-    "description": "The runestick was found during archeological excavations in Durhúsi in Eiði. Runologically, the inscription is dated to 900-1200 AD. Archeological observations point to the elder part of this period.",
-    "title": "Eiði runestick",
-    "rowType": "younger_futhark_eidi_runestick",
-    "runes": "ᚠᚢᚦᚭᚱᚴᚽᚿᛁᛆᛌᛐᛓ",
-    "explanationAfter": "Indeed, the stick contains first 13 rune characters of short-twig Younger Fuþark, which were used in North Western areas, including Faroes.",
-    "sources": [
-      "Tjóðsavnið - the National Museum of Faroe Islands"
-    ]
-  },
-  {
-    "id": "sandavagur_stone",
-    "img": "sandavagur_stone.jpg",
-    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
-    "title": "Sandavágur rune-stone",
-    "rowType": "younger_futhark_sandavagur_stone",
-    "runes": "ᚦᚭᚱᚴᛅᛚ:ᚭᚿᚭᚿᛑᛆᚱᛍᚢᚿ|ᛆᚢᛍᛐᛉᛆᚦᚱᛆᚠᚱᚢᚼᛆ|ᛚᛆᚿᛑᛂxᛒᛦᚵᚦᛂ:ᚦᛂ(ᚿ)|ᛆ:ᛍᛆᚦ:ᚠᛦᛍᛐ",
-    "description": "This is the most magnificent rune-stone inscription found in the Faroes. The stone was found by chance, at the abandoned ancient settlement í Eingjartoftum in Sandavágur in 1917. You can see this to this day in Sandavágur church. The runes are of the younger Swedo-Norwegian type.",
-    "explanationAfter": "Good! The translation provided by Tjóðsavnið is: \"1. þorkæl onondarsun 2. austmaþrafruha 3. lande bygþe þe(n) 4. a saþ fyst\". In English: \"Torkil Onundarson from Rogaland was the first to settle this place.\"",
-    "sources": [
-      "Tjóðsavnið - the National Museum of Faroe Islands"
-    ]
-  },
-  {
-    "id": "sørvágur_box",
-    "img": "sørvágur_box.jpg",
-    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
-    "title": "Sørvágur wooden box",
-    "rowType": "medieval_sørvági_box",
-    "runes": "ᛆᛒᚴᚦᛂᚠᚴᚼᛁᚴᛚᛘᚿᚮᛒᚱᛋᛏᚢ",
-    "description": "This box orignates from the Sørvágur village in the Vágar island.",
-    "explanationAfter": "The latin alphabet has been carved with runes, supplemented by the date ANNO 1695. G. I. S. below stands for G(utti) J(oens) S(on).",
-    "sources": [
-      "Tjóðsavnið - the National Museum of Faroe Islands"
+      "https://www.reddit.com/r/runes/comments/kau2ak/assassins_creed_valhalla_menu_runes_please/"
     ]
   },
   {
@@ -327,19 +380,6 @@
       "https://www.vikingtidsmuseet.no/de-nye-utstillingene/key-objects-16.12..2021.pdf",
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
       "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
-    ]
-  },
-  {
-    "id": "lidingö_dalängen",
-    "img": "lidingö_dalängen.jpg",
-    "title": "Dalängen runsten i Lidingö",
-    "img_credit": "Own photo, taken in Lidingö.",
-    "description": "A runestone standing by the road in Lidingö. One of the two present on the island. It was found in 19th century and it has been standing in its current place since 1943.",
-    "runes": "ᚴᚬᚱᛁ x ᛅᚢᚴ x ᛁᛅᚴᛚᛏᚱ x ᛅᚢ … ᛁᚱ ᛫ ᛒᛁᛁᚱᚾ ᛫ ᚠᛅᚦᚢᚱ ᛫ ᛋᛁᚾ ᛫ ᚴᚢᚦ ᛫ …",
-    "rowType": "younger_futhark_dalängen",
-    "explanationAfter": "The remaining part of the stone can be read as \"Kore and Ingjald and ... after Björn, their father. God ...\". It seems to follow a standard formula, helping us fill the gaps: \"Kore and Ingjald raised this stone after Björn, their father. God help...\".",
-    "sources": [
-      "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
     ]
   }
 ]

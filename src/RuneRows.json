@@ -176,7 +176,7 @@
         "rune": "ᛦ",
         "latin": [
           "ʀ",
-          "R",
+          "r",
           "Ʀ"
         ]
       }
@@ -807,6 +807,20 @@
     "name": "Long-branch Younger Fuþark",
     "inherit_from": "younger_futhark_long_branch",
     "override_symbols": []
+  },
+  "younger_futhark_askrikevägen": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚮ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᚽ",
+        "latin": "e"
+      }
+    ]
   },
   "younger_futhark_bjärby": {
     "name": "Long-branch Younger Fuþark",
