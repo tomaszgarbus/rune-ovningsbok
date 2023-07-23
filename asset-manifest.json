@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rune-ovningsbok/static/css/main.314e35ee.css",
-    "main.js": "/rune-ovningsbok/static/js/main.22600b6f.js",
+    "main.js": "/rune-ovningsbok/static/js/main.a70914ef.js",
     "static/js/787.042a5c5b.chunk.js": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js",
     "static/media/bjärby_runsten.jpg": "/rune-ovningsbok/static/media/bjärby_runsten.f9556d3cb1033bf79a12.jpg",
     "static/media/lidingö_dalängen.jpg": "/rune-ovningsbok/static/media/lidingö_dalängen.10febd455eb4001ec24b.jpg",
@@ -27,8 +27,10 @@
     "static/media/Finlandica-VariableFont_wght.ttf": "/rune-ovningsbok/static/media/Finlandica-VariableFont_wght.849af27709535a817a46.ttf",
     "static/media/burserydfont.jpg": "/rune-ovningsbok/static/media/burserydfont.08d1362edd96dc26bfa1.jpg",
     "static/media/ågedalbracteate.jpg": "/rune-ovningsbok/static/media/ågedalbracteate.e3298d51e9900943c288.jpg",
+    "static/media/u614.jpg": "/rune-ovningsbok/static/media/u614.618c89bf79599acc2148.jpg",
     "static/media/maugholdstone.jpg": "/rune-ovningsbok/static/media/maugholdstone.f74c6bfb4a4ea29dd0a7.jpg",
     "static/media/svingerudsteinen.jpg": "/rune-ovningsbok/static/media/svingerudsteinen.2c6800e183911ada9468.jpg",
+    "static/media/picture_stone_stånga.jpg": "/rune-ovningsbok/static/media/picture_stone_stånga.fc56db3ad8e3f358d8cd.jpg",
     "static/media/Aboreto-Regular.ttf": "/rune-ovningsbok/static/media/Aboreto-Regular.7c5655d7b7541650e02d.ttf",
     "static/media/at_pitcher.jpg": "/rune-ovningsbok/static/media/at_pitcher.c02c2b71a8e4e38a7f3e.jpg",
     "static/media/einangstone.jpg": "/rune-ovningsbok/static/media/einangstone.c5ca9dbefc68c5dc7fa6.jpg",
@@ -39,11 +41,11 @@
     "index.html": "/rune-ovningsbok/index.html",
     "static/media/help_button_background.svg": "/rune-ovningsbok/static/media/help_button_background.e1b3abf591d68b8959a2.svg",
     "main.314e35ee.css.map": "/rune-ovningsbok/static/css/main.314e35ee.css.map",
-    "main.22600b6f.js.map": "/rune-ovningsbok/static/js/main.22600b6f.js.map",
+    "main.a70914ef.js.map": "/rune-ovningsbok/static/js/main.a70914ef.js.map",
     "787.042a5c5b.chunk.js.map": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.314e35ee.css",
-    "static/js/main.22600b6f.js"
+    "static/js/main.a70914ef.js"
   ]
 }
