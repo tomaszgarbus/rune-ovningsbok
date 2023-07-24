@@ -92,6 +92,32 @@
     ]
   },
   {
+    "id": "picture_stone_stånga",
+    "img": "picture_stone_stånga.jpg",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "title": "Picture stone from Stånga",
+    "rowType": "younger_futhark_long_branch",
+    "description": "Picture stone with runic inscription in a ribbon shape. At the top there is an indoor scene with a man and woman sitting opposite one another on a seat of honour. Behind the man, but outisde the walls of the room, there is the triquetra, also known as valknut. Another figure is approaching the man and presenting or taking a psear. The woman appears to be watching what is happening, but behind her a longnecked, bird-like creature is sticking in its head and pecking the standing man in the back. The scene below depicts three male figures, marching in a line carrying a spear, a sickle and a club or torch. Behind them there is a circular shape and beneath it something that could be a flaming fire. One interpretation is that the scene depicts a \"cadastral survey\", perhaps at full moon on the vernal equinox. Others have interpreted the three men as Odin, Thor and Frey. The stone was found in Stånga Parish in Gotland.",
+    "runes": "ᚱᚬᚦᚢᛁᛋᛚ:ᛅᚢᚴ:ᚠᛅᚱᛒᚬᚱᚾ:ᛅᚢᚴ:ᚴᚢᚾᛒᚬᚱᚾ",
+    "explanationAfter": "Correct! The inscription runs \"Rodvisl and Farbjörn and Gunbjörn\"",
+    "sources": [
+      "Description in Historiska Museet"
+    ]
+  },
+  {
+    "id": "u614",
+    "img": "u614.jpg",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "title": "Uppland stone U 614",
+    "rowType": "younger_futhark_u614",
+    "description": "One of the two runestones which originally stood at the boundary of what later became known as Torsätra Herrgård but which during the Viking Age was called Husa. Both stones were moved to the Swedish History Museum in 1967. The ornamentation, the appearance of the runes and the inscription all indicate that the stone was engraved by Visäte, sometime during the latter decades of the 11th century. The stone is on display in Historiska Museet in Stockholm.",
+    "runes": "ᛋᚴᚢᛚᛁ:ᛅᚢᚴ:ᚠᚬᛚᚴᛁ:ᛚᛅᛏᛅ:ᚱᚽᛁᛋᛅ:ᚦᛁᚾᛋᛅ:ᛋᛏᚽᛁᚾ:ᛁᚠᛏᚱ:ᛒᚱᚬᚦᚢᚱ:ᛋᛁᚾ:ᚼᚢᛋᛒᛁᚬᚱᚾ:ᚼᚾᚢᛋᛁᚬᚴᚢᛏᛁ:ᚦᛅᚦᛁᛦ:ᚴᛁᛅᛚᛏ:ᛏᚬᚴᚢ:ᚴᛅᚢᛏᛚᛅᚾᛏᛁ",
+    "explanationAfter": "Correct! The text translates to Swedish as: \"Skule och Folke låt resa denna sten efter sin broder Husbjörn. Han blev sjuk ute då de togo gäld på Gotland.\" And to English: \"Skull och Folki raised this stone in memory of their brother Husbjorn. He fell ill while collecting payment on Gotland.\" Husbjorn took part in a voyage from the mainland to the island to collect \"geld\" or tax. This tallies with a part of the medieval Gutasagan which tells of an old agreement between the Gutes and the Svear. The agreement stipulated that the Svear had the right to collect 60 marks of silver in geld (tax/tribute) from Gotland each year. 40 marks would go to the King and 20 to the Jarl. In return the Gutes would be given protection against attack and raids and the right to indulge in free trade with the Svear in their seas.",
+    "sources": [
+      "Description in Historiska Museet"
+    ]
+  },
+  {
     "id": "rökstone_side_a",
     "img": "rökstenen_side_a.jpg",
     "img_credit": "https://sv.wikipedia.org/wiki/Rökstenen#/media/Fil:Rökstenen_2.jpg",
