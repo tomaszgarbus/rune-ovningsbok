@@ -33,7 +33,6 @@ type ExerciseState = {
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
-  const [hintsEnabled, setHintsEnabled] = useState<boolean>(false);
   // TODO: Consider caching solved exercises on disk?
   const [userAnswer, setUserAnswer] = useState<ExerciseState>({
     inputs: mapRunes<string>(_ => ""),
@@ -57,8 +56,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
 
   function shouldShowHintForField(index: number) {
     const inputs: Array<string> = userAnswer.inputs;
-    // TODO: handle the case when all inputs are provided
-    if (hintsEnabled && inputs[index].length > 0) {
+    if (inputs[index].length > 0) {
       return true;
     }
     return false;
@@ -124,7 +122,8 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </SafeAreaView>
     
     {/* Description */}
-    <Text>
+    <Text
+      style={styles.description}>
       {props.exercise.description}
     </Text>
 
@@ -180,18 +179,6 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       </Text>
     }
 
-    {/* Hints toggler */}
-    <View>
-      <Text>Show hints immediately after wrong answers?</Text>
-      <Toggle
-        value={hintsEnabled}
-        leftTitle={"No"}
-        rightTitle={"Yes"}
-        trackBar={styles.toggler}
-        thumbButton={styles.togglerButton}
-        onPress={(val: boolean | undefined) => setHintsEnabled(val || false)} />
-    </View>
-
     {/* Sources */}
     <ScrollView horizontal={true}>
       <View>
@@ -216,6 +203,10 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     fontSize: 20,
   },
+  description: {
+    marginBottom: 20,
+    marginTop: 10,
+  },
   image: {
     alignSelf: "center",
     margin: "auto",
@@ -238,6 +229,7 @@ const styles = StyleSheet.create({
   topLevelScrollView: {
     display: "flex",
     flexDirection: "column",
+    marginHorizontal: 20,
   },
   toggler: {
     activeBackgroundColor: "#3c4145",
