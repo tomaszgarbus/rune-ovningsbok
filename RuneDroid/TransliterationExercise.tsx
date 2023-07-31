@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
-import StaticImages from './StaticImages.autogen';
+import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
@@ -33,7 +33,6 @@ type ExerciseState = {
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
-  // TODO: Consider caching solved exercises on disk?
   const [userAnswer, setUserAnswer] = useState<ExerciseState>({
     inputs: mapRunes<string>(_ => ""),
     ready: false,

@@ -6,8 +6,8 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import { ExerciseType}  from './Types';
-import StaticImages from './StaticImages.autogen';
+import { ExerciseType }  from './Types';
+import { StaticThumbnails } from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
 
 type ListOfExercisesPropsType = {
@@ -43,14 +43,14 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                 {
                   column.map(
                     (exercise: ExerciseType) => (
-                      StaticImages[exercise.id] ?
+                      StaticThumbnails[exercise.id] ?
                       <TouchableOpacity
                         key={exercise.id}
                         onPress={(_) => props.setExercise(exercise)}>
                         <View
                           style={styles.container}>
                           <ImageBackground
-                            source={StaticImages[exercise.id]}
+                            source={StaticThumbnails[exercise.id]}
                             style={styles.image}>
                             <LinearGradient
                               colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
