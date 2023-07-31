@@ -14,3 +14,9 @@ To see the logs, run:
 ```
 npx react-native log-android
 ```
+
+After adding a new exercises, remember to run the following command:
+```
+python3 ../py_utils/autogen_static_images.py
+```
+and paste the output to `StaticImages.autogen.tsx` (TODO: Add a GitHub Action as a reminder).

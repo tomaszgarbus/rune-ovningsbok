@@ -180,17 +180,15 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     }
 
     {/* Sources */}
-    <ScrollView horizontal={true}>
-      <View>
-        <Text>Sources:</Text>
+    <View>
+      <Text>Sources:</Text>
       {
         props.exercise.sources && 
         props.exercise.sources.map((src: string) =>
           <Text key={src}> • {src}</Text>
         )
       }
-      </View>
-    </ScrollView>
+    </View>
 
   </ScrollView>
 }

@@ -19,7 +19,8 @@ type ListOfExercisesPropsType = {
 function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
   return (
     <ScrollView>
-      <Text>text</Text>
+      <Text style={styles.header}>Welcome to RuneDroid</Text>
+      <Text style={styles.subheader}>Pick an exercise to get started</Text>
       {
         props.exercises.map(
           (exercise: ExerciseType) => (
@@ -54,6 +55,24 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  header: {
+    fontSize: 40,
+    fontWeight: "bold",
+    color: "#000",
+    zIndex: 3,
+    textAlign: "center",
+    marginTop: 20,
+    marginHorizontal: 20,
+    marginBottom: 0,
+  },
+  subheader: {
+    fontSize: 15,
+    fontWeight: "bold",
+    color: "#000",
+    zIndex: 3,
+    textAlign: "center",
+    margin: 10,
+  },
   image: {
     width: "100%",
     height: "100%"
