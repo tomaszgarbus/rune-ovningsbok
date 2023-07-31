@@ -13,43 +13,67 @@ import LinearGradient from 'react-native-linear-gradient';
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
   setExercise: ((exercise: ExerciseType) => void),
+  columns: number
 };
 
 // TODO: display thumbnails instead, for better performance?
 function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
+  var exerciseColumns: Array<Array<ExerciseType>> = Array.from(
+    Array(props.columns).keys()).map(
+      (column_nr: Number): Array<ExerciseType> => {
+        return props.exercises.filter(
+          (_, index, __) => {
+            return index % props.columns === column_nr;
+          }
+        )
+      }
+  );
+
   return (
     <ScrollView>
       <Text style={styles.header}>Welcome to RuneDroid</Text>
       <Text style={styles.subheader}>Pick an exercise to get started</Text>
-      {
-        props.exercises.map(
-          (exercise: ExerciseType) => (
-            StaticImages[exercise.id] ?
-            <TouchableOpacity
-              key={exercise.id}
-              onPress={(_) => props.setExercise(exercise)}>
+      <View style={styles.columnsContainer}>
+        {
+          exerciseColumns.map(
+            (column: Array<ExerciseType>, column_index: number) => (
               <View
-                style={styles.container}>
-                <ImageBackground
-                  source={StaticImages[exercise.id]}
-                  style={styles.image}>
-                  <LinearGradient
-                    colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
-                    style={styles.linGrad}
-                  >
-                    <Text
-                      style={styles.title}>
-                      {exercise.title}
-                    </Text>
-                  </LinearGradient>
-                </ImageBackground>
+                key={column_index}
+                style={{width: `${100 / props.columns}%`}}>
+                {
+                  column.map(
+                    (exercise: ExerciseType) => (
+                      StaticImages[exercise.id] ?
+                      <TouchableOpacity
+                        key={exercise.id}
+                        onPress={(_) => props.setExercise(exercise)}>
+                        <View
+                          style={styles.container}>
+                          <ImageBackground
+                            source={StaticImages[exercise.id]}
+                            style={styles.image}>
+                            <LinearGradient
+                              colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
+                              style={styles.linGrad}
+                            >
+                              <Text
+                                style={styles.title}>
+                                {exercise.title}
+                              </Text>
+                            </LinearGradient>
+                          </ImageBackground>
+                        </View>
+                      </TouchableOpacity>
+                      :
+                      <></>
+                    )
+                  )
+                }
               </View>
-            </TouchableOpacity>
-            :
-            <></>
+            )
           )
-        )
-      }
+        }
+      </View>
     </ScrollView>
   )
 }
@@ -110,6 +134,12 @@ const styles = StyleSheet.create({
     elevation: 3,
     // Needed for elevation to work:
     backgroundColor: '#fff',
+  },
+  columnsContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start' // if you want to fill rows left to right
   }
 });
 
