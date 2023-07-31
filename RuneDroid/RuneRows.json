@@ -157,6 +157,10 @@
         "latin": "s"
       },
       {
+        "rune": "ᛌ",
+        "latin": "s"
+      },
+      {
         "rune": "ᛏ",
         "latin": "t"
       },
@@ -823,6 +827,36 @@
     ]
   },
   "younger_futhark_u614": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚽ",
+        "latin": "e"
+      }
+    ]
+  },
+  "younger_futhark_u613": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚽ",
+        "latin": "e"
+      }
+    ]
+  },
+  "younger_futhark_norumfont": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚽ",
+        "latin": "e"
+      }
+    ]
+  },
+  "younger_futhark_lerkaka": {
     "name": "Long-branch Younger Fuþark",
     "inherit_from": "younger_futhark_long_branch",
     "override_symbols": [

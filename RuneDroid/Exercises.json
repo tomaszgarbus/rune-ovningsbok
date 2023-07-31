@@ -110,11 +110,38 @@
     "img_credit": "Own photo, taken in Historiska Museet",
     "title": "Uppland stone U 614",
     "rowType": "younger_futhark_u614",
-    "description": "One of the two runestones which originally stood at the boundary of what later became known as Torsätra Herrgård but which during the Viking Age was called Husa. Both stones were moved to the Swedish History Museum in 1967. The ornamentation, the appearance of the runes and the inscription all indicate that the stone was engraved by Visäte, sometime during the latter decades of the 11th century. The stone is on display in Historiska Museet in Stockholm.",
+    "description": "One of the two runestones (the other being U 613) which originally stood at the boundary of what later became known as Torsätra Herrgård but which during the Viking Age was called Husa. Both stones were moved to the Swedish History Museum in 1967. The ornamentation, the appearance of the runes and the inscription all indicate that the stone was engraved by Visäte, sometime during the latter decades of the 11th century. The stone is on display in Historiska Museet in Stockholm.",
     "runes": "ᛋᚴᚢᛚᛁ:ᛅᚢᚴ:ᚠᚬᛚᚴᛁ:ᛚᛅᛏᛅ:ᚱᚽᛁᛋᛅ:ᚦᛁᚾᛋᛅ:ᛋᛏᚽᛁᚾ:ᛁᚠᛏᚱ:ᛒᚱᚬᚦᚢᚱ:ᛋᛁᚾ:ᚼᚢᛋᛒᛁᚬᚱᚾ:ᚼᚾᚢᛋᛁᚬᚴᚢᛏᛁ:ᚦᛅᚦᛁᛦ:ᚴᛁᛅᛚᛏ:ᛏᚬᚴᚢ:ᚴᛅᚢᛏᛚᛅᚾᛏᛁ",
     "explanationAfter": "Correct! The text translates to Swedish as: \"Skule och Folke låt resa denna sten efter sin broder Husbjörn. Han blev sjuk ute då de togo gäld på Gotland.\" And to English: \"Skull och Folki raised this stone in memory of their brother Husbjorn. He fell ill while collecting payment on Gotland.\" Husbjorn took part in a voyage from the mainland to the island to collect \"geld\" or tax. This tallies with a part of the medieval Gutasagan which tells of an old agreement between the Gutes and the Svear. The agreement stipulated that the Svear had the right to collect 60 marks of silver in geld (tax/tribute) from Gotland each year. 40 marks would go to the King and 20 to the Jarl. In return the Gutes would be given protection against attack and raids and the right to indulge in free trade with the Svear in their seas.",
     "sources": [
       "Description in Historiska Museet"
+    ]
+  },
+  {
+    "id": "u613",
+    "img": "u613.jpg",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "title": "Unna's stone U 613",
+    "rowType": "younger_futhark_u613",
+    "description": "One of the two rune stones (the other being U 614) which originally stood at the boundary of what later became known as Torsätra Herrgård but which during the Viking Age was called Husa. The inscription starts on the right side of the stone and runs downwards and inside the head of the serpent from where it continues on the other side.",
+    "runes": "ᚢᚾᛅ+ᛚᛁᛏ+ᚱᚽᛁᛋᛅ+ᚦᛁᚾᛋᛅ+ᛋᛏᚽᛁᚾ+ᛅᚠᛏᛦ+ᛋᚢᚾᛋᛁᚾ+ᛁᛋᛏᛁᚾ+ᛋᚢᛘ+ᛏᚬ+ᛁᚼᚬᛁᛏᛅ+ᚢᛅᚦᚢᛘ+ᚴᚢᚦᚼᛁᛅᛚᛒᛁ+ᛋᛅᛚᚢ+ᚼᛅᚾᛋ",
+    "explanationAfter": "Correct. The inscription runs: \"'Unna had this stone raised in memory of his son Östen, who died wearing a christening gown. God preserve his soul.\" (\"Unna let ræisa þennsa stæin æftiʀ sun sinn Øystæin, sum do i hvitavaðum. Gud hialpi salu hans.\")",
+    "sources": [
+      "Description in Historiska Museet",
+      "https://vikingar.historiska.se/object_details.php?object=44677_HST&e=no&l=en"
+    ]
+  },
+  {
+    "id": "lerkaka_stenen",
+    "img": "lerkaka_stenen.jpg",
+    "img_credit": "Own photo, taken in Lerkaka",
+    "title": "Lerkaka stone Ö 37",
+    "rowType": "younger_futhark_lerkaka",
+    "description": "An 11-century runestone standing by the road in Lerkaka, just across the beautiful windmills.",
+    "runes": "ᚬᛚᛅᚠᛦxᛅᚢᚴxᚴᛅᛘᛅᛚxᛅᚢᚴxᛋᛅᚴᛋᛁxᚱᛅᛁᛋᛏᚢxᛋᛏᛅᛁᚾxᚦᛁᚾᛅxᛅᚠᛏᛁᛦ…ᚢᛁᛚᛁᛏxᛅᛏxᛒᚬᚾᛏᛅxᛋᛁᚾxᚼᛁᛅᚱᛋᚢ…ᚴᚢᛒᛚᚦᛋᛁᚠᛁᛅᛦᚢᚾᚬᛚᛅᚠᛦᚼᚽᚠᚾᛏ…ᚠᛅᚾᛒᚢ",
+    "explanationAfter": "Yes! The full stone originally said: \"Olof and Gammal and Saxe raised this stone after their father, Unn. Geirvi had this memorial made after her husband. Olof avenged Rike-Unn at Miomu. Unn owned half the village.\" (in Swedish: \"Olof och Gammal och Saxe reste denna sten efter Unn, sin fader. Geirvi lät efter sin make här (göra) denna minnesvård. För Rike-Unn hämnades Olof vid Miomu; Unn ägde här halva byn.\")",
+    "sources": [
+      "A plaque next to the stone, provided by Riksantikvarieambetet"
     ]
   },
   {
@@ -261,6 +288,20 @@
     "sources": [
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/331/c/4d7032467cdc2f98787138d9e1f2bd24/",
       "https://app.raa.se/open/runor/inscription?id=d5024f02-c8b4-4168-b02c-ad97c5559b42"
+    ]
+  },
+  {
+    "id": "norumfont",
+    "img": "norumfont.jpg",
+    "title": "Norum font",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "runes": "ᛌᚢᛅᚾᚴᛅᚱᚦᚽ ᛘᛁᚴ ᛘᛁᚴ ᛘᛁᚴ ᛘᛁᚴ ᛘᛁᚴ",
+    "rowType": "younger_futhark_norumfont",
+    "description": "Soapstone baptismal font, found in 1847 in a scrap heap in the cemetery of Norum Church. All four sides are decorated, one side contains a runic inscription.",
+    "explanationAfter": "Indeed, the inscription says: \"Sven made me\" (\"Sven gjorde mig\"). The last 5 characters seem to be bind runes for \"mik\" or \"mig\" - \"me\".",
+    "sources": [
+      "Description in Historiska Museet",
+      "https://vikingar.historiska.se/object_details.php?object=46162_HST&e=no&l=en"
     ]
   },
   {
