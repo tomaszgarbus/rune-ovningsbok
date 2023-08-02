@@ -17,7 +17,6 @@ import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
-import Toggle from 'react-native-toggle-element/lib/toggle';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -142,6 +141,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     {/* Rune inputs and separators */}
     <ScrollView
       contentContainerStyle={styles.horizontalScrollView}
+      persistentScrollbar={true} 
       horizontal={true}>
       {
         mapRunes<ReactElement>(
