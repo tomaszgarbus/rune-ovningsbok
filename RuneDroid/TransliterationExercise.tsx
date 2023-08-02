@@ -17,6 +17,7 @@ import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
+import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -126,17 +127,25 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </Text>
 
     {/* Image */}
-    <Image
-      source={StaticImages[props.exercise.id]}
-      style={[
-        styles.image,
-        {
-          aspectRatio: imageAspectRatio
-        }
-      ]}
-      onLoad={
-        ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
-        } />
+    <ReactNativeZoomableView
+      maxZoom={1.5}
+      minZoom={0.5}
+      zoomStep={0.5}
+      initialZoom={1}
+      bindToBorders={true}
+    >
+      <Image
+        source={StaticImages[props.exercise.id]}
+        style={[
+          styles.image,
+          {
+            aspectRatio: imageAspectRatio
+          }
+        ]}
+        onLoad={
+          ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
+          } />
+    </ReactNativeZoomableView>
 
     {/* Rune inputs and separators */}
     <ScrollView
