@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     marginTop: 0,
     textAlign: 'center',
+    color: 'black',
   },
   runeInputBox: {
     backgroundColor: '#ffd0d0',

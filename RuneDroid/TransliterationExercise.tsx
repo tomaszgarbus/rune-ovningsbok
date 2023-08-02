@@ -121,10 +121,14 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </SafeAreaView>
     
     {/* Description */}
-    <Text
+    <View
       style={styles.description}>
-      {props.exercise.description}
-    </Text>
+      <Text style={styles.sectionName}>About:</Text>
+      <Text
+        style={styles.sectionContent}>
+        {props.exercise.description}
+      </Text>
+    </View>
 
     {/* Image */}
     <ReactNativeZoomableView
@@ -188,14 +192,16 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     }
 
     {/* Sources */}
-    <View>
-      <Text>Sources:</Text>
-      {
-        props.exercise.sources && 
-        props.exercise.sources.map((src: string) =>
-          <Text key={src}> • {src}</Text>
-        )
-      }
+    <View style={styles.sources}>
+      <Text style={styles.sectionName}>Sources:</Text>
+      <Text style={styles.sectionContent}>
+        {
+          props.exercise.sources && 
+          props.exercise.sources.map((src: string) =>
+            `• ${src}`
+          )
+        }
+      </Text>
     </View>
 
   </ScrollView>
@@ -208,9 +214,21 @@ const styles = StyleSheet.create({
   title: {
     alignSelf: "center",
     fontSize: 20,
+    color: "black",
+    marginTop: 10,
+  },
+  sectionName: {
+    color: "black",
+    fontWeight: "bold"
+  },
+  sectionContent: {
+    color: "black"
   },
   description: {
     marginBottom: 20,
+    marginTop: 10,
+  },
+  sources: {
     marginTop: 10,
   },
   image: {
