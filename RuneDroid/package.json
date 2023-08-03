@@ -15,7 +15,13 @@
     "react": "18.2.0",
     "react-native": "0.71.8",
     "react-native-linear-gradient": "^2.6.2",
-    "react-native-toggle-element": "^2.0.1"
+    "react-native-toggle-element": "^2.0.1",
+    "react-native-walkthrough-tooltip": "^1.5.0"
+  },
+  "overrides": {
+    "react-native-walkthrough-tooltip": {
+      "@types/react": ">=18"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
