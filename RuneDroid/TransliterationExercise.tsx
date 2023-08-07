@@ -17,6 +17,7 @@ import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
+import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Tooltip from 'react-native-walkthrough-tooltip';
 
@@ -39,8 +40,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     ready: false,
     solved: false,
   });
-  const [inputsToolTipVisible, setInputsToolTipVisible] = useState<boolean>(true);
-  const [imageToolTipVisible, setImageToolTipVisible] = useState<boolean>(true);
+  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 2);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
   
   useBackHandler(() => {
@@ -135,13 +135,13 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
 
     {/* Image */}
     <Tooltip
-      isVisible={imageToolTipVisible}
+      isVisible={currentToolTip == 0}
       content={<Text>
         Use gestures (pinch, double tap) to zoom in and move the photo.
         Try to locate the runes you're transliterating on the photo!
         </Text>}
       placement="top"
-      onClose={() => setImageToolTipVisible(false)}
+      onClose={nextToolTip}
         >
       <ReactNativeZoomableView
         maxZoom={1.5}
@@ -166,7 +166,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
 
     {/* Rune inputs and separators */}
     <Tooltip
-      isVisible={inputsToolTipVisible}
+      isVisible={currentToolTip == 1}
       content={<Text>
         Enter characters of Latin alphabet below the runes.
         You will see a feedback immediately after input.
@@ -174,7 +174,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         just input whichever and update according to the hint.
         </Text>}
       placement="top"
-      onClose={() => setInputsToolTipVisible(false)}
+      onClose={nextToolTip}
     >
       <ScrollView
         contentContainerStyle={styles.horizontalScrollView}
