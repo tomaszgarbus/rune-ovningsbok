@@ -14,12 +14,12 @@ function useToolTips(key: string, count: number): [
   /*currentToolTipNumber */number,
   /*nextTooltip: */() => void
 ] {
-  const loadedToolTipNumber = await loadCurrentToolTipNumberFromLocalStorage();
-  const [currentToolTipNumber, setCurrentToolTipNumber] = useState<number>(
-    
-  );
+  const [currentToolTipNumber, setCurrentToolTipNumber] = useState<number>(0);
+  loadCurrentToolTipNumberFromLocalStorage().then((value: number) => {
+    setCurrentToolTipNumber(Math.max(currentToolTipNumber, value));
+  });
 
-  async function updateLocalStorage(value: number) {
+  async function updateLocalStorage(value: number): Promise<void> {
     try {
       await AsyncStorage.setItem(key, value.toString());
     } catch (e) {
@@ -37,9 +37,9 @@ function useToolTips(key: string, count: number): [
     }
   };
 
-  useEffect(async () => {
+  useEffect(() => {
     try {
-      await AsyncStorage.setItem(key, currentToolTipNumber);
+      updateLocalStorage(currentToolTipNumber)
     } catch (e) {
       // saving error
     }
