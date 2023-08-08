@@ -17,7 +17,9 @@ import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
+import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
+import Tooltip from 'react-native-walkthrough-tooltip';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -38,8 +40,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     ready: false,
     solved: false,
   });
+  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 2);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
-
+  
   useBackHandler(() => {
     props.goBack();
     return true;
@@ -131,51 +134,73 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </View>
 
     {/* Image */}
-    <ReactNativeZoomableView
-      maxZoom={1.5}
-      minZoom={0.5}
-      zoomStep={0.5}
-      initialZoom={1}
-      bindToBorders={true}
-    >
-      <Image
-        source={StaticImages[props.exercise.id]}
-        style={[
-          styles.image,
-          {
-            aspectRatio: imageAspectRatio
-          }
-        ]}
-        onLoad={
-          ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
-          } />
-    </ReactNativeZoomableView>
+    <Tooltip
+      isVisible={currentToolTip == 0}
+      content={<Text>
+        Use gestures (pinch, double tap) to zoom in and move the photo.
+        Try to locate the runes you're transliterating on the photo!
+        </Text>}
+      placement="top"
+      onClose={nextToolTip}
+        >
+      <ReactNativeZoomableView
+        maxZoom={1.5}
+        minZoom={0.5}
+        zoomStep={0.5}
+        initialZoom={1}
+        bindToBorders={true}
+      >
+        <Image
+          source={StaticImages[props.exercise.id]}
+          style={[
+            styles.image,
+            {
+              aspectRatio: imageAspectRatio
+            }
+          ]}
+          onLoad={
+            ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
+            } />
+      </ReactNativeZoomableView>
+    </Tooltip>
 
     {/* Rune inputs and separators */}
-    <ScrollView
-      contentContainerStyle={styles.horizontalScrollView}
-      persistentScrollbar={true} 
-      horizontal={true}>
-      {
-        mapRunes<ReactElement>(
-          (rune, index) => IsSeparator(rune) ?
-          <RuneSeparator character={rune} key={index} />
-          :
-          <RuneInput
-            index={index}
-            key={index}
-            rune={rune}
-            onChangeText={(text) => updateUserAnswer(index, text)}
-            feedback={shouldShowHintForField(index) ? 
-              {
-                "symbol": runeMapping[rune],
-                "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
-              } : undefined
-            }
-          />
-        )
-      }
-    </ScrollView>
+    <Tooltip
+      isVisible={currentToolTip == 1}
+      content={<Text>
+        Enter characters of Latin alphabet below the runes.
+        You will see a feedback immediately after input.
+        If you are unsure how to translate some symbol (should ᚴ be K or G?),
+        just input whichever and update according to the hint.
+        </Text>}
+      placement="top"
+      onClose={nextToolTip}
+    >
+      <ScrollView
+        contentContainerStyle={styles.horizontalScrollView}
+        persistentScrollbar={true} 
+        horizontal={true}>
+        {
+          mapRunes<ReactElement>(
+            (rune, index) => IsSeparator(rune) ?
+            <RuneSeparator character={rune} key={index} />
+            :
+            <RuneInput
+              index={index}
+              key={index}
+              rune={rune}
+              onChangeText={(text) => updateUserAnswer(index, text)}
+              feedback={shouldShowHintForField(index) ? 
+                {
+                  "symbol": runeMapping[rune],
+                  "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
+                } : undefined
+              }
+            />
+          )
+        }
+      </ScrollView>
+    </Tooltip>
 
     {/* Explanation after */}
     { userAnswer.solved && 
