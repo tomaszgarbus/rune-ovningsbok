@@ -31,7 +31,7 @@ function App(): JSX.Element {
         <ListOfExercises
           exercises={Exercises}
           setExercise={setExercise}
-          columns={2}
+          columns={1}
         />
         :
         <TransliterationExercise

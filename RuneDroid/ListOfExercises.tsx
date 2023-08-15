@@ -1,4 +1,6 @@
 import {
+  Dimensions,
+    Image,
     ImageBackground,
     ScrollView,
     StyleSheet,
@@ -9,6 +11,7 @@ import {
 import { ExerciseType }  from './Types';
 import { StaticThumbnails } from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
+import { useState } from 'react';
 
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
@@ -29,6 +32,21 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
       }
   );
 
+  function boundedAspectRatio(aspectRatio: number) {
+    return Math.min(Math.max(2/3, aspectRatio), 4/5);
+  }
+
+  type ImageAspectRatiosDictType = { [exercise_id: string]: (number) };
+  const [imageAspectRatios, setImageAspectRatios] = useState<ImageAspectRatiosDictType>(
+    props.exercises.reduce(
+      (dict: ImageAspectRatiosDictType, exercise: ExerciseType, idx: number, array: any) => {
+        const source = Image.resolveAssetSource(StaticThumbnails[exercise.id]);
+        dict[exercise.id] = boundedAspectRatio(source.width / source.height);
+        return dict;
+      },
+      {}
+  ));
+
   return (
     <ScrollView>
       <Text style={styles.header}>Welcome to RuneDroid</Text>
@@ -48,10 +66,26 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                         key={exercise.id}
                         onPress={(_) => props.setExercise(exercise)}>
                         <View
-                          style={styles.container}>
+                          style={
+                            [
+                              {
+                                aspectRatio: imageAspectRatios[exercise.id]
+                              },
+                              styles.container,
+                            ]
+                          }>
                           <ImageBackground
                             source={StaticThumbnails[exercise.id]}
-                            style={styles.image}>
+                            style={styles.image}
+                            onLoad={
+                              ({nativeEvent: {source: {width, height}}}) => setImageAspectRatios(
+                                {
+                                  ...imageAspectRatios,
+                                  [exercise.id]: boundedAspectRatio(width / height)
+                                }
+                              )
+                            }
+                            >
                             <LinearGradient
                               colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
                               style={styles.linGrad}
@@ -122,8 +156,8 @@ const styles = StyleSheet.create({
     width: "auto",
     marginTop: 5,
     marginHorizontal: 5,
-    minHeight: 100,
-    maxHeight: 300,
+    // minHeight: 100,
+    // maxHeight: 300,
     shadowColor: '#000',
     shadowRadius: 5,
     shadowOffset: {
