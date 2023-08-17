@@ -1,0 +1,61 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "fonts/Aboreto/Aboreto-Regular.ttf",
+      "sha1": "50703a14e4a6246c32fdb3fa6769a90e205fe41d"
+    },
+    {
+      "path": "fonts/Aboreto/OFL.txt",
+      "sha1": "5f8bc4bdd2c0b2b0b3dab8f0955da594d2af39b3"
+    },
+    {
+      "path": "fonts/Finlandica/Finlandica-Italic-VariableFont_wght.ttf",
+      "sha1": "b6cff936d09ca741e54e77e75513871676c8c3f0"
+    },
+    {
+      "path": "fonts/Finlandica/Finlandica-VariableFont_wght.ttf",
+      "sha1": "2d74e8e331ec8788b638aa2cfd36f39364220018"
+    },
+    {
+      "path": "fonts/Finlandica/README.txt",
+      "sha1": "1aceee597f7f72a3395aa09f8c71c2da77297523"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-Bold.ttf",
+      "sha1": "b943796fca82c46ef53b90172a9325e186fd900c"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-BoldItalic.ttf",
+      "sha1": "1dcefe91f32232569bb1fbcee2e77d2f0fef4e5b"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-Italic.ttf",
+      "sha1": "abfb6dc94135b730d7ed9f5069fb594ea5e60151"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-Medium.ttf",
+      "sha1": "cab61064938acc0564baf6cb232eb32d25322320"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-MediumItalic.ttf",
+      "sha1": "206623328aaf9acc69a8cfbaf3fbb26fa9b9c191"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-Regular.ttf",
+      "sha1": "e94edd002aa8482018e63c4e26ec1df41ae3c982"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-SemiBold.ttf",
+      "sha1": "476d3e5d0061c8d4d8606d81b14407586c08321b"
+    },
+    {
+      "path": "fonts/Finlandica/static/Finlandica-SemiBoldItalic.ttf",
+      "sha1": "e8a859110e15e83dfcb7d2feef9d8545a0568925"
+    },
+    {
+      "path": "fonts/Forum/Forum-Regular.ttf",
+      "sha1": "b661e8c6b8502ce99d002d22ee182fd2db54ea56"
+    }
+  ]
+}

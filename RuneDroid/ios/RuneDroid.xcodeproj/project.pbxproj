@@ -14,6 +14,20 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-RuneDroid-RuneDroidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RuneDroid-RuneDroidTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		067BE087290A4EFF9368BB1C /* Aboreto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 676ACF42488C4F7DB985CB52 /* Aboreto-Regular.ttf */; };
+		9559327E30EA4CA781B63E1E /* Forum-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EAD680D44EE410BBB5FD50C /* Forum-Regular.ttf */; };
+		405A01D9EB3948EB9F11E2E1 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F62F7A098D84BB79176814C /* OFL.txt */; };
+		8BE2998152EB4370A1916713 /* Finlandica-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A7970DF8A4ACAAC221166 /* Finlandica-Italic-VariableFont_wght.ttf */; };
+		BD44B4956BE14ABD9898C21F /* Finlandica-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B52E13A30C954D37B3C01D44 /* Finlandica-VariableFont_wght.ttf */; };
+		A0E352F0DA0743B087529108 /* Finlandica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1823CB20F944AA3B81D1AD3 /* Finlandica-Bold.ttf */; };
+		B41B754BF04946C9AEEF74D7 /* Finlandica-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B44035959FF04AADAC6E9A02 /* Finlandica-BoldItalic.ttf */; };
+		B56E1FC0771046998DE50550 /* Finlandica-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFBB8D3E34D413E90AAD0F1 /* Finlandica-Italic.ttf */; };
+		4923950F64054C33B91B7656 /* Finlandica-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20BE598C15D942A4B5D1000A /* Finlandica-Medium.ttf */; };
+		97928C634FA649678E4A9B6B /* Finlandica-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ED482F5219D48ABBB8709A9 /* Finlandica-MediumItalic.ttf */; };
+		40EC023E6771485987A7482D /* Finlandica-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2425D834E41947F58671E582 /* Finlandica-Regular.ttf */; };
+		C1AFF549A6184D5AB9900F59 /* Finlandica-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72CE75B152104C4F80C51192 /* Finlandica-SemiBold.ttf */; };
+		DFAC70752DEB4C16A204B21E /* Finlandica-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41DED495FFD4EB982037AF9 /* Finlandica-SemiBoldItalic.ttf */; };
+		4B17040DEBEE43CFAFF78170 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = F668DD06B6E1416D8D413212 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,20 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RuneDroid/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RuneDroid-RuneDroidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuneDroid-RuneDroidTests.release.xcconfig"; path = "Target Support Files/Pods-RuneDroid-RuneDroidTests/Pods-RuneDroid-RuneDroidTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		676ACF42488C4F7DB985CB52 /* Aboreto-Regular.ttf */ = {isa = PBXFileReference; name = "Aboreto-Regular.ttf"; path = "../fonts/Aboreto/Aboreto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9EAD680D44EE410BBB5FD50C /* Forum-Regular.ttf */ = {isa = PBXFileReference; name = "Forum-Regular.ttf"; path = "../fonts/Forum/Forum-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F62F7A098D84BB79176814C /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../fonts/Aboreto/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5E0A7970DF8A4ACAAC221166 /* Finlandica-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Finlandica-Italic-VariableFont_wght.ttf"; path = "../fonts/Finlandica/Finlandica-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B52E13A30C954D37B3C01D44 /* Finlandica-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Finlandica-VariableFont_wght.ttf"; path = "../fonts/Finlandica/Finlandica-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1823CB20F944AA3B81D1AD3 /* Finlandica-Bold.ttf */ = {isa = PBXFileReference; name = "Finlandica-Bold.ttf"; path = "../fonts/Finlandica/static/Finlandica-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B44035959FF04AADAC6E9A02 /* Finlandica-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Finlandica-BoldItalic.ttf"; path = "../fonts/Finlandica/static/Finlandica-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0AFBB8D3E34D413E90AAD0F1 /* Finlandica-Italic.ttf */ = {isa = PBXFileReference; name = "Finlandica-Italic.ttf"; path = "../fonts/Finlandica/static/Finlandica-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20BE598C15D942A4B5D1000A /* Finlandica-Medium.ttf */ = {isa = PBXFileReference; name = "Finlandica-Medium.ttf"; path = "../fonts/Finlandica/static/Finlandica-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0ED482F5219D48ABBB8709A9 /* Finlandica-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Finlandica-MediumItalic.ttf"; path = "../fonts/Finlandica/static/Finlandica-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2425D834E41947F58671E582 /* Finlandica-Regular.ttf */ = {isa = PBXFileReference; name = "Finlandica-Regular.ttf"; path = "../fonts/Finlandica/static/Finlandica-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72CE75B152104C4F80C51192 /* Finlandica-SemiBold.ttf */ = {isa = PBXFileReference; name = "Finlandica-SemiBold.ttf"; path = "../fonts/Finlandica/static/Finlandica-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C41DED495FFD4EB982037AF9 /* Finlandica-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Finlandica-SemiBoldItalic.ttf"; path = "../fonts/Finlandica/static/Finlandica-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F668DD06B6E1416D8D413212 /* README.txt */ = {isa = PBXFileReference; name = "README.txt"; path = "../fonts/Finlandica/README.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +150,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7B4D731F47C7437DBD46C5D9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +176,28 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		7B4D731F47C7437DBD46C5D9 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				676ACF42488C4F7DB985CB52 /* Aboreto-Regular.ttf */,
+				9EAD680D44EE410BBB5FD50C /* Forum-Regular.ttf */,
+				3F62F7A098D84BB79176814C /* OFL.txt */,
+				5E0A7970DF8A4ACAAC221166 /* Finlandica-Italic-VariableFont_wght.ttf */,
+				B52E13A30C954D37B3C01D44 /* Finlandica-VariableFont_wght.ttf */,
+				A1823CB20F944AA3B81D1AD3 /* Finlandica-Bold.ttf */,
+				B44035959FF04AADAC6E9A02 /* Finlandica-BoldItalic.ttf */,
+				0AFBB8D3E34D413E90AAD0F1 /* Finlandica-Italic.ttf */,
+				20BE598C15D942A4B5D1000A /* Finlandica-Medium.ttf */,
+				0ED482F5219D48ABBB8709A9 /* Finlandica-MediumItalic.ttf */,
+				2425D834E41947F58671E582 /* Finlandica-Regular.ttf */,
+				72CE75B152104C4F80C51192 /* Finlandica-SemiBold.ttf */,
+				C41DED495FFD4EB982037AF9 /* Finlandica-SemiBoldItalic.ttf */,
+				F668DD06B6E1416D8D413212 /* README.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +295,20 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				067BE087290A4EFF9368BB1C /* Aboreto-Regular.ttf in Resources */,
+				9559327E30EA4CA781B63E1E /* Forum-Regular.ttf in Resources */,
+				405A01D9EB3948EB9F11E2E1 /* OFL.txt in Resources */,
+				8BE2998152EB4370A1916713 /* Finlandica-Italic-VariableFont_wght.ttf in Resources */,
+				BD44B4956BE14ABD9898C21F /* Finlandica-VariableFont_wght.ttf in Resources */,
+				A0E352F0DA0743B087529108 /* Finlandica-Bold.ttf in Resources */,
+				B41B754BF04946C9AEEF74D7 /* Finlandica-BoldItalic.ttf in Resources */,
+				B56E1FC0771046998DE50550 /* Finlandica-Italic.ttf in Resources */,
+				4923950F64054C33B91B7656 /* Finlandica-Medium.ttf in Resources */,
+				97928C634FA649678E4A9B6B /* Finlandica-MediumItalic.ttf in Resources */,
+				40EC023E6771485987A7482D /* Finlandica-Regular.ttf in Resources */,
+				C1AFF549A6184D5AB9900F59 /* Finlandica-SemiBold.ttf in Resources */,
+				DFAC70752DEB4C16A204B21E /* Finlandica-SemiBoldItalic.ttf in Resources */,
+				4B17040DEBEE43CFAFF78170 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

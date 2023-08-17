@@ -115,7 +115,7 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
 const styles = StyleSheet.create({
   header: {
     fontSize: 40,
-    fontWeight: "bold",
+    fontFamily: "Forum-Regular",
     color: "#000",
     zIndex: 3,
     textAlign: "center",
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   },
   subheader: {
     fontSize: 15,
-    fontWeight: "bold",
+    fontFamily: "Aboreto-Regular",
     color: "#000",
     zIndex: 3,
     textAlign: "center",
@@ -136,16 +136,11 @@ const styles = StyleSheet.create({
     height: "100%"
   },
   title: {
-    fontSize: 20,
-    fontWeight: "bold",
+    fontSize: 18,
     color: "#000",
     zIndex: 3,
-    // textShadowColor: "#fff",
-    // textShadowRadius: 2,
-    // textShadowOffset: {
-    //   width: 0,
-    //   height: 0,
-    // },
+    fontFamily: "Finlandica-Regular",
+    marginLeft: 2,
   },
   linGrad: {
     width: "100%",
@@ -155,7 +150,7 @@ const styles = StyleSheet.create({
   container: {
     width: "auto",
     marginTop: 5,
-    marginHorizontal: 5,
+    marginHorizontal: 2,
     // minHeight: 100,
     // maxHeight: 300,
     shadowColor: '#000',
@@ -173,7 +168,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    alignItems: 'flex-start' // if you want to fill rows left to right
+    alignItems: 'flex-start'
   }
 });
 
