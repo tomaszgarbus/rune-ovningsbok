@@ -16,7 +16,13 @@ import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
-import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
+import { Linking } from 'react-native';
+import {
+  IsSeparator,
+  IsValidHttpUrl,
+  RuneMappingType,
+  RuneRowToMapping
+} from './Utils';
 import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Tooltip from 'react-native-walkthrough-tooltip';
@@ -223,7 +229,14 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         {
           props.exercise.sources && 
           props.exercise.sources.map((src: string) =>
-            `• ${src}`
+            IsValidHttpUrl(src)
+            ?
+            <Text
+              style={styles.link}
+              onPress={() => Linking.openURL(src)}
+              >{`• ${src}\n`}</Text>
+            :
+            `• ${src}\n`
           )
         }
       </Text>
@@ -256,6 +269,9 @@ const styles = StyleSheet.create({
   },
   sources: {
     marginTop: 10,
+  },
+  link: {
+    color: "blue",
   },
   image: {
     alignSelf: "center",

@@ -17,6 +17,7 @@
     "react-native": "0.71.8",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-toggle-element": "^2.0.1",
+    "react-native-url-polyfill": "^2.0.0",
     "react-native-walkthrough-tooltip": "^1.5.0"
   },
   "overrides": {
