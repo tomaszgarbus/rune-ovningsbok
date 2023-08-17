@@ -36,7 +36,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -51,5 +51,20 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Aboreto-Regular.ttf</string>
+		<string>Forum-Regular.ttf</string>
+		<string>Finlandica-Italic-VariableFont_wght.ttf</string>
+		<string>Finlandica-VariableFont_wght.ttf</string>
+		<string>Finlandica-Bold.ttf</string>
+		<string>Finlandica-BoldItalic.ttf</string>
+		<string>Finlandica-Italic.ttf</string>
+		<string>Finlandica-Medium.ttf</string>
+		<string>Finlandica-MediumItalic.ttf</string>
+		<string>Finlandica-Regular.ttf</string>
+		<string>Finlandica-SemiBold.ttf</string>
+		<string>Finlandica-SemiBoldItalic.ttf</string>
+	</array>
 </dict>
 </plist>

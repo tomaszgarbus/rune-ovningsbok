@@ -1,4 +1,6 @@
 import {
+  Dimensions,
+    Image,
     ImageBackground,
     ScrollView,
     StyleSheet,
@@ -9,6 +11,7 @@ import {
 import { ExerciseType }  from './Types';
 import { StaticThumbnails } from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
+import { useState } from 'react';
 
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
@@ -29,6 +32,21 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
       }
   );
 
+  function boundedAspectRatio(aspectRatio: number) {
+    return Math.min(Math.max(2/3, aspectRatio), 4/5);
+  }
+
+  type ImageAspectRatiosDictType = { [exercise_id: string]: (number) };
+  const [imageAspectRatios, setImageAspectRatios] = useState<ImageAspectRatiosDictType>(
+    props.exercises.reduce(
+      (dict: ImageAspectRatiosDictType, exercise: ExerciseType, idx: number, array: any) => {
+        const source = Image.resolveAssetSource(StaticThumbnails[exercise.id]);
+        dict[exercise.id] = boundedAspectRatio(source.width / source.height);
+        return dict;
+      },
+      {}
+  ));
+
   return (
     <ScrollView>
       <Text style={styles.header}>Welcome to RuneDroid</Text>
@@ -48,10 +66,26 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                         key={exercise.id}
                         onPress={(_) => props.setExercise(exercise)}>
                         <View
-                          style={styles.container}>
+                          style={
+                            [
+                              {
+                                aspectRatio: imageAspectRatios[exercise.id]
+                              },
+                              styles.container,
+                            ]
+                          }>
                           <ImageBackground
                             source={StaticThumbnails[exercise.id]}
-                            style={styles.image}>
+                            style={styles.image}
+                            onLoad={
+                              ({nativeEvent: {source: {width, height}}}) => setImageAspectRatios(
+                                {
+                                  ...imageAspectRatios,
+                                  [exercise.id]: boundedAspectRatio(width / height)
+                                }
+                              )
+                            }
+                            >
                             <LinearGradient
                               colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
                               style={styles.linGrad}
@@ -81,7 +115,7 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
 const styles = StyleSheet.create({
   header: {
     fontSize: 40,
-    fontWeight: "bold",
+    fontFamily: "Forum-Regular",
     color: "#000",
     zIndex: 3,
     textAlign: "center",
@@ -91,7 +125,7 @@ const styles = StyleSheet.create({
   },
   subheader: {
     fontSize: 15,
-    fontWeight: "bold",
+    fontFamily: "Aboreto-Regular",
     color: "#000",
     zIndex: 3,
     textAlign: "center",
@@ -102,16 +136,11 @@ const styles = StyleSheet.create({
     height: "100%"
   },
   title: {
-    fontSize: 20,
-    fontWeight: "bold",
+    fontSize: 18,
     color: "#000",
     zIndex: 3,
-    // textShadowColor: "#fff",
-    // textShadowRadius: 2,
-    // textShadowOffset: {
-    //   width: 0,
-    //   height: 0,
-    // },
+    fontFamily: "Finlandica-Regular",
+    marginLeft: 2,
   },
   linGrad: {
     width: "100%",
@@ -121,9 +150,9 @@ const styles = StyleSheet.create({
   container: {
     width: "auto",
     marginTop: 5,
-    marginHorizontal: 5,
-    minHeight: 100,
-    maxHeight: 300,
+    marginHorizontal: 2,
+    // minHeight: 100,
+    // maxHeight: 300,
     shadowColor: '#000',
     shadowRadius: 5,
     shadowOffset: {
@@ -139,7 +168,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    alignItems: 'flex-start' // if you want to fill rows left to right
+    alignItems: 'flex-start'
   }
 });
 

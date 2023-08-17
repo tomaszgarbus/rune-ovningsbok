@@ -241,6 +241,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "black",
     marginTop: 10,
+    fontFamily: "Aboreto-Regular",
   },
   sectionName: {
     color: "black",
@@ -279,6 +280,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     marginHorizontal: 20,
+    fontFamily: "Finlandica-Regular",
   },
   toggler: {
     activeBackgroundColor: "#3c4145",
