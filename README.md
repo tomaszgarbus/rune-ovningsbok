@@ -146,4 +146,4 @@ Thus, a good practice after adding a new exercise, is to wait for the `img-resiz
 
 Currently, mobile is not supported. You can open the app on your phone (in the browser), but the layout was designed for PC.
 
-Rewriting the app in React Native for Android is in progress.
+Rewriting the app in React Native for Android is in progress. See the RuneDroid directory for react-native source code.
