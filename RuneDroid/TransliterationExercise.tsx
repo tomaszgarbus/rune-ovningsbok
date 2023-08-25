@@ -129,6 +129,15 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       </Text>
     </SafeAreaView>
     
+    {/* Row type */}
+    <View
+      style={styles.rowType}>
+      <Text style={styles.sectionName}>Runic alphabet:</Text>
+      <Text style={styles.sectionContent}>
+        {props.runeRow.name}
+      </Text>
+    </View>
+
     {/* Description */}
     <View
       style={styles.description}>
@@ -265,6 +274,10 @@ const styles = StyleSheet.create({
   },
   description: {
     marginBottom: 20,
+    marginTop: 10,
+  },
+  rowType: {
+    marginBottom: 0,
     marginTop: 10,
   },
   sources: {
