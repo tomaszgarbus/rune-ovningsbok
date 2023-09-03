@@ -242,17 +242,11 @@
       },
       {
         "rune": "ᛅ",
-        "latin": [
-          "a",
-          "e"
-        ]
+        "latin": "a"
       },
       {
         "rune": "ᛆ",
-        "latin": [
-          "a",
-          "e"
-        ]
+        "latin": "a"
       },
       {
         "rune": "ᛌ",
@@ -516,16 +510,25 @@
     ]
   },
   "b149_younger_futhark": {
-    "name": "Long-branch Younger Fuþark",
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": []
+  },
+  "bergen_possible_gravestone_younger_futhark": {
+    "name": "Short-twig Younger Fuþark",
     "inherit_from": "younger_futhark_short_twig",
     "override_symbols": [
       {
-        "rune": "ᛆ",
-        "latin": "a"
+        "rune": "ᛒ",
+        "latin": "b"
       },
       {
-        "rune": "ᛅ",
-        "latin": "a"
+        "rune": "ᚮ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": ["þ", "d"]
       }
     ]
   },
