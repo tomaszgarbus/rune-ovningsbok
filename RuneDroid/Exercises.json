@@ -268,6 +268,7 @@
   {
     "id": "bryggengohome",
     "img": "bergenstick_gohome.jpg",
+    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
     "title": "Bergen stick B 149",
     "runes": ["ᚴ", "ᛦ", "ᛆ", ":", "ᛌ", "ᛅ", "ᚼ", "ᛁ", "ᚱ", ":", "ᛆ", "ᛐ", "ᚦ", "ᚢ", ":", "ᚴ", "ᛆ", "ᚴ", ":", "ᚼ", "ᛅ", "ᛁ", "ᛉ"],
     "rowType": "b149_younger_futhark",
@@ -275,6 +276,19 @@
     "explanationAfter": "Yes! That is the famous inscription which translates to \"Gyða segir at þú gakk heim\" - \"Gyða tells you to go home\"!",
     "sources": [
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
+    ]
+  },
+  {
+    "id": "bergen_possible_gravestone",
+    "img": "bergen_possible_gravestone.jpg",
+    "title": "Possible gravestone from Bryggen, Bergen",
+    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
+    "runes": "ᚦᛁᛐᛆᚱᛅᛁᛌᛐᚱᚿᛁᛁᚴᚦᚱ…ᚦᛁᛐᛆᚱᛅᛁᛌᛐ ᛅᛁᚱᚱᛁᚴᚱ ᛒᛆᚴᛁᚢᛉ ᚿᚮᛐ ᚠ…",
+    "rowType": "bergen_possible_gravestone_younger_futhark",
+    "description": "This stone is dated to 1248-1332 and was possibly a gravestone.",
+    "explanationAfter": "Correct. The inscription was interpreted as: \"Arne carved this. Erik bakium (a nickname?) carved this the night before...\" (\"Dette ristet Arne. Dette ristet Eirik bakium natten f...\").",
+    "sources": [
+      "Description in the Bryggen Museum, Bergen."
     ]
   },
   {
@@ -447,6 +461,19 @@
       "https://www.vikingtidsmuseet.no/de-nye-utstillingene/key-objects-16.12..2021.pdf",
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
       "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
+    ]
+  },
+  {
+    "id": "eik_sokndal",
+    "img": "eik_sokndal.jpg",
+    "title": "Eik stone",
+    "img_credit": "Own photo, taken in the Arkeologisk museum | University of Stavanger.",
+    "runes": "ᛌᛆᚴᛌᛁ:ᚴᛁᚢᚦᛁᚴᚮᚢ…ᚦᛆᚴᛆ:ᚠᛁᚱᛁᚱ:ᛌᛆᛁ… …ᛁᚮᚢᚦᚮᚱᛌᛁᚿᛆᚱ… …ᚦᛌᚢᛁᛁᚱᛁᚦ:ᛒᚱᚢᚦᛁᛌᛆ+",
+    "rowType": "eik_sokndal_younger_futhark",
+    "description": "The Eik stone was found in the river Sokna. Originally it was placed by a bridge. The inscription is dated to the first half of the 11th century.",
+    "explanationAfter": "The inscription tells us who build the bridge: \"Sakse made, giving thanks to God, this bridge for the soul of his mother, Turid\" (\"Sakse gjorde, for Guds takk, denne brua for sjela til mora si, Turid.\")",
+    "sources": [
+      "Arkeologisk museum | University of Stavanger"
     ]
   }
 ]
