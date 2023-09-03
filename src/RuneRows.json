@@ -532,6 +532,24 @@
       }
     ]
   },
+  "eik_sokndal_younger_futhark": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᚮ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": ["þ", "d"]
+      }
+    ]
+  },
   "sö179_younger_futhark": {
     "name": "Long-branch Younger Fuþark",
     "inherit_from": "younger_futhark_long_branch",
