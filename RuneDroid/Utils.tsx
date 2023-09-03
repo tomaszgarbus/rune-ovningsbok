@@ -55,8 +55,20 @@ function ExpandRuneRowsToCanonical(compressed: CompressedRuneRowMap) : Canonical
   return result;
 }
 
+// https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
+function IsValidHttpUrl(maybeLink: string): boolean {
+  try {
+    const url: URL = new URL(maybeLink);
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch (_) {
+    return false;
+  }
+}
+
 export {
   IsSeparator,
+  IsValidHttpUrl,
   RuneRowToMapping,
-  ExpandRuneRowsToCanonical, type RuneMappingType
+  ExpandRuneRowsToCanonical,
+  type RuneMappingType
 };

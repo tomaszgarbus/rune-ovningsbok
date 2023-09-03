@@ -12,12 +12,20 @@ import {
 } from 'react-native';
 import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
-import StaticImages from './StaticImages.autogen';
+import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
 import { ReactElement, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
-import { IsSeparator, RuneMappingType, RuneRowToMapping } from './Utils';
-import Toggle from 'react-native-toggle-element/lib/toggle';
+import { Linking } from 'react-native';
+import {
+  IsSeparator,
+  IsValidHttpUrl,
+  RuneMappingType,
+  RuneRowToMapping
+} from './Utils';
+import { useToolTips } from './ToolTipHook';
+import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
+import Tooltip from 'react-native-walkthrough-tooltip';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -33,14 +41,14 @@ type ExerciseState = {
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
-  // TODO: Consider caching solved exercises on disk?
   const [userAnswer, setUserAnswer] = useState<ExerciseState>({
     inputs: mapRunes<string>(_ => ""),
     ready: false,
     solved: false,
   });
+  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 2);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
-
+  
   useBackHandler(() => {
     props.goBack();
     return true;
@@ -122,48 +130,83 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </SafeAreaView>
     
     {/* Description */}
-    <Text
+    <View
       style={styles.description}>
-      {props.exercise.description}
-    </Text>
+      <Text style={styles.sectionName}>About:</Text>
+      <Text
+        style={styles.sectionContent}>
+        {props.exercise.description}
+      </Text>
+    </View>
 
     {/* Image */}
-    <Image
-      source={StaticImages[props.exercise.id]}
-      style={[
-        styles.image,
-        {
-          aspectRatio: imageAspectRatio
-        }
-      ]}
-      onLoad={
-        ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
-        } />
+    <Tooltip
+      isVisible={currentToolTip == 0}
+      content={<Text>
+        Use gestures (pinch, double tap) to zoom in and move the photo.
+        Try to locate the runes you're transliterating on the photo!
+        </Text>}
+      placement="top"
+      onClose={nextToolTip}
+        >
+      <ReactNativeZoomableView
+        maxZoom={1.5}
+        minZoom={0.5}
+        zoomStep={0.5}
+        initialZoom={1}
+        bindToBorders={true}
+      >
+        <Image
+          source={StaticImages[props.exercise.id]}
+          style={[
+            styles.image,
+            {
+              aspectRatio: imageAspectRatio
+            }
+          ]}
+          onLoad={
+            ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
+            } />
+      </ReactNativeZoomableView>
+    </Tooltip>
 
     {/* Rune inputs and separators */}
-    <ScrollView
-      contentContainerStyle={styles.horizontalScrollView}
-      horizontal={true}>
-      {
-        mapRunes<ReactElement>(
-          (rune, index) => IsSeparator(rune) ?
-          <RuneSeparator character={rune} key={index} />
-          :
-          <RuneInput
-            index={index}
-            key={index}
-            rune={rune}
-            onChangeText={(text) => updateUserAnswer(index, text)}
-            feedback={shouldShowHintForField(index) ? 
-              {
-                "symbol": runeMapping[rune],
-                "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
-              } : undefined
-            }
-          />
-        )
-      }
-    </ScrollView>
+    <Tooltip
+      isVisible={currentToolTip == 1}
+      content={<Text>
+        Enter characters of Latin alphabet below the runes.
+        You will see a feedback immediately after input.
+        If you are unsure how to translate some symbol (should ᚴ be K or G?),
+        just input whichever and update according to the hint.
+        </Text>}
+      placement="top"
+      onClose={nextToolTip}
+    >
+      <ScrollView
+        contentContainerStyle={styles.horizontalScrollView}
+        persistentScrollbar={true} 
+        horizontal={true}>
+        {
+          mapRunes<ReactElement>(
+            (rune, index) => IsSeparator(rune) ?
+            <RuneSeparator character={rune} key={index} />
+            :
+            <RuneInput
+              index={index}
+              key={index}
+              rune={rune}
+              onChangeText={(text) => updateUserAnswer(index, text)}
+              feedback={shouldShowHintForField(index) ? 
+                {
+                  "symbol": runeMapping[rune],
+                  "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
+                } : undefined
+              }
+            />
+          )
+        }
+      </ScrollView>
+    </Tooltip>
 
     {/* Explanation after */}
     { userAnswer.solved && 
@@ -180,17 +223,24 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     }
 
     {/* Sources */}
-    <ScrollView horizontal={true}>
-      <View>
-        <Text>Sources:</Text>
-      {
-        props.exercise.sources && 
-        props.exercise.sources.map((src: string) =>
-          <Text key={src}> • {src}</Text>
-        )
-      }
-      </View>
-    </ScrollView>
+    <View style={styles.sources}>
+      <Text style={styles.sectionName}>Sources:</Text>
+      <Text style={styles.sectionContent}>
+        {
+          props.exercise.sources && 
+          props.exercise.sources.map((src: string) =>
+            IsValidHttpUrl(src)
+            ?
+            <Text
+              style={styles.link}
+              onPress={() => Linking.openURL(src)}
+              >{`• ${src}\n`}</Text>
+            :
+            `• ${src}\n`
+          )
+        }
+      </Text>
+    </View>
 
   </ScrollView>
 }
@@ -202,10 +252,26 @@ const styles = StyleSheet.create({
   title: {
     alignSelf: "center",
     fontSize: 20,
+    color: "black",
+    marginTop: 10,
+    fontFamily: "Aboreto-Regular",
+  },
+  sectionName: {
+    color: "black",
+    fontWeight: "bold"
+  },
+  sectionContent: {
+    color: "black"
   },
   description: {
     marginBottom: 20,
     marginTop: 10,
+  },
+  sources: {
+    marginTop: 10,
+  },
+  link: {
+    color: "blue",
   },
   image: {
     alignSelf: "center",
@@ -230,6 +296,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     marginHorizontal: 20,
+    fontFamily: "Finlandica-Regular",
   },
   toggler: {
     activeBackgroundColor: "#3c4145",
