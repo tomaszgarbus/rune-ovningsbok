@@ -114,7 +114,6 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       solved: isSolved(inputs),
     });
     if (isSolved(inputs)) {
-      console.log(setExerciseSolved);
       setExerciseSolved(props.exercise.id);
     }
     // TODO: move to the next input
@@ -224,18 +223,37 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </Tooltip>
 
     {/* Explanation after */}
-    { userAnswer.solved && 
-      <Text>
-        {props.exercise.explanationAfter}
+    <Tooltip
+      isVisible={currentToolTip == 2 && userAnswer.ready}
+      content={
+        <Text>
+          When you input all the Latin characters, here you will receive your feedback.
+          Once all fields are correct, you'll learn more about the meaning and
+          interpretations of the inscription!
+        </Text>
+      }
+      placement="top"
+      onClose={nextToolTip}
+      >
+      {
+        userAnswer.ready &&
+        <Text style={styles.sectionName}>Feedback:</Text>
+      }
+      <Text style={styles.sectionContent}>
+        { userAnswer.solved && 
+          <Text>
+            {props.exercise.explanationAfter}
+          </Text>
+        }
+        {
+          userAnswer.ready && !userAnswer.solved &&
+          <Text>
+            Not quite! Please correct all the inputs according to the
+            hints to read an explanation of the runic message.
+          </Text>
+        }
       </Text>
-    }
-    {
-      userAnswer.ready && !userAnswer.solved &&
-      <Text>
-        Not quite! Please correct all the inputs according to the
-        hints to read an explanation of the runic message.
-      </Text>
-    }
+    </Tooltip>
 
     {/* Sources */}
     <View style={styles.sources}>

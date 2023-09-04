@@ -36,6 +36,9 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
   );
 
   function boundedAspectRatio(aspectRatio: number) {
+    if (props.columns == 1) {
+      return Math.min(Math.max(5/4, aspectRatio), 3/2);
+    } 
     return Math.min(Math.max(2/3, aspectRatio), 4/5);
   }
 
@@ -90,20 +93,26 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                             }
                             >
                             <LinearGradient
-                              colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
+                              colors={
+                                  ["#fffd", "#fff3", "#fff1", "#fff1"]
+                              }
                               style={styles.linGrad}
                             >
-                              <Text
-                                style={styles.title}>
-                                {exercise.title}
-                              </Text>
-                              {
+                              {/* {
                                 isExerciseSolved(exercise.id) &&
                                 <Text
                                   style={styles.doneMarker}>
                                     ✅
                                 </Text>
-                              }
+                              } */}
+                              <Text
+                                style={styles.title}>
+                                {
+                                  (isExerciseSolved(exercise.id) ? "✅ " : "")
+                                  + exercise.title
+                                }
+                              </Text>
+                              
                             </LinearGradient>
                           </ImageBackground>
                         </View>

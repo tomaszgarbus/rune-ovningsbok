@@ -9,7 +9,6 @@ function useSolvedExercises(): [
   const [solvedExercises, setSolvedExercises] = useState<SolvedExercisesSetType>([]);
   loadSolvedExercisesFromLocalStorage().then((value: string) => {
     if (value != solvedExercises.join(";")) {
-      console.log("updating solved exercises from " + solvedExercises.join(";") + " to " + value)
       setSolvedExercises(value.split(";"));
     }
   });
@@ -23,7 +22,6 @@ function useSolvedExercises(): [
       return;
     }
     try {
-      console.log("updating local storage to " + solvedExercises.join(';'))
       await AsyncStorage.setItem(
         "SolvedExercises",
         solvedExercises.join(';'));
