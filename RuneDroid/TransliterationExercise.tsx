@@ -47,9 +47,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     ready: false,
     solved: false,
   });
-  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 2);
+  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 3);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
-  const [_, setExerciseSolved] = useSolvedExercises();
+  const [isExerciseSolved, setExerciseSolved] = useSolvedExercises();
   
   useBackHandler(() => {
     props.goBack();
@@ -124,7 +124,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     
     {/* Back button */}
     <Button title="back to the list" onPress={props.goBack} />
-    
+
     {/* Title */}
     <SafeAreaView
       style={styles.titleBar}>
@@ -133,6 +133,17 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         {props.exercise.title}
       </Text>
     </SafeAreaView>
+
+    {/* Toast about having solved this exercise */}
+    {
+      !userAnswer.ready && isExerciseSolved(props.exercise.id) &&
+      <View
+        style={styles.alreadySolvedView}>
+        <Text style={styles.alreadySolvedText}>
+          You have already solved this exercise. Kudos for revising it!
+        </Text>
+      </View>
+    }
     
     {/* Row type */}
     <View
@@ -290,12 +301,24 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontFamily: "Aboreto-Regular",
   },
+  alreadySolvedView: {
+    backgroundColor: "lightgreen",
+    borderRadius: 10,
+    padding: 5,
+    margin: 5,
+  },
+  alreadySolvedText: {
+    color: "darkgreen",
+    fontFamily: "Finlandica-Regular",
+    alignSelf: "center",
+  },
   sectionName: {
     color: "black",
-    fontWeight: "bold"
+    fontFamily: "Finlandica-Bold",
   },
   sectionContent: {
-    color: "black"
+    color: "black",
+    fontFamily: "Finlandica-Regular",
   },
   description: {
     marginBottom: 20,
