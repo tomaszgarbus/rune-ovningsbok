@@ -26,6 +26,7 @@ import {
 import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Tooltip from 'react-native-walkthrough-tooltip';
+import { useSolvedExercises } from './SolvedExercisesHook';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -48,6 +49,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
   });
   const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 2);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
+  const [_, setExerciseSolved] = useSolvedExercises();
   
   useBackHandler(() => {
     props.goBack();
@@ -111,6 +113,10 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       ready: isReady(inputs),
       solved: isSolved(inputs),
     });
+    if (isSolved(inputs)) {
+      console.log(setExerciseSolved);
+      setExerciseSolved(props.exercise.id);
+    }
     // TODO: move to the next input
   }
 
@@ -243,6 +249,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
             <Text
               style={styles.link}
               onPress={() => Linking.openURL(src)}
+              key={src}
               >{`• ${src}\n`}</Text>
             :
             `• ${src}\n`

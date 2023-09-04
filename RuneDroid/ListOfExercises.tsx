@@ -12,6 +12,7 @@ import { ExerciseType }  from './Types';
 import { StaticThumbnails } from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
 import { useState } from 'react';
+import { useSolvedExercises } from './SolvedExercisesHook';
 
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
@@ -21,6 +22,8 @@ type ListOfExercisesPropsType = {
 
 // TODO: display thumbnails instead, for better performance?
 function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
+  const [isExerciseSolved, _] = useSolvedExercises();
+
   var exerciseColumns: Array<Array<ExerciseType>> = Array.from(
     Array(props.columns).keys()).map(
       (column_nr: Number): Array<ExerciseType> => {
@@ -94,6 +97,13 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                                 style={styles.title}>
                                 {exercise.title}
                               </Text>
+                              {
+                                isExerciseSolved(exercise.id) &&
+                                <Text
+                                  style={styles.doneMarker}>
+                                    ✅
+                                </Text>
+                              }
                             </LinearGradient>
                           </ImageBackground>
                         </View>
@@ -169,6 +179,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'flex-start'
+  },
+  doneMarker: {
+    alignSelf: 'flex-end',
+    fontSize: 20,
+    zIndex: 3,
   }
 });
 

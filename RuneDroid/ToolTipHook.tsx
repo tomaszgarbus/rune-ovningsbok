@@ -21,7 +21,7 @@ function useToolTips(key: string, count: number): [
 
   async function updateLocalStorage(value: number): Promise<void> {
     try {
-      await AsyncStorage.setItem(key, value.toString());
+      await AsyncStorage.setItem("ToolTips:" + key, value.toString());
     } catch (e) {
       // TODO: handle error
     }
