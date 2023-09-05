@@ -26,6 +26,7 @@ import {
 import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Tooltip from 'react-native-walkthrough-tooltip';
+import { useSolvedExercises } from './SolvedExercisesHook';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -46,8 +47,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     ready: false,
     solved: false,
   });
-  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 2);
+  const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 3);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
+  const [isExerciseSolved, setExerciseSolved] = useSolvedExercises();
   
   useBackHandler(() => {
     props.goBack();
@@ -111,6 +113,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       ready: isReady(inputs),
       solved: isSolved(inputs),
     });
+    if (isSolved(inputs)) {
+      setExerciseSolved(props.exercise.id);
+    }
     // TODO: move to the next input
   }
 
@@ -119,7 +124,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     
     {/* Back button */}
     <Button title="back to the list" onPress={props.goBack} />
-    
+
     {/* Title */}
     <SafeAreaView
       style={styles.titleBar}>
@@ -128,7 +133,27 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         {props.exercise.title}
       </Text>
     </SafeAreaView>
+
+    {/* Toast about having solved this exercise */}
+    {
+      !userAnswer.ready && isExerciseSolved(props.exercise.id) &&
+      <View
+        style={styles.alreadySolvedView}>
+        <Text style={styles.alreadySolvedText}>
+          You have already solved this exercise. Kudos for revising it!
+        </Text>
+      </View>
+    }
     
+    {/* Row type */}
+    <View
+      style={styles.rowType}>
+      <Text style={styles.sectionName}>Runic alphabet:</Text>
+      <Text style={styles.sectionContent}>
+        {props.runeRow.name}
+      </Text>
+    </View>
+
     {/* Description */}
     <View
       style={styles.description}>
@@ -209,18 +234,37 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     </Tooltip>
 
     {/* Explanation after */}
-    { userAnswer.solved && 
-      <Text>
-        {props.exercise.explanationAfter}
+    <Tooltip
+      isVisible={currentToolTip == 2 && userAnswer.ready}
+      content={
+        <Text>
+          When you input all the Latin characters, here you will receive your feedback.
+          Once all fields are correct, you'll learn more about the meaning and
+          interpretations of the inscription!
+        </Text>
+      }
+      placement="top"
+      onClose={nextToolTip}
+      >
+      {
+        userAnswer.ready &&
+        <Text style={styles.sectionName}>Feedback:</Text>
+      }
+      <Text style={styles.sectionContent}>
+        { userAnswer.solved && 
+          <Text>
+            {props.exercise.explanationAfter}
+          </Text>
+        }
+        {
+          userAnswer.ready && !userAnswer.solved &&
+          <Text>
+            Not quite! Please correct all the inputs according to the
+            hints to read an explanation of the runic message.
+          </Text>
+        }
       </Text>
-    }
-    {
-      userAnswer.ready && !userAnswer.solved &&
-      <Text>
-        Not quite! Please correct all the inputs according to the
-        hints to read an explanation of the runic message.
-      </Text>
-    }
+    </Tooltip>
 
     {/* Sources */}
     <View style={styles.sources}>
@@ -234,6 +278,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
             <Text
               style={styles.link}
               onPress={() => Linking.openURL(src)}
+              key={src}
               >{`• ${src}\n`}</Text>
             :
             `• ${src}\n`
@@ -256,15 +301,31 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontFamily: "Aboreto-Regular",
   },
+  alreadySolvedView: {
+    backgroundColor: "lightgreen",
+    borderRadius: 10,
+    padding: 5,
+    margin: 5,
+  },
+  alreadySolvedText: {
+    color: "darkgreen",
+    fontFamily: "Finlandica-Regular",
+    alignSelf: "center",
+  },
   sectionName: {
     color: "black",
-    fontWeight: "bold"
+    fontFamily: "Finlandica-Bold",
   },
   sectionContent: {
-    color: "black"
+    color: "black",
+    fontFamily: "Finlandica-Regular",
   },
   description: {
     marginBottom: 20,
+    marginTop: 10,
+  },
+  rowType: {
+    marginBottom: 0,
     marginTop: 10,
   },
   sources: {
