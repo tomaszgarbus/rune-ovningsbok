@@ -292,6 +292,19 @@
     ]
   },
   {
+    "id": "bergen_knife_beater",
+    "img": "bergen_knife_beater.jpg",
+    "title": "Bergen knife beater",
+    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
+    "runes": "ᚼᛆᚴᚮᚿᚱᛅᛁᛌᛐᛘᛁᚵᚵᚽᚿᛌᚢᛅᛁᚿᛁᚿᛆᛘᛁᚵ",
+    "rowType": "bergen_knife_beater_younger_futhark",
+    "description": "A medieval knife beater from Bryggen, Bergen.",
+    "explanationAfter": "The inscription runs \"Håkon carved me, but the boy owns me.\" There is additional inscription on the other side, saying: \"Bård owns me. He found much to object to in the person who carved me.\"",
+    "sources": [
+      "Description in the Bryggen Museum, Bergen."
+    ]
+  },
+  {
     "id": "grumpanbracteate",
     "img": "grumpanbracteate.jpg",
     "title": "Grumpan bracteate Vg 207",
@@ -316,6 +329,32 @@
     "sources": [
       "Description in Historiska Museet",
       "https://vikingar.historiska.se/object_details.php?object=46162_HST&e=no&l=en"
+    ]
+  },
+  {
+    "id": "eik_sokndal",
+    "img": "eik_sokndal.jpg",
+    "title": "Eik stone",
+    "img_credit": "Own photo, taken in the Arkeologisk museum | University of Stavanger.",
+    "runes": "ᛌᛆᚴᛌᛁ:ᚴᛁᚢᚦᛁᚴᚮᚢ…ᚦᛆᚴᛆ:ᚠᛁᚱᛁᚱ:ᛌᛆᛁ… …ᛁᚮᚢᚦᚮᚱᛌᛁᚿᛆᚱ… …ᚦᛌᚢᛁᛁᚱᛁᚦ:ᛒᚱᚢᚦᛁᛌᛆ+",
+    "rowType": "eik_sokndal_younger_futhark",
+    "description": "The Eik stone was found in the river Sokna. Originally it was placed by a bridge. The inscription is dated to the first half of the 11th century.",
+    "explanationAfter": "The inscription tells us who build the bridge: \"Sakse made, giving thanks to God, this bridge for the soul of his mother, Turid\" (\"Sakse gjorde, for Guds takk, denne brua for sjela til mora si, Turid.\")",
+    "sources": [
+      "Arkeologisk museum | University of Stavanger"
+    ]
+  },
+  {
+    "id": "møgedal",
+    "img": "møgedal.jpg",
+    "title": "Stone inscription from Møgedal Eigersund",
+    "img_credit": "Own photo, taken in the Arkeologisk museum | University of Stavanger.",
+    "runes": "ᛚᚨᛁᚦᛁᚷᚨᛉ",
+    "rowType": "older_futhark",
+    "description": "The inscription is written in older runes and is dated to ca. 500 AD.",
+    "explanationAfter": "The runes probably represent a man's name.",
+    "sources": [
+      "Arkeologisk museum | University of Stavanger"
     ]
   },
   {
@@ -461,19 +500,6 @@
       "https://www.vikingtidsmuseet.no/de-nye-utstillingene/key-objects-16.12..2021.pdf",
       "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
       "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
-    ]
-  },
-  {
-    "id": "eik_sokndal",
-    "img": "eik_sokndal.jpg",
-    "title": "Eik stone",
-    "img_credit": "Own photo, taken in the Arkeologisk museum | University of Stavanger.",
-    "runes": "ᛌᛆᚴᛌᛁ:ᚴᛁᚢᚦᛁᚴᚮᚢ…ᚦᛆᚴᛆ:ᚠᛁᚱᛁᚱ:ᛌᛆᛁ… …ᛁᚮᚢᚦᚮᚱᛌᛁᚿᛆᚱ… …ᚦᛌᚢᛁᛁᚱᛁᚦ:ᛒᚱᚢᚦᛁᛌᛆ+",
-    "rowType": "eik_sokndal_younger_futhark",
-    "description": "The Eik stone was found in the river Sokna. Originally it was placed by a bridge. The inscription is dated to the first half of the 11th century.",
-    "explanationAfter": "The inscription tells us who build the bridge: \"Sakse made, giving thanks to God, this bridge for the soul of his mother, Turid\" (\"Sakse gjorde, for Guds takk, denne brua for sjela til mora si, Turid.\")",
-    "sources": [
-      "Arkeologisk museum | University of Stavanger"
     ]
   }
 ]
