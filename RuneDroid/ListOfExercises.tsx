@@ -12,6 +12,7 @@ import { ExerciseType }  from './Types';
 import { StaticThumbnails } from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
 import { useState } from 'react';
+import { useSolvedExercises } from './SolvedExercisesHook';
 
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
@@ -21,6 +22,8 @@ type ListOfExercisesPropsType = {
 
 // TODO: display thumbnails instead, for better performance?
 function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
+  const [isExerciseSolved, _] = useSolvedExercises();
+
   var exerciseColumns: Array<Array<ExerciseType>> = Array.from(
     Array(props.columns).keys()).map(
       (column_nr: Number): Array<ExerciseType> => {
@@ -33,6 +36,9 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
   );
 
   function boundedAspectRatio(aspectRatio: number) {
+    if (props.columns == 1) {
+      return Math.min(Math.max(5/4, aspectRatio), 3/2);
+    } 
     return Math.min(Math.max(2/3, aspectRatio), 4/5);
   }
 
@@ -87,13 +93,26 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                             }
                             >
                             <LinearGradient
-                              colors={["#fffd", "#fff3", "#fff0", "#fff0"]}
+                              colors={
+                                  ["#fffd", "#fff3", "#fff1", "#fff1"]
+                              }
                               style={styles.linGrad}
                             >
+                              {/* {
+                                isExerciseSolved(exercise.id) &&
+                                <Text
+                                  style={styles.doneMarker}>
+                                    ✅
+                                </Text>
+                              } */}
                               <Text
                                 style={styles.title}>
-                                {exercise.title}
+                                {
+                                  (isExerciseSolved(exercise.id) ? "✅ " : "")
+                                  + exercise.title
+                                }
                               </Text>
+                              
                             </LinearGradient>
                           </ImageBackground>
                         </View>
@@ -169,6 +188,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'flex-start'
+  },
+  doneMarker: {
+    alignSelf: 'flex-end',
+    fontSize: 20,
+    zIndex: 3,
   }
 });
 
