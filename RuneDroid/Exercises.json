@@ -145,71 +145,16 @@
     ]
   },
   {
-    "id": "rökstone_side_a",
-    "img": "rökstenen_side_a.jpg",
-    "img_credit": "https://sv.wikipedia.org/wiki/Rökstenen#/media/Fil:Rökstenen_2.jpg",
-    "title": "Rök runestone, side A (fragment) Ög 136",
-    "rowType": "younger_futhark_rök_side_a",
-    "description": "The Rök runestone from Östergötland, Sweden, is dated to 9th century. It contains inscriptions in 3 different runic ortographies: short-twig runes, older Fuþark and numerical cipher. The scholars have long debated the meaning (and even reading order!) of the inscription. For one recent interpretation, binding it to poems Vafþrúðnismál and Völuspá, see Holmberg et al., 2020 (linked in the sources). For the exercise below, we use the very beginning of the inscription. Note that due to limitations of Runic Unicode block, I had to use \u16c5 and \u16d9 as substitutes for two other short-twig runes.",
-    "runes": ["\u16c5", "\u16a0", "\u16cf", " ", "\u16a2", "\u16c5", "\u16d9", "\u16a2", "\u16a6", " ", "\u16cc", "\u16cf", "\u16ad", "\u16bf", "\u16cf", "\u16c5", " ", "\u16b1", "\u16a2", "\u16bf", "\u16c5", "\u16e7", " ", "\u16a6", "\u16c5", "\u16e7", " ", "+", " ", "(", "\u16c1", ")", "\u16bf", " ", "\u16a2", "\u16c5", "\u16b1", "\u16c1", "\u16bf", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", " ", "\u16a0", "\u16c5", "\u16a6", "\u16c1", "\u16e7", " ", "\u16c5", "\u16a0", "\u16cf", " ", "\u16a0", "\u16c5", "\u16c1", "\u16b4", "\u16c1", "\u16ad", "\u16bf", " ", "\u16cc", "\u16a2", "\u16bf", "\u16a2"],
-    "explanationAfter": "Excellent! This translates as: \"Aft Vāmōð stãnda rūnaʀ þāʀ. Æn Varinn fāði, faðiʀ, aft faigiãn sunu.\", or in English: \"After Vāmōðʀ stand these runes. And Varinn, the father, made them after thedeath-doomed son\".",
+    "id": "össeby_fragment",
+    "img": "össeby_fragment.jpg",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "title": "Rune stone fragment from Össeby",
+    "rowType": "younger_futhark_össeby",
+    "description": "The fragment was found in the longhouse in Össeby-garn parish, Uppland, Sweden.",
+    "runes": "ᚱᚴᛁ᛫ᚽᚠᛏᛁᛦ᛫ᛁᚾᚴᛁᚼᚢᛅᛚᛏ᛫ᛋᚢᚾ᛫ᛋᛁᚾ",
+    "explanationAfter": "The preserved fragment of inscription suggests the following interpretation: \"monument in memory of Ingevald, his [her] son\".",
     "sources": [
-      "http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1383036&dswid=-2803",
-      "Runes: A Handbook by Michael P. Barnes (p 83)",
-      "http://kulturarvsdata.se/uu/srdb/3a61c080-77fc-4a44-b5ac-f3a4b33b3aab"
-    ]
-  },
-  {
-    "id": "sigurdristingen",
-    "img": "sigurdristingen.jpg",
-    "img_credit": "https://sv.wikipedia.org/wiki/Sigurdsristningen#/media/Fil:Sigurdsristningen_på_Ramsundsberget,_Södermanland_(Montelius_1877_s349_fig406).jpg",
-    "title": "Ramsundberget carving Sö 101",
-    "rowType": "younger_futhark_ramsund",
-    "description": "The Ramsund carving is located in Södermanland, Sweden. The carving is almost 5m wide, making it the biggest known rune carving. It is unusual, since the carving is made in a flat rock, not in a standing stone.",
-    "runes": "ᛋᛁᚱᛁᚦᚱ:ᚴᛁᛅᚱᚦᛁ:ᛒᚢᚱ:ᚦᚬᛋᛁ:ᛘᚢᚦᛁᛦ:ᛅᛚᚱᛁᚴᛋ:ᛏᚢᛏᛁᛦ:ᚢᚱᛘᛋ:ᚠᚢᚱ᛫ᛋᛅᛚᚢ:ᚼᚢᛚᛘᚴᛁᚱᛋ:ᚠᛅᚦᚢᚱ:ᛋᚢᚴᚱᚢᚦᛅᚱ ᛒᚢᛅᛏᛅ᛫ᛋᛁᛋ",
-    "explanationAfter": "Good answer! The runes are believed to translate to \"Sigriðr gærði bro þasi, moðiR Alriks, dottiR Orms, for salu HolmgæiRs, faður SigrøðaR, boanda sins.\" -- \"Sigríðr, Alríkr's mother, Ormr's daughter, made this bridge for the soul of Holmgeirr, father of Sigrøðr, her husbandman\".",
-    "sources": [
-      "Runes: A Handbook by Michael P. Barnes (p 84)",
-      "https://jonaslaumarkussen.com/illustration/the-ramsund-carving-so-101/"
-    ]
-  },
-  {
-    "id": "jellingstoneharald",
-    "img": "jellingstoneharald.png",
-    "img_credit": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-monuments-at-jelling/the-jelling-stone/",
-    "title": "Jelling stone of Harald Bluetooth",
-    "runes": "ᚼᛅᚱᛅᛚᛏᚱ:ᚴᚢᚾᚢᚴᛦ:ᛒᛅᚦ:ᚴᛅᚢᚱᚢᛅᚴᚢᛒᛚ:ᚦᛅᚢᛋᛁ:ᛅᚠᛏ:ᚴᚢᚱᛘᚠᛅᚦᚢᚱᛋᛁᚾᛅᚢᚴᛅᚠᛏ:ᚦᚭᚢᚱᚢᛁ:ᛘᚢᚦᚢᚱ:ᛋᛁᚾᛅ:ᛋᛅᚼᛅᚱᛅᛚᛏᚱ:ᛁᛅᛋ:ᛋᚭᛦ᛫ᚢᛅᚾ᛫ᛏᛅᚾᛘᛅᚢᚱᚴ||ᛅᛚᛅ᛫ᛅᚢᚴ᛫ᚾᚢᚱᚢᛁᛅᚴ||᛫ᛅᚢᚴ᛫ᛏᛅᚾᛁ᛫ᚴᛅᚱᚦᛁ᛫ᚴᚱᛁᛋᛏᚾᚭ",
-    "rowType": "younger_futhark_jelling",
-    "description": "A rune-stone with political themes from north-eastern Jutland. King Haraldr claims on it to have made himself master of all Denmark and of Norway. These are among the earliest occurrences of the names \"Denmark\" and \"Norway\". Thanks to the  political references, Jelling 2 stone can be fairly reliably dated to around 970-980s.",
-    "explanationAfter": "The translation to be found in Barnes' book is as follows: \"King Haraldr ordered [people] to make these monuments after GormR, his father and after Þorvi, his mother. That Haraldr who won for himself all Denmark, and Norway, and made the Danes Christian.\" (\"Haraldr kunungR bað gørva kumbl þøsi aft Gorm, faður sin, ok aft Þórvi, moður sina. Sa Haraldr æs sæR vann Danmork alla ok Norvæg ok dani gærði kristna.\")",
-    "sources": [
-      "Runes: A Handbook by Michael P. Barnes (p 73-4)"
-    ]
-  },
-  {
-    "id": "kjølevikstone",
-    "img": "kjølevikstone.jpg",
-    "img_credit": "https://www.runesdb.eu/find-list/d/im/q/r/r/1~2/f/71/p/4597/c/97591001363d3a3306231e8304be203c/",
-    "title": "Kjølevik stone N KJ75",
-    "rowType": "older_futhark",
-    "runes": ["\u16ba", "\u16a8", "\u16de", "\u16a2", "\u16da", "\u16a8", "\u16c1", "\u16b2", "\u16a8", "\u16c9", " ", "\u16d6", "\u16b2", "\u16ba", "\u16a8", "\u16b7", "\u16a2", "\u16ca", "\u16cf", "\u16a8", "\u16de", "\u16a8", "\u16c9", " ", "\u16ba", "\u16da", "\u16a8", "\u16a8", "\u16c1", "\u16b9", "\u16c1", "\u16de", "\u16df", "\u16d7", "\u16a8", "\u16b7", "\u16a2", "\u16d7", "\u16c1", "\u16be", "\u16c1", "\u16be", "\u16df"],
-    "description": "The Kjølevik stone is dated to 5th century and was found in Rogaland, south+western Norway.",
-    "explanationAfter": "Old Norse translation of the inscription is believed to be \"Haðulaikaz. Ek Hagustaldaz hlaiwiðdo magu minino\" -- \"Haðulaikaz. I Hagustaldaz buried my son\". Haðulaikaz is a man's name consisting of elements \"battle\" ahnd \"play\".",
-    "sources": [
-      "Runes: A Handbook by Michael P. Barnes (p 30)"
-    ]
-  },
-  {
-    "id": "svingerudsteinen",
-    "img": "svingerudsteinen.jpg",
-    "title": "Svingerudsteinen (Svingerud Stone)",
-    "runes": ["\u16c1", "\u16de", "\u16c1", "\u16d2", "\u16d6", "\u16b1", "\u16a2", "\u16b7"],
-    "rowType": "older_futhark",
-    "description": "In early 2023, this stone was announced to be the oldest known runic inscription to date. It was found in a cremation ground, in Hole near Tyrifjorden, Eastern Norway, by University of Oslo researchers. The inscriptions are dated between 1 and 250 AD. The stone itself is a 31x32 cm block of reddish-brown Ringerike sandstone.",
-    "explanationAfter": "Great answer! The inscription, consisting of thin, shallow runes, is transliterated as \"Idiberug\". According to Kristel Zilmer, professor at Oslo's Museum of Cultural History: this could be name of a woman Idibera or a kin named Idiberung.",
-    "sources": [
-      "https://edition.cnn.com/style/article/worlds-oldest-runestone-norway-intl-scli-scn/index.html",
-      "https://www.khm.uio.no/english/news/found-the-world-s-oldest-rune-stone.html"
+      "Description in Historiska Museet"
     ]
   },
   {
@@ -252,20 +197,6 @@
     ]
   },
   {
-    "id": "einang",
-    "img": "einangstone.jpg",
-    "title": "Einangsteinen (Einang stone)",
-    "runes": ["\u16de", "\u16a8", "\u16b7", "\u16a8", "\u16ca", "\u16cf", "\u16c1", "\u16c9", "\u16b1", "\u16a2", "\u16be", "\u16df", "\u16a0", "\u16a8", "\u16c1", "\u16ba", "\u16c1", "\u16de", "\u16df"],
-    "rowType": "older_futhark",
-    "description": "The Einang stone is located in Gardbergfeltet, a historical site in Oppland, Norway, holding over 550 burial mounds and over 900 discoveries from Roman Iron Age and Viking Age. The Einang stone is believed to date back to around 300 AD, and for a long time was the oldest known runic stone from northwestern Europe.",
-    "explanationAfter": "Excellent! As explained by Kristel Zilmer on Twitter (see sources): Moltke's reading - still commonly accepted - is: …daga-(t)(i)R runo faihido. He suggested that the start could be: [Ek Go]dagastiR rūnō faihidō, «I, GodagastiR, painted (wrote) the rune (i.e. the runic inscription)”. The singular rūnō can refer to the overall runic message.",
-    "sources": [
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/51/c/eac8d35824e8706f5d26e9e376610921/",
-      "https://www.visitnorway.com/listings/gardbergfeltet-and-the-einang-stone/6081/",
-      "https://twitter.com/kristel_zilmer/status/1395417502528716801"
-    ]
-  },
-  {
     "id": "bryggengohome",
     "img": "bergenstick_gohome.jpg",
     "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
@@ -302,19 +233,6 @@
     "explanationAfter": "The inscription runs \"Håkon carved me, but the boy owns me.\" There is additional inscription on the other side, saying: \"Bård owns me. He found much to object to in the person who carved me.\"",
     "sources": [
       "Description in the Bryggen Museum, Bergen."
-    ]
-  },
-  {
-    "id": "grumpanbracteate",
-    "img": "grumpanbracteate.jpg",
-    "title": "Grumpan bracteate Vg 207",
-    "rowType": "older_futhark",
-    "runes": ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "᛫", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "…", "᛫", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛉ", "ᚷ", "ᛞ"],
-    "description": "Grumpan bracteate was found in Sweden and is dated to ca. 500-550 AD. It is kept in the Historiska Museet in Stockholm.",
-    "explanationAfter": "Correct! This bracteate depicts the division of Elder Futhark row into 3 equal parts.",
-    "sources": [
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/331/c/4d7032467cdc2f98787138d9e1f2bd24/",
-      "https://app.raa.se/open/runor/inscription?id=d5024f02-c8b4-4168-b02c-ad97c5559b42"
     ]
   },
   {
@@ -355,58 +273,6 @@
     "explanationAfter": "The runes probably represent a man's name.",
     "sources": [
       "Arkeologisk museum | University of Stavanger"
-    ]
-  },
-  {
-    "id": "burserydfont",
-    "img": "burserydfont.jpg",
-    "img_credit": "https://mis.historiska.se/mis/sok/resultat_bild.asp?lokalid=5696&rd_min=&typ=fotografi&searchmode=&qmode=&qtype=bild&sort=&orderby=upptagning.namn&sm=&pagesize=6&page",
-    "title": "Burseryd baptismal font",
-    "runes": "ᛆᚱᛁᚿᛒᛁᚮᚱᚿ:ᚵᚯᚱᛐᚼᛂ:ᛘᛁᚴ ᚢᛁᛐᚴᚢᚿᛑᛂᚱ:ᛔᚱᛂᛋᛐᛂᚱ:ᛋᚴᚱᛂᚠ:ᛘᛁᚴ ᚮᚴ:ᚼᛅᚱ:ᛋᚴᛆᛚ:ᚢᛘ:ᛋᛐᚢᚿᛑ:ᛋᛐᛆᚿᛐ",
-    "rowType": "medieval_burseryd",
-    "description": "This is 13th century baptismal font from Burseryd church in Småland, Sweden.",
-    "explanationAfter": "Yes! Translation: \"Arinbjorn gjørði mik. Vitkunder prester skref mik. Ok hær skal um stund standa\" -- \"Arinbjorn made me. Vitkunder the priest wrote me. And here I shall stand for a while\". Interesting detail is the use of [th] instead of [þ] in the spelling of \"gørthi\". Note there are some bind runes, which in this exercise were split due to limitations of Unicode.",
-    "sources": [
-      "Runes: A Handbook by Michael P. Barnes (p 102-3)"
-    ]
-  },
-  {
-    "id": "maugholdstone",
-    "img": "maugholdstone.jpg",
-    "img_credit": "https://en.wikipedia.org/wiki/Manx_runestones#/media/File:Maughold_Stone_with_Runes_and_Ogham_-_Maughold-Stein_mit_Runen_und_Ogham,_Zeichnung.gif",
-    "title": "Maughold I stone",
-    "runes": ["\u16c5", "\u16bf", "+", "\u16d3", "\u16b1", "\u16c1", "\u16cc", "\u16d0", "+", "\u16b1", "\u16c5", "\u16c1", "\u16cc", "\u16d0", "\u16c1", "+", "\u16a6", "\u16c5", "\u16cc", "\u16c1", "\u16b1", "+", "\u16b1", "\u16a2", "\u16bf", "\u16a2", "\u16b1", "+", "\u16a2", "\u16a6", "\u16ad", "\u16b1", "\u16bf", "\u16c1", "\u16c5", "\u16cc", "\u16d0", "\u16d3", "\u16c9", "\u16da", " "],
-    "rowType": "younger_futhark_maughold",
-    "description": "This runestone is dated to 1150-1199 and was found in the Maughold parish in the Isle of Man.",
-    "explanationAfter": "Yes! According to Scandinavian Runic-text Database (see sources), the inferred transliteration is \"(i)(u)an + brist + raisti + þasir + runur +¶ [f]uþor(k)(h)niastbml +\". The translation to Old Norse is \"Jóan prestr reisti þessar rúnar. <fuþorkhniastbml>\" and to English: \"Jóan the priest carved these runes. fuþorkhniastbml\"",
-    "sources": [
-      "http://kulturarvsdata.se/uu/srdb/057d73b7-7715-44fd-9355-b621125623f4"
-    ]
-  },
-  {
-    "id": "ågedalbracteate",
-    "img": "ågedalbracteate.jpg",
-    "img_credit": "https://digi20.digitale-sammlungen.de/en/fs1/object/display/bsb00042600_00018.html",
-    "title": "Ågedal bracteate N IK1",
-    "runes": ["\u16a6", "\u16c1", "\u16c9", "\u16a8", "\u16c1", "\u16d6", "\u16c1", "\u16a2", "-", "\u16de", "\u16c1", "\u16a2", "\u16ba", "\u16da", "\u16c1", "\u16a8", "\u16a0", "\u16da", "\u16ba", "\u16a8", "-", "\u16ba", "\u16de", "\u16cf", "\u16c1", "\u16a8", "\u16c1", "-", "-", "\u16c1", "\u16d6", "\u16da", "\u16c1", "\u16a8", "\u16c1", "\u16a8", "-", "\u16be", "\u16c1", "\u16cf"],
-    "rowType": "older_futhark_ågedal",
-    "description": "Little is known about this bracteate. It was found in southern Norway and contains inscriptions in Older Futhark, though with inconsistent direction of carving. It is made of gold and is dated before early 8th century.",
-    "explanationAfter": "That's a correct transliteration of the intelligible symbols. Uppsala University website makes the following attempt at translation to Old Norse: \"Þiz æje, i-rioð, i yhli-afl haha! Lið tiaðe elli aiga i tahe\". English: \"The slave-woman, rosy-cheeked, full of yule-power (=intoxicated), may lead the horse to the pasture! It became apparent that the old one had a retinue in the tún (=his own homestead)\".",
-    "sources": [
-      "http://kulturarvsdata.se/uu/srdb/33b8b0a3-d3ff-44fc-836f-f10461f5b8ff"
-    ]
-  },
-  {
-    "id": "codexrunicus",
-    "img": "codexrunicus.jpg",
-    "img_credit": "https://en.wikipedia.org/wiki/Codex_Runicus#/media/File:CodexRunicus.jpeg",
-    "title": "An excerpt from the Codex Runicus",
-    "rowType": "medieval",
-    "description": "Codex runicus is a vellum manuscript from c. 1300, containing early Danish law texts, in particular the Scanian Law (Skånske lov).",
-    "runes": "ᛋᛅᚱᛅᚱ:ᛘᛆᚿ:ᛆᚿᚿᛅᚱ:ᛘᛆᚿ:ᛘᛆᚦᛅᚿ:ᚴᚢᚿᚢᚿᚵ:ᛅᚱ:ᛁᚿᚿᛅᚿ:ᛚᛅᚿᛑᛅᛋ:ᛒᚯᛐᛅ:ᚠᚮᚱᛂ:ᛋᛆᚱ:ᛋᚢᛘ:ᛚᚮᚼ:ᛅᚱᛅ:ᚮᚴ:ᚴᚢᚿᚢᚿᚵ:ᚠᛁᚱᛁᛐᛁᚢᚼᚢ:ᛘᛆᚱᚴ:ᚮᚴ:ᚼᛁᚿᚢᛘ:ᛅᚱ:ᛋᛆᚱ:ᚠᛁᚱᛁᛐᛁᚢᚼᚢ:ᛘᛆᚱᚴ:ᚠᚮᚱᛂ:ᚠᚱᛁᚦᛒᚱᚢᛐ",
-    "explanationAfter": "Correct! this medieval manuscript reads \"Særær man annær man mæþæn kunung ær innæn lændæs bøtæ fore sar sum loh æræ ok kunungi firitiuhu mark ok hinum ær sar fik firitiuhu mark fore friþbrut\". In English: \"If a man wounds another man while the king is the province he shall pay a fine for the wound in accordance with the law, and 40 marks to the king and 40 marks for breach of the peace to the one who was wounded\".",
-    "sources": [
-      "https://web.archive.org/web/19991002053657/http://www.hum.ku.dk/ami/am28.html"
     ]
   },
   {
@@ -484,22 +350,6 @@
     "explanationAfter": "Indeed, the runic message says \"To fight is to live\". While the use of Uruz rune for \"v\" is historically common, the choice of ᚹ for \"h\" is more surprising.",
     "sources": [
       "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Morituri_Te_Salutamus\""
-    ]
-  },
-  {
-    "id": "oseberg_oar",
-    "img": "oseberg_oar.jpg",
-    "img_credit": "Kulturhistorisk museum, UiO",
-    "title": "Oseberg inscription N 137",
-    "description": "An inscription on a wooden runic stave found at the famous Oseberg ship in Tønsberg, Vestfold, Norway. Dated to the viking period, more specifically early 9th century. Einar Selvik can often be seen wearing a shirt with this inscription - for example, at the Midgardsblot festival, which takes place close to this historic place.",
-    "runes": "ᛚᛁᛐᛁᛚᚢᛁᛌᛙ",
-    "rowType": "younger_futhark_oseberg_oar",
-    "explanationAfter": "That's a correct transliteration. Interpretation of this inscription is unclear, with some theories saying: \"little man knows\" or \"you idiot\".",
-    "sources": [
-      "http://kulturarvsdata.se/uu/srdb/c35baf97-5e9c-47f3-b761-61255179eee3",
-      "https://www.vikingtidsmuseet.no/de-nye-utstillingene/key-objects-16.12..2021.pdf",
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/2136/c/9a0eb155942a42aa32b463d0004dd2a5/",
-      "https://www.vikingtidsmuseet.no/vikingtiden/junior/vikingene-hjemme/runer-og-samfunn/runerissing.html"
     ]
   }
 ]
