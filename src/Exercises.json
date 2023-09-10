@@ -145,6 +145,19 @@
     ]
   },
   {
+    "id": "össeby_fragment",
+    "img": "össeby_fragment.jpg",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "title": "Rune stone fragment from Össeby",
+    "rowType": "younger_futhark_össeby",
+    "description": "The fragment was found in the longhouse in Össeby-garn parish, Uppland, Sweden.",
+    "runes": "ᚱᚴᛁ᛫ᚽᚠᛏᛁᛦ᛫ᛁᚾᚴᛁᚼᚢᛅᛚᛏ᛫ᛋᚢᚾ᛫ᛋᛁᚾ",
+    "explanationAfter": "The preserved fragment of inscription suggests the following interpretation: \"monument in memory of Ingevald, his [her] son\".",
+    "sources": [
+      "Description in Historiska Museet"
+    ]
+  },
+  {
     "id": "rökstone_side_a",
     "img": "rökstenen_side_a.jpg",
     "img_credit": "https://sv.wikipedia.org/wiki/Rökstenen#/media/Fil:Rökstenen_2.jpg",
