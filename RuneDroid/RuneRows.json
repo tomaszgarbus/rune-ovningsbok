@@ -12,7 +12,10 @@
       },
       {
         "rune": "ᚦ",
-        "latin": "þ"
+        "latin": [
+          "þ",
+          "d"
+        ]
       },
       {
         "rune": "ᚨ",
@@ -60,7 +63,10 @@
       },
       {
         "rune": "ᛉ",
-        "latin": "z"
+        "latin": [
+          "r",
+          "z"
+        ]
       },
       {
         "rune": "ᛊ",
@@ -529,6 +535,36 @@
       {
         "rune": "ᚦ",
         "latin": ["þ", "d"]
+      }
+    ]
+  },
+  "bergen_knife_beater_younger_futhark": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᚵ",
+        "latin": "g"
+      },
+      {
+        "rune": "ᚮ",
+        "latin": "o"
+      },
+      {
+        "rune": "ᛅ",
+        "latin": "a"
+      },
+      {
+        "rune": "ᚦ",
+        "latin": ["þ", "d"]
+      },
+      {
+        "rune": "ᚽ",
+        "latin": "e"
+      },
+      {
+        "rune": "ᛘ",
+        "latin": "m"
       }
     ]
   },
