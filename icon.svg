@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="170mm"
+   height="170mm"
+   viewBox="0 0 170 170"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
    sodipodi:docname="icon.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,28 +25,28 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="0.87483544"
-     inkscape:cx="597.25518"
-     inkscape:cy="641.835"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:cx="603.54208"
+     inkscape:cy="545.81694"
+     inkscape:window-width="2048"
+     inkscape:window-height="1280"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer3"
      showguides="false" />
   <defs
      id="defs1">
     <rect
-       x="206.91816"
-       y="323.30962"
-       width="381.50535"
-       height="381.50535"
+       x="206.91817"
+       y="323.30963"
+       width="381.50534"
+       height="381.50534"
        id="rect14" />
     <rect
        x="174.58719"
-       y="381.50535"
-       width="375.03916"
-       height="362.10677"
+       y="381.50534"
+       width="375.03915"
+       height="362.10678"
        id="rect13" />
     <linearGradient
        id="linearGradient11"
@@ -120,6 +120,63 @@
        y1="186.08859"
        x2="98.613243"
        y2="80.871513" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11"
+       id="linearGradient4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-4.2771168,1.7108467)"
+       x1="130.2639"
+       y1="186.08859"
+       x2="98.613243"
+       y2="80.871513" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11"
+       id="linearGradient6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-4.2771168,1.7108467)"
+       x1="130.2639"
+       y1="186.08859"
+       x2="98.613243"
+       y2="80.871513" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11"
+       id="linearGradient7"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-67.739081,-66.816339)"
+       x1="130.2639"
+       y1="186.08859"
+       x2="98.613243"
+       y2="80.871513" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3"
+       id="linearGradient8"
+       gradientUnits="userSpaceOnUse"
+       x1="103.50623"
+       y1="65.867599"
+       x2="103.50623"
+       y2="199.31364" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3"
+       id="linearGradient9"
+       gradientUnits="userSpaceOnUse"
+       x1="103.50623"
+       y1="65.867599"
+       x2="103.50623"
+       y2="199.31364" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3"
+       id="linearGradient14"
+       gradientUnits="userSpaceOnUse"
+       x1="103.50623"
+       y1="65.867599"
+       x2="103.50623"
+       y2="199.31364" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -127,42 +184,43 @@
      inkscape:label="Vrstva 1">
     <g
        id="g8-0"
-       style="fill:url(#linearGradient10);fill-opacity:1;stroke:#800000;stroke-width:3.3;stroke-dasharray:none">
+       style="fill:url(#linearGradient10);fill-opacity:1;stroke:#800000;stroke-width:3.3;stroke-dasharray:none"
+       transform="translate(-25,-45)">
       <circle
-         style="fill:url(#linearGradient12);fill-opacity:1;stroke-width:8.465;stroke:#800000;stroke-dasharray:none"
+         style="fill:url(#linearGradient4);fill-opacity:1;stroke:#800000;stroke-width:8.465;stroke-dasharray:none"
          id="path1-6"
          cx="120"
          cy="120"
          r="70" />
       <rect
-         style="fill:url(#linearGradient13);fill-opacity:1;stroke-width:8.465;stroke:#800000;stroke-dasharray:none"
+         style="fill:url(#linearGradient6);fill-opacity:1;stroke:#800000;stroke-width:8.465;stroke-dasharray:none"
          id="rect2-0"
          width="140"
          height="90"
          x="50"
          y="120" />
       <rect
-         style="fill:url(#linearGradient16);fill-opacity:1;stroke-width:8.465;stroke:#800000;stroke-dasharray:none"
+         style="fill:url(#linearGradient7);fill-opacity:1;stroke:#800000;stroke-width:8.465;stroke-dasharray:none"
          id="rect2-0-1"
          width="20"
          height="10"
          x="100"
          y="50" />
       <circle
-         style="fill:url(#linearGradient12);fill-opacity:1;stroke-width:0;stroke:#800000;stroke-dasharray:none"
+         style="fill:url(#linearGradient12);fill-opacity:1;stroke:#800000;stroke-width:0;stroke-dasharray:none"
          id="circle19"
          cx="120"
          cy="120"
          r="70" />
       <rect
-         style="fill:url(#linearGradient13);fill-opacity:1;stroke-width:0;stroke:#800000;stroke-dasharray:none"
+         style="fill:url(#linearGradient13);fill-opacity:1;stroke:#800000;stroke-width:0;stroke-dasharray:none"
          id="rect19"
          width="140"
          height="90"
          x="50"
          y="120" />
       <rect
-         style="fill:url(#linearGradient16);fill-opacity:1;stroke-width:0;stroke:#800000;stroke-dasharray:none"
+         style="fill:url(#linearGradient16);fill-opacity:1;stroke:#800000;stroke-width:0;stroke-dasharray:none"
          id="rect20"
          width="20"
          height="10"
@@ -175,30 +233,29 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g8">
-      <ellipse
-         style="fill:url(#linearGradient5);stroke-width:8.46500004;fill-opacity:1;stroke-dasharray:none;stroke:#800000"
+       id="g8"
+       transform="translate(-25,-45)">
+      <circle
+         style="fill:url(#linearGradient8);fill-opacity:1;stroke:#800000;stroke-width:8.465;stroke-dasharray:none"
          id="ellipse15"
          cx="100"
          cy="120"
-         ry="70"
-         rx="70" />
+         r="70" />
       <rect
-         style="fill:url(#linearGradient5);stroke-width:8.46500004;fill-opacity:1;stroke-dasharray:none;stroke:#800000"
+         style="fill:url(#linearGradient9);fill-opacity:1;stroke:#800000;stroke-width:8.465;stroke-dasharray:none"
          id="rect15"
          width="140"
          height="90"
          x="30"
          y="120" />
-      <ellipse
-         style="fill:url(#linearGradient5);stroke-width:8.46500004;fill-opacity:1;stroke-dasharray:none"
+      <circle
+         style="fill:url(#linearGradient14);fill-opacity:1;stroke-width:8.465;stroke-dasharray:none"
          id="path1"
          cx="100"
          cy="120"
-         ry="70"
-         rx="70" />
+         r="70" />
       <rect
-         style="fill:url(#linearGradient5);stroke-width:8.46500004;fill-opacity:1;stroke-dasharray:none"
+         style="fill:url(#linearGradient5);fill-opacity:1;stroke-width:8.465;stroke-dasharray:none"
          id="rect2"
          width="140"
          height="90"
@@ -206,10 +263,9 @@
          y="120" />
     </g>
     <path
-       d="m 266.48822,422.01691 h -1.6276 V 627.42036 H 237.5169 V 394.02215 h 27.34372 l 99.60928,51.26948 v 15.46222 l -52.73433,49.31636 62.33718,117.35015 H 341.03242 L 284.55461,513.48818 v -8.6263 l 49.1536,-47.85151 z"
+       d="M 59.972611,56.751463 H 59.174928 V 136.69368 H 45.773848 V 45.856012 h 13.40108 l 48.818232,19.953881 v 6.017835 L 82.148211,91.021463 112.69949,136.69368 H 96.506515 L 68.826898,92.351723 V 88.994401 L 92.91694,70.370781 Z"
        id="text13"
-       style="font-size:333.333px;white-space:pre;fill:#800000"
-       transform="matrix(0.49009721,0,0,0.38919609,-46.437496,-63.642383)"
+       style="font-size:333.333px;white-space:pre;fill:#800000;stroke-width:0.436742"
        aria-label="ᚱ" />
   </g>
 </svg>
