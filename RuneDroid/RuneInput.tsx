@@ -1,3 +1,4 @@
+import { Ref, forwardRef } from "react";
 import { NativeSyntheticEvent, StyleSheet, Text, TextInput, TextInputChangeEventData, View } from "react-native";
 
 type Feedback = {
@@ -12,7 +13,7 @@ type RuneInputPropsType = {
   onChangeText: (text: string) => void,
 };
 
-function RuneInput(props : RuneInputPropsType) {
+const RuneInput = forwardRef((props : RuneInputPropsType, inputRef: Ref<TextInput>) => {
   function GetStylesFromFeedback() {
     // TODO: type the aray correctly
     var result: Array<any> = [styles.runeInputBox];
@@ -34,7 +35,8 @@ function RuneInput(props : RuneInputPropsType) {
     <TextInput
       style={styles.textInput}
       maxLength={1}
-      onChangeText={props.onChangeText}>
+      onChangeText={props.onChangeText}
+      ref={inputRef}>
     </TextInput>
     {props.feedback && !props.feedback.correct && 
       <Text style={styles.feedbackSymbol}>
@@ -42,7 +44,7 @@ function RuneInput(props : RuneInputPropsType) {
       </Text>
     }
   </View>
-}
+});
 
 type RuneSeparatorPropsType = {
   character: string

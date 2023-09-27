@@ -8,13 +8,14 @@ import {
   StyleSheet,
   Switch,
   Text,
+  TextInput,
   View
 } from 'react-native';
 import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
-import { ReactElement, useCallback, useState } from 'react';
+import { ReactElement, Ref, createRef, forwardRef, useCallback, useRef, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { Linking } from 'react-native';
 import {
@@ -50,6 +51,10 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
   const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 3);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
   const [isExerciseSolved, setExerciseSolved] = useSolvedExercises();
+
+  // Used for moving focus to next field.
+  const inputsRefs: Array<Ref<TextInput>> = mapRunes<Ref<TextInput>>(
+    _ => createRef());
   
   useBackHandler(() => {
     props.goBack();
@@ -104,6 +109,17 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     return true;
   }, [props, runeMapping])
 
+  function maybeMoveToNextInput(currentIndex: number) {
+    const inputs = userAnswer.inputs;
+    
+    let nextIndexToFocus: number = currentIndex;
+    while (++nextIndexToFocus < inputs.length && 
+      IsSeparator(props.exercise.runes[nextIndexToFocus]));
+    if (nextIndexToFocus < inputs.length) {
+      inputsRefs[nextIndexToFocus].current.focus();
+    }
+  }
+
   function updateUserAnswer(index: number, char: string) {
     const inputs: Array<string> = userAnswer.inputs;
     inputs[index] = char;
@@ -117,6 +133,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       setExerciseSolved(props.exercise.id);
     }
     // TODO: move to the next input
+    if (inputs[index].length === 1) {
+      maybeMoveToNextInput(index);
+    }
   }
 
   return <ScrollView
@@ -221,6 +240,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
               key={index}
               rune={rune}
               onChangeText={(text) => updateUserAnswer(index, text)}
+              ref={inputsRefs[index]}
               feedback={shouldShowHintForField(index) ? 
                 {
                   "symbol": runeMapping[rune],
