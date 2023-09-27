@@ -29,7 +29,7 @@ function useToolTips(key: string, count: number): [
 
   async function loadCurrentToolTipNumberFromLocalStorage(): Promise<number> {
     try {
-      const stored_value = await AsyncStorage.getItem(key);
+      const stored_value = await AsyncStorage.getItem("ToolTips:" + key);
       return +(stored_value || "0")
     } catch (e) {
       // TODO: handle error
