@@ -1,12 +1,9 @@
 import {
   Button,
-  FlatList,
   Image,
-  ImageBackground,
   SafeAreaView,
   ScrollView,
   StyleSheet,
-  Switch,
   Text,
   TextInput,
   View
@@ -15,7 +12,7 @@ import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
-import { ReactElement, Ref, createRef, forwardRef, useCallback, useRef, useState } from 'react';
+import { ReactElement, Ref, createRef, useCallback, useState } from 'react';
 import { RuneInput, RuneSeparator } from './RuneInput';
 import { Linking } from 'react-native';
 import {
