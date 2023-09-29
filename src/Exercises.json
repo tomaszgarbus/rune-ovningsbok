@@ -276,6 +276,19 @@
     ]
   },
   {
+    "id": "wooden_spade",
+    "img": "wooden_spade.jpg",
+    "title": "A wooden spade from Iceland",
+    "img_credit": "Own photo, taken in the National Museum of Iceland",
+    "runes": "ᛒᚮᛆᛐᛐᛆᛐᛘᛁᚴ᛫ᛁᚿᚴᛁᛆᛚᚱ᛫ᚴᛆᚱᚦᛁ",
+    "rowType": "wooden_spade_younger_futhark",
+    "description": "A wooden spade with runes cut into the blade. It was found in a peat bog and dates from the 12th century. It can be seen in Iceland's national museum.",
+    "explanationAfter": "Correct. The inscription has been interpreted as \"boalliatmik inkialtr kærþi\", in modern Icelandic: \"Páll lét mig (gera), Ingjaldur gerði (mig)\" and in English: \"Páll had me (made), Ingjaldur made (me)\".",
+    "sources": [
+      "National Museum of Iceland"
+    ]
+  },
+  {
     "id": "acvalhalla",
     "img": "acvalhalla.jpg",
     "title": "Assasin's Creed Valhalla loading screen",
