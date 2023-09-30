@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/rune-ovningsbok/static/css/main.314e35ee.css",
-    "main.js": "/rune-ovningsbok/static/js/main.9baa1801.js",
+    "main.js": "/rune-ovningsbok/static/js/main.6edc29c4.js",
     "static/js/787.042a5c5b.chunk.js": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js",
     "static/media/bjärby_runsten.jpg": "/rune-ovningsbok/static/media/bjärby_runsten.f9556d3cb1033bf79a12.jpg",
     "static/media/møgedal.jpg": "/rune-ovningsbok/static/media/møgedal.e27d33b221ecc01932a1.jpg",
     "static/media/lerkaka_stenen.jpg": "/rune-ovningsbok/static/media/lerkaka_stenen.f35cd8409ff277042317.jpg",
     "static/media/lidingö_dalängen.jpg": "/rune-ovningsbok/static/media/lidingö_dalängen.10febd455eb4001ec24b.jpg",
+    "static/media/borgarnes.jpg": "/rune-ovningsbok/static/media/borgarnes.d507a907a61de6d8cdde.jpg",
     "static/media/gripsholmstone178.jpg": "/rune-ovningsbok/static/media/gripsholmstone178.659a5fca3dd1b6931eee.jpg",
     "static/media/gårdby_runsten.jpg": "/rune-ovningsbok/static/media/gårdby_runsten.e470793a20933cbcd878.jpg",
     "static/media/gripsholmstone179.jpg": "/rune-ovningsbok/static/media/gripsholmstone179.bbb81d2c35d25bab9e08.jpg",
     "static/media/eik_sokndal.jpg": "/rune-ovningsbok/static/media/eik_sokndal.ac1b121d55cc931bd5ac.jpg",
     "static/media/lidingö_askrikevägen.jpg": "/rune-ovningsbok/static/media/lidingö_askrikevägen.86ea6f9ecb4a76bb3c54.jpg",
     "static/media/bergen_knife_beater.jpg": "/rune-ovningsbok/static/media/bergen_knife_beater.b7c9d562636b38ba74e5.jpg",
+    "static/media/wooden_spade.jpg": "/rune-ovningsbok/static/media/wooden_spade.524da0cdee1555f2c74b.jpg",
     "static/media/norumfont.jpg": "/rune-ovningsbok/static/media/norumfont.678db1ae1b74e82e1b57.jpg",
     "static/media/u614.jpg": "/rune-ovningsbok/static/media/u614.7c8fff365a4037bdcb09.jpg",
     "static/media/u613.jpg": "/rune-ovningsbok/static/media/u613.f2cfdef677f05bc24b30.jpg",
     "static/media/bergen_possible_gravestone.jpg": "/rune-ovningsbok/static/media/bergen_possible_gravestone.2c420a0df368fd8802f1.jpg",
     "static/media/sandavagur_stone.jpg": "/rune-ovningsbok/static/media/sandavagur_stone.2ed2370b7a75ccf7224f.jpg",
+    "static/media/thorfinn_karlsefni.jpg": "/rune-ovningsbok/static/media/thorfinn_karlsefni.70fca9b755aa0e43df2b.jpg",
     "static/media/sørvágur_box.jpg": "/rune-ovningsbok/static/media/sørvágur_box.3f39e39d123dc8058459.jpg",
     "static/media/kylverstone.jpg": "/rune-ovningsbok/static/media/kylverstone.84a84f3bdb1465153bf1.jpg",
     "static/media/bergenstick_gohome.jpg": "/rune-ovningsbok/static/media/bergenstick_gohome.9c2e7030d64be19c5a72.jpg",
@@ -37,11 +40,11 @@
     "index.html": "/rune-ovningsbok/index.html",
     "static/media/help_button_background.svg": "/rune-ovningsbok/static/media/help_button_background.e1b3abf591d68b8959a2.svg",
     "main.314e35ee.css.map": "/rune-ovningsbok/static/css/main.314e35ee.css.map",
-    "main.9baa1801.js.map": "/rune-ovningsbok/static/js/main.9baa1801.js.map",
+    "main.6edc29c4.js.map": "/rune-ovningsbok/static/js/main.6edc29c4.js.map",
     "787.042a5c5b.chunk.js.map": "/rune-ovningsbok/static/js/787.042a5c5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.314e35ee.css",
-    "static/js/main.9baa1801.js"
+    "static/js/main.6edc29c4.js"
   ]
 }
