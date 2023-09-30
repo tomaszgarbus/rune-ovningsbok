@@ -676,6 +676,16 @@
       }
     ]
   },
+  "borgarnes_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚴ",
+        "latin": ["k", "g"]
+      }
+    ]
+  },
   "medieval_sørvági_box": {
     "name": "Medieval runes",
     "inherit_from": "medieval",

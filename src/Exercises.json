@@ -302,6 +302,19 @@
     ]
   },
   {
+    "id": "borgarnes",
+    "img": "borgarnes.jpg",
+    "img_credit": "Own photo, taken in Borgarnes",
+    "title": "Grave mound in Borgarnes",
+    "description": "A modern inscription from a grave mound in Borgarnes of one of the first Icelandic settlers. The entire park is dedicated to his memory.",
+    "runes": "ᛋᚴᛅᛚᛚᛅᚴᚱᛁᛘᚱ",
+    "explanationAfter": "Of course, that's Skalla-Grim Kveld-Ulfsson! Although he died of old age at his farm Borg at Myrar, he is said to be buried in Borgarnes.",
+    "rowType": "borgarnes_younger_futhark",
+    "sources": [
+      "An information board provided by the Borgarnes commune authorities"
+    ]
+  },
+  {
     "id": "acvalhalla",
     "img": "acvalhalla.jpg",
     "title": "Assasin's Creed Valhalla loading screen",
