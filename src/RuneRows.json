@@ -662,6 +662,20 @@
       }
     ]
   },
+  "thorfinn_karlsefni_older_futhark": {
+    "name": "Older Fuþark",
+    "inherit_from": "older_futhark",
+    "override_symbols": [
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      }
+    ]
+  },
   "medieval_sørvági_box": {
     "name": "Medieval runes",
     "inherit_from": "medieval",

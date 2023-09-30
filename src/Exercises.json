@@ -289,6 +289,19 @@
     ]
   },
   {
+    "id": "thorfinn_karlsefni",
+    "img": "thorfinn_karlsefni.jpg",
+    "img_credit": "Own photo, taken in The Einar Jónsson Museum",
+    "title": "Thorfinn Karlsefni sculpture",
+    "description": "This very modern usage of runes is the back of Einár Jónsson's sculpture of Þorfinnur Karlsefni from 1918. Þorfinnur Karlsefni was an Icelandic sailor, who journeyed to Vinland, previously discovered by Leif Eriksson.",
+    "explanationAfter": "Correct. The inscription runs \"Frá eylandi norðurs elds og ísa / blómstrandi dala og blárra fjalla / vakandi sólar og draumadimmu / dísa heimkynni norðurljósa\" (in English: \"From the northern isle of fire and ice / of verdant dales and blue mountains / of wakeful sun and dreaming dark / abode of the goddesses of the Northern Lights\"). It is a description of Thorfinn's home country.",
+    "runes": "ᚠᚱᚨ ᛖᛁᛚᚨᚾᛞᛁ : ᚾᛟᚱᛞᚢᚱᛋ ᛖᛚᛞᛋ ᛟᚷ ᛁᛋᚨ | ᛒᛚᛟᛗᛋᛏᚱᚨᚾᛞᛁ : ᛞᚨᛚᚨ ᛟᚷ ᛒᛚᚨᚱᚱᚨ ᚠᛃᚨᛚᛚᚨ | …ᚨᚾᛞᛁ ᛋᛟᛚᚨᚱ ᛟᚷ : ᛞᚱᚨᚢᛗᚨᛞᛁᛗᛗᚢ | ᛞᛁᛋᚨ ᚼᛖᛁᛗᛃᚢᚾᚾᛁ : ᚾᛟᚱᛞᚢᚱᛚᛁᛟᛋᚨ",
+    "rowType": "thorfinn_karlsefni_older_futhark",
+    "sources": [
+      "The Einar Jónsson Museum"
+    ]
+  },
+  {
     "id": "acvalhalla",
     "img": "acvalhalla.jpg",
     "title": "Assasin's Creed Valhalla loading screen",
