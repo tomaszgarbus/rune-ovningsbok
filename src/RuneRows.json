@@ -640,6 +640,52 @@
     "inherit_from": "younger_futhark_short_twig",
     "override_symbols": []
   },
+  "wooden_spade_younger_futhark": {
+    "name": "Short-twig Younger Fuþark",
+    "inherit_from": "younger_futhark_short_twig",
+    "override_symbols": [
+      {
+        "rune": "ᛒ",
+        "latin": "b"
+      },
+      {
+        "rune": "ᛚ",
+        "latin": "t"
+      },
+      {
+        "rune": "ᛐ",
+        "latin": "l"
+      },
+      {
+        "rune": "ᛘ",
+        "latin": "m"
+      }
+    ]
+  },
+  "thorfinn_karlsefni_older_futhark": {
+    "name": "Older Fuþark",
+    "inherit_from": "older_futhark",
+    "override_symbols": [
+      {
+        "rune": "ᚼ",
+        "latin": "h"
+      },
+      {
+        "rune": "ᛋ",
+        "latin": "s"
+      }
+    ]
+  },
+  "borgarnes_younger_futhark": {
+    "name": "Long-branch Younger Fuþark",
+    "inherit_from": "younger_futhark_long_branch",
+    "override_symbols": [
+      {
+        "rune": "ᚴ",
+        "latin": ["k", "g"]
+      }
+    ]
+  },
   "medieval_sørvági_box": {
     "name": "Medieval runes",
     "inherit_from": "medieval",

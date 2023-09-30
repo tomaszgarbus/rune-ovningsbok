@@ -24,6 +24,21 @@ function IsValidHttpUrl(maybeLink) {
   return url.protocol === "http:" || url.protocol === "https:";
 }
 
+function GetCountryFlag(country) {
+  switch (country) {
+    case 'SE':
+      return '🇸🇪'
+    case 'NO':
+      return '🇳🇴'
+    case 'IS':
+      return '🇮🇸'
+    case 'FO':
+      return '🇫🇴'
+    default:
+      return ''
+  }
+}
+
 // Expands rune rows to canonical form (no inheritance).
 function ExpandRuneRowsToCanonical(runeRows) {
   function InheritFrom(baseRunRow, childRuneRow) {
@@ -57,4 +72,4 @@ function ExpandRuneRowsToCanonical(runeRows) {
   return result;
 }
 
-export {IsSeparator, IsValidHttpUrl, RuneRowToMapping, ExpandRuneRowsToCanonical};
+export {IsSeparator, IsValidHttpUrl, RuneRowToMapping, ExpandRuneRowsToCanonical, GetCountryFlag};

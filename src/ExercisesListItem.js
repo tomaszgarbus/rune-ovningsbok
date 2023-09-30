@@ -1,6 +1,15 @@
 /* TODO: Consider refactoring to a React Router Link. */
 
+import { GetCountryFlag } from "./Utils";
+
 function ExercisesListItem(props) {
+  function GetCountryFlagIfAvailable() {
+    if (props.exercise.country !== undefined) {
+      return GetCountryFlag(props.exercise.country) + ' ';
+    }
+    return ''
+  }
+
   return (
     <div className="ExercisesListItem" onClick={props.open}>
       <img
@@ -26,7 +35,7 @@ function ExercisesListItem(props) {
           mask={`url(#mask${props.exercise.runes[0]})`} fillOpacity="0.9"/>
       </svg>
       <div className="ExerciseListItemInfo">
-        <p className="ExerciseListItemTitle">{props.exercise.title}</p>
+        <p className="ExerciseListItemTitle">{GetCountryFlagIfAvailable() + props.exercise.title}</p>
         <p className="ExerciseListItemRowType">{props.runeRow.name}</p>
       </div>
     </div>
