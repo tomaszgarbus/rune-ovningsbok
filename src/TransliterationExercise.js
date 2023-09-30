@@ -1,6 +1,6 @@
 import RuneInput from "./RuneInput";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { IsSeparator, IsValidHttpUrl, RuneRowToMapping } from './Utils';
+import { IsSeparator, IsValidHttpUrl, RuneRowToMapping, GetCountryFlag } from './Utils';
 import RuneSeparator from "./RuneSeparator";
 import ActiveExerciseImage from "./ActiveExerciseImage";
 import Keyboard from "./Keyboard";
@@ -194,6 +194,14 @@ function TransliterationExercise(props) {
         </button>
         <h1 className="ActiveExerciseTitle">{props.exercise.title}</h1>
       </div>
+
+      {/* Country of origin */}
+      {
+        props.exercise.country && 
+        <p className="ActiveExerciseInfoBlock">
+          <b>Country: </b> {GetCountryFlag(props.exercise.country)}
+        </p>
+      }
 
       {/* Row type */}
       <p className="ActiveExerciseInfoBlock">
