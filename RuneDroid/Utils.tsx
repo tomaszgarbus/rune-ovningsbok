@@ -17,6 +17,21 @@ function RuneRowToMapping(rune_row: CanonicalRuneRowType) : RuneMappingType {
   return result;
 }
 
+function GetCountryFlag(country: string): string {
+  switch (country) {
+    case 'SE':
+      return '🇸🇪'
+    case 'NO':
+      return '🇳🇴'
+    case 'IS':
+      return '🇮🇸'
+    case 'FO':
+      return '🇫🇴'
+    default:
+      return ''
+  }
+}
+
 // Expands rune rows to canonical form (no inheritance).
 function ExpandRuneRowsToCanonical(compressed: CompressedRuneRowMap) : CanonicalRuneRowMap {
   function inheritFrom(baseRuneRow: CanonicalRuneRowType, childRuneRow: CompressedRuneRowType) {
@@ -70,5 +85,6 @@ export {
   IsValidHttpUrl,
   RuneRowToMapping,
   ExpandRuneRowsToCanonical,
+  GetCountryFlag,
   type RuneMappingType
 };

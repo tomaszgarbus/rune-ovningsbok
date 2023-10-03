@@ -13,6 +13,7 @@ import { StaticThumbnails } from './StaticImages.autogen';
 import LinearGradient from 'react-native-linear-gradient';
 import { useState } from 'react';
 import { useSolvedExercises } from './SolvedExercisesHook';
+import { GetCountryFlag } from './Utils';
 
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
@@ -109,6 +110,9 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                                 style={styles.title}>
                                 {
                                   (isExerciseSolved(exercise.id) ? "✅ " : "")
+                                  + (exercise.country !== undefined ? 
+                                    GetCountryFlag(exercise.country) + " "
+                                    : "")
                                   + exercise.title
                                 }
                               </Text>

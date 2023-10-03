@@ -160,6 +160,18 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         </Text>
       </View>
     }
+
+    {/* Country */}
+    {props.exercise.country &&
+      <View
+        style={styles.country}>
+        <Text style={styles.sectionName}>Country:</Text>
+        <Text
+          style={styles.sectionContent}>
+          {props.exercise.country}
+        </Text>
+      </View>
+    }
     
     {/* Row type */}
     <View
@@ -338,6 +350,10 @@ const styles = StyleSheet.create({
     fontFamily: "Finlandica-Regular",
   },
   description: {
+    marginBottom: 20,
+    marginTop: 10,
+  },
+  country: {
     marginBottom: 20,
     marginTop: 10,
   },

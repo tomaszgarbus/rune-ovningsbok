@@ -1,4 +1,3 @@
-
 const StaticImages: {[id: string]: any} = {
   'gripsholmstone178': require('./images/gripsholmstone178.jpg'),
   'gripsholmstone179': require('./images/gripsholmstone179.jpg'),
@@ -21,6 +20,9 @@ const StaticImages: {[id: string]: any} = {
   'norumfont': require('./images/norumfont.jpg'),
   'eik_sokndal': require('./images/eik_sokndal.jpg'),
   'møgedal': require('./images/møgedal.jpg'),
+  'wooden_spade': require('./images/wooden_spade.jpg'),
+  'thorfinn_karlsefni': require('./images/thorfinn_karlsefni.jpg'),
+  'borgarnes': require('./images/borgarnes.jpg'),
   'acvalhalla': require('./images/acvalhalla.jpg'),
   'adventure_time_guitar_repair': require('./images/at_guitar_repair.jpg'),
   'adventure_time_pitcher': require('./images/at_pitcher.jpg'),
@@ -53,6 +55,9 @@ const StaticThumbnails: {[id: string]: any} = {
   'norumfont': require('./images/thumbnails/norumfont.jpg'),
   'eik_sokndal': require('./images/thumbnails/eik_sokndal.jpg'),
   'møgedal': require('./images/thumbnails/møgedal.jpg'),
+  'wooden_spade': require('./images/thumbnails/wooden_spade.jpg'),
+  'thorfinn_karlsefni': require('./images/thumbnails/thorfinn_karlsefni.jpg'),
+  'borgarnes': require('./images/thumbnails/borgarnes.jpg'),
   'acvalhalla': require('./images/thumbnails/acvalhalla.jpg'),
   'adventure_time_guitar_repair': require('./images/thumbnails/at_guitar_repair.jpg'),
   'adventure_time_pitcher': require('./images/thumbnails/at_pitcher.jpg'),

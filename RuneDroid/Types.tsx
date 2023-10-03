@@ -8,6 +8,7 @@ type ExerciseType = {
   description: string,
   explanationAfter: string,
   rowType: string,
+  country: string,
 };
 
 type RuneRowSymbolPair = {
