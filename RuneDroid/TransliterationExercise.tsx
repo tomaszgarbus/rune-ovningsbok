@@ -22,7 +22,8 @@ import {
   IsSeparator,
   IsValidHttpUrl,
   RuneMappingType,
-  RuneRowToMapping
+  RuneRowToMapping,
+  GetCountryFlag
 } from './Utils';
 import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
@@ -172,7 +173,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
         <Text style={styles.sectionName}>Country:</Text>
         <Text
           style={styles.sectionContent}>
-          {props.exercise.country}
+          {GetCountryFlag(props.exercise.country)}
         </Text>
       </View>
     }
