@@ -1,11 +1,14 @@
 import {
   Button,
   Image,
+  Modal,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
   TextInput,
+  TouchableNativeFeedback,
+  TouchableWithoutFeedback,
   View
 } from 'react-native';
 import { ExerciseType, CanonicalRuneRowType}  from './Types';
@@ -40,6 +43,7 @@ type ExerciseState = {
 
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
+  const [isModalVisible, setModalVisible] = useState<boolean>(false);
   const [userAnswer, setUserAnswer] = useState<ExerciseState>({
     inputs: mapRunes<string>(_ => ""),
     ready: false,
@@ -196,14 +200,42 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     <Tooltip
       isVisible={currentToolTip == 0}
       content={<Text>
-        Use gestures (pinch, double tap) to zoom in and move the photo.
-        Try to locate the runes you're transliterating on the photo!
+        Tap the photo to zoom it!
         </Text>}
       placement="top"
       onClose={nextToolTip}
         >
+      <TouchableNativeFeedback
+        onPress={_ => {
+          setModalVisible(true);
+        }}
+        >
+        <Image
+          source={StaticImages[props.exercise.id]}
+          style={[
+            styles.image,
+            {
+              aspectRatio: imageAspectRatio
+            }
+          ]}
+          onLoad={
+            ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
+            } />
+      </TouchableNativeFeedback>
+    </Tooltip>
+
+    {/* Image pop-up */}
+    <Modal
+      animationType='fade'
+      transparent={false}
+      style={styles.modal}
+      visible={isModalVisible}>
+      <Button
+        title="Close preview"
+        onPress={_ => {setModalVisible(false)}}
+        />
       <ReactNativeZoomableView
-        maxZoom={1.5}
+        maxZoom={5}
         minZoom={0.5}
         zoomStep={0.5}
         initialZoom={1}
@@ -216,12 +248,9 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
             {
               aspectRatio: imageAspectRatio
             }
-          ]}
-          onLoad={
-            ({nativeEvent: {source: {width, height}}}) => setImageAspectRatio(width / height)
-            } />
+          ]} />
       </ReactNativeZoomableView>
-    </Tooltip>
+    </Modal>
 
     {/* Rune inputs and separators */}
     <Tooltip
@@ -380,6 +409,9 @@ const styles = StyleSheet.create({
     //   width: 5
     // },
     // shadowRadius: 10,
+  },
+  modal: {
+    backgroundColor: "#fff4"
   },
   horizontalScrollView: {
     display: "flex",
