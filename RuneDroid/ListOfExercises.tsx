@@ -69,29 +69,25 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                               }
                             </Text>
                             <View
-                              style={{
-                                paddingHorizontal: 5,
-                              }}>
+                              style={styles.infoBox}>
                               <Text
                                 numberOfLines={1}
-                                style={{
-                                  fontFamily: "Finlandica-Regular"
-                                }}>
+                                style={styles.infoLine}>
                                 {props.runeRows[exercise.rowType].name}
                               </Text>
                               <Text
                                 numberOfLines={1}
-                                style={{
-                                  fontFamily: "Finlandica-Regular"
-                                }}>
+                                style={styles.infoLine}>
+                                Length: {exercise.runes.length}
+                              </Text>
+                              <Text
+                                numberOfLines={1}
+                                style={styles.infoLine}>
                                 {exercise.runes}
                               </Text>
                             </View>
                           </View>
-                          <View style={{
-                            width: "30%",
-                            height: "100%"
-                          }}>
+                          <View style={styles.imageParent}>
                             <Image
                               source={StaticThumbnails[exercise.id]}
                               style={styles.image}
@@ -169,6 +165,16 @@ const styles = StyleSheet.create({
     elevation: 3,
     // Needed for elevation to work:
     backgroundColor: '#222',
+  },
+  infoBox: {
+    paddingHorizontal: 5,
+  },
+  infoLine: {
+    fontFamily: "Finlandica-Regular"
+  },
+  imageParent: {
+    width: "30%",
+    height: "100%"
   },
   columnsContainer: {
     flex: 1,
