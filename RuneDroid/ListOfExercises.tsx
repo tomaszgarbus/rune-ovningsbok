@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import { ExerciseType }  from './Types';
+import { CanonicalRuneRowMap, ExerciseType }  from './Types';
 import { StaticThumbnails } from './StaticImages.autogen';
 import { useSolvedExercises } from './SolvedExercisesHook';
 import { GetCountryFlag } from './Utils';
@@ -14,7 +14,8 @@ import { GetCountryFlag } from './Utils';
 type ListOfExercisesPropsType = {
   exercises: Array<ExerciseType>,
   setExercise: ((exercise: ExerciseType) => void),
-  columns: number
+  columns: number,
+  runeRows: CanonicalRuneRowMap,
 };
 
 // TODO: display thumbnails instead, for better performance?
@@ -52,20 +53,50 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                         onPress={(_) => props.setExercise(exercise)}>
                         <View
                           style={styles.container}>
-                          <Text
-                            style={styles.title}>
-                            {
-                              (isExerciseSolved(exercise.id) ? "✅ " : "")
-                              + (exercise.country !== undefined ? 
-                                GetCountryFlag(exercise.country) + " "
-                                : "")
-                              + exercise.title
-                            }
-                          </Text>
-                          <Image
-                            source={StaticThumbnails[exercise.id]}
-                            style={styles.image}
-                            />
+                          <View style={{
+                            width: "70%",
+                            height: "100%"
+                          }}>
+                            <Text
+                              numberOfLines={1}
+                              style={styles.title}>
+                              {
+                                (isExerciseSolved(exercise.id) ? "✅ " : "")
+                                + (exercise.country !== undefined ? 
+                                  GetCountryFlag(exercise.country) + " "
+                                  : "")
+                                + exercise.title
+                              }
+                            </Text>
+                            <View
+                              style={{
+                                paddingHorizontal: 5,
+                              }}>
+                              <Text
+                                numberOfLines={1}
+                                style={{
+                                  fontFamily: "Finlandica-Regular"
+                                }}>
+                                {props.runeRows[exercise.rowType].name}
+                              </Text>
+                              <Text
+                                numberOfLines={1}
+                                style={{
+                                  fontFamily: "Finlandica-Regular"
+                                }}>
+                                {exercise.runes}
+                              </Text>
+                            </View>
+                          </View>
+                          <View style={{
+                            width: "30%",
+                            height: "100%"
+                          }}>
+                            <Image
+                              source={StaticThumbnails[exercise.id]}
+                              style={styles.image}
+                              />
+                          </View>
                         </View>
                       </TouchableOpacity>
                       :
@@ -102,10 +133,11 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   image: {
-    width: "100%",
+    width: "auto",
     height: undefined,
     resizeMode: 'cover',
     aspectRatio: 1,
+    margin: 2,
   },
   title: {
     fontSize: 18,
@@ -121,6 +153,8 @@ const styles = StyleSheet.create({
   },
   container: {
     width: "auto",
+    flex: 1,
+    flexDirection: 'row',
     marginTop: 5,
     marginHorizontal: 2,
     // minHeight: 100,

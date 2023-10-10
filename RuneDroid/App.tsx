@@ -34,7 +34,8 @@ function App(): JSX.Element {
         <ListOfExercises
           exercises={Exercises}
           setExercise={setExercise}
-          columns={2}
+          runeRows={CanonicalRuneRows}
+          columns={1}
         />
         :
         <TransliterationExercise
