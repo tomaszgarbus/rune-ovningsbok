@@ -22,7 +22,10 @@ function App(): JSX.Element {
   const [exercise, setExercise] = useState<ExerciseType | null>(null)
 
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{
+        'backgroundColor': 'white',
+      }}>
       <StatusBar
         barStyle='dark-content'
       />

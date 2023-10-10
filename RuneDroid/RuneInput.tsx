@@ -95,6 +95,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     backgroundColor: 'white',
+    color: 'black',
     borderColor: 'transparent',
     borderWidth: 0,
     borderRadius: 25,
@@ -105,6 +106,7 @@ const styles = StyleSheet.create({
   },
   feedbackSymbol: {
     fontSize: 15,
+    color: 'black',
     textAlign: 'center'
   }
 });

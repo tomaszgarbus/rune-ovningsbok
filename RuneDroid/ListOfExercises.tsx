@@ -1,7 +1,5 @@
 import {
-  Dimensions,
     Image,
-    ImageBackground,
     ScrollView,
     StyleSheet,
     Text,
@@ -10,8 +8,6 @@ import {
 } from 'react-native';
 import { ExerciseType }  from './Types';
 import { StaticThumbnails } from './StaticImages.autogen';
-import LinearGradient from 'react-native-linear-gradient';
-import { useState } from 'react';
 import { useSolvedExercises } from './SolvedExercisesHook';
 import { GetCountryFlag } from './Utils';
 
@@ -36,24 +32,6 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
       }
   );
 
-  function boundedAspectRatio(aspectRatio: number) {
-    if (props.columns == 1) {
-      return Math.min(Math.max(5/4, aspectRatio), 3/2);
-    } 
-    return Math.min(Math.max(2/3, aspectRatio), 4/5);
-  }
-
-  type ImageAspectRatiosDictType = { [exercise_id: string]: (number) };
-  const [imageAspectRatios, setImageAspectRatios] = useState<ImageAspectRatiosDictType>(
-    props.exercises.reduce(
-      (dict: ImageAspectRatiosDictType, exercise: ExerciseType, idx: number, array: any) => {
-        const source = Image.resolveAssetSource(StaticThumbnails[exercise.id]);
-        dict[exercise.id] = boundedAspectRatio(source.width / source.height);
-        return dict;
-      },
-      {}
-  ));
-
   return (
     <ScrollView>
       <Text style={styles.header}>Welcome to RuneDroid</Text>
@@ -73,52 +51,21 @@ function ListOfExercises(props: ListOfExercisesPropsType): JSX.Element {
                         key={exercise.id}
                         onPress={(_) => props.setExercise(exercise)}>
                         <View
-                          style={
-                            [
-                              {
-                                aspectRatio: imageAspectRatios[exercise.id]
-                              },
-                              styles.container,
-                            ]
-                          }>
-                          <ImageBackground
+                          style={styles.container}>
+                          <Text
+                            style={styles.title}>
+                            {
+                              (isExerciseSolved(exercise.id) ? "✅ " : "")
+                              + (exercise.country !== undefined ? 
+                                GetCountryFlag(exercise.country) + " "
+                                : "")
+                              + exercise.title
+                            }
+                          </Text>
+                          <Image
                             source={StaticThumbnails[exercise.id]}
                             style={styles.image}
-                            onLoad={
-                              ({nativeEvent: {source: {width, height}}}) => setImageAspectRatios(
-                                {
-                                  ...imageAspectRatios,
-                                  [exercise.id]: boundedAspectRatio(width / height)
-                                }
-                              )
-                            }
-                            >
-                            <LinearGradient
-                              colors={
-                                  ["#fffd", "#fff3", "#fff1", "#fff1"]
-                              }
-                              style={styles.linGrad}
-                            >
-                              {/* {
-                                isExerciseSolved(exercise.id) &&
-                                <Text
-                                  style={styles.doneMarker}>
-                                    ✅
-                                </Text>
-                              } */}
-                              <Text
-                                style={styles.title}>
-                                {
-                                  (isExerciseSolved(exercise.id) ? "✅ " : "")
-                                  + (exercise.country !== undefined ? 
-                                    GetCountryFlag(exercise.country) + " "
-                                    : "")
-                                  + exercise.title
-                                }
-                              </Text>
-                              
-                            </LinearGradient>
-                          </ImageBackground>
+                            />
                         </View>
                       </TouchableOpacity>
                       :
@@ -156,11 +103,13 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: "100%"
+    height: undefined,
+    resizeMode: 'cover',
+    aspectRatio: 1,
   },
   title: {
     fontSize: 18,
-    color: "#000",
+    color: "#ddd",
     zIndex: 3,
     fontFamily: "Finlandica-Regular",
     marginLeft: 2,
@@ -185,7 +134,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     elevation: 3,
     // Needed for elevation to work:
-    backgroundColor: '#fff',
+    backgroundColor: '#222',
   },
   columnsContainer: {
     flex: 1,
