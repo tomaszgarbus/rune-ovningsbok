@@ -170,7 +170,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
   },
   infoLine: {
-    fontFamily: "Finlandica-Regular"
+    fontFamily: "Finlandica-Regular",
+    color: "white",
   },
   imageParent: {
     width: "30%",
