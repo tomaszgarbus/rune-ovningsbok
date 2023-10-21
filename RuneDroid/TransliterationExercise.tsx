@@ -8,15 +8,13 @@ import {
   Text,
   TextInput,
   TouchableNativeFeedback,
-  TouchableWithoutFeedback,
   View
 } from 'react-native';
 import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
-import { ReactElement, Ref, createRef, useCallback, useState } from 'react';
-import { RuneInput, RuneSeparator } from './RuneInput';
+import { ReactElement, Ref, createRef, useState } from 'react';
 import { Linking } from 'react-native';
 import {
   IsSeparator,
@@ -29,6 +27,8 @@ import { useToolTips } from './ToolTipHook';
 import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
 import Tooltip from 'react-native-walkthrough-tooltip';
 import { useSolvedExercises } from './SolvedExercisesHook';
+import { RuneInExercise, RuneInExerciseStatus } from './RuneInExercise';
+import { RuneInput } from './RuneInput';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -38,7 +38,7 @@ type TransliterationExercisePropsType = {
 
 type ExerciseState = {
   inputs: Array<string>,
-  ready: boolean,
+  index: number,
   solved: boolean,
 };
 
@@ -47,8 +47,8 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
   const [isModalVisible, setModalVisible] = useState<boolean>(false);
   const [userAnswer, setUserAnswer] = useState<ExerciseState>({
     inputs: mapRunes<string>(_ => ""),
-    ready: false,
     solved: false,
+    index: 0,
   });
   const [currentToolTip, nextToolTip] = useToolTips("TransliterationExercise", 3);
   const runeMapping: RuneMappingType = RuneRowToMapping(props.runeRow);
@@ -71,73 +71,18 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     }
   }
 
-  function shouldShowHintForField(index: number) {
+  function handleCorrectInput(input: string) {
     const inputs: Array<string> = userAnswer.inputs;
-    if (inputs[index].length > 0) {
-      return true;
-    }
-    return false;
-  }
-
-  function isReady(inputs: Array<string>): boolean {
-    for (const [i, c] of inputs.entries()) {
-      if (IsSeparator(props.exercise.runes[i])) {
-        continue;
-      }
-      if (c === '') {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  function isInputCorrect(input: string, groundTruth: string | Array<string>) {
-    if (typeof(groundTruth) === 'string') {
-      return input.toLowerCase() === groundTruth;
-    } else {
-      return groundTruth.includes(input.toLowerCase());
-    }
-  }
-
-  const isSolved = useCallback((inputs: Array<string>) => {
-    for (const i in inputs) {
-      if (IsSeparator(props.exercise.runes[i])) {
-        continue;
-      }
-      if (!isInputCorrect(inputs[i], runeMapping[props.exercise.runes[i]])) {
-        return false;
-      }
-    }
-    return true;
-  }, [props, runeMapping])
-
-  function maybeMoveToNextInput(currentIndex: number) {
-    const inputs = userAnswer.inputs;
-    
-    let nextIndexToFocus: number = currentIndex;
-    while (++nextIndexToFocus < inputs.length && 
-      IsSeparator(props.exercise.runes[nextIndexToFocus]));
-    if (nextIndexToFocus < inputs.length) {
-      inputsRefs[nextIndexToFocus].current.focus();
-    }
-  }
-
-  function updateUserAnswer(index: number, char: string) {
-    const inputs: Array<string> = userAnswer.inputs;
-    inputs[index] = char;
+    inputs[userAnswer.index] = input;
+    var nextIndex = userAnswer.index;
+    while (++nextIndex < props.exercise.runes.length
+      && IsSeparator(props.exercise.runes[nextIndex]));
     setUserAnswer({
       ...userAnswer,
       inputs: inputs,
-      ready: isReady(inputs),
-      solved: isSolved(inputs),
-    });
-    if (isSolved(inputs)) {
-      setExerciseSolved(props.exercise.id);
-    }
-    // TODO: move to the next input
-    if (inputs[index].length === 1) {
-      maybeMoveToNextInput(index);
-    }
+      index: nextIndex,
+      solved: nextIndex === props.exercise.runes.length,
+    })
   }
 
   return <ScrollView
@@ -157,7 +102,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
 
     {/* Toast about having solved this exercise */}
     {
-      !userAnswer.ready && isExerciseSolved(props.exercise.id) &&
+      !userAnswer.solved && isExerciseSolved(props.exercise.id) &&
       <View
         style={styles.alreadySolvedView}>
         <Text style={styles.alreadySolvedText}>
@@ -253,77 +198,58 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       </ReactNativeZoomableView>
     </Modal>
 
-    {/* Rune inputs and separators */}
-    <Tooltip
-      isVisible={currentToolTip == 1}
-      content={<Text>
-        Enter characters of Latin alphabet below the runes.
-        You will see a feedback immediately after input.
-        If you are unsure how to translate some symbol (should ᚴ be K or G?),
-        just input whichever and update according to the hint.
-        </Text>}
-      placement="top"
-      onClose={nextToolTip}
-    >
-      <ScrollView
-        contentContainerStyle={styles.horizontalScrollView}
-        persistentScrollbar={true} 
-        horizontal={true}>
+    {/* Runic text with answers or blanks */}
+    <View style={styles.runesSection}>
+      <Text style={styles.sectionName}>Runes:</Text>
+      <View style={styles.runes}>
         {
           mapRunes<ReactElement>(
-            (rune, index) => IsSeparator(rune) ?
-            <RuneSeparator character={rune} key={index} />
-            :
-            <RuneInput
-              index={index}
-              key={index}
+            (rune, index) => <RuneInExercise
               rune={rune}
-              onChangeText={(text) => updateUserAnswer(index, text)}
-              ref={inputsRefs[index]}
-              feedback={shouldShowHintForField(index) ? 
-                {
-                  "symbol": runeMapping[rune],
-                  "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
-                } : undefined
+              latin={userAnswer.inputs[index]}
+              key={index}
+              status={
+                index < userAnswer.index ?
+                  RuneInExerciseStatus.Done :
+                  index === userAnswer.index ?
+                    RuneInExerciseStatus.Active :
+                    RuneInExerciseStatus.Default
               }
             />
           )
         }
-      </ScrollView>
-    </Tooltip>
+      </View>
+    </View>
+
+    {/* Rune input */}
+    {!userAnswer.solved && 
+      <View style={styles.runeInputParent}>
+        <RuneInput
+          runeAndLatin={{
+            rune: props.exercise.runes[userAnswer.index],
+            latin: runeMapping[props.exercise.runes[userAnswer.index]]
+          }}
+          onSolve={(input: string) => handleCorrectInput(input)}
+        />
+      </View>
+    }
 
     {/* Explanation after */}
-    <Tooltip
-      isVisible={currentToolTip == 2 && userAnswer.ready}
-      content={
-        <Text>
-          When you input all the Latin characters, here you will receive your feedback.
-          Once all fields are correct, you'll learn more about the meaning and
-          interpretations of the inscription!
-        </Text>
-      }
-      placement="top"
-      onClose={nextToolTip}
-      >
-      {
-        userAnswer.ready &&
-        <Text style={styles.sectionName}>Feedback:</Text>
-      }
-      <Text style={styles.sectionContent}>
+    <Text style={styles.sectionName}>Feedback:</Text>
+    <Text style={styles.sectionContent}>
         { userAnswer.solved && 
           <Text>
             {props.exercise.explanationAfter}
           </Text>
         }
         {
-          userAnswer.ready && !userAnswer.solved &&
+          !userAnswer.solved &&
           <Text>
-            Not quite! Please correct all the inputs according to the
-            hints to read an explanation of the runic message.
+            Transliterate all runes first, and you'll see the explanation
+            behind the inscription here.
           </Text>
         }
       </Text>
-    </Tooltip>
 
     {/* Sources */}
     <View style={styles.sources}>
@@ -404,15 +330,17 @@ const styles = StyleSheet.create({
     width: "80%",
     height: undefined,
     borderRadius: 20,
-    // shadowColor: "black",
-    // shadowOffset: {
-    //   height: 5,
-    //   width: 5
-    // },
-    // shadowRadius: 10,
   },
   modal: {
     backgroundColor: "#fff4"
+  },
+  runes: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  runesSection: {
+    marginTop: 10,
   },
   horizontalScrollView: {
     display: "flex",
@@ -425,21 +353,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     fontFamily: "Finlandica-Regular",
   },
-  toggler: {
-    activeBackgroundColor: "#3c4145",
-    inActiveBackgroundColor: "#3c4145",
-    borderActiveColor: "#1c1c1c",
-    borderInActiveColor: "#1c1c1c",
-    borderWidth: 5,
-    height: 30,
-    width: 80,
-  },
-  togglerButton: {
-    width: 45,
-    height: 45,
-    radius: 22,
-    activeBackgroundColor: "#ffd0d0",
-    inActiveBackgroundColor: "#ffd0d0",
+  runeInputParent: {
+    marginBottom: 20,
   }
 });
 

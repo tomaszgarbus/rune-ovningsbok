@@ -1,117 +1,76 @@
-import { Ref, forwardRef } from "react";
-import { NativeSyntheticEvent, StyleSheet, Text, TextInput, TextInputChangeEventData, View } from "react-native";
-
-type Feedback = {
-  correct: boolean,
-  symbol: string | Array<string>,
-};
+import { StyleSheet, Text, TextInput, View } from "react-native";
+import { RuneRowSymbolPair } from "./Types";
+import { useEffect, useRef } from "react";
 
 type RuneInputPropsType = {
-  index: number,
-  feedback: Feedback | undefined,
-  rune: string,
-  onChangeText: (text: string) => void,
-};
+  runeAndLatin: RuneRowSymbolPair,
+  onSolve: (input: string) => void,
+}
 
-const RuneInput = forwardRef((props : RuneInputPropsType, inputRef: Ref<TextInput>) => {
-  function GetStylesFromFeedback() {
-    // TODO: type the aray correctly
-    var result: Array<any> = [styles.runeInputBox];
-    if (props.feedback) {
-      if (props.feedback.correct) {
-        result.push(styles.correct);
-      } else {
-        result.push(styles.incorrect);
-      }
+function RuneInput(props: RuneInputPropsType) {
+  const inputRef = useRef<TextInput | null>(null);
+
+  function isInputCorrect(input: string, groundTruth: string | Array<string>) {
+    if (typeof(groundTruth) === 'string') {
+      return input.toLowerCase() === groundTruth;
+    } else {
+      return groundTruth.includes(input.toLowerCase());
     }
-    return result;
   }
 
-  return <View style={GetStylesFromFeedback()}>
-    <Text
-      style={styles.originalSymbol}>
-      {props.rune}
-    </Text>
+  function handleTextChange(text: string) {
+    if (isInputCorrect(text, props.runeAndLatin.latin)) {
+      inputRef.current?.clear();
+      console.log(inputRef.current === null);
+      props.onSolve(text);
+    }
+    // TODO: handle wrong input
+  }
+
+  return <View style={styles.container}>
+    <View style={styles.runeTextContainer}>
+      <Text style={styles.runeText}>
+        {props.runeAndLatin.rune}
+      </Text>
+    </View>
     <TextInput
-      style={styles.textInput}
+      autoCorrect={false} 
+      placeholder="?"
+      placeholderTextColor={"grey"}
+      textAlign="center"
       maxLength={1}
-      onChangeText={props.onChangeText}
+      style={styles.textInput}
+      onChangeText={(text: string) => {handleTextChange(text)}}
       ref={inputRef}>
     </TextInput>
-    {props.feedback && !props.feedback.correct && 
-      <Text style={styles.feedbackSymbol}>
-        {props.feedback.symbol}
-      </Text>
-    }
-  </View>
-});
-
-type RuneSeparatorPropsType = {
-  character: string
-};
-
-function RuneSeparator(props: RuneSeparatorPropsType) {
-  return <View
-    style={styles.runeSeparatorBox}>
-    <Text
-      style={styles.runeSeparatorSymbol}>
-      {props.character}
-    </Text>
   </View>
 }
 
 const styles = StyleSheet.create({
-  runeSeparatorSymbol: {
-    fontSize: 20,
-    alignSelf: "center",
-  },
-  runeSeparatorBox: {
+  container: {
+    backgroundColor: "lightgrey",
+    borderRadius: 20,
+    marginHorizontal: 30,
     display: "flex",
     flexDirection: "row",
-    height: "100%",
+    alignContent: "stretch",
   },
-  originalSymbol: {
-    fontSize: 15,
-    marginBottom: 5,
-    marginTop: 0,
-    textAlign: 'center',
-    color: 'black',
+  runeText: {
+    color: "black",
   },
-  runeInputBox: {
-    backgroundColor: '#ffd0d0',
-    margin: 1,
-    marginTop: 10,
-    borderRadius: 15,
-    paddingBottom: 8,
-    paddingTop: 8,
-    paddingLeft: 5,
-    paddingRight: 5,
-  },
-  correct: {
-    backgroundColor: "lightgreen",
-  },
-  incorrect: {
-    backgroundColor: "lightcoral",
+  runeTextContainer: {
+    borderRadius: 10,
+    margin: 10,
+    marginStart: 20,
+    backgroundColor: "grey",
   },
   textInput: {
-    backgroundColor: 'white',
-    color: 'black',
-    borderColor: 'transparent',
-    borderWidth: 0,
-    borderRadius: 25,
-    fontSize: 15,
-    height: 30,
-    padding: 0,
-    textAlign: 'center',
-  },
-  feedbackSymbol: {
-    fontSize: 15,
-    color: 'black',
-    textAlign: 'center'
+    backgroundColor: "white",
+    color: "black",
+    borderRadius: 10,
+    margin: 10,
+    marginEnd: 20,
   }
-});
+})
 
-export {
-  RuneInput,
-  RuneSeparator
-};
+export { RuneInput };
