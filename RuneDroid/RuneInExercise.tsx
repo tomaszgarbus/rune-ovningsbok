@@ -37,7 +37,7 @@ function RuneInExercise(props: RuneInExercisePropsType) {
     </Text>
 
     <Text style={styles.text}>
-      {props.latin}
+      {props.status === RuneInExerciseStatus.Active ? "?" : props.latin}
     </Text>
   </View>
 }
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "black",
+    fontSize: 20,
   },
 })
 

@@ -14,7 +14,7 @@ import { ExerciseType, CanonicalRuneRowType}  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
-import { ReactElement, Ref, createRef, useState } from 'react';
+import { ReactElement, Ref, createRef, useEffect, useState } from 'react';
 import { Linking } from 'react-native';
 import {
   IsSeparator,
@@ -70,6 +70,12 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
       return props.exercise.runes.map(fn);
     }
   }
+
+  useEffect(() => {
+    if (userAnswer.solved) {
+      setExerciseSolved(props.exercise.id);
+    }
+  }, [userAnswer]);
 
   function handleCorrectInput(input: string) {
     const inputs: Array<string> = userAnswer.inputs;
@@ -224,6 +230,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     {/* Rune input */}
     {!userAnswer.solved && 
       <View style={styles.runeInputParent}>
+        <Text style={styles.sectionName}>Solve here:</Text>
         <RuneInput
           runeAndLatin={{
             rune: props.exercise.runes[userAnswer.index],
@@ -235,21 +242,23 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     }
 
     {/* Explanation after */}
-    <Text style={styles.sectionName}>Feedback:</Text>
-    <Text style={styles.sectionContent}>
-        { userAnswer.solved && 
-          <Text>
+    <View style={styles.feedback}>
+      <Text style={styles.sectionName}>Feedback:</Text>
+      { userAnswer.solved && 
+        <View style={styles.alreadySolvedView}>
+          <Text style={styles.sectionContent}>
             {props.exercise.explanationAfter}
           </Text>
-        }
-        {
-          !userAnswer.solved &&
-          <Text>
-            Transliterate all runes first, and you'll see the explanation
-            behind the inscription here.
-          </Text>
-        }
-      </Text>
+        </View>
+      }
+      {
+        !userAnswer.solved &&
+        <Text style={styles.sectionContent}>
+          Transliterate all runes first, and you'll see the explanation
+          behind the inscription here.
+        </Text>
+      }
+    </View>
 
     {/* Sources */}
     <View style={styles.sources}>
@@ -304,13 +313,18 @@ const styles = StyleSheet.create({
   sectionContent: {
     color: "black",
     fontFamily: "Finlandica-Regular",
+    flexWrap: "wrap",
+    flexShrink: 1,
   },
   description: {
     marginBottom: 20,
     marginTop: 10,
   },
   country: {
-    marginBottom: 20,
+    marginBottom: 0,
+    marginTop: 10,
+  },
+  feedback: {
     marginTop: 10,
   },
   rowType: {
