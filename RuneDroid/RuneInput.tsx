@@ -27,10 +27,12 @@ function RuneInput(props: RuneInputPropsType) {
   }
 
   function handleTextChange(text: string) {
+    inputRef.current?.setNativeProps({
+      text: '',
+    })
     if (isInputCorrect(text, props.runeAndLatin.latin)) {
       // TODO: fix clearing
       props.onSolve(text);
-      inputRef.current?.clear();
       setFeedback("");
     } else if (text.length === 1) {
       setFeedback(

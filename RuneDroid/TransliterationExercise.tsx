@@ -10,7 +10,7 @@ import {
   TouchableNativeFeedback,
   View
 } from 'react-native';
-import { ExerciseType, CanonicalRuneRowType}  from './Types';
+import { ExerciseType, CanonicalRuneRowType, ExerciseState }  from './Types';
 import { useBackHandler } from '@react-native-community/hooks'
 import { StaticImages } from './StaticImages.autogen';
 import commonStyles from './CommonStyles';
@@ -29,6 +29,7 @@ import Tooltip from 'react-native-walkthrough-tooltip';
 import { useSolvedExercises } from './SolvedExercisesHook';
 import { RuneInExercise, RuneInExerciseStatus } from './RuneInExercise';
 import { RuneInput } from './RuneInput';
+import { useUserAnswers } from './UserAnswersHook';
 
 type TransliterationExercisePropsType = {
   exercise: ExerciseType,
@@ -36,16 +37,11 @@ type TransliterationExercisePropsType = {
   runeRow: CanonicalRuneRowType,
 };
 
-type ExerciseState = {
-  inputs: Array<string>,
-  index: number,
-  solved: boolean,
-};
-
 function TransliterationExercise(props: TransliterationExercisePropsType): JSX.Element {
   const [imageAspectRatio, setImageAspectRatio] = useState<number>(1);
   const [isModalVisible, setModalVisible] = useState<boolean>(false);
-  const [userAnswer, setUserAnswer] = useState<ExerciseState>({
+  const [userAnswer, setUserAnswer, resetUserAnswer] = useUserAnswers(
+    props.exercise.id, {
     inputs: mapRunes<string>(_ => ""),
     solved: false,
     index: 0,
@@ -239,6 +235,13 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
           onSolve={(input: string) => handleCorrectInput(input)}
         />
       </View>
+    }
+
+    {/* Clear answer button */}
+    { userAnswer.index > 0 &&
+      <Button
+        title='clear answer'
+        onPress={resetUserAnswer} />
     }
 
     {/* Explanation after */}

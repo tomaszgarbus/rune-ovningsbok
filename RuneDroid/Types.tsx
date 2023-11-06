@@ -27,6 +27,12 @@ type CanonicalRuneRowType = {
   symbols: Array<RuneRowSymbolPair>,
 }
 
+type ExerciseState = {
+  inputs: Array<string>,
+  index: number,
+  solved: boolean,
+};
+
 type CompressedRuneRowMap = { [name: string]: (CompressedRuneRowType | CanonicalRuneRowType) };
 type CanonicalRuneRowMap = { [name: string]: CanonicalRuneRowType };
 
@@ -36,5 +42,6 @@ export type {
   CompressedRuneRowType,
   CanonicalRuneRowType,
   CompressedRuneRowMap,
-  CanonicalRuneRowMap
+  CanonicalRuneRowMap,
+  ExerciseState,
 };
