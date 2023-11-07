@@ -52,6 +52,7 @@ function RuneInput(props: RuneInputPropsType) {
 
       {/* Input */}
       <TextInput
+        autoCapitalize="none"
         autoCorrect={false} 
         autoComplete="off"
         spellCheck={false}

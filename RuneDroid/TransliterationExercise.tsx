@@ -147,7 +147,7 @@ function TransliterationExercise(props: TransliterationExercisePropsType): JSX.E
     {/* Image */}
     <Tooltip
       isVisible={currentToolTip == 0}
-      content={<Text>
+      content={<Text style={styles.toolTipText}>
         Tap the photo to zoom it!
         </Text>}
       placement="top"
@@ -372,6 +372,9 @@ const styles = StyleSheet.create({
   },
   runeInputParent: {
     marginBottom: 20,
+  },
+  toolTipText: {
+    color: "black",
   }
 });
 
