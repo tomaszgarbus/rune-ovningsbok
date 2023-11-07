@@ -7,11 +7,14 @@ function useSolvedExercises(): [
 ] {
   type SolvedExercisesSetType = Array<string>;
   const [solvedExercises, setSolvedExercises] = useState<SolvedExercisesSetType>([]);
-  loadSolvedExercisesFromLocalStorage().then((value: string) => {
-    if (value != solvedExercises.join(";")) {
-      setSolvedExercises(value.split(";"));
-    }
-  });
+
+  useEffect(() => {
+    loadSolvedExercisesFromLocalStorage().then((value: string) => {
+      if (value != solvedExercises.join(";")) {
+        setSolvedExercises(value.split(";"));
+      }
+    });
+  }, [])
 
   function isExerciseSolved(exerciseId: string): boolean {
     return solvedExercises.find(e => e === exerciseId) !== undefined;
