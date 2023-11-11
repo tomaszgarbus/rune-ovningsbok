@@ -1,40 +1,20 @@
 import RuneInput from "./RuneInput";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { IsSeparator, IsValidHttpUrl, RuneRowToMapping, GetCountryFlag } from './Utils';
 import RuneSeparator from "./RuneSeparator";
 import ActiveExerciseImage from "./ActiveExerciseImage";
 import Keyboard from "./Keyboard";
+import { useUserAnswers } from "./UserAnswersHook.tsx";
 
 
 function TransliterationExercise(props) {
-  function loadUserAnswerIfExerciseIdMatches() {
-    let loadedUserAnswer = window.sessionStorage.getItem('userAnswer');
-    if (!loadedUserAnswer) {
-      return null;
-    }
-    let parsedUserAnswer = JSON.parse(loadedUserAnswer);
-    if (parsedUserAnswer.exerciseId === props.exercise.id) {
-      return parsedUserAnswer;
-    }
-    return null;
-  }
-
-  const [userAnswer, setUserAnswer] = useState(
-    loadUserAnswerIfExerciseIdMatches() ||
-    {
+  const [userAnswer, setUserAnswer] = useUserAnswers(
+    props.exercise.id, {
       inputs: mapRunes(_ => ""),
       // "Solved" means "checked and all inputs correct or corrected after hints".
-      solved: false,
-      // Read-only. This field is used to identify whether the userAnswer cached
-      // in window.sessionStorage is for the current exercise.
-      exerciseId: props.exercise.id,
+      solved: false
     }
   )
-
-  function setUserAnswerAndCacheInSessionStorage(newAnswer) {
-    window.sessionStorage.setItem('userAnswer', JSON.stringify(newAnswer));
-    setUserAnswer(newAnswer);
-  }
 
   // Used to update the `display` property on the help modal.
   const helpModalRef = useRef(null);
@@ -80,7 +60,7 @@ function TransliterationExercise(props) {
   function updateUserAnswer(index, char) {
     const inputs = userAnswer.inputs;
     inputs[index] = char;
-    setUserAnswerAndCacheInSessionStorage({
+    setUserAnswer({
       ...userAnswer,
       inputs: inputs,
       solved: isSolved(inputs)
@@ -124,7 +104,7 @@ function TransliterationExercise(props) {
         solved: isSolved(u.inputs)
       };});
     },
-    [isSolved]
+    [isSolved, setUserAnswer]
   )
 
   function toggleHelpModal(event) {
@@ -200,7 +180,7 @@ function TransliterationExercise(props) {
       <hr/>
 
       {/* User input */}
-      <text>Tips:</text>
+      <div>Tips:</div>
       <ul>
         <li>Use keyboard arrows to navigate between inputs.</li>
         <li>Use virtual keyboard below to input non-standard symbols.</li>
@@ -237,7 +217,7 @@ function TransliterationExercise(props) {
 
       {/* Explanation after */}
       { userAnswer.solved &&
-          <p className="ActiveExerciseInfoBlock">
+          <p className="ActiveExerciseInfoBlock ExplanationAfter">
             <b>Feedback: </b>{props.exercise.explanationAfter}
           </p>
         }

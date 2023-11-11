@@ -65,6 +65,12 @@ hr {
   margin-bottom: 5px;
 }
 
+.ExplanationAfter {
+  border-radius: 20px;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
 .ActiveExerciseImg {
   border-radius: 15px;
   max-height: 700px;
