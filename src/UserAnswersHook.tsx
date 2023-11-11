@@ -19,7 +19,7 @@ function useUserAnswers(exerciseId: string, defaultState: ExerciseState) {
     }
     let parsedUserAnswer = JSON.parse(loadedUserAnswer);
     return parsedUserAnswer;
-  }, [createKey, exerciseId]);
+  }, [createKey]);
 
   const [userAnswer, setUserAnswer] = useState<ExerciseState>(
     maybeLoadUserAnswerFromSessionStorage() || defaultState);
