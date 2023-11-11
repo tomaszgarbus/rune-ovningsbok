@@ -7,40 +7,6 @@ afterEach(() => {
   window.sessionStorage.clear();
 });
 
-test('enable check once all inputs provided', () => {
-  render(<TransliterationExercise
-    exercise={testExercise}
-    runeRow={testRuneRow}
-  />);
-  const checkButton = screen.getByText("Check");
-  expect(checkButton).toBeDisabled();
-
-  for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
-    inputField.setAttribute('value', 'a');
-    fireEvent.change(inputField, { target: { value: 'a' } });
-  }
-
-  expect(checkButton).toBeEnabled();
-});
-
-test('check button enables feedback', () => {
-  render(<TransliterationExercise
-    exercise={testExercise}
-    runeRow={testRuneRow}
-  />);
-  for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
-    inputField.setAttribute('value', 'a');
-    fireEvent.change(inputField, { target: { value: 'a' } });
-  }
-
-  expect(screen.queryAllByTestId("symbol-feedback").length).toBe(0);
-
-  const checkButton = screen.getByText("Check");
-  fireEvent.submit(checkButton, {});
-
-  expect(screen.getAllByTestId("symbol-feedback").length).toBe(4);
-});
-
 test('accept upper case answers', () => {
   render(<TransliterationExercise
     exercise={testExercise}
@@ -52,10 +18,6 @@ test('accept upper case answers', () => {
     inputField.setAttribute('value', latinSymbol.toUpperCase());
     fireEvent.change(inputField, { target: { value: latinSymbol } });
   }
-
-  const checkButton = screen.getByText("Check");
-  expect(checkButton).toBeEnabled();
-  fireEvent.submit(checkButton, {});
 
   const explanationAfter = screen.getByText(testExercise.explanationAfter);
   expect(explanationAfter).toBeInTheDocument();
@@ -73,10 +35,6 @@ test('show explanation after solved', () => {
     inputField.setAttribute('value', latinSymbol);
     fireEvent.change(inputField, { target: { value: latinSymbol } });
   }
-
-  const checkButton = screen.getByText("Check");
-  expect(checkButton).toBeEnabled();
-  fireEvent.submit(checkButton, {});
 
   const explanationAfter = screen.getByText(testExercise.explanationAfter);
   expect(explanationAfter).toBeInTheDocument();
@@ -150,10 +108,6 @@ test('solved exercise with separators', () => {
   fireEvent.change(inputFields[2], { target: { value: 's' } });
   fireEvent.change(inputFields[3], { target: { value: 't' } });
 
-  const checkButton = screen.getByText("Check");
-  expect(checkButton).toBeEnabled();
-  fireEvent.click(checkButton, {});
-
   expect(screen.getByText(
     testExerciseWithSeparators.explanationAfter)).toBeInTheDocument();
 });
@@ -197,8 +151,7 @@ test('don\'t load user answer from session storage if exercise id mismatches', (
     fireEvent.change(inputField, { target: { value: 'a' } });
   }
   // Just make sure that all inputs are present:
-  let checkButton = screen.getByText('Check');
-  expect(checkButton).toBeEnabled();
+  expect(screen.getAllByTestId("symbol-feedback").length).toBe(4);
 
   // Now rerender the component with different exercise.
   unmount();
@@ -210,8 +163,6 @@ test('don\'t load user answer from session storage if exercise id mismatches', (
   for (let inputField of screen.getAllByTestId(/RuneInput.*/)) {
     expect(inputField).toHaveValue('');
   }
-  checkButton = screen.getByText('Check');
-  expect(checkButton).toBeDisabled();
 });
 
 test('accepts alternative inputs as correct', () => {
@@ -227,9 +178,6 @@ test('accepts alternative inputs as correct', () => {
   fireEvent.change(inputFields[3], { target: { value: 'd' } });
 
   // Check that the answer is accepted.
-  let checkButton = screen.getByText('Check');
-  expect(checkButton).toBeEnabled();
-  fireEvent.click(checkButton, {});
   expect(
     screen.getByText(
       testExerciseWithMultipleCorrectAnswers.explanationAfter

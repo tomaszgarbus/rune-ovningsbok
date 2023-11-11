@@ -99,9 +99,6 @@ test('open exercise with alphabet using inherit mode', () => {
   fireEvent.change(inputFields[1], { target: { value: 'e' } });
   fireEvent.change(inputFields[2], { target: { value: 's' } });
   fireEvent.change(inputFields[3], { target: { value: 'd' } });
-  let checkButton = screen.getByText('Check');
-  expect(checkButton).toBeEnabled();
-  fireEvent.click(checkButton, {});
   expect(
     screen.getByText(
       testExerciseInheriting.explanationAfter
