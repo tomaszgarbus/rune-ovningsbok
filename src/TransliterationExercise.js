@@ -56,7 +56,7 @@ function TransliterationExercise(props) {
   }
 
   function maybeMoveToPreviousInput(current_index) {
-    // TODO: find a way to do it with Refs instead.
+    // TODO: use Refs instead.
     let previousIndexToFocus = current_index;
     while (--previousIndexToFocus >= 0 &&
       IsSeparator(props.exercise.runes[previousIndexToFocus]));
@@ -68,7 +68,7 @@ function TransliterationExercise(props) {
   function maybeMoveToNextInput(current_index) {
     const inputs = userAnswer.inputs;
 
-    // TODO: find a way to do it with Refs instead.
+    // TODO: use Refs instead.
     let nextIndexToFocus = current_index;
     while (++nextIndexToFocus < inputs.length &&
       IsSeparator(props.exercise.runes[nextIndexToFocus]));
@@ -86,7 +86,9 @@ function TransliterationExercise(props) {
       solved: isSolved(inputs)
     });
 
-    if (inputs[index].length === 1) {
+    if (inputs[index].length === 1
+      && isInputCorrect(
+        char, runeMappingFn(props.exercise.runes[index]))) {
       maybeMoveToNextInput(index);
     }
   }
