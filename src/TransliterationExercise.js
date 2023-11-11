@@ -200,6 +200,16 @@ function TransliterationExercise(props) {
       <hr/>
 
       {/* User input */}
+      <text>Tips:</text>
+      <ul>
+        <li>Use keyboard arrows to navigate between inputs.</li>
+        <li>Use virtual keyboard below to input non-standard symbols.</li>
+        <li>After a wrong answer, you'll see a tip with the correct one.
+          Re-type it into the input field.</li>
+        <li>Once you've got everything right,
+          you'll learn more about the inscription below.</li>
+      </ul>
+      <b>Input your transliteration here:</b>
       <div className="ActiveExerciseRuneInputsDiv">
         {
           mapRunes(
