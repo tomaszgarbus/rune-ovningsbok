@@ -23,9 +23,6 @@ function TransliterationExercise(props) {
     loadUserAnswerIfExerciseIdMatches() ||
     {
       inputs: mapRunes(_ => ""),
-      // "Ready" means "ready for checking". This is synonymous with "submit
-      // button is unlocked".
-      ready: false,
       // "Solved" means "checked and all inputs correct or corrected after hints".
       solved: false,
       // Read-only. This field is used to identify whether the userAnswer cached
@@ -38,9 +35,6 @@ function TransliterationExercise(props) {
     window.sessionStorage.setItem('userAnswer', JSON.stringify(newAnswer));
     setUserAnswer(newAnswer);
   }
-
-  // True if user has clicked the "Check" button.
-  const [showFeedback, setShowFeedback] = useState(false);
 
   // Used to update the `display` property on the help modal.
   const helpModalRef = useRef(null);
@@ -89,21 +83,12 @@ function TransliterationExercise(props) {
     setUserAnswerAndCacheInSessionStorage({
       ...userAnswer,
       inputs: inputs,
-      ready: isReady(inputs),
       solved: isSolved(inputs)
     });
 
     if (inputs[index].length === 1) {
       maybeMoveToNextInput(index);
     }
-  }
-
-  function isReady(inputs) {
-    for (const [i, c] of inputs.entries()) {
-      if (IsSeparator(props.exercise.runes[i])) continue;
-      if (c === "") return false;
-    }
-    return true;
   }
 
   function isInputCorrect(input, groundTruth) {
@@ -119,9 +104,6 @@ function TransliterationExercise(props) {
   }
 
   const isSolved = useCallback((inputs) => {
-    if (!showFeedback) {
-      return false;
-    }
     for (const i in inputs) {
       if (IsSeparator(props.exercise.runes[i])) continue;
       if (!isInputCorrect(inputs[i], runeMappingFn(props.exercise.runes[i]))) {
@@ -129,7 +111,7 @@ function TransliterationExercise(props) {
       }
     }
     return true;
-  }, [showFeedback, props, runeMappingFn]);
+  }, [props, runeMappingFn]);
 
   // If the user requests feedback and they got everything right,
   // `solved` should automatically be set to true.
@@ -140,13 +122,8 @@ function TransliterationExercise(props) {
         solved: isSolved(u.inputs)
       };});
     },
-    [showFeedback, isSolved]
+    [isSolved]
   )
-
-  function onSubmit(event) {
-    event.preventDefault();
-    setShowFeedback(true);
-  }
 
   function toggleHelpModal(event) {
     event.preventDefault();
@@ -221,54 +198,30 @@ function TransliterationExercise(props) {
       <hr/>
 
       {/* User input */}
-      <form onSubmit={onSubmit}>
-        <div className="ActiveExerciseRuneInputsDiv">
-          {
-            mapRunes(
-              (rune, index) => IsSeparator(rune) ?
-                  <RuneSeparator
-                    character={rune}
-                    key={index}
-                    />
-                :
-                  <RuneInput
-                      index={index}
-                      key={index}
-                      runeSymbol={rune}
-                      userInput={userAnswer.inputs[index]}
-                      onKeyDown={(e) => handleKeyDown(index, e)}
-                      feedback={
-                        showFeedback ?
-                          {
-                            "symbol": runeMapping[rune],
-                            "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
-                          } : undefined
-                        }
-                      onChange={event => updateUserAnswer(index, event.target.value)}
-                    />
-            )
-          }
-
-          {/* Check button */}
-          <input
-            id="ActiveExerciseCheckButton"
-            type="submit"
-            onSubmit={onSubmit}
-            disabled={!userAnswer.ready}
-            hidden={showFeedback}
-            value="Check"
-            title={
-              userAnswer.ready ?
-              "Show feedback for your answers. After you check " +
-              "you'll receive hints for the wrong inputs to correct " +
-              "them."
+      <div className="ActiveExerciseRuneInputsDiv">
+        {
+          mapRunes(
+            (rune, index) => IsSeparator(rune) ?
+                <RuneSeparator
+                  character={rune}
+                  key={index}
+                  />
               :
-              "Please complete all inputs first. You can get" +
-              " some hints by clicking the button at the bottom right."
-            }
-            />
-        </div>
-      </form>
+                <RuneInput
+                    index={index}
+                    key={index}
+                    runeSymbol={rune}
+                    userInput={userAnswer.inputs[index]}
+                    onKeyDown={(e) => handleKeyDown(index, e)}
+                    feedback={userAnswer.inputs[index].length > 0 ? {
+                          "symbol": runeMapping[rune],
+                          "correct": isInputCorrect(userAnswer.inputs[index], runeMapping[rune])
+                    } : undefined}
+                    onChange={event => updateUserAnswer(index, event.target.value)}
+                  />
+          )
+        }
+      </div>
 
       {/* Explanation after */}
       { userAnswer.solved &&
@@ -276,11 +229,11 @@ function TransliterationExercise(props) {
             <b>Feedback: </b>{props.exercise.explanationAfter}
           </p>
         }
-      { showFeedback && !userAnswer.solved &&
+      { !userAnswer.solved &&
         <p className="ActiveExerciseInfoBlock">
           <b>Feedback: </b>
-          Not quite! Please correct all the inputs according to the
-          hints to read an explanation of the runic message.
+          Please fill all the inputs with correct transliterations
+          to read an explanation of the runic message.
         </p>
       }
 
