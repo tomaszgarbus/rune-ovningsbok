@@ -33,6 +33,8 @@ To add tooltips to a component:
 
 ## Release
 
+Update `versionCode` and `versionName` in `build.gradle`. Then:
+
 ```
 $ npx react-native build-android --mode=release
 $ cd android
