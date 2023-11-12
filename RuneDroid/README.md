@@ -30,3 +30,13 @@ To add tooltips to a component:
 1. Import the custom hook: `import Tooltip from 'react-native-walkthrough-tooltip';`
 2. Set the state in the component: `const [currentToolTip, nextToolTip] = useToolTips(${COMPONENT_NAME}, $N);`, where $N means how many tooltips there will be.
 3. Wrap the nodes with `<Tooltip isVisible={currentToolTip == $M}`, where `0<$M<$N` means which tooltip in order that is.
+
+## Release
+
+```
+$ npx react-native build-android --mode=release
+$ cd android
+$ ./gradlew bundleRelease
+$ cd ..
+$ ls -lh android/app/build/outputs/bundle
+```
