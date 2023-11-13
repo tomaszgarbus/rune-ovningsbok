@@ -6,6 +6,12 @@
 
 ## [Try it out!](https://tomaszgarbus.github.io/rune-ovningsbok)
 
+Open the web app [here](https://tomaszgarbus.github.io/rune-ovningsbok).
+
+## [Mobile version!](https://play.google.com/store/apps/details?id=com.runedroid)
+
+Download the RuneDroid mobile app from [Google Play](https://play.google.com/store/apps/details?id=com.runedroid) or build the APK yourself from this repository.
+
 ## About
 
 Use real runic inscriptions, both historical and from popular culture, to practice transliteration.
@@ -141,9 +147,3 @@ The entry point of the app is the "List of exercises" view. It shows all availab
 Thumbnails are created automatically by [img-resize workflow](https://github.com/tomaszgarbus/rune-ovningsbok/blob/main/.github/workflows/img-resize.yml).
 
 Thus, a good practice after adding a new exercise, is to wait for the `img-resize` workflow to complete, download the generated artefact (a zip file with images) and extract it to `public/images/thumbnails`.
-
-## Mobile support.
-
-Currently, mobile is not supported. You can open the app on your phone (in the browser), but the layout was designed for PC.
-
-Rewriting the app in React Native for Android is in progress. See the RuneDroid directory for react-native source code.
