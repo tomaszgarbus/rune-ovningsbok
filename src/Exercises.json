@@ -1,17 +1,138 @@
 [
   {
+    "id": "uppsala_u934",
+    "img": "uppsala_u934.jpg",
+    "img_credit": "Own photo, taken at Uppsala Domkyrka.",
+    "title": "Uppsala stone U 934",
+    "rowType": "younger_futhark_u934",
+    "description": "One of the Uppland inscriptions standing by the Uppsala Domkyrka. It's only a fragmentary stone, but a beautifully decorated. It was excavated from the church grounds in 1866.",
+    "runes": "ᚦᚬᚱᛁᛦ᛫ᛅᚢᚴ᛫ᚱᚤᚦᛁᚴᛦ᛫ᛅᚢᚴ᛫ᚴᛅᚱᛚ᛫ᚦᛅᛁᛦ…",
+    "explanationAfter": "Correct. Inscription reads in modern Swedish as \"Tore och Rörik (?) och Karl, de (bröderna)\" and in English: \"Tore and Rörik (?) and Karl, they brothers...\".",
+    "sources": [
+      "A plaque next to the stone, provided by Riksantikvarieämbetet."
+    ],
+    "country": "SE",
+    "location": "uppsala_uniparken"
+  },
+  {
+    "id": "uppsala_u933",
+    "img": "uppsala_u933.jpg",
+    "img_credit": "Own photo, taken at Uppsala Domkyrka.",
+    "title": "Uppsala stone U 933",
+    "rowType": "younger_futhark_u933",
+    "description": "The runestone was found in 1866 in the foundation wall of Uppsala Domkyrka. It was carved by runemaster Öpir, who created 5 of 18 known runestones in that church.",
+    "runes": "ᛒᚭᚱᚼᛅᛚᛁᛏ᛫ᚱᛅᛁᛋᛅ᛫ᛋᛏᛅᛁᚾ᛫ᛁᚠᛏᛁᛦ᛫ᛋᛏᚤᚾᛒᛁᛅᚱ…ᚴᛁᛚ᛫ᛚᛁᛏ᛫ᛁᚠᛏᛁᛦ᛫ᛒᚱᚭᚦᚢᚱ᛫ᛋᛁᚾ…",
+    "explanationAfter": "Yes! The inscription reads in Swedish: \"Borga lät resa stenen efter Stynbjörn ... Torken lät (resa den) efter sin broder\" and in English \"Borga had this stone raised after Stynbjörn ... Torken had (it raised) after his brother\".",
+    "sources": [
+      "A plaque next to the stone, provided by Riksantikvarieämbetet."
+    ],
+    "country": "SE",
+    "location": "uppsala_uniparken"
+  },
+  {
+    "id": "gamla_stan_stenen",
+    "img": "gamla_stan_stenen.jpg",
+    "img_credit": "Own photo, taken at Gamla Stan.",
+    "title": "Gamla Stan stone U 53",
+    "rowType": "younger_futhark_gamla_stan",
+    "description": "The runestone (known as U 53) is built into the southeast wall of the house on the corner of Prästgatan and Kåkbrinken at Gamla Stan (Old Town) in Stockholm. The house has a medieval cellar and the stone is believed to have been part of the walls from the house's earliest days. However, it wasn't externally visible until the house's renovation in 18th century. In 1937 the stone was removed from the wall by Riksantikvariet for investigation and inserted again, in a way that makes it better visible and protected.",
+    "runes": "ᚦᚬᚱ…ᛅᛁᚾ᛫ᛅᚢᚴ᛫ᚠᚱᛅᚤᚴᚢᚾ᛫ᚦᛅᚢ…ᛋᛏᛅᛁᚾ᛫ᛁᚠᛏᛁᛦ…ᛋᚢᚾ᛫ᛋᛁᚾ",
+    "explanationAfter": "Correct! The stone reads \"Þor[st]æinn ok Frøygunn þau … stæin æftiʀ …, sun sinn\", or in English: \"Þorsteinn and Freygunnr, they … stone in memory of … their son\".",
+    "sources": [
+      "https://www.raa.se/runinskrifter/sri_uppland_b06_text_2.pdf"
+    ],
+    "country": "SE",
+    "location": "gamla_stan"
+  },
+  {
+    "id": "uppsala_u937",
+    "img": "uppsala_u937.jpg",
+    "img_credit": "Own photo, taken in Universitetsparken Uppsala.",
+    "title": "Uppsala stone U 937",
+    "rowType": "younger_futhark_long_branch",
+    "description": "One of the many runestones standing in Universitetsparken Uppsala, originating from the Viking Age.",
+    "runes": "ᚦᛁᛅᚴ(ᚾ) × ᛅᚢᚴ × ᚴᚢᚾᛅᚱ × ᚱᛅᛁᛋᛏᚢ × ᛋᛏᛅᚾᛅ × ᛅᚠᛏᛁᛦ × ᚢᛅᚦᚱ × ᛒᚱᚢᚦᚢᚱ ᛋᛁᚾ",
+    "explanationAfter": "That's correct. This stone translates to: \"Þegn and Gunnarr raised the stones in memory of Veðr, their brother\".",
+    "sources": [
+      "https://app.raa.se"
+    ],
+    "country": "SE",
+    "location": "uppsala_uniparken"
+  },
+  {
+    "id": "olstastenen",
+    "img": "olstastenen.jpg",
+    "img_credit": "Own photo, taken in Skansen Stockholm.",
+    "title": "Ölstastenen U 871",
+    "rowType": "younger_futhark_ölsta",
+    "description": "Rune stone from Uppland (Sweden) carved by Åsmund Kåresson in 11-th century. It can be visited in Skansen on Djursgården, Stockholm. This rune stone was painted in what is believed to be the authentic manner.",
+    "runes": "ᛒᛁᚾᚱᚾ ᛫ ᛅᚢᚦᚢᛚᚠᚱ ᛫ ᚴᚢᚾᚬᚱ ᛫ ᚼᚢᛚᛘᛏᛁᛋ ᛫ ᛚᛅᛏᚢ ᚱᛁᛏᚬ ᛋᛏᛁᚾ ᚦᛁᚾᚬ ᛫ ᛁᚠᛏᛁᛦ ᛫ ᚢᛚᚠ ᛫ ᚴᛁᚾᛚᛅᚢᚼᛅᛦᛒᚢᛅᚾᛏᛅ ᛫ ᛁᚾᚬᛋᛘᚢᚾᛏᚱᚼᛁᚢ",
+    "explanationAfter": "Correct. The text translated to modern Swedish is \"Björn, Ödulv, Gunnar, Holmdis läto resa denna sten efter Ulv, Ginnlögs man. Och Åsmund högg.\" And to English: \"Björn, Ödulv, Gunnar, Holmdis erected this stone in memory of Ulf, Ginnlög's husband. And Åsmund carved it.\"",
+    "sources": [
+      "A plaque next to the stone, provided by Skansen Stockholm."
+    ],
+    "country": "SE",
+    "location": "skansen"
+  },
+  {
+    "id": "hanstastenen",
+    "img": "hanstastenen.jpg",
+    "img_credit": "Own photo, taken in Skansen Stockholm.",
+    "title": "Hanstastenen U 72",
+    "rowType": "younger_futhark_hansta",
+    "description": "Rune stone from Uppland. One of the four runestones currently stored in Skansen, Stockholm.",
+    "runes": "ᚴᛁᛅᚱᚦᛅᚱ + ᛅᚢᚴ ᛫ ᛁᚬᚱᚢᚾᛏᚱ ᛫ ᛚᛅᛏᛅ ᛫ ᚱᚽᛁᛋᛅ ᛫ ᚦᛁᛋᛅ ᛫ ᛋᛏᚽᛁᚾᛅ ᛫ ᛁᚠᛏᛁᚱ ᛫ ᛋᛁᛋᛏᚢᚱ ᛫ ᛋᚢᚾᛁ ᛫ ᛋᛁᚾᛅ ᛫ ᛁᚱᚾᛘᚢᚾᛏ x ᛅᚢᚴ ᛫ ᛁᚴᛁᚢᚾᛏ",
+    "explanationAfter": "Correct. The text translates to modern Swedish as \"Gärdar och Jorun låta resa dessa stenar till minne av sina systersöner Ärnmund och Ingemund\". And English: \"Gärdar and Jorund erected this stone in memory of their nephews Ärnmund and Ingemund\".",
+    "sources": [
+      "A plaque next to the stone, provided by Skansen Stockholm."
+    ],
+    "country": "SE",
+    "location": "skansen"
+  },
+  {
+    "id": "norslundastenen",
+    "img": "norslundastenen.jpg",
+    "img_credit": "Own photo, taken in Skansen Stockholm.",
+    "rowType": "younger_futhark_norslundastenen",
+    "title": "Norslundastenen U 419",
+    "description":  "Rune stone from Uppland. One of the four runestones currently stored in Skansen, Stockholm.",
+    "runes": "ᚦᛅᚢᚾ ᛫ ᚴᚢᛚᚠᛁᚾᚴᚱ ᛫ ᛅᚢᚴ ᛫ ᛋᛏᛁᚾᚠᚱᛁᚦᚱ ᛫ ᛅᚢᚴ ᛫ ᛋ…ᚱ ᛫ ᛚᛁᛏᚢ ᛫ ᚱᛅᛁᛋᛅ ᛫ ᛋᛏᛁᚾ ᛫ ᚦᛁᚾᚬ ᛫ ᚬᚠᛏᛁᛦ ᛫ ᛅᚢᛋᛏᚾᛁᚾ ᛫ ᚴᚢᚾᛅᚱᛋᚢᚾ ᛫ ᛋ ᛫ ᛅᛏ ᛫ ᛁᚢᚱᛁᛅ ᛫ ᚴᚢᚦ … ᛅᛚᛒᛁ ᛫ ᚼᚬᚾᛋ",
+    "explanationAfter": "Correct. The text translates to modern Swedish as \"Kylving och Stenfrid och Sigfast läto resa denna sten efter Östen, Gunnars son... Gud hjälpe hans själ\". And English: \"Kylving and Stenfrid and Sigfast erected this stone in memory of Östen, son of Gunnar... May God preserve his soul\".",
+    "sources": [
+      "A plaque next to the stone, provided by Skansen Stockholm."
+    ],
+    "country": "SE",
+    "location": "skansen"
+  },
+  {
+    "id": "norrby",
+    "img": "norrby_runsten.jpg",
+    "img_credit": "Own photo, taken in Norrby, Sweden",
+    "title": "Norrby stone Sö 272",
+    "rowType": "younger_futhark_norrby",
+    "description": "A runestone from the 11th century. It was found in the summer 1915 when ploughing a field. It's currently located next to a roundabout in Norrby, just south of Stockholm.",
+    "runes": "ᚦᚢᚱᚠᛅᛋᛏᚱ x ᛚᚽᛏ x ᚱᛅᛁ… x ᛋᛏᛅᚽᚾ x ᚦᚽᚾᛅ x ᛅᚠᛏᛁᛦ x ᚼᛅᛚᚠᛏᛅᚾ x ᛋᚢᚾᛅ x ᛋ…ᚾ",
+    "explanationAfter": "Correct. The stone reads: \"Torfast had this stone raised after Halvdan, his son.\"",
+    "sources": [
+      "A plaque next to the stone, provided by Riksantikvarieambetet"
+    ],
+    "country": "SE",
+    "location": "norrby"
+  },
+  {
     "id": "gripsholmstone178",
     "img": "gripsholmstone178.jpg",
     "img_credit": "Own photo, taken in Mariefred, Sweden",
     "title": "Gripsholm stone Sö 178",
-    "rowType": "sö178_younger_futhark",
+    "rowType": "younger_futhark_long_branch",
     "description": "A rune stone with inscription from the 11th century.",
     "runes": "ᚼᛅᚴᚢᛚᚠᚱ x ᛅᚢᚴ x ᛅᚢᛚᚠᚱ x ᚦᛅᛁᛦ x ᛚᛅᛏᚢ x ᚱᛅᛁᛁᛋᛅ x ᛋᛏᛅᛁᚾᛅ x ᛒᛅᚦᛅ x ᛅᛏ x ᛒᚱᚬᚦᚢᚱ x ᛋᛁᚾ x ᚴᛁᛏᛁᛚᛘᚢᛏ x ᛅᚢᚴ x ᛒᚱᚬ x ᛁᚠᛏᛁᛦ x ᛋᚬᛘᚢ x ᛘᚬᚦᚢᚱ x ᛋᛁᚾᛅ x ᛁᛅ x ᛁᚱᚢᚾᛁ x ᛁᛁᚢᚴ x ᛒᚱᚬᚦᛁᛦ x ᚼᛁᚾᛅᛦ",
-    "explanationAfter": "Correct. The stone reads: \"Hälgulv (?) and Oulv they had this stone raised in memory of their brother, Kätilmund, and built a bridge in memory of Soma, their mother. But Brune (?), her brother, carved (the runes)\"",
+    "explanationAfter": "Correct. The stone reads: \"Hälgulv (?) and Oulv they had this stone raised in memory of their brother, Kätilmund, and built a bridge in memory of Soma, their mother. But Brune (?), her brother, carved (the runes)\". In Swedish it's a bit more similar to the Old Norse inscription: \"Hälgulv (?) och Öulv de läto resa båda stenarna efter sin broder Kätilmund och (gjorde) bro efter Soma, sin moder. Men Brune (?), hennes broder, högg (runorna)\".",
     "sources": [
       "A plaque next to the stone, provided by Riksantikvarieambetet"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "gripsholm"
   },
   {
     "id": "gripsholmstone179",
@@ -21,11 +142,12 @@
     "rowType": "sö179_younger_futhark",
     "description": "The Gripsholm Stone - which can to this day be visited near the Gripsholm Castle not far from Stockholm - is one of the \"Ingvarr stones\". This group of stones is dated soon after 1041, when the Icelandic annals record the death of Yngvarr the Far-Travelled in the south. Note how the inscriber forgot one word and added it later!",
     "runes": "ᛏᚢᛚᛅ:ᛚᛁᛏ:ᚱᛅᛁᛋᛅ:ᛋᛏᛅᛁᚾ:ᚦᛁᚾᛋᛅᛏ:ᛋᚢᚾ:ᛋᛁᚾ:ᚼᛅᚱᛅᛚᛏ:ᛒᚱᚢᚦᚢᚱ:ᛁᚾᚴᚢᛅᚱᛋ:ᚦᛅᛁᛦ|ᚠᚢᚱᚢ:ᛏᚱᛁᚴᛁᛚᛅ:ᚠᛁᛅᚱᛁ:ᛅᛏ:ᚴᚢᛚᛁ:ᛅᚢᚴ:ᛅ:ᚢᛋᛏᛅᚱᛚᛅᚱ:ᚾᛁ:ᚴᛅᚠᚢ:ᛏᚢᚢ:ᛋᚢᚾᛅᚱ:ᛚᛅ:ᛅᛋᛁᚱᚴ:ᛚᛅᚾ:ᛏᛁ",
-    "explanationAfter": "Correct. The last part (from the word inserted later) runs: \"Þæiʀ foru drængila, fjarri at gulli, auk austarla ærni gafu. Dou sunnarla, a Særklandi\" -- \"They went manfully, far after gold, and in the east gave [food] to the eagle [i.e. despatched enemies in battle]. They died in the south, in Særkland.\" (translation credit to Michael P. Barnes, p. 77 from Runes: A Handbook)",
+    "explanationAfter": "Correct. The stone was set up by Tola in memory of ther son, Harald. He was Ingvar the Far-travelled's brother. The last part (from the word inserted later) runs: \"Þæiʀ foru drængila, fjarri at gulli, auk austarla ærni gafu. Dou sunnarla, a Særklandi\" -- \"They went manfully, far after gold, and in the east gave [food] to the eagle [i.e. despatched enemies in battle]. They died in the south, in Særkland.\" (translation credit to Michael P. Barnes, p. 77 from Runes: A Handbook). Ingvar the Far-travelled's expedition to Serkland \"the Saracens land\" is mentioned on nearly thirty rune stones in the Mälar region.",
     "sources": [
       "Runes: A Handbook by Michael P. Barnes (p 77-8, 81, 139, 169)"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "gripsholm"
   },
   {
     "id": "kylverstone",
@@ -39,7 +161,8 @@
     "sources": [
       "Runes: A Handbook by Michael P. Barnes (p 16-19)"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "historiska"
   },
   {
     "id": "lidingö_dalängen",
@@ -53,7 +176,8 @@
     "sources": [
       "Info table next to the stone, provided by Stockholms Läns Museum and Lidingö Stad"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "lidingö_dalängen"
   },
   {
     "id": "lidingö_askrikevägen",
@@ -68,7 +192,8 @@
       "Info table next to the stone, provided by Lidingö Stad",
       "http://raa.diva-portal.org/smash/get/diva2:1225795/FULLTEXT01.pdf"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "lidingö_askrikevägen"
   },
   {
     "id": "bjärby_runsten",
@@ -76,13 +201,14 @@
     "title": "Bjärby stone Ö 36",
     "img_credit": "Own photo, taken in Bjärby",
     "description": "A beautiful 11-century runestone standing by the side of the road in Bjärby in eastern Öland, Sweden.",
-    "runes": "ᚼᛁᚱᚠᚱᛁ…ᚢᛁᚦᛒᛁᚢᚱᚾxᛚᛁᛏᚢxᚱᛅᛁᛋᛅxᛋᛏᛅᛁᚾxᚦᛁᚾᛅxᛅᛏxᚠᛅ…ᛏᚢᛚᚠxᚠᛅᚦᚢᚱxᛋᛁᚾ ᛋᛁᚴᛚᛅᚢᚴxᛚᛁᛏxᚱᛅᛁᛋᛅxᛅᚠᛏᛁᛦxᛒᚢᚾᛏᛅxᛋᛁᚾxᚼᛅᚾxᛁᛅᚱxᚴᚱᛅᚠᛁᚾᛁxᚴᛁᚱᛁᚴᛁᚢ",
-    "rowType": "younger_futhark_bjärby",
+    "runes": "ᚼᛁᚱᚠᚱᛁ…ᚢᛁᚦᛒᛁᚢᚱᚾ x ᛚᛁᛏᚢ x ᚱᛅᛁᛋᛅ x ᛋᛏᛅᛁᚾ x ᚦᛁᚾᛅ x ᛅᛏ x ᚠᛅ…ᛏᚢᛚᚠ x ᚠᛅᚦᚢᚱ x ᛋᛁᚾ ᛋᛁᚴᛚᛅᚢᚴ x ᛚᛁᛏ x ᚱᛅᛁᛋᛅ x ᛅᚠᛏᛁᛦ x ᛒᚢᚾᛏᛅ x ᛋᛁᚾ x ᚼᛅᚾ x ᛁᛅᚱ x ᚴᚱᛅᚠᛁᚾᛁ x ᚴᛁᚱᛁᚴᛁᚢ",
+    "rowType": "younger_futhark_long_branch",
     "explanationAfter": "Correct! Swedish translation provided onsite: \"Härfrid och Vidbjörn läto resa stenen efter Fastul sin fader. Siglaug lät resa efter sin make. Han är begraven i kyrkan.\" In English that would be: \"Harfrid and Vidbjorn had this stone raised after their father Fastul. Siglaug had it raised after her husband. He is buried in the church.\"",
     "sources": [
       "Info table next to the stone, provided by Riksantikvarieambetet."
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "bjärby"
   },
   {
     "id": "gårdby_runsten",
@@ -90,13 +216,14 @@
     "title": "Gårdby stone Ö 28",
     "img_credit": "Own photo, taken in Gårdby",
     "description": "A well preserved 11-th century runestone, now standing in the cemetery in Gårdby, Öland.",
-    "runes": "ᚼᛅᚱᚦᚱᚢᚦᚱxᚱᛅᛁᛋᛁxᛋᛏᛅᛁᚾxᚦᛁᚾᛋᛅxᛅᚠᛏᛁᛦxᛋᚢᚾxᛋᛁᚾxᛋᛘᛁᚦxᛏᚱᛅᚴxᚴᚢᚦᛅᚾxᚼᛅᛚᚠᛒᚢᚱᛁᚾxᛒᚱᚢᚦᛁᚱxᛋᛁᚾxᛋᛁᛏᚱxᚴᛅᚱ ᚦᚢᛘ ᛒᚱᛅᚾᛏᚱ ᚱᛁᛏᛁ ᛁᛅᚴᚦᚢ ᚱᛅᚦᛅ ᚴᚼᚾ",
-    "rowType": "younger_futhark_gårdby",
+    "runes": "ᚼᛅᚱᚦᚱᚢᚦᚱ x ᚱᛅᛁᛋᛁ x ᛋᛏᛅᛁᚾ x ᚦᛁᚾᛋᛅ x ᛅᚠᛏᛁᛦ x ᛋᚢᚾ x ᛋᛁᚾ x ᛋᛘᛁᚦ x ᛏᚱᛅᚴ x ᚴᚢᚦᛅᚾ x ᚼᛅᛚᚠᛒᚢᚱᛁᚾ x ᛒᚱᚢᚦᛁᚱ x ᛋᛁᚾ x ᛋᛁᛏᚱ x ᚴᛅᚱ ᚦᚢᛘ ᛒᚱᛅᚾᛏᚱ ᚱᛁᛏᛁ ᛁᛅᚴᚦᚢ ᚱᛅᚦᛅ ᚴᚼᚾ",
+    "rowType": "younger_futhark_long_branch",
     "explanationAfter": "Yes! Swedish translation: \"Härtrud reste denna sten efter sin son Smed, en god man. Halvboren, hans broder, sitter i Gårdarike. Brand högg rätt, därför kan du tyda.\" English: \"Hartrud raised this stone after his son Smed, a good man. Halvbor, his brother, is in Gaardarike. Brand (sword?) cut straight, therefore you can decipher\". Gårdarike is an old Norse name for the Swedish viking areas in current Russia.",
     "sources": [
       "Info table next to the stone, provided by Riksantikvarieambetet."
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "gårdby"
   },
   {
     "id": "picture_stone_stånga",
@@ -104,13 +231,14 @@
     "img_credit": "Own photo, taken in Historiska Museet",
     "title": "Picture stone from Stånga",
     "rowType": "younger_futhark_long_branch",
-    "description": "Picture stone with runic inscription in a ribbon shape. At the top there is an indoor scene with a man and woman sitting opposite one another on a seat of honour. Behind the man, but outisde the walls of the room, there is the triquetra, also known as valknut. Another figure is approaching the man and presenting or taking a psear. The woman appears to be watching what is happening, but behind her a longnecked, bird-like creature is sticking in its head and pecking the standing man in the back. The scene below depicts three male figures, marching in a line carrying a spear, a sickle and a club or torch. Behind them there is a circular shape and beneath it something that could be a flaming fire. One interpretation is that the scene depicts a \"cadastral survey\", perhaps at full moon on the vernal equinox. Others have interpreted the three men as Odin, Thor and Frey. The stone was found in Stånga Parish in Gotland.",
+    "description": "Picture stone with runic inscription in a ribbon shape. At the top there is an indoor scene with a man and woman sitting opposite one another on a seat of honour. Behind the man, but outisde the walls of the room, there is the triquetra, also known as valknut. Another figure is approaching the man and presenting or taking a spear. The woman appears to be watching what is happening, but behind her a longnecked, bird-like creature is sticking in its head and pecking the standing man in the back. The scene below depicts three male figures, marching in a line carrying a spear, a sickle and a club or torch. Behind them there is a circular shape and beneath it something that could be a flaming fire. One interpretation is that the scene depicts a \"cadastral survey\", perhaps at full moon on the vernal equinox. Others have interpreted the three men as Odin, Thor and Frey. The stone was found in Stånga Parish in Gotland.",
     "runes": "ᚱᚬᚦᚢᛁᛋᛚ:ᛅᚢᚴ:ᚠᛅᚱᛒᚬᚱᚾ:ᛅᚢᚴ:ᚴᚢᚾᛒᚬᚱᚾ",
     "explanationAfter": "Correct! The inscription runs \"Rodvisl and Farbjörn and Gunbjörn\"",
     "sources": [
       "Description in Historiska Museet"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "historiska"
   },
   {
     "id": "u614",
@@ -124,7 +252,8 @@
     "sources": [
       "Description in Historiska Museet"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "historiska"
   },
   {
     "id": "u613",
@@ -133,13 +262,14 @@
     "title": "Unna's stone U 613",
     "rowType": "younger_futhark_u613",
     "description": "One of the two rune stones (the other being U 614) which originally stood at the boundary of what later became known as Torsätra Herrgård but which during the Viking Age was called Husa. The inscription starts on the right side of the stone and runs downwards and inside the head of the serpent from where it continues on the other side.",
-    "runes": "ᚢᚾᛅ+ᛚᛁᛏ+ᚱᚽᛁᛋᛅ+ᚦᛁᚾᛋᛅ+ᛋᛏᚽᛁᚾ+ᛅᚠᛏᛦ+ᛋᚢᚾᛋᛁᚾ+ᛁᛋᛏᛁᚾ+ᛋᚢᛘ+ᛏᚬ+ᛁᚼᚬᛁᛏᛅ+ᚢᛅᚦᚢᛘ+ᚴᚢᚦᚼᛁᛅᛚᛒᛁ+ᛋᛅᛚᚢ+ᚼᛅᚾᛋ",
+    "runes": "ᚢᚾᛅ + ᛚᛁᛏ + ᚱᚽᛁᛋᛅ + ᚦᛁᚾᛋᛅ + ᛋᛏᚽᛁᚾ + ᛅᚠᛏᛦ + ᛋᚢᚾᛋᛁᚾ + ᛁᛋᛏᛁᚾ + ᛋᚢᛘ + ᛏᚬ + ᛁᚼᚬᛁᛏᛅ + ᚢᛅᚦᚢᛘ + ᚴᚢᚦᚼᛁᛅᛚᛒᛁ + ᛋᛅᛚᚢ + ᚼᛅᚾᛋ",
     "explanationAfter": "Correct. The inscription runs: \"'Unna had this stone raised in memory of his son Östen, who died wearing a christening gown. God preserve his soul.\" (\"Unna let ræisa þennsa stæin æftiʀ sun sinn Øystæin, sum do i hvitavaðum. Gud hialpi salu hans.\")",
     "sources": [
       "Description in Historiska Museet",
       "https://vikingar.historiska.se/object_details.php?object=44677_HST&e=no&l=en"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "historiska"
   },
   {
     "id": "lerkaka_stenen",
@@ -148,110 +278,13 @@
     "title": "Lerkaka stone Ö 37",
     "rowType": "younger_futhark_lerkaka",
     "description": "An 11-century runestone standing by the road in Lerkaka, just across the beautiful windmills.",
-    "runes": "ᚬᛚᛅᚠᛦxᛅᚢᚴxᚴᛅᛘᛅᛚxᛅᚢᚴxᛋᛅᚴᛋᛁxᚱᛅᛁᛋᛏᚢxᛋᛏᛅᛁᚾxᚦᛁᚾᛅxᛅᚠᛏᛁᛦ…ᚢᛁᛚᛁᛏxᛅᛏxᛒᚬᚾᛏᛅxᛋᛁᚾxᚼᛁᛅᚱᛋᚢ…ᚴᚢᛒᛚᚦᛋᛁᚠᛁᛅᛦᚢᚾᚬᛚᛅᚠᛦᚼᚽᚠᚾᛏ…ᚠᛅᚾᛒᚢ",
+    "runes": "ᚬᛚᛅᚠᛦ x ᛅᚢᚴ x ᚴᛅᛘᛅᛚ x ᛅᚢᚴ x ᛋᛅᚴᛋᛁ x ᚱᛅᛁᛋᛏᚢ x ᛋᛏᛅᛁᚾ x ᚦᛁᚾᛅ x ᛅᚠᛏᛁᛦ…ᚢᛁᛚᛁᛏ x ᛅᛏ x ᛒᚬᚾᛏᛅ x ᛋᛁᚾ x ᚼᛁᛅᚱᛋᚢ…ᚴᚢᛒᛚᚦᛋᛁᚠᛁᛅᛦᚢᚾᚬᛚᛅᚠᛦᚼᚽᚠᚾᛏ…ᚠᛅᚾᛒᚢ",
     "explanationAfter": "Yes! The full stone originally said: \"Olof and Gammal and Saxe raised this stone after their father, Unn. Geirvi had this memorial made after her husband. Olof avenged Rike-Unn at Miomu. Unn owned half the village.\" (in Swedish: \"Olof och Gammal och Saxe reste denna sten efter Unn, sin fader. Geirvi lät efter sin make här (göra) denna minnesvård. För Rike-Unn hämnades Olof vid Miomu; Unn ägde här halva byn.\")",
     "sources": [
       "A plaque next to the stone, provided by Riksantikvarieambetet"
     ],
-    "country": "SE"
-  },
-  {
-    "id": "össeby_fragment",
-    "img": "össeby_fragment.jpg",
-    "img_credit": "Own photo, taken in Historiska Museet",
-    "title": "Rune stone fragment from Össeby",
-    "rowType": "younger_futhark_össeby",
-    "description": "The fragment was found in the longhouse in Össeby-garn parish, Uppland, Sweden.",
-    "runes": "ᚱᚴᛁ᛫ᚽᚠᛏᛁᛦ᛫ᛁᚾᚴᛁᚼᚢᛅᛚᛏ᛫ᛋᚢᚾ᛫ᛋᛁᚾ",
-    "explanationAfter": "The preserved fragment of inscription suggests the following interpretation: \"monument in memory of Ingevald, his [her] son\".",
-    "sources": [
-      "Description in Historiska Museet"
-    ],
-    "country": "SE"
-  },
-  {
-    "id": "eidi_runestick",
-    "img": "eidi_runestick.jpg",
-    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
-    "description": "The runestick was found during archeological excavations in Durhúsi in Eiði. Runologically, the inscription is dated to 900-1200 AD. Archeological observations point to the elder part of this period.",
-    "title": "Eiði runestick",
-    "rowType": "younger_futhark_eidi_runestick",
-    "runes": "ᚠᚢᚦᚭᚱᚴᚽᚿᛁᛆᛌᛐᛓ",
-    "explanationAfter": "Indeed, the stick contains first 13 rune characters of short-twig Younger Fuþark, which were used in North Western areas, including Faroes.",
-    "sources": [
-      "Tjóðsavnið - the National Museum of Faroe Islands"
-    ],
-    "country": "FO"
-  },
-  {
-    "id": "sandavagur_stone",
-    "img": "sandavagur_stone.jpg",
-    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
-    "title": "Sandavágur rune-stone",
-    "rowType": "younger_futhark_sandavagur_stone",
-    "runes": "ᚦᚭᚱᚴᛅᛚ:ᚭᚿᚭᚿᛑᛆᚱᛍᚢᚿ|ᛆᚢᛍᛐᛉᛆᚦᚱᛆᚠᚱᚢᚼᛆ|ᛚᛆᚿᛑᛂxᛒᛦᚵᚦᛂ:ᚦᛂ(ᚿ)|ᛆ:ᛍᛆᚦ:ᚠᛦᛍᛐ",
-    "description": "This is the most magnificent rune-stone inscription found in the Faroes. The stone was found by chance, at the abandoned ancient settlement í Eingjartoftum in Sandavágur in 1917. You can see this to this day in Sandavágur church. The runes are of the younger Swedo-Norwegian type.",
-    "explanationAfter": "Good! The translation provided by Tjóðsavnið is: \"1. þorkæl onondarsun 2. austmaþrafruha 3. lande bygþe þe(n) 4. a saþ fyst\". In English: \"Torkil Onundarson from Rogaland was the first to settle this place.\"",
-    "sources": [
-      "Tjóðsavnið - the National Museum of Faroe Islands"
-    ],
-    "country": "FO"
-  },
-  {
-    "id": "sørvágur_box",
-    "img": "sørvágur_box.jpg",
-    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
-    "title": "Sørvágur wooden box",
-    "rowType": "medieval_sørvági_box",
-    "runes": "ᛆᛒᚴᚦᛂᚠᚴᚼᛁᚴᛚᛘᚿᚮᛒᚱᛋᛏᚢ",
-    "description": "This box orignates from the Sørvágur village in the Vágar island.",
-    "explanationAfter": "The latin alphabet has been carved with runes, supplemented by the date ANNO 1695. G. I. S. below stands for G(utti) J(oens) S(on).",
-    "sources": [
-      "Tjóðsavnið - the National Museum of Faroe Islands"
-    ],
-    "country": "FO"
-  },
-  {
-    "id": "bryggengohome",
-    "img": "bergenstick_gohome.jpg",
-    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
-    "title": "Bergen stick B 149",
-    "runes": ["ᚴ", "ᛦ", "ᛆ", ":", "ᛌ", "ᛅ", "ᚼ", "ᛁ", "ᚱ", ":", "ᛆ", "ᛐ", "ᚦ", "ᚢ", ":", "ᚴ", "ᛆ", "ᚴ", ":", "ᚼ", "ᛅ", "ᛁ", "ᛉ"],
-    "rowType": "b149_younger_futhark",
-    "description": "The stick has an inscription on both sides, consisting of mixed long- and short-twig Younger Futhark runes. The first side says: ᚴᛦᛆ : ᛌᛅᚼᛁᚱ : ᛆᛐᚦᚢ : ᚴᛆᚴ : ᚼᛅᛁᛉ.",
-    "explanationAfter": "Yes! That is the famous inscription which translates to \"Gyða segir at þú gakk heim\" - \"Gyða tells you to go home\"!",
-    "sources": [
-      "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
-    ],
-    "country": "NO"
-  },
-  {
-    "id": "bergen_possible_gravestone",
-    "img": "bergen_possible_gravestone.jpg",
-    "title": "Possible gravestone from Bryggen, Bergen",
-    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
-    "runes": "ᚦᛁᛐᛆᚱᛅᛁᛌᛐᚱᚿᛁᛁᚴᚦᚱ…ᚦᛁᛐᛆᚱᛅᛁᛌᛐ ᛅᛁᚱᚱᛁᚴᚱ ᛒᛆᚴᛁᚢᛉ ᚿᚮᛐ ᚠ…",
-    "rowType": "bergen_possible_gravestone_younger_futhark",
-    "description": "This stone is dated to 1248-1332 and was possibly a gravestone.",
-    "explanationAfter": "Correct. The inscription was interpreted as: \"Arne carved this. Erik bakium (a nickname?) carved this the night before...\" (\"Dette ristet Arne. Dette ristet Eirik bakium natten f...\").",
-    "sources": [
-      "Description in the Bryggen Museum, Bergen."
-    ],
-    "country": "NO"
-  },
-  {
-    "id": "bergen_knife_beater",
-    "img": "bergen_knife_beater.jpg",
-    "title": "Bergen knife beater",
-    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
-    "runes": "ᚼᛆᚴᚮᚿᚱᛅᛁᛌᛐᛘᛁᚵᚵᚽᚿᛌᚢᛅᛁᚿᛁᚿᛆᛘᛁᚵ",
-    "rowType": "bergen_knife_beater_younger_futhark",
-    "description": "A medieval knife beater from Bryggen, Bergen.",
-    "explanationAfter": "The inscription runs \"Håkon carved me, but the boy owns me.\" There is additional inscription on the other side, saying: \"Bård owns me. He found much to object to in the person who carved me.\"",
-    "sources": [
-      "Description in the Bryggen Museum, Bergen."
-    ],
-    "country": "NO"
+    "country": "SE",
+    "location": "lerkaka"
   },
   {
     "id": "norumfont",
@@ -266,7 +299,137 @@
       "Description in Historiska Museet",
       "https://vikingar.historiska.se/object_details.php?object=46162_HST&e=no&l=en"
     ],
-    "country": "SE"
+    "country": "SE",
+    "location": "historiska"
+  },
+  {
+    "id": "össeby_fragment",
+    "img": "össeby_fragment.jpg",
+    "img_credit": "Own photo, taken in Historiska Museet",
+    "title": "Rune stone fragment from Össeby",
+    "rowType": "younger_futhark_össeby",
+    "description": "The fragment was found in the longhouse in Össeby-garn parish, Uppland, Sweden.",
+    "runes": "ᚱᚴᛁ᛫ᚽᚠᛏᛁᛦ᛫ᛁᚾᚴᛁᚼᚢᛅᛚᛏ᛫ᛋᚢᚾ᛫ᛋᛁᚾ",
+    "explanationAfter": "The preserved fragment of inscription suggests the following interpretation: \"monument in memory of Ingevald, his [her] son\".",
+    "sources": [
+      "Description in Historiska Museet"
+    ],
+    "country": "SE",
+    "location": "historiska"
+  },
+  {
+    "id": "eidi_runestick",
+    "img": "eidi_runestick.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "description": "The runestick was found during archeological excavations in Durhúsi in Eiði. Runologically, the inscription is dated to 900-1200 AD. Archeological observations point to the elder part of this period.",
+    "title": "Eiði runestick",
+    "rowType": "younger_futhark_short_twig",
+    "runes": "ᚠᚢᚦᚭᚱᚴᚽᚿᛁᛆᛌᛐᛓ",
+    "explanationAfter": "Indeed, the stick contains first 13 rune characters of short-twig Younger Fuþark, which were used in North Western areas, including Faroes.",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ],
+    "country": "FO",
+    "location": "tjóðsavnið"
+  },
+  {
+    "id": "sandavagur_stone",
+    "img": "sandavagur_stone.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "title": "Sandavágur rune-stone",
+    "rowType": "medieval_sandavagur_stone",
+    "runes": "ᚦᚭᚱᚴᛅᛚ:ᚭᚿᚭᚿᛑᛆᚱᛍᚢᚿ|ᛆᚢᛍᛐᛘᛆᚦᚱᛆᚠᚱᚢᚼᛆ|ᛚᛆᚿᛑᛂxᛒᛦᚵᚦᛂ:ᚦᛂ(ᚿ)|ᛆ:ᛍᛆᚦ:ᚠᛦᛍᛐ",
+    "description": "This is the most magnificent rune-stone inscription found in the Faroes. The stone was found by chance, at the abandoned ancient settlement í Eingjartoftum in Sandavágur in 1917. You can see this to this day in Sandavágur church. The runes are of the younger Swedo-Norwegian type.",
+    "explanationAfter": "Good! The translation provided by Tjóðsavnið is: \"1. þorkæl onondarsun 2. austmaþrafruha 3. lande bygþe þe(n) 4. a saþ fyst\". In English: \"Torkil Onundarson from Rogaland was the first to settle this place.\"",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ],
+    "country": "FO",
+    "location": "tjóðsavnið"
+  },
+  {
+    "id": "sørvágur_box",
+    "img": "sørvágur_box.jpg",
+    "img_credit": "Own photo, taken at Tjóðsavnið - the National Museum of Faroe Islands.",
+    "title": "Sørvágur wooden box",
+    "rowType": "medieval_sørvági_box",
+    "runes": "ᛆᛒᚴᚦᛂᚠᚴᚼᛁᚴᛚᛘᚿᚮᛒᚱᛋᛏᚢ",
+    "description": "This box orignates from the Sørvágur village in the Vágar island.",
+    "explanationAfter": "The latin alphabet has been carved with runes, supplemented by the date ANNO 1695. G. I. S. below stands for G(utti) J(oens) S(on).",
+    "sources": [
+      "Tjóðsavnið - the National Museum of Faroe Islands"
+    ],
+    "country": "FO",
+    "location": "tjóðsavnið"
+  },
+  {
+    "id": "bryggengohome",
+    "img": "bergenstick_gohome.jpg",
+    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
+    "title": "Bergen stick B 149",
+    "runes": [
+      "ᚴ",
+      "ᛦ",
+      "ᛆ",
+      ":",
+      "ᛌ",
+      "ᛅ",
+      "ᚼ",
+      "ᛁ",
+      "ᚱ",
+      ":",
+      "ᛆ",
+      "ᛐ",
+      "ᚦ",
+      "ᚢ",
+      ":",
+      "ᚴ",
+      "ᛆ",
+      "ᚴ",
+      ":",
+      "ᚼ",
+      "ᛅ",
+      "ᛁ",
+      "ᛘ"
+    ],
+    "rowType": "medieval",
+    "description": "The stick was found in archeological excavations in the Bryggen district of Bergen, following a fire in 1955. It has an inscription on both sides. The first side says: ᚴᛦᛆ : ᛌᛅᚼᛁᚱ : ᛆᛐᚦᚢ : ᚴᛆᚴ : ᚼᛅᛁᛉ.",
+    "explanationAfter": "Yes! That is a famous inscription which translates to \"Gyða segir at þú gakk heim\" - \"Gyða tells you to go home\"! Funnily enough, the inscription on the second side is incomprehensible - perhaps the respondent of the message was in a tavern and was either not very literate or already drunk, when he tried to respond to Gyða.",
+    "sources": [
+      "https://www.runesdb.eu/find-list/d/fa/q////6/f/3218/c/ea625a4d7a879c814004254c503a0b1f/"
+    ],
+    "country": "NO",
+    "location": "bryggen"
+  },
+  {
+    "id": "bergen_possible_gravestone",
+    "img": "bergen_possible_gravestone.jpg",
+    "title": "Possible gravestone from Bryggen, Bergen",
+    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
+    "runes": "ᚦᛁᛐᛆᚱᛅᛁᛌᛐᚱᚿᛁᛁᚴᚦᚱ…ᚦᛁᛐᛆᚱᛅᛁᛌᛐ ᛅᛁᚱᚱᛁᚴᚱ ᛒᛆᚴᛁᚢᛘ ᚿᚮᛐ ᚠ…",
+    "rowType": "medieval",
+    "description": "This stone is dated to 1248-1332 and was possibly a gravestone.",
+    "explanationAfter": "Correct. The inscription was interpreted as: \"Arne carved this. Erik bakium (a nickname?) carved this the night before...\" (\"Dette ristet Arne. Dette ristet Eirik bakium natten f...\").",
+    "sources": [
+      "Description in the Bryggen Museum, Bergen."
+    ],
+    "country": "NO",
+    "location": "bryggen"
+  },
+  {
+    "id": "bergen_knife_beater",
+    "img": "bergen_knife_beater.jpg",
+    "title": "Bergen knife beater",
+    "img_credit": "Own photo, taken at the Bryggen Museum, Bergen.",
+    "runes": "ᚼᛆᚴᚮᚿᚱᛅᛁᛌᛐᛘᛁᚵᚵᛂᚿᛌᚢᛅᛁᚿᛁᚿᛆᛘᛁᚵ",
+    "rowType": "medieval",
+    "description": "A medieval knife beater from Bryggen, Bergen.",
+    "explanationAfter": "The inscription runs \"Håkon carved me, but the boy owns me.\" (Norwegian: \"Håkon ristet meg, men sveinen eier meg.\") There is additional inscription on the other side, saying: \"Bård owns me. He found much to object to in the person who carved me.\"",
+    "sources": [
+      "Description in the Bryggen Museum, Bergen."
+    ],
+    "country": "NO",
+    "location": "bryggen"
   },
   {
     "id": "eik_sokndal",
@@ -280,7 +443,8 @@
     "sources": [
       "Arkeologisk museum | University of Stavanger"
     ],
-    "country": "NO"
+    "country": "NO",
+    "location": "stavanger_archeology_museum"
   },
   {
     "id": "møgedal",
@@ -294,7 +458,272 @@
     "sources": [
       "Arkeologisk museum | University of Stavanger"
     ],
-    "country": "NO"
+    "country": "NO",
+    "location": "stavanger_archeology_museum"
+  },
+  {
+    "id": "hobro",
+    "img": "hobro.jpg",
+    "title": "Hobro rune stone",
+    "img_credit": "Own photo, taken in the public library in Hobro",
+    "runes": "ᚦᚢᚱᛁᛦ:ᚱᛁᛋᚦᛁ ᛋᛏᛁᚾ:ᚦᚮᛅᛋᛁ:ᛅᚢᚠᛏᛁ:ᚴᛅᚱᛚ:ᚼᛁᚾ:ᚴᚢᚦᚮᛆ:ᚠᛦᛚᛅᚴᛅ:ᛋᛁᚾ:ᚼᛅᚱᚦ:ᛅ:ᚴᚢᚦᚮᛅᚾ:ᛏᚱᛦᚴ",
+    "rowType": "hobro_younger_futhark",
+    "description": "A granit rune stone dated to 970-1020.",
+    "sources": [
+      "Public library in Hobro",
+      "https://www.mariagerfjordbibliotekerne.dk/runesten"
+    ],
+    "explanationAfter": "The stone is transliterated as: \"Thurir risthi stin tháasi aufti Karl hin kuthaa fælaka sin harta a kutháan træk\". In Danish: \"Thore rejste denne sten efter sin fælle Karl den Gode, en meget god dreng\". Finally, in English: \"Thore raised this stone after his friend Carl the Good, a very good guy\". Confusingly, the \"ᛦ\" rune, normally denoting \"r\", is used also as \"æ\" in several words. This type of laying out letters on a runestone is typical for Jutland and Skåne. We know of one more stone raised possibly by the same Thore - the Glenstrup 1 stone.",
+    "country": "DA",
+    "location": "hobro"
+  },
+  {
+    "id": "glenstrup1",
+    "img": "glenstrup1.jpg",
+    "title": "Glenstrup 1 rune stone",
+    "img_credit": "Own photo, taken in Copenhagen",
+    "rowType": "glenstrup_younger_futhark",
+    "description": "A rune stone from Glenstrup, dated to around 1000 AD.",
+    "runes": "ᚦᚢᚱᛁᛦ:ᚱᛁᛋᚦᛁ:ᛋᛏᛁᚾ:ᚦᛅᚾᛋᛁ:ᛁᚠᛏᛁᛦ:ᚴᚢᚾᛅᚱ:ᚠᛅᚦᚢᚱ:ᛋᛁᚾ",
+    "explanationAfter": "The inscription is rendered into Danish as: \"Thore rejste denne sten efter sin fader Gunnar\" and English: \"Thore raised this stone in memory of Gunnar, his father\". This type of laying out letters on a runestone is typical for Jutland and Skåne. We know of one more stone raised possibly by the same Thore - the Hobro stone.",
+    "sources": [
+      "Danish National Museum in Copenhagen"
+    ],
+    "country": "DA",
+    "location": "da_nationalmuseet"
+  },
+  {
+    "id": "glenstrup2",
+    "img": "glenstrup2.jpg",
+    "title": "Glenstrup 2 rune stone",
+    "img_credit": "Own photo, taken in the Glenstrup church",
+    "runes": "ᛏᚢᚴᛁ:ᛋᛅᛏᛁ:ᛋᛏᛁᚾ:ᚦᚬᚾᛋᛁ:ᛁᚠᛏᛁᛦ:ᚢᚠᛚᛅ:ᚠᛅᚦᚢᚱ:ᛋᛁᚾ:ᚼᛅᚱᚦᛅ:ᚴᚢᚦᛅᚾ:ᚦᛁᚵᚾ",
+    "rowType": "glenstrup_younger_futhark",
+    "description": "Glenstrup 2 stone is also known as Handeststenen, since it used to be located in the Handest church, which no longer exists. Then it was used as a part of the foundation for a turf house. Finally, it was moved to Glenstrup in 1881. The photo below shows the front of the stone, but the last few runes are on the side. At the back of the stone, there is a carving of a deer. The red paint on the carvings has been filled by the conservators from Danish National Museum.",
+    "sources": [
+      "Glenstrup church",
+      "A pamphlet from the Glenstrup church"
+    ],
+    "explanationAfter": "The inscription translates very similarly to Danish: \"Toke satte denne sten efter sin far Ufla en hard god thegn\". In English: \"Toki raised this stone after his father Ufla, a rich and good landowner.\"",
+    "country": "DA",
+    "location": "glenstrup_kirke"
+  },
+  {
+    "id": "læborg",
+    "img": "laborg.jpg",
+    "title": "Læborg stone",
+    "img_credit": "Own photo, taken in Læborg",
+    "runes": "ᚱᚼᛅᚠᚾᚢᚴᛅᛏᚢᚠᛁ:ᚼᛁᛅᚢ:ᚱᚢᚾᛅᛦ:ᚦᛅᛋᛁ … ᚦᚢᚱᚢᛁ:ᛏᚱᚢᛏᚾᛁᚴ:ᛋᛁᚾᛅ",
+    "rowType": "younger_futhark_long_branch",
+    "description": "A large granit rune stone standing in Læborg. Runic inscriptions run on two sides and it is decorated with two hammers (presumably Thor's).",
+    "sources": [
+      "Læborg church",
+      "Gåden om Thyra show on DRTV"
+    ],
+    "explanationAfter": "The inscription is rendered into Danish as: \"Ravnunga-Tove hug runer disse efter Tyre, dronning sin.\" English: \"Ravnunga-Tove carved these runes after Thyra, his queen.\" Who was Thyra? She was a powerful figure, who's named also on both Jelling stones and the Bække 1 stone. Ravnunge-Tove (or -Tue) is named also on Bække 1 stone and Bække 2 stone.",
+    "country": "DA",
+    "location": "læborg_kirke"
+  },
+  {
+    "id": "bække1",
+    "img": "bakke1.jpg",
+    "title": "Bække 1 stone",
+    "img_credit": "Own photo, taken in Bække",
+    "description": "A runestone found in Bække in 1820. It was brought to its current honourable placing in 1923, as the construction of church's tower has was completed.",
+    "runes": "ᚱᛅᚠᚾᚢᚴᛅ:ᛏᚢᚠᛁ:ᛅᚢᚴ:ᚠᚢᛏᛁᚾ:ᛅᚢᚴ:ᚴᚾᚢᛒᛚᛁ:ᚦᛅᛁᛦ:ᚦᚱᛁᛦ:ᚴᛅᚦᚢ:ᚦᚢᚱᚢᛁᛅᛦ:ᚼᛅᚢᚴ",
+    "rowType": "younger_futhark_long_branch",
+    "sources": [
+      "Plaque in Bække"
+    ],
+    "explanationAfter": "The inscription is rendered into Danish as: \"Ravnunge-Tue og Fundin og Gnyple, de tre gjorde Thyras høj\". In English: \"Ravnunge-Tue and Fundin and Gnyple, they three made Thyras monument.\" Who was Thyra? She was a powerful figure, who's named also on both Jelling stones and the Læborg stone. Ravnunge-Tue (or -Tove) is named also on Læborg stone and Bække 2 stone.",
+    "country": "DA",
+    "location": "bække_kirke"
+  },
+  {
+    "id": "bække2",
+    "img": "bakke2.jpg",
+    "title": "Bække 2 stone",
+    "img_credit": "Own photo, taken in Bække",
+    "description": "The runic stone was erected in the 900s. It constitutes a part (in fact, a stem) of a stone ship near Klebæk Høje. Stone ships were often, though not always, built around graves. The stone ship at Klebæk Høje (also known as the Bække Monument) is 45 meters long and dates back to the Viking Age. It is flanked by two Bronze Age burial mounds.",
+    "runes": "ᚼᚱᛁᛒᚾᚬ:ᚴᛏᚢᛒᛁ:ᚴᚱᛁᚢᚴᚢᛒᚦᛋᛁ:ᛅᚠᛏ:ᚢᛁᛒᚱᚢᚴ:ᛘᚦᚢ:ᛋᛁᚾ",
+    "rowType": "younger_futhark_long_branch",
+    "sources": [
+      "Plaques in Bække",
+      "Gåden om Thyra show on DRTV"
+    ],
+    "explanationAfter": "The inscription states: \"Ravnunge-Tue made these monuments for his mother Vibrog\" (Danish: \"Ravnunge-Tue gjorde disse kumler [mindesmærker] efter sin moder Vibrog.\"). Unlike the other two nearby stones signed Ravnunge-Tue (Bække 1 and Læborg stones), this one is hard to read, due to abbreviated words and missing separators between words. Either way, Ravnunge-Tue was clearly an important figure in the local community.",
+    "country": "DA",
+    "location": "klebæk_høje"
+  },
+  {
+    "id": "jelling_gorm",
+    "title": "Gorm's stone in Jelling",
+    "img": "jelling_gorm.jpg",
+    "img_credit": "Own photo, taken in Jelling",
+    "description": "On this stone, the name Denmark appears for the first time within the country. The stone was placed in c. 950 by Gorm the Old. It is the smaller of the two iconic Jelling stones. They stand to this day at the location of Jelling monument, an enormous show of power consisting of two grave mounds, and a gigantic grave ship surrounded by a 1.4 km long palisade.",
+    "runes": "ᚴᚢᚱᛘᛦ:ᚴᚢᚾᚢᚴᛦ:ᚴ…ᛁ:ᚴᚢᛒᛚ:ᚦᚢᛋᛁ:ᛅᚠᛏ:ᚦᚢᚱᚢᛁ:ᚴᚢᚾᚢ:ᛋᛁᚾ:ᛏᛅᚾᛘᛅᚱᚴᛋᛦ:ᛒᚢᛏ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Kong Gorm gjorde disse kumler (monumenter) efter Thyra sin kone - Danmarks pryd\". And to English: \"King Gorm made this monument to Thyra, his wife, Denmark's adornment\". Little is known about Thyra, apart from her name appearing on four different runestones, praising her as wife and queen.",
+    "sources": [
+      "Plaques in Jelling"
+    ],
+    "country": "DA",
+    "location": "jelling"
+  },
+  {
+    "id": "jelling_harald",
+    "title": "Harald's stone in Jelling",
+    "img": "jelling_harald.jpg",
+    "img_credit": "Own photo, taken in Jelling",
+    "description": "The bigger of the two Jelling stones, raised by Harald Bluetooth, the son of Gorm. The stone dates back to around 965, to a time when Denmark was transitioning from a tribal society to a Christian kingdom.",
+    "runes": "ᚼᛅᚱᛅᛚᛏᚱ:ᚴᚢᚾᚢᚴᛦ:ᛒᛅᚦᚴᛅᚢᚱᚢᛅ:ᚴᚢᛒᛚ:ᚦᛅᚢᛋᛁ:ᛅᚠᛏ:ᚴᚢᚱᛘᚠᛅᚦᚢᚱᛋᛁᚾ:ᛅᚢᚴᛅᚠᛏ:ᚦᚢᚱᚢᛁ:ᛘᚢᚦᚢᚱ:ᛋᛁᚾᛅ:ᛋᛅ:ᚼᛅᚱᛅᛚᛏᚱ:ᛁᛅᛋ:ᛋᚬᛁ:ᛏᛅᚾᛘᛅᚢᚱᚴ:ᛅᛚᛅ:ᛅᚢᚴ:ᚾᚢᚱᚢᛁᛅᚴ:ᛅᚢᚴ:ᛏᛅᚾᛁ:ᚴᛅᚱᚦᛁ:ᚴᚱᛁᛋᛏᚾᚬ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered to modern Danish as: \"Kong Harald bød gøre disse kumler (monumenter) efter Gorm sin fader og efter Thyra sin moder. Den Harald som vandt sig hele Danmark og Norge og gjorde Danerne kristne.\" And in English: \"King Harald had these monuments raised after his father Gorm and after his mother Thyra. Harald, who united all of Denmark and Norway and christened the Danes.\" This stone is considered the Denmark's birth certificate.",
+    "sources": [
+      "Plaques in Jelling"
+    ],
+    "country": "DA",
+    "location": "jelling"
+  },
+  {
+    "id": "aarhus_mask_stone",
+    "title": "Aarhus mask stone DR 66 (Mjy77)",
+    "img": "aarhus_mask.jpg",
+    "img_credit": "Own photo, taken in the musem",
+    "description": "The \"mask stone\" from Aarhus, dating from around AD 970-1020. It was found in 1850, in the foundations of the mill Aarhus Mølle.",
+    "runes": "ᚴᚢᚾᚢᛚᚠᛦ:ᛅᚢᚴ:ᛅᚢᚴᚢᛏᚱ:ᛅᚢᚴ:ᛅᛋᛚᛅᚴᛦ:ᛅᚢᚴ:ᚱᚢᛚᚠᛦ:ᚱᛁᛋᚦᚢ:ᛋᛏᛁᚾ:ᚦᛅᚾᛋᛁ:ᛁᚠᛏᛁᛦ:ᚠᚢᛚ:ᚠᛁᛚᛅ(ᚴ)ᛅ:ᛋᛁᚾ:ᛁᛅᛦ:ᚢᛅᚱᚦ…ᛁ…ᛏᚢᚦᚱ:ᚦᚬ:ᚴᚢᚾᚢᚴᛅᛦ:ᛒᛅᚱᚦᚢᛋᚴ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Gunulv og Øgot og Aslak og Rolf rejste denne sten efter deres fælle Ful. Han fandt døden ... da konger kæmpede\". In English: \"Gunnulfr and Eygautr/Auðgautr and Áslakr and Hrólfr raised this stone in memory of Fúl, their partner, who died when kings fought\". Perhaps it is a reference to the battle at Svolder, a naval battle in AD 1000, when the Danish king Swein Forkbeard, the Swedish king Olof Skötkonung and the Norwegian earl Eirik Hákonarson fought the Norwegian king Olaf Tryggvason.",
+    "sources": [
+      "Moesgaard Museum",
+      "https://app.raa.se"
+    ],
+    "country": "DA",
+    "location": "moesgaard_museum"
+  },
+  {
+    "id": "aarhus_dr67",
+    "title": "Aarhus Runestone DR 67 (MJy78)",
+    "img": "aarhus_dr67.jpg",
+    "img_credit": "Own photo, taken in the museum",
+    "description": "Runestone dated around AD 1000, found in 1866 beneath Vor Frue Kirke (church of Our Lady) in Aarhus.",
+    "runes": "ᚴᛁᛏᛁᛚ:ᚱᛁᛋᚦᛁ:ᛋᛏᛁᚾ:ᚦᛅᚾᛋᛁ:ᚢᚠᛏᛁᛦ:ᛁᚴᛅ:ᚠᛅᚦᚢᚱ:ᛋᛁᚾ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Kaeld rejste denne sten efter sin fader Inge.\" In English: \"Ketill raised this stone in memory of Ingi, his father\".",
+    "sources": [
+      "Moesgaard Museum",
+      "https://app.raa.se"
+    ],
+    "country": "DA",
+    "location": "moesgaard_museum"
+  },
+  {
+    "id": "aarhus_dr68",
+    "title": "Aarhus Runestone DR 68 (MJy79)",
+    "img": "aarhus_dr68.jpg",
+    "img_credit": "Own photo, taken in the museum",
+    "description": "Rune stone from around AD 1000. Found in 1905 in the foundations of Vor Frue Kirke (church of Our Lady) in Aarhus. The inscription runs on two sides of the stone. One side (the continuation of the text) is also ornamented.",
+    "runes": "ᛏᚢᛋᛏᛁ:ᛅᚢᚴ:ᚼᚢᚠᛁ:ᛅᚢᚴ:ᚦᛁᚱ:ᚠᚱᛁᛒᛁᚢᚱᚾ:ᚱᛁᛋᚦᚢ:ᛋᛏᛁᚾ:ᚦᚬᚾᛋᛁ:ᛁᚠᛏᛁᛦ:ᚬᛋᚢᚱ:ᛋᛅᚴᛋᛅ:ᚠᛁᛚᛅᚴᛅ:ᛋᛁᚾ:ᚼᛅᚱᚦᛅ:ᚴᚢᚦᛅᚾ:ᛏᚱᛁᚴ:ᛋᛅᛦ:ᛏᚢ:ᛘᛅᚾᛅ:ᛘᛁᛋᛏ:ᚢᚾᛁᚦᛁᚴᛦ:ᛋᛅᛦ:ᛅᛏᛁ:ᛋᚴᛁᛒ:ᛘᛁᚦ:ᛅᚱᚾᚬ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Toste og Hove rejste sammen med Fredbjørn denne sten efter Asser Saxe, deres fælle, en meget velbyrdig dreng. Han døde som den største unidding blandt mænd. Han ejede skib sammen med Arne\". In English: \"Tosti and Hofi and Freybjorn raised this stone in memory of Azurr Saxon/Sword(-wielder), their partner, a very good 'drengr'. He died as the most unvillainous of men. He owned a ship with Arni\". Asser Saxe was clearly a respected figure. The term drengr is a noble title and unvillainous simply means an honourable man. The statement that Asser owned a ship with Arne could mean that they ran a trading company together.",
+    "sources": [
+      "Moesgaard Museum",
+      "https://app.raa.se"
+    ],
+    "country": "DA",
+    "location": "moesgaard_museum"
+  },
+  {
+    "id": "aarhus_dr69",
+    "title": "Aarhus Runestone DR 69 (MJy73)",
+    "img": "aarhus_dr69.jpg",
+    "img_credit": "Own photo, taken in the museum",
+    "description": "Rune stone dating back to AD 1000, found north of Aarhus in the 17th century.",
+    "runes": "ᚦᚢᚦᚴᛁᛚ:ᚱᛁᛋᚦᛁ:ᛋᛏᚾ:ᚦᛅᚾᛋᛁ:ᚢᚠᛏᛁᛦ:ᛏᚢᚠᛅ:ᛘᛅᚴ:ᛋᛁᚾ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Thydkill rejste denne sten efter sin måg Thue\". In English: \"Þjöðkell raised this stone in memory of Tófi, his måg\". Måg is a male relation by marriage - a brother- or father-in-law.",
+    "sources": [
+      "Moesgaard Museum",
+      "https://app.raa.se"
+    ],
+    "country": "DA",
+    "location": "moesgaard_museum"
+  },
+  {
+    "id": "hørningstenen",
+    "title": "The Hørning stone DR 58",
+    "img": "horning_stenen.jpg",
+    "img_credit": "Own photo, taken in the museum",
+    "description": "Runestone dating around AD 1000, found in 1849 in Hørning, southwest of Aarhus, next to the old road between Jelling and Aarhus. A copy of this stone stands in the Viking Museum in Aarhus.",
+    "runes": "ᛏᚢᚴᛁ:ᛋᛘᛁᚦᚱ:ᚱᛁᚦ:ᛋᛏᛁᚾ:ᛁᚠᛏ:ᚦᚢᚱᚴᛁᛋᛚ:ᚴᚢᚦᛘᚢᛏᛅᛦ:ᛋᚢᚾ:ᛁᛋ:ᚼᛅᚾᚢᛘ:ᚴᛅᚠ:ᚴᚢᛚ:ᚢᚴ:ᚠᚱᛁᛅᛚᛋᛁ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Toke Smed rejste stenen efter Troels Gudmunds søn, som gav ham guld(?) og frihed\". In English: \"Toki Smith raised the stone in memory of Þorgist Guðmundr's son, who gave him gold(?) and freedom\".",
+    "sources": [
+      "Moesgaard Museum",
+      "https://samlinger.natmus.dk/dmr/asset/7750",
+      "https://trap.lex.dk/Hørningstenen"
+    ],
+    "country": "DA",
+    "location": "moesgaard_museum"
+  },
+  {
+    "id": "asferg",
+    "title": "Asferg stone DR 121 (MJy 47)",
+    "img": "asferg.jpg",
+    "img_credit": "Own photo, taken in the National Museum of Denmark",
+    "description": "Rune stoned dated around AD 1000.",
+    "runes": "ᚦᚢᚱᚵᛁᛦ:ᛏᚢᚴᛅ:ᛋᚢᚾ:ᚱᛁᛋᚦᛁ:ᛋᛏᛁᚾ:ᚦᚬᚾᚾᛋᛁ:ᛁᚠᛏᛁᛦ:ᛘᚢᛚᛅ:ᛒᚱᚢᚦᚱ:ᛋᛁᚾ:ᚼᛅᚱᚦᚬ:ᚴᚢᚦᚱᚢ:ᚦᛁᚾ",
+    "rowType": "asferg_younger_futhark",
+    "explanationAfter": "The transcription in Danish runs: \"Thorger Tokes søn rejste denne sten efter sin broder Mule, en meget god thegn\". In English: \"Thorger Toke's son raised this stone in memory of Mule, his brother, a very good thegn\".",
+    "sources": [
+      "Danish National Museum in Copenhagen"
+    ],
+    "country": "DA",
+    "location": "da_nationalmuseet"
+  },
+  {
+    "id": "snoldelev",
+    "title": "Snoldelev stone DR 248",
+    "img": "snoldelev.jpg",
+    "img_credit": "Own photo, taken in the National Museum of Denmark",
+    "description": "Rune stone dated to 8th-9th century AD. Apart from the inscription, contains two ornaments: three interlaced horns and a fylfot.",
+    "runes": "ᚴᚢᚾ᛫ᚢᚼᛚᛏᛋᛏᚼᛁᚾ᛫ᛋᚢᚾᛅᛦ:ᚱᚢᚺᛅᛚᛏᛋ᛫ᚦᚢᛚᛅᛦ᛫ᚨᛋᛅᛚᚺᛅᚢᚴᚢ(ᛘ)",
+    "rowType": "snoldelev_younger_futhark",
+    "explanationAfter": "This older stone is tricky to transliterate as it is written in the early form of younger futhark. For example, 'ᚼ' denotes 'a' instead of 'h', and two words blend together (kunualts stain = kunualtstain). It is rendered into Danish as: \"Gunvalds sten, søn af Roald, thul (taler, fremsigemand?) i Salløv (på Salhøjene)\". In English: \"Gunvald's stone, son of Roald, thul (speaker, reciter?) in Salløv (on the Salmounds)\".",
+    "sources": [
+      "Danish National Museum in Copenhagen"
+    ],
+    "country": "DA",
+    "location": "da_nationalmuseet"
+  },
+  {
+    "id": "tirsted",
+    "title": "Tirsted stone DR 216",
+    "img": "tirsted.jpg",
+    "img_credit": "Own photo, taken in the National Museum of Denmark",
+    "description": "A rune stone dated to 10th century AD.",
+    "runes": "ᚬᛋᚱᛅᚦᚱ:ᛅᚢᚴ:ᚼᛁᛚᛏᚢ(-)-ᛦ:ᚱᛅᛁᛋᚦᚢ:ᛋᛏᛅᛁᚾ:ᚦᛅᚾᛋᛁ:ᛅᚠᛏ:ᚠᚱᚬᚦᛅ:ᚠᚱᚬᚾᛏᛁ:ᛋᛁᚾ:ᛋᛁᚾ:ᛁᛅᚾ:ᚼᛅᚾ:ᚢᛅᛋ:ᚦᚬ:ᚠᚬᛁᚾᚴ:ᚢᛅᛁᛦᛅ:ᛁᛅᚾ:ᚼᛅᚾ:ᚢᛅᚱᚦ:ᛏᛅᚢᚦᚱ:ᚬ:ᛋᚢᚬ:ᚦᛁᛅᚢᚦᚢ:ᛅᚢᚴ:ᚢᛅᛋ:ᚠᚢᚱᛋ:ᛁ:ᚠᚱᛁᚴᛁᛋ:ᚬᚦᛁ:ᚦᚬ:ᛅᛚᛁᛦ:ᚢᛁᚴᛁᚴᛅᛦ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription is rendered into modern Danish as: \"Asråd og Hildvig (eller Hildulv?) rejste denne sten efter Frede, deres frænde (?), men han var (da mænds skræk?), og han døde i Svitjod (Sverige) og var (først i Frigges skare?), derefter alle vikingerne.\" In English: \"Asråd and Hildvig  Hildulv?) raised this stone in memory of Frede, their kinsman (?). And he was then (the terror of man?), and he died in Svitjod (Sweden) and was (the foremost of Frigge's host?). And then: all viking\". As you see, it's very hard to interpret.",
+    "sources": [
+      "Danish National Museum in Copenhagen"
+    ],
+    "country": "DA",
+    "location": "da_nationalmuseet"
+  },
+  {
+    "id": "ladby_viking_museum_stone",
+    "title": "Stone at the Viking Museum Ladby",
+    "img": "ladby_viking_museum_stone.jpg",
+    "img_credit": "Own photo, taken in Ladby",
+    "description": "A modern stone at the parking of the Ladby Viking Museum.",
+    "runes": "ᚢᛁᛚᚴᚢᛘᛁᚾ:ᛏᛁᛚ:ᚼᛚᛅᛏᛒᛁ ᛋᚴᛁᛒᛁᛏ:ᚠᛅᚱᛅ:ᚼᛁᛚ:ᚢᚴ:ᚢᛁᛚ",
+    "rowType": "younger_futhark_long_branch",
+    "explanationAfter": "The inscription says: \"Velkomin til Ladby Skibet. Fare hel og vel\" - \"Welcome to the Ladby ship. Travel whole and well!\" There is indeed a 1000-year old ship burial next to the museum, left in its original location and shape. It's truly worth paying a visit there.",
+    "sources": [
+    ],
+    "country": "DA",
+    "location": "ladby"
   },
   {
     "id": "wooden_spade",
@@ -302,13 +731,29 @@
     "title": "A wooden spade from Iceland",
     "img_credit": "Own photo, taken in the National Museum of Iceland",
     "runes": "ᛒᚮᛆᛐᛐᛆᛐᛘᛁᚴ᛫ᛁᚿᚴᛁᛆᛚᚱ᛫ᚴᛆᚱᚦᛁ",
-    "rowType": "wooden_spade_younger_futhark",
+    "rowType": "medieval",
     "description": "A wooden spade with runes cut into the blade. It was found in a peat bog and dates from the 12th century. It can be seen in Iceland's national museum.",
     "explanationAfter": "Correct. The inscription has been interpreted as \"boalliatmik inkialtr kærþi\", in modern Icelandic: \"Páll lét mig (gera), Ingjaldur gerði (mig)\" and in English: \"Páll had me (made), Ingjaldur made (me)\".",
     "sources": [
       "National Museum of Iceland"
     ],
-    "country": "IS"
+    "country": "IS",
+    "location": "þjóðminjasafnið"
+  },
+  {
+    "id": "bergthorshvoll",
+    "img": "bergthorshvoll_stick.jpg",
+    "title": "Bergþórshvoll stick",
+    "img_credit": "Own photo, taken in the National Museum of Iceland",
+    "runes": "ᛍᛆᛐᚮᚱ ᛆᚱᛁᛕᚮ ᛐᛁᚿᛁᛐ ᚮᛕᛁᚱᛆ ᚱᚮᛐᛆᛍ",
+    "rowType": "medieval_bergthorshvoll",
+    "description": "A rune-inscribed stick said to have been unearthed in 1925 at the farm Bergþórshvoll in the south of Iceland. On one side it has a list of runes in roman alphabet order from a to u and on the other... Solve the exercise to find out!",
+    "explanationAfter": "The runes form a formula \"sator:aripo:tinit:opira:rotas\", widely quoted in the medieval Europe (though originating in earlier period). The formula is a palindrome with some interesting patterns, also known as Sator Square. The stick is dated late, to seventeenth or eighteenth century.",
+    "sources": [
+      "National Museum of Iceland"
+    ],
+    "country": "IS",
+    "location": "þjóðminjasafnið"
   },
   {
     "id": "thorfinn_karlsefni",
@@ -322,7 +767,8 @@
     "sources": [
       "The Einar Jónsson Museum"
     ],
-    "country": "IS"
+    "country": "IS",
+    "location": "einar_jónssons_museum"
   },
   {
     "id": "borgarnes",
@@ -332,11 +778,12 @@
     "description": "A modern inscription from a grave mound in Borgarnes of one of the first Icelandic settlers. The entire park is dedicated to his memory.",
     "runes": "ᛋᚴᛅᛚᛚᛅᚴᚱᛁᛘᚱ",
     "explanationAfter": "Of course, that's Skalla-Grim Kveld-Ulfsson! Although he died of old age at his farm Borg at Myrar, he is said to be buried in Borgarnes.",
-    "rowType": "borgarnes_younger_futhark",
+    "rowType": "younger_futhark_long_branch",
     "sources": [
       "An information board provided by the Borgarnes commune authorities"
     ],
-    "country": "IS"
+    "country": "IS",
+    "location": "skallagrímsgarður"
   },
   {
     "id": "acvalhalla",
@@ -382,7 +829,41 @@
     "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Web_Weirdos\"",
     "title": "Adventure Time: a sword from \"Web Weirdos\"",
     "rowType": "older_futhark_at_web_weirdos",
-    "runes": ["\u16c1", " ", "\u16a8", "\u16d7", " ", "\u16a8", " ", "ᛋ", "\u16b2", "\u16d6", "\u16da", "\u16d6", "\u16cf", "\u16df", "\u16be", " ", "\u16c1", " ", "\u16b9", "\u16c1", "ᛋ", "\u16ba", " ", "\u16c1", " ", "\u16ba", "\u16a8", "\u16de", " ", "ᛋ", "\u16b2", "\u16c1", "\u16be"],
+    "runes": [
+      "\u16c1",
+      " ",
+      "\u16a8",
+      "\u16d7",
+      " ",
+      "\u16a8",
+      " ",
+      "ᛋ",
+      "\u16b2",
+      "\u16d6",
+      "\u16da",
+      "\u16d6",
+      "\u16cf",
+      "\u16df",
+      "\u16be",
+      " ",
+      "\u16c1",
+      " ",
+      "\u16b9",
+      "\u16c1",
+      "ᛋ",
+      "\u16ba",
+      " ",
+      "\u16c1",
+      " ",
+      "\u16ba",
+      "\u16a8",
+      "\u16de",
+      " ",
+      "ᛋ",
+      "\u16b2",
+      "\u16c1",
+      "\u16be"
+    ],
     "description": "This magic sword appears in an episode \"Web weirdos\".",
     "explanationAfter": "Yes! The sword says \"I am a skeleton I wish I had skin\".",
     "sources": [
@@ -408,7 +889,27 @@
     "img_credit": "https://adventuretime.fandom.com/wiki/Runic_code#Sword_in_\"Morituri_Te_Salutamus\"",
     "title": "Adventure Time: a sword from \"Morituri Te Salutamus\"",
     "rowType": "anglo_saxon_at_morituri",
-    "runes": ["\u16cf", "\u16a9", " ", "\u16a0", "\u16c1", "\u16b7", "ᚹ", "\u16cf", " ", "\u16c1", "\u16cb", " ", "\u16cf", "\u16a9", " ", "\u16da", "\u16c1", "ᚢ", "\u16d6"],
+    "runes": [
+      "\u16cf",
+      "\u16a9",
+      " ",
+      "\u16a0",
+      "\u16c1",
+      "\u16b7",
+      "ᚹ",
+      "\u16cf",
+      " ",
+      "\u16c1",
+      "\u16cb",
+      " ",
+      "\u16cf",
+      "\u16a9",
+      " ",
+      "\u16da",
+      "\u16c1",
+      "ᚢ",
+      "\u16d6"
+    ],
     "description": "A sword that occurs in the episode \"Morituri Te Salutamus\"",
     "explanationAfter": "Indeed, the runic message says \"To fight is to live\". While the use of Uruz rune for \"v\" is historically common, the choice of ᚹ for \"h\" is more surprising.",
     "sources": [

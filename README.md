@@ -4,13 +4,22 @@
 [![Generate thumbnails](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml)
 [![Diff Web and Native resources](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/diff-web-and-native.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/diff-web-and-native.yml)
 
+## [Litiluism!](litiluism.com)
+
+I no longer maintain this web app. Go check out the Android app
+[Litiluism](litiluism.com) instead!
+
+I only keep this web app for people who want to give Litiluism a try but don't have an Android phone.
+
 ## [Try it out!](https://tomaszgarbus.github.io/rune-ovningsbok)
 
 Open the web app [here](https://tomaszgarbus.github.io/rune-ovningsbok).
 
-## [Mobile version!](https://play.google.com/store/apps/details?id=com.runedroid)
+## ~~[Mobile version!](https://play.google.com/store/apps/details?id=com.runedroid)~~
 
-Download the RuneDroid mobile app from [Google Play](https://play.google.com/store/apps/details?id=com.runedroid) or build the APK yourself from this repository.
+~~Download the RuneDroid mobile app from [Google Play](https://play.google.com/store/apps/details?id=com.runedroid) or build the APK yourself from this repository.~~~
+
+Check out Litiluism instead!
 
 ## About
 
