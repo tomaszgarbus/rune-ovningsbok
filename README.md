@@ -4,10 +4,10 @@
 [![Generate thumbnails](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/img-resize.yml)
 [![Diff Web and Native resources](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/diff-web-and-native.yml/badge.svg)](https://github.com/tomaszgarbus/rune-ovningsbok/actions/workflows/diff-web-and-native.yml)
 
-## [Litiluism!](litiluism.com)
+## [Litiluism!](https://litiluism.com)
 
 I no longer maintain this web app. Go check out the Android app
-[Litiluism](litiluism.com) instead!
+[Litiluism](https://litiluism.com) instead!
 
 I only keep this web app for people who want to give Litiluism a try but don't have an Android phone.
 
